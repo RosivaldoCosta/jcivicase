@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="civicrm">
+	<name>CiviCRM - UCC Assessment and Treatment PDF Plugin</name>
+	<author>Joomla! Project</author>
+	<creationDate>January 2012</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.
+		All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>CiviCRM UCC Assessment and Treatment outputs in PDF format</description>
+	<files>
+		<filename plugin="assessmentandtreatmentpdf">assessmentandtreatmentpdf.php</filename>
+	</files>
+    <params>
+        <param name="pdf_template" type="text" default="PDF/assessmentandtreatmentpdf" label="Custom Template Name" description="Custom Template Name" />
+        <param name="countcolumn" type="text" default="3" label="The number of columns for the long lines" description="The number of columns for the long lines" />
+        <param name="overlenght" type="text" default="120" label="Max lenght string for single row" description="Max lenght string for single row" />
+    </params>
+</install>

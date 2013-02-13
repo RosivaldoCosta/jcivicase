@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>CiviCRM - BuildForm Intern Plugin</name>
+	<author>Charles Campbell</author>
+	<creationDate>February 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.
+		All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>CiviCRM BuildForm Hook for defining Intern features</description>
+	<files>
+		<filename plugin="civicrm">interns.php</filename>
+	</files>
+	 <params>
+                <param name="needs_approval" type="radio" default="1" label="Needs Approval" description="Intern has access to Needs Approval">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                <param name="scheduled" type="radio" default="1" label="Scheduled" description="Intern has access to Scheduled">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                <param name="completed" type="radio" default="1" label="Completed" description="Intern has access to Completed">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+		<!--
+                <param name="needs_approval" type="radio" default="1" label="Needs Approval" description="Intern has access to Needs Approval">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+                <param name="needs_approval" type="radio" default="1" label="Needs Approval" description="Intern has access to Needs Approval">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </param>
+		-->
+          </params> 
+</install>

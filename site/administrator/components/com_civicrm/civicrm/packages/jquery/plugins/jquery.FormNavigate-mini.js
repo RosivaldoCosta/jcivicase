@@ -1,0 +1,3 @@
+var global_formNavigate=true;(function($){$.fn.FormNavigate=function(message){window.onbeforeunload=confirmExit;function confirmExit(event){if(global_formNavigate==true){if(event!=null){event.cancelBubble=true;}}else{return message;}}
+$(this+":input[type=text], :input[type='textarea'], :input[type='password'], :input[type='radio'], :input[type='checkbox'], :input[type='file'], select").change(function(){global_formNavigate=false;});$(this+":input[type='textarea']").keyup(function(){global_formNavigate=false;});$(this+":submit").click(function(){global_formNavigate=true;});$(".token-input-list-facebook").bind("DOMNodeRemoved DOMNodeInserted",function(){global_formNavigate=false;});}})(jQuery);
+

@@ -1,0 +1,24 @@
+<macrodef name="trashArticle" description="Trash article">
+	<attribute name="name"/>
+	<attribute name="section"/>
+	<attribute name="category"/>
+
+	<sequential>
+		<clickLink label="Article Manager" />
+		<verifyText text="Article Manager" />
+		
+		<!-- Filter article based on the section, category and name -->
+		<setSelectField name="filter_sectionid" text="${section}"/>
+		<setSelectField name="catid" text="${category}"/>
+		<setInputField name="search" value="@{name}" />
+		<!-- Go -->
+		<clickButton xpath="(//button)[1]" />
+		
+		<!-- Select the article -->
+		<setCheckbox name="toggle" checked="true" />
+		
+		<!-- Delete the article -->		
+		<clickLink xpath="(//a[@class='toolbar'])[7]"/>
+		
+	</sequential>
+</macrodef>

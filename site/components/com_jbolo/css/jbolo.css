@@ -1,0 +1,99 @@
+/*---------- bubble tooltip -----------*/
+a.tt{
+    position:relative;
+    display:block;
+    padding:3px 0 3px 16px!important;
+	color:#000!important; 
+	border:none!important;
+	text-decoration:none!important;
+	text-align:left!important;
+	font-weight:normal!important;
+}
+
+a.tt:hover{
+	 /*z-index:25; */
+	 padding:3px 0 3px 16px!important;
+	 text-decoration:none!important;
+	 color:#000!important; 
+	 border:none!important;
+	 text-align:left!important;
+	 font-weight:normal!important; 
+}
+
+a.img_green
+{
+	/*background:transparent url(../img/green.jpg) no-repeat 3px center !important;*/
+	background:transparent url(../img/icon-darkblue.png) no-repeat 0px -3px !important;
+}
+a.img_red
+{
+	/*background:transparent url(../img/red.jpg) no-repeat 3px center !important;*/
+	background:transparent url(../img/icon-darkblue.png) no-repeat 0px -49px !important;
+}
+
+
+a.tt span.tooltip{ display: none; }
+
+/*background:; ie hack, something must be changed in a for ie to execute it*/
+
+ul#jbusers{
+	margin:0px!important;
+	padding:0px!important;
+}
+
+ul#jbusers li:hover span.tooltip{
+    display:block;
+    position:absolute;
+    top:-10px; left:150px;
+	padding: 0px 0 0 0;
+	width:200px;
+	color: #993300;
+    text-align: center;
+	z-index:25;
+	/*	filter: alpha(opacity:90);	KHTMLOpacity: 0.90;	MozOpacity: 0.90;	opacity: 0.90; */
+}
+ul#jbusers li span.tooltip{
+    display:none;
+}
+ul#jbusers li{
+	/*position:relative;*/
+	/*background:none !important;*/
+	list-style-type:none;
+	margin:0px!important;
+	padding:0px!important;
+}
+
+ul#jbusers li.logeduser{
+	padding:3px 0 3px 16px!important;
+	color:#000!important; 
+	border-bottom:solid 1px #E0ECFF;
+	list-style-type:none;
+	text-transform:capitalize;
+	margin:0px!important;
+	text-align:left!important;
+}
+
+li.img_green
+{
+	//background:transparent url(../img/green.jpg) no-repeat 3px center !important;
+	background:transparent url(../img/icon-darkblue.png) no-repeat 0px -3px !important;
+}
+li.img_red
+{
+	//background:transparent url(../img/red.jpg) no-repeat 3px center !important;
+	background:transparent url(../img/icon-darkblue.png) no-repeat 0px -49px !important;
+}
+li.img_off
+{
+	//background:transparent url(../img/offline.jpg) no-repeat 3px center !important;
+	background:transparent url(../img/icon-darkblue.png) no-repeat 0px -72px !important;
+}
+
+
+span.tooltip{
+	background-color:#fff;
+	border:solid 4px #6694E3;	
+}
+div.chathead{
+	border-bottom:solid 1px #6694E3;
+}

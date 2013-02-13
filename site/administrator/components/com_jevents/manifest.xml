@@ -1,0 +1,65 @@
+		<?xml version="1.0" encoding="UTF-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>JEvents</name>
+	<creationDate>March 2009</creationDate>
+	<author>JEvents Project Group</author>
+	<copyright>(C) 2009 JEvents Project Group</copyright>
+	<licence>http://www.gnu.org/copyleft/gpl.html</licence>
+	<authorEmail></authorEmail>
+	<authorUrl>http://www.jevents.net</authorUrl>
+	<version>1.5 RC</version>
+	<description>Events, meetings and more</description>
+	
+    <files folder="site">
+	    <folder>assets</folder>
+	    <folder>controllers</folder>
+		<folder>help</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>libraries</folder>
+		<folder>views</folder>
+		<filename>index.html</filename>
+		<filename>jevents.defines.php</filename>
+		<filename>jevents.php</filename>
+		<filename>metadata.xml</filename>
+		<filename>mod.defines.php</filename>
+		<filename>router.php</filename>
+    </files>
+    
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB.com_jevents.ini</language>
+		<language tag="de-DE">de-DE.com_jevents.ini</language>
+   	</languages>
+	<media />
+
+	<administration>
+		<menu >JEvents MVC</menu>
+
+	    <files folder="admin">
+		    <folder>assets</folder>
+		    <folder>controllers</folder>
+		    <folder>elements</folder>
+			<folder>help</folder>
+			<folder>language</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+						
+			<filename>config.xml</filename>
+			<filename>events_config.ini.php</filename>
+			<filename>index.html</filename>
+			<filename>jevents.php</filename>
+			<filename>jevents.defines.php</filename>
+	    </files>
+
+		<!-- Admin Language Files -->
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB.com_jevents.ini</language>
+			<language tag="de-DE">de-DE.com_jevents.ini</language>
+    	</languages>
+ 	</administration>
+
+	<params />
+
+</install>

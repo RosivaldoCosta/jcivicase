@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>JBolo!</name>
+	<author>TechJoomla</author>
+	<creationDate>1st March 2011</creationDate>
+	<copyright>Copyright(C)2010-11 TechJoomla</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>jbolo@techjoomla.com</authorEmail>
+	<authorUrl>www.techjoomla.com</authorUrl>
+	<version>2.9.1</version>
+	<description>Chat Module to show list of online users or to show Chat Bar</description>
+	<languages folder="lang">
+		<language tag="en-GB">en-GB.mod_jbolo.ini</language>
+		<language tag="cs-CZ">cs-CZ.mod_jbolo.ini</language>
+	</languages>
+    <files>
+        <filename>mod_jbolo.xml</filename>
+        <filename module="mod_jbolo">mod_jbolo.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>element</folder>
+    </files>
+    <params>
+	<param name="moduleclass_sfx" type="text" default="_jbolo" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	<param name="modorbar" type="radio" default="1" label="Display Option" description="Select option to display Bar or Module">
+		<option value="1">Gmail Like ChatBox</option>
+		<option value="0">Facebook Like Bar</option>
+	</param>
+	<param default="4" description="Number of chat user buttons to be shown on the slider" label="Facebook-Slider Options" name="slideroptions" type="radio">
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+	</param>
+	
+	<param type="spacer"/>
+	
+	<param name="groupselect" type="list" default="0" label="Enable Group Integration(Make sure that you have the correct option set in JBolo component)" description="NOTE that this is not a group chat but group integration. It allows you to integrate the chat with other group components">
+		<option value="0">None</option>
+		<option value="1">Integrate with SuperGroups</option>
+		<option value="2">Integrate with GroupJive</option>
+		<option value="3">Integrate with JomSocial Groups</option>
+	</param>
+	<param name="persongroup" type="radio" default="0" label="Show only users from the persons subscribed groups" description="Allows you to integrate the chat with other group components">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</param>
+	<param name="pagegroup" type="radio" default="0" label="Show group users on Group Pages" description="Allows you to integrate the chat with other group components">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</param>
+	<param type="spacer"/>
+	<param name="posttext" type="text" default="jbolo_pos1" label="Enter Position Name for Activity" description="This is the position where the SuperActivity Module needs to be published">
+	</param>
+    </params>
+	<params group="advanced" addpath="/modules/mod_jbolo/element">
+	<param name="intensiveupdate" type="radio" default="1" label="Enable Intensive Ajax Update(Requires more Bandwidth)" description="This will update the User List using Ajax instantaneously">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</param>
+	<param name="theme" type="radio" default="0" label="Select theme for the bar" description="Currently there are 2 themes available i.e. Black3D and GradientGrey">
+		<option value="0">GradientGrey</option>
+		<option value="1">Black3D</option>
+	</param>
+	<param name="showguestbar" type="radio" default="0" label="Show bar to guests" description="With this option you can choose if you want to show the chat bar to your guests as well as logged in users.">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+	</param>
+	<param name="disableactivities" type="radio" default="0" label="Disable the Activities tab on the bar?" description="This will disable the Activities tab on the bar ">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</param>
+	<param name="iconsfields" type="iconsfields" default="" label="Please Select the Icons you want to Hide (only for ChatBar)" description="Hides the icon on the FB Bar" />   
+	</params>
+</install>
+

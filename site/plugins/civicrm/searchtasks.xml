@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>CiviCRM - Search Task</name>
+	<author>Joomla! Project</author>
+	<creationDate>February 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.
+		All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>CiviCRM Search Tasks Hook for Joomla</description>
+	<files>
+		<filename plugin="civicrm">searchtasks.php</filename>
+	</files>
+	<params>
+		<param name="delete_contacts" type="radio" default="1"
+			label="Enable Delete Contacts" description="Enable delete contacts search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="remove_group" type="radio" default="1"
+			label="Enable Remove Group" description="Enable remove contacts from group search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="tag_contacts" type="radio" default="1"
+			label="Enable Tag Contacts" description="Enable tag contacts search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="untag_contacts" type="radio" default="0"
+			label="Enable Untag Contacts" description="Enable untag contacts search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="export_contacts" type="radio" default="1"
+			label="Enable Export Contacts" description="Enable export contacts search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="send_email" type="radio" default="0"
+			label="Enable Send Email" description="Enable send email search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="send_sms" type="radio" default="0"
+			label="Enable Send SMS" description="Enable send sms search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="record_activity_for_contacts" type="radio" default="1"
+			label="Enable Record Activity" description="Enable enable record activity search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="new_smart_group" type="radio" default="1"
+			label="Enable New Smart Group" description="Enable new smart group search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="update_smart_group" type="radio" default="0"
+			label="Enable Update Smart Group" description="Enable update smart group search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="print_contacts" type="radio" default="0"
+			label="Enable Print Contacts" description="Enable print contacts search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mailing_labels" type="radio" default="0"
+			label="Enable Mailing Labels" description="Enable mailing labels search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="batch_update_profile" type="radio" default="0"
+			label="Enable Batch Update Profile" description="Enable batch update profile task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

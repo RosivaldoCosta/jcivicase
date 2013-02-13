@@ -1,0 +1,40 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.Properties.Resources.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.NewIntakeFormView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.NewLethalityFormView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.OPSView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\OPS.csproj.GenerateResource.Cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\OPS.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\OPS.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\OPS.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\OPS.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\OPS.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\OPS.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.Properties.Resources.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.NewIntakeFormView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.NewLethalityFormView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.OPSView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\OPS.csproj.GenerateResource.Cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\OPS.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\OPS.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\OPS.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\OPS.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.NewIntakeFormView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.NewLethalityFormView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.OPSView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\OPS.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\OPS.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\OPS\OPS\obj\Release\OPS.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\OPS.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\OPS.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\OPS\OPS\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.NewIntakeFormView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.NewLethalityFormView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\OPS\OPS\obj\Release\Sante.EMR.SmartClient.OPS.OPSView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\OPS\OPS\obj\Release\OPS.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\OPS\OPS\obj\Release\OPS.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\OPS\OPS\obj\Release\OPS.pdb

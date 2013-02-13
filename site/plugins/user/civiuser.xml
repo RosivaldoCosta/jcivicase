@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user">
+	<name>CiviUser</name>
+	<author>Charles Campbell</author>
+	<creationDate>November 2010</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0</version>
+	<description>An CiviCRM user synchronisation plugin</description>
+	<files>
+		<filename plugin="civiuser">civiuser.php</filename>
+	</files>
+	<params/>
+</install>

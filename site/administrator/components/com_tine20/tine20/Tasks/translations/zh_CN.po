@@ -1,0 +1,326 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tine 2.0 - Tasks\n"
+"POT-Creation-Date: 2008-05-17 22:12+0100\n"
+"PO-Revision-Date: 2009-02-24 21:45-0800\n"
+"Last-Translator: \n"
+"Language-Team: Tine 2.0 Translators\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: NOT SPECIFIED / ANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: Controller.php:97
+#, python-format
+msgid "%s's personal tasks"
+msgstr "%s 的个人任务"
+
+#: Setup/setup.xml:295
+msgid "NEEDS-ACTION"
+msgstr "需要执行"
+
+#: Setup/setup.xml:317
+msgid "COMPLETED"
+msgstr "完成"
+
+#: Setup/setup.xml:339
+msgid "IN-PROCESS"
+msgstr "正在处理"
+
+#: Setup/setup.xml:361
+msgid "CANCELLED"
+msgstr "取消了"
+
+#: Setup/Update/Release3.php:66 Setup/Initialize.php:37
+msgid "All tasks of my taskslists"
+msgstr ""
+
+#: Setup/Initialize.php:46
+msgid "My open tasks"
+msgstr ""
+
+#: Setup/Initialize.php:55
+msgid "My open tasks this week"
+msgstr ""
+
+#: Setup/Initialize.php:64
+msgid "All tasks for me"
+msgstr ""
+
+#: Setup/Initialize.php:65
+msgid "All tasks that I am responsible for"
+msgstr ""
+
+#: Setup/Initialize.php:72
+msgid "Last modified by me"
+msgstr ""
+
+#: Setup/Initialize.php:73
+msgid "All tasks that I have last modified"
+msgstr ""
+
+#: Setup/Initialize.php:82
+msgid "Tasks without responsible"
+msgstr ""
+
+#: Preference.php:29
+msgid "All my tasks"
+msgstr ""
+
+#: Preference.php:71
+msgid "Default Favorite"
+msgstr ""
+
+#: Preference.php:72
+msgid "The default favorite which is loaded on Tasks startup"
+msgstr ""
+
+#: Preference.php:75
+msgid "Default Task List"
+msgstr ""
+
+#: Preference.php:76
+msgid "The default task list to create new tasks in."
+msgstr ""
+
+#: Acl/Rights.php:90
+msgid "manage shared task lists"
+msgstr ""
+
+#: Acl/Rights.php:91
+msgid "Create new shared tasks lists"
+msgstr ""
+
+#: Acl/Rights.php:94
+msgid "manage shared tasks favorites"
+msgstr ""
+
+#: Acl/Rights.php:95
+msgid "Create or update shared tasks favorites"
+msgstr ""
+
+#: js/Status.js:33 js/GridPanel.js:157 js/TaskEditDialog.js:208
+#: Model/Task.php:187
+msgid "Status"
+msgstr "状态"
+
+#: js/GridPanel.js:55
+msgid "Do you really want to delete the selected task?"
+msgid_plural "Do you really want to delete the selected tasks?"
+msgstr[0] "你确实想删除选中的任务？"
+
+#: js/GridPanel.js:110
+#, fuzzy
+msgid "Tags"
+msgstr "任务"
+
+#: js/GridPanel.js:111 Model/Task.php:195
+msgid "Lead"
+msgstr ""
+
+#: js/GridPanel.js:114 js/TaskEditDialog.js:180 js/Tasks.js:133
+msgid "Summary"
+msgstr "摘要"
+
+#: js/GridPanel.js:118
+msgid "Add a task..."
+msgstr "添加任务"
+
+#: js/GridPanel.js:122 js/Tasks.js:134
+msgid "Due Date"
+msgstr "过期日期"
+
+#: js/GridPanel.js:130 js/TaskEditDialog.js:188 Model/Task.php:186
+msgid "Priority"
+msgstr "优先"
+
+#: js/GridPanel.js:144 Model/Task.php:188
+msgid "Percent"
+msgstr "百分比"
+
+#: js/GridPanel.js:171 js/Tasks.js:140
+msgid "Creation Time"
+msgstr "创建时间"
+
+#: js/GridPanel.js:178 js/TaskEditDialog.js:212
+msgid "Completed"
+msgstr "完成的"
+
+#: js/GridPanel.js:185 js/Tasks.js:136
+msgid "Responsible"
+msgstr "有责任的"
+
+#: js/GridPanel.js:234
+msgid "Show closed"
+msgstr "显示关闭的"
+
+#: js/TaskEditDialog.js:141
+msgid "You have to supply a due date, because an alarm ist set!"
+msgstr ""
+
+#: js/TaskEditDialog.js:185
+msgid "Due date"
+msgstr "过期日期"
+
+#: js/TaskEditDialog.js:191
+#, fuzzy
+msgid "Add Responsible ..."
+msgstr "有责任的"
+
+#: js/TaskEditDialog.js:198
+msgid "Notes"
+msgstr "注释"
+
+#: js/TaskEditDialog.js:199
+msgid "Enter description..."
+msgstr "输入描述"
+
+#: js/TaskEditDialog.js:204
+msgid "Percentage"
+msgstr "百分比"
+
+#: js/Tasks.js:92
+msgid "Task"
+msgid_plural "Tasks"
+msgstr[0] "任务"
+
+#: js/Tasks.js:92
+msgid "Tasks"
+msgstr "任务"
+
+#: js/Tasks.js:96
+msgid "to do list"
+msgid_plural "to do lists"
+msgstr[0] "要做的事项列表"
+
+#: js/Tasks.js:96
+msgid "to do lists"
+msgstr "to do 列表"
+
+#: js/Tasks.js:131
+msgid "Quick search"
+msgstr ""
+
+#: js/Tasks.js:138
+msgid "Last modified"
+msgstr ""
+
+#: js/Tasks.js:139
+msgid "Last modifier"
+msgstr ""
+
+#: js/Tasks.js:141
+msgid "Creator"
+msgstr ""
+
+#: Model/Task.php:183
+msgid "Due"
+msgstr ""
+
+#: Model/Task.php:184
+msgid "Organizer"
+msgstr ""
+
+#: Model/Task.php:185
+#, fuzzy
+msgid "Description"
+msgstr "输入描述"
+
+#: Model/Task.php:201
+msgid "Telephone"
+msgstr ""
+
+#: Model/Task.php:202
+msgid "Email"
+msgstr ""
+
+#: Controller/Task.php:166
+msgid "Notification for Task "
+msgstr ""
+
+#~ msgid "Failed"
+#~ msgstr "失败"
+
+#~ msgid "Could not save task."
+#~ msgstr "不能保存任务"
+
+#, fuzzy
+#~ msgid "to to list"
+#~ msgstr "要做的事项列表"
+
+#, fuzzy
+#~ msgid "Tasks) "
+#~ msgstr "任务"
+
+#~ msgid "Could not delete task(s)."
+#~ msgstr "不能删除任务"
+
+#~ msgid "Edit task"
+#~ msgstr "编辑任务"
+
+#~ msgid "Add task"
+#~ msgstr "添加任务"
+
+#~ msgid "Delete task"
+#~ msgid_plural "Delete tasks"
+#~ msgstr[0] "删除任务"
+
+#~ msgid "Enter searchfilter"
+#~ msgstr "输入搜索过滤器"
+
+#~ msgid "Search:"
+#~ msgstr "搜索："
+
+#~ msgid "Displaying tasks {0} - {1} of {2}"
+#~ msgstr "显示任务 {0} - {1} of {2}"
+
+#~ msgid "No tasks to display"
+#~ msgstr "没有任务要显示"
+
+#~ msgid "No Tasks to display"
+#~ msgstr "没有任务要显示"
+
+#~ msgid "Loading Task..."
+#~ msgstr "加载任务..."
+
+#~ msgid "Please Wait"
+#~ msgstr "请稍等"
+
+#~ msgid "Add New Task"
+#~ msgstr "添加新任务"
+
+#~ msgid "Edit Task \"{0}\""
+#~ msgstr "编辑任务 \"{0}\""
+
+#~ msgid "Please wait"
+#~ msgstr "请稍等"
+
+#~ msgid "Saving Task"
+#~ msgstr "保存任务"
+
+#~ msgid "Errors"
+#~ msgstr "错误"
+
+#~ msgid "Please fix the errors noted."
+#~ msgstr "请修改标注的错误"
+
+#~ msgid "Confirm"
+#~ msgstr "确认"
+
+#~ msgid "Do you really want to delete this task?"
+#~ msgstr "确实要删除这个任务？"
+
+#~ msgid "Please wait a moment..."
+#~ msgstr "请稍等一会儿..."
+
+#~ msgid "Enter short name..."
+#~ msgstr "输入短名..."
+
+#~ msgid "Saved in"
+#~ msgstr "保存到"
+
+#~ msgid "Folder"
+#~ msgstr "文件夹"

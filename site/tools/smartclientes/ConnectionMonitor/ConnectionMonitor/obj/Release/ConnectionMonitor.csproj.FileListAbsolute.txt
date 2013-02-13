@@ -1,0 +1,28 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\Sante.EMR.SmartClient.Infrastructure.Module.ConnectionMonitor.LayoutView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.csproj.GenerateResource.Cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\ConnectionMonitor.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\ConnectionMonitor.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\ConnectionMonitor.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\ConnectionMonitor.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\Sante.EMR.SmartClient.Infrastructure.Module.ConnectionMonitor.LayoutView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.csproj.GenerateResource.Cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\ConnectionMonitor.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\ConnectionMonitor.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\Sante.EMR.SmartClient.Infrastructure.Module.ConnectionMonitor.LayoutView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\ConnectionMonitor.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\ConnectionMonitor.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\ConnectionMonitor\ConnectionMonitor\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\ConnectionMonitor\ConnectionMonitor\obj\Release\Sante.EMR.SmartClient.Infrastructure.Module.ConnectionMonitor.LayoutView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\ConnectionMonitor\ConnectionMonitor\obj\Release\ConnectionMonitor.pdb

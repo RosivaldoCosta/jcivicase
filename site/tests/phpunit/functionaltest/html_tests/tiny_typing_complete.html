@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/j1514test/" />
+<title>tiny_typing_complete</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tiny_typing_complete</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>Start logged into administrator page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>administrator/index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Article Manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//td[@id='toolbar-new']/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Create a new article called Test Tiny Typing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>Test Tiny Typing</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>sectionid</td>
+	<td>label=Uncategorised</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>frontpage1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>tinymce</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Enter some text into the article using typeKeys command</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_bold']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>tinymce</td>
+	<td>This is bold</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_bold']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>tinymce</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_italic']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>tinymce</td>
+	<td>This is italic</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_italic']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>tinymce</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_underline']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>tinymce</td>
+	<td>This is underlined</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_underline']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>tinymce</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_strikethrough']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>tinymce</td>
+	<td>This is strikethrough</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_strikethrough']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>tinymce</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_justifyleft']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>tinymce</td>
+	<td>This is left justified</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_justifyleft']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>tinymce</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_justifycenter']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>tinymce</td>
+	<td>This is centered</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>tinymce</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_justifyright']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>tinymce</td>
+	<td>This is right justified</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>tinymce</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='text_justifyleft']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>text_formatselect_open</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='mce_4']/td/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>tinymce</td>
+	<td>This is heading 1</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>tinymce</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Save the article</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//td[@id='toolbar-save']/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Navigate to frontpage and check that article is there</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/div[1]</td>
+	<td>Welcome to the Frontpage</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/div/table[1]/tbody/tr/td[1]</td>
+	<td>Test Tiny Typing</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[3]/td/p[2]/em</td>
+	<td>This is italic</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[3]/td/p[1]/strong</td>
+	<td>This is bold</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[3]/td/p[3]/span</td>
+	<td>This is underlined</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[3]/td/p[4]/span</td>
+	<td>This is strikethrough</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[3]/td/p[5]</td>
+	<td>This is left justified</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[3]/td/p[6]</td>
+	<td>This is centered</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[3]/td/p[7]</td>
+	<td>This is right justified</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[3]/td/h1</td>
+	<td>This is heading 1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Return to administrator page (still logged in)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>administrator/index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Trash the article</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Article Manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>cb0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//td[@id='toolbar-trash']/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Return to front end front page and make sure article is gone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/div[1]</td>
+	<td>Welcome to the Frontpage</td>
+</tr>
+<tr>
+	<td>assertNotText</td>
+	<td>//div[@id='maincolumn']/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/div/table[1]/tbody/tr/td[1]</td>
+	<td>Test Tiny Typing</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Return to administrative back end (where we started)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='leftcolumn']/div[2]/div/div/div/ul/li[7]/a/span</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

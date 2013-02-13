@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="kettle">
+	<name>Exporter - MCT Dispatch</name>
+	<author>Joomla! Project</author>
+	<creationDate>November 2005</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0</version>
+	<description>A plugin which uses Pentaho's kettle to run a transformation </description>
+	<files>
+		<filename plugin="mctdispatch">mctdispatch.php</filename>
+	</files>
+	<params>
+	<param name="ktr_file_name" type="text" size="50" default="/var/www/html/pgcrs/plugins/exporter/kettle/exporter_intake.ktr" label="Transformation File Path" description="PARAMAUTOCREATEUSERS" />
+	<param name="out_path" type="text" size="50" default="out.path=/var/www/html/staging/administrator/components/com_kettle/out/" label="Export File Path" description="PARAMAUTOCREATEUSERS" />
+	<param name="excel_filename" type="text" default="tasks" label="Excel File Name" description="PARAMAUTOCREATEUSERS"/>
+	<param name="start_date" type="calendar" default="20120201" label="Start Date" description="PARAMAUTOCREATEUSERS" />
+	<param name="end_date" type="calendar" default="20120229" label="End Date" description="PARAMAUTOCREATEUSERS"></param>
+	<param name="dbname" type="text" default="cc5tudio_jo153" label="DB Name" description="PARAMAUTOCREATEUSERS"></param>
+	<param name="dbuser" type="text" default="cc5tudio_bccrs" label="DB User" description="PARAMAUTOCREATEUSERS"></param>
+	</params>
+</install>

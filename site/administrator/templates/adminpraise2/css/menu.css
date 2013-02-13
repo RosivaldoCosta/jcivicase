@@ -1,0 +1,247 @@
+/*  AdminPraise 2 CSS
+//  Copyright 2009 JoomlaPraise - Kyle Ledbetter
+*/
+
+/* Menu */
+#ap-menu {
+width:780px;
+height:20px;
+float:left;
+margin:5px;
+}
+#ap-menu ul {
+list-style:none;
+}
+#ap-menu li {
+display:inline;
+float:left;
+}
+#ap-menu li.node a {
+display:block;
+line-height:12px;
+padding:6px 8px 8px 8px;
+}
+#ap-menu li#globals a,#ap-menu li a#Config {
+display:block;
+line-height:12px;
+width:5px;
+height:12px;
+padding:2px 8px;
+border-right:1px solid #BFBFBF;
+border-left:1px solid #BFBFBF;
+border-top:0;
+border-bottom:0;
+position:relative;
+top:5px;
+}
+#ap-menu li#com-launch a,#ap-menu li#mod-launch a,#ap-menu li a#ComponentQuickLaunch,#ap-menu li a#ModulesQuickLaunch {
+display:block;
+line-height:12px;
+width:5px;
+height:12px;
+padding:2px 8px;
+border-right:1px solid #BFBFBF;
+border-left:1px solid #BFBFBF;
+border-top:0;
+border-bottom:0;
+position:relative;
+top:5px;
+}
+#menu, #menu ul, #menu li { 
+margin: 0; 
+padding: 0; 
+border: 0; 
+}
+#menu { 
+position:relative; 
+z-index: 100;
+}
+#menu li    { 
+float:left;  
+position:relative; 
+list-style: none; 
+display: inline;
+}
+#menu li a  { 
+display:block; 
+white-space: nowrap;  
+}
+#menu a:hover {
+cursor:pointer;
+}
+#menu li li { 
+clear: both;
+}
+#menu li ul { 
+visibility: hidden; 
+position:absolute; 
+}
+
+#menu li li ul {  
+top: 0; 
+left: 0; 
+}
+
+#menu li.hover ul {  
+visibility: visible; 
+}
+#menu li.hover ul li ul {  
+visibility: hidden;  
+}
+#menu li.hover li.hover ul {  
+visibility: visible;  
+left: 100%; 
+}
+
+/* Menu */
+
+#menu li {
+
+}
+#menu li li { 
+border: 0;
+}
+
+#menu ul { 
+background:#666 none;
+padding-bottom:8px;
+-moz-border-radius-bottomright:5px;
+-webkit-border-bottom-right-radius:5px;
+-moz-border-radius-bottomleft:5px;
+-webkit-border-bottom-left-radius:5px;
+}
+#menu ul ul {
+background:#E0E0E0 none;
+border-right:1px solid #686868;
+border-top:1px solid #686868;
+border-bottom:1px solid #686868;
+border-left:1px solid #686868;
+margin-top:1px;
+-moz-border-radius-topright:5px;
+-webkit-border-top-right-radius:5px;
+-moz-border-radius-bottomleft:0;
+-webkit-border-bottom-left-radius:0;
+}
+#menu ul li li {
+width:100% !important;
+}
+#menu ul li li li {
+width:auto !important;
+margin:0;
+}
+#menu ul li.node { 
+
+}
+#menu ul li.separator { 
+background-color: #CFCFCF;  
+height: 1px;  
+border-top:1px solid #DFDFDF; 
+padding:0 !important;
+margin:0 8px;
+display:block;
+width:88% !important;
+}
+
+#menu a, #menu div {
+padding: 0.35em 1em 0.35em;
+margin: 0 1px 0 1px;
+color: #333333;
+line-height: 1.6em; 
+vertical-align: middle;
+cursor: default;
+background-repeat: no-repeat; 
+background-position: left 50%
+}
+
+#menu li.disabled a { 
+color: gray; 
+}
+
+#menu ul a {
+font-size: 11px;
+font-weight: normal;
+padding-left: 25px;
+padding-right: 20px;
+line-height: 1.2em;
+}
+
+/* 1 level - hover */
+#menu li a:hover {  
+
+}
+#menu li.hover a {  
+padding:6px 8px 8px 8px;
+}
+
+#ap-menu li#com-launch a:hover,#ap-menu li#mod-launch a:hover,#ap-menu li#globals a:hover,
+a#Config:hover,a#ModulesQuickLaunch:hover,a#ComponentQuickLaunch:hover {
+border-top:0;
+border-bottom:0;
+}
+/* 2 level - normal */
+#menu li.hover li { 
+
+}
+#menu li.hover li a { 
+border: 0 none;   
+height:auto;
+width:115px;
+display:block;
+padding:3px 8px 4px 8px;
+margin:1px 8px;
+background:none;
+}
+/* 2 level - hover */
+#menu li.hover li.hover {
+
+}
+#menu li.hover li.hover a { 
+color:#000;
+background:#E0E0E0 url(../images/theme1/button-bg.jpg) repeat-x scroll 0 0;
+border:1px solid #686868;
+padding:2px 7px 3px 7px;
+}
+/* 3 level - normal */
+#menu li.hover li.hover li {
+
+}
+#menu li.hover li.hover li a { 
+background: none; 
+width:100px;
+border:0;
+margin:2px 0;
+}
+/* 3 level - hover */
+#menu li.hover li.hover li a:hover { 
+margin:2px 0;
+}
+
+/* submenu styling */
+#submenu {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+#submenu li {
+float: left;
+padding: 0;
+margin: 0;
+}
+#submenu li a,
+#submenu span.nolink {
+cursor: pointer;
+padding: 0px 15px;
+border-right: 1px solid #ccc;
+font-weight: bold;
+color: #0B55C4;
+line-height: 12px;
+height: 12px;
+}
+#submenu span.nolink {
+color: #999;
+}
+#submenu a.active,
+#submenu span.nolink.active {
+color: #000;
+text-decoration: underline;
+}

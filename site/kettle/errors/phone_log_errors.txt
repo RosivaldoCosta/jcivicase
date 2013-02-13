@@ -1,0 +1,129 @@
+contact_id;api_key;source;primary_contact_id;sic_code;user_unique_id;employer_id;source_contact_id;activity_type_id;subject;activity_date_time;details;status_id;is_current_revision;case_id;completed_date;assigned_date;source_1;title;activity_id;entity_table;nr_errors;description;fields;codes
+298;;;;;119;; 119; 13;Intake;2010-04-12 21:00:19;Consumer was angry because his mother told him that he could not go out of the house because he stayed out later than his curfew.; 2; 1; 16;2010-08-13 16:27:25;2010-04-12 00:00:00;119;Intake - 16;24393;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+298;;;;;119;; 119; 13;Intake;2010-05-16 21:36:02;Consumer is out of her MH medications,she has self injurious behaviors (cutting), and becomes angry. ; 2; 1; 109;2010-08-16 10:28:17;2010-05-16 00:00:00;119;Intake - 109;24394;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+298;;;;;119;; 119; 13;Intake;2010-06-19 20:11:27;Consumer was considered to be a \"runaway\" after an argument with her father.  Easton PD wanted MCT to talk to the consumer and family in reference to a plan for the family.; 2; 1; 171;2010-06-19 20:44:16;2010-06-19 00:00:00;119;Intake - 171;24395;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+298;;;;;119;; 119; 13;Intake;2010-08-15 22:40:47;Client is a 10 year old caucasion adolescent male threatning to abandon and run away from his current residency as his is expressing anger from not being able to visit with his biological mother as he has visitations every two weeks at his paternal grandmothers house. father rbbert martiz contacted Ops and demanded that the mct respond immediately to this clients needs.; 2; 1; 329;2010-12-07 16:45:05;2010-08-15 00:00:00;119;Intake - 329;24396;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+298;;;;;119;; 119; 13;Intake;2010-08-25 21:46:23;Consumer found his girlfriend dead in their home around 5pm on this date.  ; 2; 1; 363;2010-12-19 11:08:36;2010-08-25 00:00:00;119;Intake - 363;24397;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+298;;;;;119;; 119; 13;Intake;2011-05-06 23:29:03;Consumer acting out.  refusing to obey parents.; 2; 1; 1022;2011-05-06 23:35:28;2011-05-06 00:00:00;119;Intake - 1022;24398;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+298;;;;;119;; 119; 13;Intake;2011-05-06 23:29:03;Consumer acting out.  refusing to obey parents.; 2; 1; 1022;2011-05-06 23:39:32;2011-05-06 00:00:00;119;Intake - 1022;24398;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+301;;;;;121;; 121; 13;Intake;2010-06-29 23:23:48;; 2; 1; 188;2010-06-29 23:29:24;2010-06-29 00:00:00;121;Intake - 188;24399;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+301;;;;;121;; 121; 13;Intake;2010-07-12 10:01:12;Neighbor called Police stating that the consumers leg appeared to be severly infected. MCT not able to find consumer; 2; 1; 226;2010-07-12 10:07:20;2010-07-12 00:00:00;121;Intake - 226;24400;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+301;;;;;121;; 121; 13;Intake;2010-07-12 15:46:38;Consumer revealed to mom that she has been sexually active with boyfriend of a few days.  When mom found out, she contacted boy's mom and cancelled asll visits and consumer became very upset and dumped out mom's drawers and became verbally abusive.  ; 2; 1; 233;2010-08-08 16:41:45;2010-07-12 00:00:00;121;Intake - 233;24401;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+301;;;;;121;; 121; 13;Intake;2010-08-13 16:11:20;Consumer released today from Potomac Ridge after a one week stay.  Became oppositional and defiant and would not stay in home or yard; 2; 1; 327;2010-10-30 13:49:16;2010-08-13 00:00:00;121;Intake - 327;24402;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+301;;;;;121;; 121; 13;Intake;2010-10-01 16:12:10;Consumer approached scene after suicide occured.; 2; 1; 527;2011-01-19 10:44:23;2010-10-01 00:00:00;121;Intake - 527;24403;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+301;;;;;121;; 121; 13;Intake;2011-05-20 15:00:10;consumer found dead in his dorm on campus; 2; 1; 1078;2011-05-20 16:22:27;2011-05-20 00:00:00;121;Intake - 1078;24404;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+301;;;;;121;; 121; 13;Intake;2011-05-20 15:32:00;Resident Assistant on consumer's floor; 2; 1; 1082;2011-05-20 15:48:08;2011-05-20 00:00:00;121;Intake - 1082;24405;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+301;;;;;121;; 121; 13;Intake;2011-05-20 16:08:07;Traumitized by death of student on her floor.; 2; 1; 1084;2011-05-20 16:13:20;2011-05-20 00:00:00;121;Intake - 1084;24406;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+680;;;;;130;; 130; 13;Intake;2010-05-06 16:13:11;; 2; 1; 77;2010-08-16 08:10:57;2010-05-06 00:00:00;130;Intake - 77;24407;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+680;;;;;130;; 130; 13;Intake;2010-05-17 18:37:01;Comsumer refused to stay home with mother.; 2; 1; 112;2010-08-16 10:49:30;2010-05-17 00:00:00;130;Intake - 112;24408;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+680;;;;;130;; 130; 13;Intake;2010-05-31 16:53:07;; 2; 1; 137;2010-08-16 17:14:30;2010-05-31 00:00:00;130;Intake - 137;24409;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+680;;;;;130;; 130; 13;Intake;2010-06-21 17:43:05;; 2; 1; 174;2010-08-17 14:52:28;2010-06-21 00:00:00;130;Intake - 174;24410;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+680;;;;;130;; 130; 13;Intake;2011-05-23 22:00:37;Carol (Director) called per conversation stated that MCT call Phylis in reference to consumer (Trey) who is an alcoholic who is feeling depressed and having suicide ideation.; 2; 1; 1089;2011-05-23 22:07:14;2011-05-23 00:00:00;130;Intake - 1089;24411;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-04-26 11:26:57;; 2; 1; 33;2010-04-26 11:27:55;2010-04-26 00:00:00;132;Intake - 33;24412;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-05-10 20:01:48;mother daughter conflic; 2; 1; 96;2010-05-10 20:06:43;2010-05-10 00:00:00;132;Intake - 96;24413;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-05-31 15:01:13;; 2; 1; 136;2010-05-31 15:04:31;2010-05-31 00:00:00;132;Intake - 136;24414;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-06-01 13:55:20;Consumer/parent conflict with h/ideation; 2; 1; 139;2010-08-17 12:36:25;2010-06-01 00:00:00;132;Intake - 139;24415;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-06-02 12:42:24;; 2; 1; 142;2010-06-02 12:48:32;2010-06-02 00:00:00;132;Intake - 142;24416;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-06-02 12:55:18;; 2; 1; 143;2010-08-17 12:49:05;2010-06-02 00:00:00;132;Intake - 143;24417;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-06-03 15:36:16;; 2; 1; 148;2010-06-03 15:38:04;2010-06-03 00:00:00;132;Intake - 148;24418;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-06-03 15:50:03;MCT dispatched to consumer`s dr office because consumer wanted meds and threaten to do herself harm if she couldn't get them.; 2; 1; 149;2010-08-17 13:06:56;2010-06-03 00:00:00;132;Intake - 149;24419;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-06-03 15:56:05;Caller called in requesting MCT to come out and assess clt for services. Clt is dx with depression and adjustment disorder and has been off her meds for two years. Clt is rapidly decomposing. ; 2; 1; 150;2010-08-17 13:11:17;2010-06-03 00:00:00;132;Intake - 150;24420;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-06-08 14:10:31;; 2; 1; 153;2010-06-08 14:11:57;2010-06-08 00:00:00;132;Intake - 153;24421;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-06-08 20:14:32;; 2; 1; 154;2010-06-08 20:16:45;2010-06-08 00:00:00;132;Intake - 154;24422;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001
+682;;;;;132;; 132; 13;Intake;2010-06-10 18:18:15;Mother wants MCT visit for herself and 14 year old daughter. Somerset Police gave Mom our number.; 2; 1; 161;2010-08-17 13:49:21;2010-06-10 00:00:00;132;Intake - 161;24423;civicrm_activity;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_log`, CONSTRAINT `FK_civicrm_log_modified_id` FOREIGN KEY (`modified_id`) REFERENCES `civicrm_contact` (`id`) ON DELETE CASCADE)
+;;ISU001

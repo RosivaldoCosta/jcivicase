@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>CiviCRM - Change Lock Status Plugin</name>
+	<author>Charles Campbell</author>
+	<creationDate>October 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.
+		All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>http://www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>CiviCRM Change Lock Status Hook for defining lock/unlock features</description>
+	<files>
+		<filename plugin="changelockstatus">changelockstatus.php</filename>
+	</files>
+	 <params>
+                <param name="lockstatus_activity_type" type="text" default="106" label="Activity Type" description="Change lock status activity type"/>
+                <param name="activity_id_field" type="text" default="1755" label="Activity Field ID" description="Activity custom field id"/>
+                <param name="lockstatus_field" type="text" default="1756" label="Lock Status Field ID" description="Lock status custom field id"/>
+                <param name="autolock_field" type="text" default="1757" label="Auto Lock Field" description="Auto lock field"/>
+                <param name="lockstatus_table" type="text" default="271" label="Lock Status Table" description="Lock status table id"/>
+          </params> 
+</install>

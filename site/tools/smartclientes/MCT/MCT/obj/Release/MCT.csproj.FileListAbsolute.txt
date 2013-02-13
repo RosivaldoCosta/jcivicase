@@ -1,0 +1,57 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.AuthorizationToReleaseView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.ConsentForServicesView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.Properties.Resource.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.MCTDispatchView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.MCTView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.NewAssessmentTreatmentView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.PrivacyPracticesView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.SelectCaseNumberView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\MCT.csproj.GenerateResource.Cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\MCT.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\MCT.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\MCT.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\MCT.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\MCT.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\MCT.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.AuthorizationToReleaseView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.ConsentForServicesView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.Properties.Resource.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.MCTDispatchView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.MCTView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.NewAssessmentTreatmentView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.PrivacyPracticesView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.SelectCaseNumberView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\MCT.csproj.GenerateResource.Cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\MCT.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\MCT.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\MCT.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\MCT.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.AuthorizationToReleaseView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.ConsentForServicesView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.Properties.Resource.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.MCTDispatchView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.MCTView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.NewAssessmentTreatmentView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.PrivacyPracticesView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.SelectCaseNumberView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\MCT.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\MCT.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\MCT\MCT\obj\Release\MCT.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\MCT.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\MCT.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.AuthorizationToReleaseView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.ConsentForServicesView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.Properties.Resource.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.MCTDispatchView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.MCTView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.NewAssessmentTreatmentView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.PrivacyPracticesView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.SelectCaseNumberView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\MCT.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\MCT.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\MCT.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\MCT\MCT\obj\Release\Sante.EMR.SmartClient.MCT.Views.SigPad.resources

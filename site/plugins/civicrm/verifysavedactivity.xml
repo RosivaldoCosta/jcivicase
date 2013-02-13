@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>CiviCRM - Post Hook - Verify Save Activity</name>
+	<author>Charles Campbell</author>
+	<creationDate>June 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.  All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>Post Hook which verifies the activities were saved properly </description>
+	<files>
+		<filename plugin="civicrm">verifyactivitysave.php</filename>
+	</files>
+	<params>
+		<param name="notifier" type="radio" default="0"
+			label="Which method should we use for notification?" description="">
+			<option value="0">Email</option>
+			<option value="1">Log File</option>
+		</param>
+	</params>
+</install>

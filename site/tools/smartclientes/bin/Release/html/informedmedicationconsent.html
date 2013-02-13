@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0090)https://65.216.170.16/emrtestSante/Casehistory/blank/ConsentForServices.asp?CaseNumber=459 -->
+<HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Informed Consent For Medication(s)</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>.style1 {
+	FONT-SIZE: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style2 {
+	FONT-SIZE: 16px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.style3 {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+BODY {
+	BACKGROUND-COLOR: #00ccff
+}
+</STYLE>
+
+<SCRIPT language=JavaScript>
+javascript:window.history.forward(1);
+
+// Declaring valid date character, minimum year and maximum year
+var dtCh= "/";
+var minYear=1900;
+var maxYear=2100;
+
+function isInteger(s){
+	var i;
+    for (i = 0; i < s.length; i++){   
+        // Check that current character is number.
+        var c = s.charAt(i);
+        if (((c < "0") || (c > "9"))) return false;
+    }
+    // All characters are numbers.
+    return true;
+}
+
+function stripCharsInBag(s, bag){
+	var i;
+    var returnString = "";
+    // Search through string's characters one by one.
+    // If character is not in bag, append to returnString.
+    for (i = 0; i < s.length; i++){   
+        var c = s.charAt(i);
+        if (bag.indexOf(c) == -1) returnString += c;
+    }
+    return returnString;
+}
+
+function daysInFebruary (year){
+	// February has 29 days in any year evenly divisible by four,
+    // EXCEPT for centurial years which are not also divisible by 400.
+    return (((year % 4 == 0) && ( (!(year % 100 == 0)) || (year % 400 == 0))) ? 29 : 28 );
+}
+function DaysArray(n) {
+	for (var i = 1; i <= n; i++) {
+		this[i] = 31
+		if (i==4 || i==6 || i==9 || i==11) {this[i] = 30}
+		if (i==2) {this[i] = 29}
+   } 
+   return this
+}
+
+function isDate(dtStr){
+	var daysInMonth = DaysArray(12)
+	var pos1=dtStr.indexOf(dtCh)
+	var pos2=dtStr.indexOf(dtCh,pos1+1)
+	var strMonth=dtStr.substring(0,pos1)
+	var strDay=dtStr.substring(pos1+1,pos2)
+	var strYear=dtStr.substring(pos2+1)
+	strYr=strYear
+	if (strDay.charAt(0)=="0" && strDay.length>1) strDay=strDay.substring(1)
+	if (strMonth.charAt(0)=="0" && strMonth.length>1) strMonth=strMonth.substring(1)
+	for (var i = 1; i <= 3; i++) {
+		if (strYr.charAt(0)=="0" && strYr.length>1) strYr=strYr.substring(1)
+	}
+	month=parseInt(strMonth)
+	day=parseInt(strDay)
+	year=parseInt(strYr)
+	if (pos1==-1 || pos2==-1){
+		alert("The date format should be : mm/dd/yyyy")
+		return false
+	}
+	if (strMonth.length<1 || month<1 || month>12){
+		alert("Please enter a valid month")
+		return false
+	}
+	if (strDay.length<1 || day<1 || day>31 || (month==2 && day>daysInFebruary(year)) || day > daysInMonth[month]){
+		alert("Please enter a valid day")
+		return false
+	}
+	if (strYear.length != 4 || year==0 || year<minYear || year>maxYear){
+		alert("Please enter a valid 4 digit year between "+minYear+" and "+maxYear)
+		return false
+	}
+	if (dtStr.indexOf(dtCh,pos2+1)!=-1 || isInteger(stripCharsInBag(dtStr, dtCh))==false){
+		alert("Please enter a valid date")
+		return false
+	}
+return true
+}
+
+function ValidateForm(){
+	var dt=document.form1.TimeStamp
+	if (isDate(dt.value)==false){
+		dt.focus()
+		return false
+	}
+    return true
+ }
+
+</SCRIPT>
+
+<META content="MSHTML 6.00.6000.16825" name=GENERATOR></HEAD>
+<BODY>
+<FORM id=form1 name=form1 action="http://localhost:8080/<#LocalUri#>" method=post>
+<input type="hidden" name="tstamp" value="<#TimeStamp#>"/>
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=750 border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center><STRONG><SPAN class=style1>Baltimore County Crisis 
+      Response System<BR>Mobile Crisis Team 
+</SPAN></STRONG></DIV></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=3 cellPadding=3 width=750 border=0>
+  <TBODY>
+  <TR>
+    <TD height=99>
+      <DIV align=center><STRONG><SPAN class=style2>Informed Consent For Medication</SPAN></STRONG></DIV></TD></TR>
+  <TR>
+    <TD><strong>Client Name: </strong><input type="text" name="ClientName"/><br/></TD></TR>
+  <tr><td>I acknowledge that Dr. <input type="text" name="DoctorName"/> has prescribed:<br/>
+   <textarea name="Description" cols="30" rows="5">&nbsp;</textarea><br/>
+   for use in treatement while at the Sante Group, and I voluntarily consent to its use.  The risks, benefits and side effects associated with this (these) medication(s) have been explained to me.<br/><br/>Alternative treatment has been discussed, and I have had the opportunity to raise questions 
+regarding this (these) medication(s).
+ </td></tr>
+</TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=750 border=0>
+  <TBODY>
+  <TR>
+    <TD class=style3 height=72>
+      <TABLE cellSpacing=3 cellPadding=3 border=0>
+        <TBODY>
+        <TR>
+          <TD><strong>Client Signature: </strong></TD>
+          <TD><INPUT id=ClientSignature maxLength=50 name="ClientSignature" value="MedicationConsentClient_Case_<#CaseNumber#>_<#Date#>"></TD>
+          <td><strong>Date: </strong><input type="text" size="5" name="ClientSigDate"></td>
+        </TR>
+        <TR>
+          <TD><strong>Parent/Legal Guardian Signature: </strong></TD>
+          <TD><INPUT id=GuardianSignature maxLength=50 name="GuardianSignature" value="MedicationConsentGuardian_Case_<#CaseNumber#>_<#Date#>"></TD>
+          <td><strong>Date: </strong><input type="text" size="5" name="GuardianSigDate"></td>
+        </TR>
+        <TR>
+          <TD><strong>Significant Other Signature: </strong></span></TD>
+          <TD><INPUT id=SignificantOtherSignature maxLength=50 name="SignficantOtherSignature" value="MedicationConsentSigOther_Case_<#CaseNumber#>_<#Date#>"></TD>
+          <td><strong>Date: </strong><input type="text" size="5" name="SigOtherSigDate"></td>
+        </TR>
+        <TR>
+          <TD><strong>Physician  Signature: </strong></TD>
+          <TD><INPUT id=PhysicianSignature maxLength=50 name="PhysicianSignature" value="MedicationConsentPhysician_Case_<#CaseNumber#>_<#Date#>"></TD>
+          <td><strong>Date: </strong><input type="text" size="5" name="PhysicianSigDate"></td>
+        </TR>
+        <TR>
+          <TD><strong>R.N./P.A. Signature: </strong></TD>
+          <TD><INPUT id=RNSignature maxLength=50 name="RNSignature" value="MedicationConsentRN_Case_<#CaseNumber#>_<#Date#>"></TD>
+          <td><strong>Date: </strong><input type="text" size="5" name="RNSigDate"></td>
+        </TR>
+        
+        </TBODY>
+      </TABLE>
+    </TD>
+    </TR>
+
+  <tr>
+    <td><INPUT type=submit value="Save" name=Submit>  </td>
+  </tr>
+  
+</TBODY></TABLE>
+<INPUT id=MCT type=hidden value="Y" name="MCT">
+<INPUT id=EmployeeID type=hidden name="EmployeeID"> 
+<INPUT id=Depart type=hidden value="<#Depart#>" name=Depart>
+<input type="hidden" name="FormName" value="Informed Consent For Medication" />
+<INPUT id=Casenumber type=hidden value="<#CaseNumber#>" name="CaseNumber">
+</FORM></BODY></HTML>

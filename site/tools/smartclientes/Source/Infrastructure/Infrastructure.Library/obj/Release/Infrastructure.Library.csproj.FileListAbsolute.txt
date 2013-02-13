@@ -1,0 +1,128 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Sante.EMR.SmartClient.Infrastructure.Library.Properties.Resources.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Sante.EMR.SmartClient.Infrastructure.Interface.WinForms.UserSelectionForm.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.csproj.GenerateResource.Cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Library.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Library.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\ConnectionMonitor.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Interface.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.CompositeUI.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.CompositeUI.WinForms.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.ConnectionMonitor.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.DisconnectedAgent.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.EnterpriseLibrary.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Fadd.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\xunit.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Logger.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.EndpointCatalog.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Fadd.xml
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.xml
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Interface.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\ConnectionMonitor.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Logger.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Library.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Library.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\ConnectionMonitor.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Interface.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.CompositeUI.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.CompositeUI.WinForms.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.ConnectionMonitor.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.DisconnectedAgent.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.EnterpriseLibrary.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Fadd.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\xunit.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Logger.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.EndpointCatalog.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Fadd.xml
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.xml
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\ConnectionMonitor.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Logger.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Interface.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Sante.EMR.SmartClient.Infrastructure.Library.Properties.Resources.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Sante.EMR.SmartClient.Infrastructure.Interface.WinForms.UserSelectionForm.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.csproj.GenerateResource.Cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Library.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Library.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\ConnectionMonitor.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Interface.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.CompositeUI.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.CompositeUI.WinForms.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.ConnectionMonitor.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.DisconnectedAgent.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.EnterpriseLibrary.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Fadd.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\xunit.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Logger.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.EndpointCatalog.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Fadd.xml
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.xml
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Interface.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Sante.EMR.SmartClient.Infrastructure.Library.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Sante.EMR.SmartClient.Infrastructure.Interface.WinForms.UserSelectionForm.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\ConnectionMonitor.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Logger.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Library.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Library.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\ConnectionMonitor.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Interface.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.CompositeUI.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.CompositeUI.WinForms.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.ConnectionMonitor.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.DisconnectedAgent.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.EnterpriseLibrary.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Fadd.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\xunit.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Logger.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.SmartClient.EndpointCatalog.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Fadd.xml
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\HttpServer.xml
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Interface.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\obj\Release\Sante.EMR.SmartClient.Infrastructure.Library.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\obj\Release\Sante.EMR.SmartClient.Infrastructure.Interface.WinForms.UserSelectionForm.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\obj\Release\Infrastructure.Library.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\ConnectionMonitor.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Infrastructure.Library\bin\Release\Infrastructure.Logger.pdb

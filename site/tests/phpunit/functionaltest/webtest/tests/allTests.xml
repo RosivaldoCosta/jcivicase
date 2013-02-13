@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<project default="test">
+	<target name="test" description="runs all the tests">
+		
+		<!-- Smoke Tests -->
+		<ant antfile="smoke/smokeTests.xml" />
+
+		<!-- Regression Tests -->
+		<ant antfile="regression/addSectionCategoryAndArticle.xml" />
+
+	</target>
+</project>

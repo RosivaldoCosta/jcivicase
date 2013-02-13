@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<CaseType>
+  <name>Operations Center</name>
+  <ActivityTypes>
+      <ActivityType>
+      <name>Open Case</name>
+      <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Care Plan</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Follow up</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>MCT Dispatch</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Assign Case Role</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Authorization To Release</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Follow up</name>
+          <status>Completed</status>
+    </ActivityType>
+	<ActivityType>
+      <name>Change Case Type</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Change Case Status</name>
+          <status>Completed</status>
+    </ActivityType> 
+    <ActivityType>
+      <name>Stat Check - Clients Providers</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Give Referrals To Alt</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Relative</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Offer More Services</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>If No Call Back</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Assess Lethality</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Send Out PAC Evaluation</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Call Referral</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Confirm Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>WS Physician Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>ES Physician Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>ES Therapist Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>WS Therapist Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Individual Treatment Plan</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Progress Note</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Missed Calls</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Recommend for Closure</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Discharge Summary</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Recommend For CISM</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Dispatch MCT</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>UCC Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Hospital Diversion Follow-Up</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>IHIT Referral</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Authorization To Release</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Consent For Services</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Assessment And Treatment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Discharge Summary</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Other Task</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+	<name>Stat Check - How Are You</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Lethality</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Phone Contact</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Care Plan</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>OPS Lethality</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Client Medical History</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Signature Captured</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Informed Consent for Medication</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Medication History</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>CISM Intervention</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>UCC Medical Evaluation</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Transportation Voucher</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Motel Voucher</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Temporary Housing</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Pharmacy Voucher</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Human Rights Notification</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Privacy Practices</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>IHIT Visit</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Informed Consent</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Frequent Callers</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Attach Document</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Supervisor to Review</name>
+          <status>Completed</status>
+    </ActivityType>
+  
+  </ActivityTypes>
+  <ActivitySets>
+    <ActivitySet>
+      <name>standard_timeline</name>
+      <label>Standard Timeline</label>
+	<timeline>true</timeline>
+      <ActivityTypes>
+        <ActivityType>
+          <name>Open Case</name>
+          <status>Completed</status>
+        </ActivityType>
+	<!--<ActivityType>
+      <name>Care Plan</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Follow up</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>MCT Dispatch</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Assign Case Role</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Authorization To Release</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Follow up</name>
+          <status>Completed</status>
+    </ActivityType>
+	<ActivityType>
+      <name>Change Case Type</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Change Case Status</name>
+          <status>Completed</status>
+    </ActivityType> 
+    <ActivityType>
+      <name>Stat Check - Clients Providers</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Give Referrals To Alt</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Relative</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Offer More Services</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>If No Call Back</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Assess Lethality</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Send Out PAC Evaluation</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Call Referral</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Confirm Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>WS Physician Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>ES Physician Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>ES Therapist Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>WS Therapist Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Individual Treatment Plan</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Progress Note</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Missed Calls</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Recommend for Closure</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Discharge Summary</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Recommend For CISM</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Dispatch MCT</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>UCC Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Hospital Diversion Follow-Up</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>IHIT Referral</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Authorization To Release</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Consent For Services</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Assessment And Treatment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Discharge Summary</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Other Task</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+	<name>Stat Check - How Are You</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Lethality</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Phone Contact</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Care Plan</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>OPS Lethality</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Client Medical History</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Signature Captured</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Informed Consent for Medication</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Medication History</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>CISM Intervention</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>UCC Medical Evaluation</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Transportation Voucher</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Motel Voucher</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Temporary Housing</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Pharmacy Voucher</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Human Rights Notification</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Privacy Practices</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>IHIT Visit</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Informed Consent</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Frequent Callers</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Attach Document</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Supervisor to Review</name>
+          <status>Completed</status>
+    </ActivityType>
+	-->
+      </ActivityTypes>
+    </ActivitySet>
+    <ActivitySet>
+      <name>audit_timeline</name>
+      <label>Audit Timeline</label>
+      <ActivityTypes>
+        <ActivityType>
+          <name>Open Case</name>
+          <status>Completed</status>
+        </ActivityType>
+	<ActivityType>
+      <name>Care Plan</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Follow up</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>MCT Dispatch</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Assign Case Role</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Authorization To Release</name>
+          <status>Completed</status>
+    </ActivityType>
+	<ActivityType>
+      <name>Change Case Type</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Change Case Status</name>
+          <status>Completed</status>
+    </ActivityType> 
+    <ActivityType>
+      <name>Stat Check - Clients Providers</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Give Referrals To Alt</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Relative</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Offer More Services</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>If No Call Back</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Assess Lethality</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Send Out PAC Evaluation</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Call Referral</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Confirm Appointment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>WS Physician Appointment</name>
+          <status>Kept</status>
+    </ActivityType>
+    <ActivityType>
+      <name>ES Physician Appointment</name>
+          <status>Kept</status>
+    </ActivityType>
+    <ActivityType>
+      <name>ES Therapist Appointment</name>
+          <status>Kept</status>
+    </ActivityType>
+    <ActivityType>
+      <name>WS Therapist Appointment</name>
+          <status>Kept</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Individual Treatment Plan</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Progress Note</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Missed Calls</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Recommend for Closure</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Discharge Summary</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Recommend For CISM</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Dispatch MCT</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>UCC Appointment</name>
+          <status>Kept</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Hospital Diversion Follow-Up</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>IHIT Referral</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Authorization To Release</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Consent For Services</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Assessment And Treatment</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Discharge Summary</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Other Task</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+	<name>Stat Check - How Are You</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Lethality</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Phone Contact</name>
+          <status>Completed</status>
+    </ActivityType>
+    <ActivityType>
+      <name>Care Plan</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>OPS Lethality</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Client Medical History</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Signature Captured</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Informed Consent for Medication</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Medication History</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>CISM Intervention</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>UCC Medical Evaluation</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Transportation Voucher</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Motel Voucher</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Temporary Housing</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Pharmacy Voucher</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Human Rights Notification</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Privacy Practices</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>IHIT Visit</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Informed Consent</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Frequent Callers</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Attach Document</name>
+          <status>Completed</status>
+    </ActivityType>
+<ActivityType>
+      <name>Supervisor to Review</name>
+          <status>Completed</status>
+    </ActivityType>
+      </ActivityTypes>
+    </ActivitySet>
+  </ActivitySets>
+  <CaseRoles>
+    <RelationshipType>
+        <name>Direct Care Physician</name>
+        <creator>1</creator>
+        <manager>1</manager>
+    </RelationshipType>
+    <RelationshipType>
+        <name>Urgent Care Clinician</name>
+    </RelationshipType>
+    <RelationshipType>
+        <name>Physician</name>
+    </RelationshipType>	  
+    <RelationshipType>
+        <name>Therapist</name>
+    </RelationshipType>	  
+    <RelationshipType>
+        <name>Supervisor</name>
+    </RelationshipType>	  
+ </CaseRoles>
+</CaseType>

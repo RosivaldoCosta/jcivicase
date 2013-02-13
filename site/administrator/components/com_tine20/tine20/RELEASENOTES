@@ -1,0 +1,154 @@
+
+
+
+                    TINE 2.0 RELEASENOTES
+                    
+Release:    Neele (2011/01)
+Date:       $LastChangedDate: 2011-01-13 16:59:27 +0100 (Do, 13. Jan 2011) $
+
+
+Contents
+--
+1. Tinebase_Controller_Record_Abstract: new/renamed inspection functions (API)
+2. Switched from Zend_Date to DateTime
+3. Added new log level: TRACE
+4. Added action-queue
+5. User contact / group list records can now be saved in other Addressbooks
+6. Customfields are now sorted by order column
+7. Session directory config has moved and other session backends are possible now
+8. New right has been added to Tinebase: Manage state
+9. Sieve rules/vacation support
+10. Added clear cache job to scheduler
+11. New config.inc.php value: 'filesdir'
+12. Added new email user backends
+13. IMAP authentication provider
+14. Added switch --passwordfile to CLI
+15. New CLI functions
+16. Voipmanager and Phone applications have been moved to separate package
+
+--------------------------------------------------------------
+1. Tinebase_Controller_Record_Abstract: new/renamed inspection functions (API)
+
+- We have renamed the _inspectUpdate() /_inspectCreate() functions to _inspectBeforeUpdate() / _inspectBeforeCreate().
+- Added new functions _inspectAfterUpdate() / _inspectAfterCreate().
+
+--------------------------------------------------------------
+2. Switched from Zend_Date to DateTime
+
+- We switched from Zend_Date to php DateTime to improve the performance of datetime handling. 
+
+--------------------------------------------------------------
+3. Added new log level: TRACE
+
+- A new log level has been added: TRACE (8). It logs even more verbose than DEBUG (7). You can activate it in your config.inc.php:
+
+    'priority' => '8',
+
+--------------------------------------------------------------
+4. Added action-queue
+    
+- Some jobs (for example the calendar notifications) can be processed by an action-queue.
+
+- To activate the (db) queue, you need to add the following to your config.inc.php file:
+
+  'actionqueue' => array(
+    'adapter' => 'Db',
+    'driverOptions' => array (
+        'host' => 'localhost',
+        'dbname' => 'queue',
+        'username' => 'user',
+        'password' => 'pw',
+        'type' => 'pdo_mysql',
+    ),
+  ),
+
+- If you use the db-adapter, it is necessary to create the queue and message tables first. use the queue.sql script found in the [tine20dir]/library/Zend/Queue/Adapter/Db directory.
+
+- The queue is triggered by the processQueue CLI function.
+
+--------------------------------------------------------------
+5. User contact / group list records can now be saved in other Addressbooks
+
+- In older versions, there has been only one internal Addressbook where all user contact/group list records were saved in. In Neele, you can choose in which Addressbook a contact/list 
+is saved in. 
+
+- A new config for default internal Addressbook has been added. Change it in Admin/Applications/Admin/Settings.
+
+--------------------------------------------------------------
+6. Customfields are now sorted by order column
+
+- Please check the order of your customfields: they used to be sorted by name and are now sorted by the order column.
+
+--------------------------------------------------------------
+7. Session directory config has moved and other session backends are possible now
+
+- The session options (like sessiondir and lifetime) can be configured this way now (deprecated settings will show a warning in the logfile):
+
+  'session' => 
+  array (
+    'backend'   => 'File',
+    'path'      => '/tmp/tinesessiondir',
+    'lifetime'  => 86400,
+  ),
+
+- you can add a redis session backend like this:
+
+  'session' => 
+  array (
+    'backend'   => 'Redis',
+    'host'      => 'localhost',
+    'port'      => 6379,
+    'lifetime'  => 86400,
+  ),
+
+--------------------------------------------------------------
+8. New right has been added to Tinebase: Manage state
+
+- With this right, you can control if the state of grids and other stateful widgets is saved for certain user roles.
+
+--------------------------------------------------------------
+9. Sieve rules/vacation support
+
+- We added support for Sieve filter rules and vacation messages. To activate this for the system email account, you need to add the Sieve server settings in the setup.php/Email Settings.
+For other email accounts, you just need to add the settings in the email account edit dialog. The IMAP credentials are used to authenticate with the Sieve server.
+ 
+--------------------------------------------------------------
+10. Added clear cache job to scheduler
+
+- A cache clearing job has been added to the scheduler. It runs every hour and removes obsolete cache entries.
+
+--------------------------------------------------------------
+11. New config.inc.php value: 'filesdir'
+
+- We added a new value to the config.inc.php: 'filesdir'. This is needed for the WebDav implementation and defines the directory on your server where files are saved in. Make sure that 
+the webserver has write permissions for this directory.
+
+--------------------------------------------------------------
+12. Added new email user backends
+
+- The email user administration now supports the Cyrus mailserver, Postfix and Dovecot MySQL. You can set it up in the setup.php script.
+
+--------------------------------------------------------------
+13. IMAP authentication provider
+
+- We added the possibility to authenticate against an IMAP server. You can set it up in the setup.php script.
+
+--------------------------------------------------------------
+14. Added switch --passwordfile to CLI
+
+- It is now possible to call the CLI-script with a --passwordfile parameter to define a file with the password for the user.
+
+--------------------------------------------------------------
+15. New CLI functions
+
+- Some new CLI functions have been added in this release (see the wiki page http://www.tine20.org/wiki/index.php/CLI_Functions for a full list and documentation):
+    - Tinebase.processQueue
+    - _Application_.import
+    - Tinebase.clearTable
+    - Tinebase.purgeDeletedRecords
+    - Tinebase.addCustomfield 
+
+--------------------------------------------------------------    
+16. Voipmanager and Phone applications have been moved to separate package
+
+- These two applications have been moved to a separate package that can be downloaded on the Tine 2.0 Download page.

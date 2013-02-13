@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="civicrm">
+	<name>CiviCRM - Authorization to Release PDF Plugin</name>
+	<author>Joomla! Project</author>
+	<creationDate>January 2012</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.
+		All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>CiviCRM Authorization to Release outputs in PDF format</description>
+	<files>
+		<filename plugin="authorizationtoreleasepdf">authorizationtoreleasepdf.php</filename>
+	</files>
+    <params>
+        <param name="pdf_template" type="text" default="PDF/authorizationtoreleasepdf" label="Custom Template Name" description="Custom Template Name" />
+        <param name="activity_type_id" type="text" default="40" label="Activity Type ID" description="Activity type id for authoriziation to release" />
+    </params>
+</install>

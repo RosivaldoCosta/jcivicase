@@ -1,0 +1,20 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Webserver.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Webserver.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\Infrastructure.Webserver.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\Infrastructure.Webserver.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Webserver.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Webserver.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\Infrastructure.Webserver.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\Infrastructure.Webserver.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Webserver.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Webserver.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\Infrastructure.Webserver.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\Infrastructure.Webserver.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Infrastructure.Webserver.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Infrastructure.Webserver.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\Infrastructure.Webserver.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Webserver\Infrastructure.Webserver\obj\Release\Infrastructure.Webserver.pdb

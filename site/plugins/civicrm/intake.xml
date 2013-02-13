@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="civicrm">
+	<name>CiviCRM - Intake PostProcess</name>
+	<author>Charles Campbell</author>
+	<creationDate>December 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.  All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>http://www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>CiviCRM Intake PostProcess Hook for Joomla</description>
+	<files>
+		<filename plugin="intake">intake.php</filename>
+	</files>
+	<params>
+		<param name="route" type="radio" default="0"
+			label="Use legacy URL routing" description="If yes, use legacy url routing mechanism">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+        <param type="spacer" default="&lt;b&gt;Form Intake > ClientProfile&lt;/b&gt;"/>
+        <param name="phone_field" type="text" default="67>280" label="Custom Phone field" description="Custom Phone field [Intake] > [ClientProfile]" />
+        <param name="phone1_field" type="text" default="67>67" label="Custom Phone1 field " description="Custom Phone1 field [Intake] > [ClientProfile]" />
+        <param name="veteran_field" type="text" default="62>805" label="Custom Veteran field " description="Custom Veteran field [Intake] > [ClientProfile]" />
+        <param name="veteran1_field" type="text" default="62>62" label="Custom Veteran1 field" description="Custom Veteran1 field [Intake] > [ClientProfile]" />
+        <param name="race_field" type="text" default="390>813" label="Custom Race field" description="Custom Race field [Intake] > [ClientProfile]" />
+        <param name="race1_field" type="text" default="390>390" label="Custom Race1 field" description="Custom Race1 field [Intake] > [ClientProfile]" />
+        <param name="client_age_field" type="text" default="71>1621" label="Custom Client Age field" description="Custom Client Age field [Intake] > [ClientProfile]" />
+        <param name="financial_field" type="text" default="59>1620" label="Custom Financial field" description="Custom Financial field [Intake] > [ClientProfile]" />
+        <param name="insurance_type_field" type="text" default="121>1619" label="Custom Insurance Type field" description="Custom Insurance Type field [Intake] > [ClientProfile]" />
+        <param name="county_field" type="text" default="155>811" label="Custom County field" description="Custom County field [Intake] > [ClientProfile]" />
+	</params>
+</install>

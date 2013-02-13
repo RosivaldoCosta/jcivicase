@@ -1,0 +1,13 @@
+id;case_type_id;subject;start_date;end_date;details;case_status;is_deleted;nr_errors;descriptions;fields;codes
+ 70;;;2010-05-06 09:37:00.000;2010-08-16 07:19:16.000;Mother stated that the consumer was out of control, hitting, acting out,violent; 2;0;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Column 'case_type_id' cannot be null
+;;ISU001
+ 71;;;2010-05-06 09:39:00.000;2010-08-16 07:24:01.000;Consumer was violent toward roommates and staff at Chesterwye Center. Per consumer she "needed to get help." ; 2;0;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Column 'case_type_id' cannot be null
+;;ISU001
+ 965;1;Open OPS Case;2011-04-15 08:16:00.000;;Health Care Worker from  Dorchester Co. Hospital called in looking for Appt. for Clt they seen in the E.D. for Depression Clt needs Follow up services.;;0;1;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Column 'status_id' cannot be null
+;;ISU001

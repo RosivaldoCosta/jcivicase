@@ -1,0 +1,441 @@
+
+/*----------Send File---------*/
+div.ProgressBar { width: 150px; padding: 0; border: 1px solid black; height:20px; margin:0 10px; display:-moz-inline-stack; display:inline-block;}
+div.ProgressBar DIV { background-color: Green; font-size: 1pt; height:100%; float:left; }
+span.asyncUploader OBJECT { position: relative; top: 5px; left: 10px; }
+.jb_backgrey{background:#9F9F9F; height:40px; margin:25px 0;}
+.componentheading{padding:20px 0 0 20px;}
+#jb_send_file{padding:0 20px;}
+.jb_select_file{font-weight:bold;}
+/*-------------------------------*/
+
+/*--------Invite Textbox ------*/
+.jb_invite
+{
+	display:none;
+	background:none repeat scroll 0 0 #FFF;
+}
+/*--------------------------------*/
+/*-----------Group Button---------*/
+
+.jb_groupchat
+{
+border:1px solid #CDCDCD;
+margin:5px;
+padding:3px;
+}
+
+.jb_groupchat:hover
+{
+border:1px solid #E0ECFF;
+}
+
+/*-----------------------------*/
+/*---------Smiley Popup------------*/
+.jb_smileybox img
+{
+	padding:0 7px;
+}
+
+.jb_smileybox
+{
+	border:1px solid #999999;
+	position:absolute;
+	right:0px;
+	bottom:25px;
+	background:none repeat scroll 0 0 #FFFFFF;
+}
+
+.chatboxbottom
+{
+	padding:5px;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-bottom:1px solid #eeeeee;
+	cursor:pointer;
+	background:none repeat scroll 0 0 #FFFFFF;
+	position:relative;
+	float:right;
+}
+
+
+/*-----------------------*/
+
+/*--------- For Custom Status-------------*/
+
+.jfb_customstatus
+{
+	float:left;
+	margin-left:45px;
+	overflow:hidden;
+	font-size:10px;
+}
+/*-----------------------------------*/
+
+/* -------- For Clear Chat /History -------------*/
+span.chathistorytitle
+{
+	font-size:16px;
+}
+
+.chathistorytop
+{
+	float:right;
+	padding:10px;
+}
+
+.chathistorycontent
+{
+	font-size:12px;
+	padding:15px;
+}
+.chatboximgs
+{
+	float:right;
+}
+.chatboximgs img
+{
+	cursor:pointer;
+	padding-left:4px;
+}
+
+/*-----------*/
+
+/* -------- Additions for Status -------------*/
+
+.chatboxstatus_message
+{
+	display:block;
+	margin-left:20%;
+	padding-top:20px;
+}
+#ch_box_status
+{
+	display:none;
+	border:1px solid #777777;
+	background-color:#fff;
+	padding:5px 5px 5px 10px;
+	cursor:pointer;
+	clear:both;
+}
+
+#ch_box_status a:hover
+{
+	background-color:#CFE2FF;
+	text-decoration:none;
+}
+.ch-box-tr
+{
+	cursor:pointer;
+}
+
+#down-arrow
+{
+	background:url(../img/downarrow.gif) no-repeat right center;
+	padding:0 10px;
+	border-left:2px solid #E0ECFF;
+	border-right:2px solid #E0ECFF;
+}
+
+/* -------- Additions for Status END  -------------*/
+
+/*---------- Thumbnail Additions -----------*/
+.jfb_insideimage
+{
+	background-color:#FFFFFF !important;
+}
+
+img.timgidclass
+{
+	height:40px !important;
+	left:5px !important;
+	position:absolute !important;
+	width:40px !important;
+}
+
+.chatboxcontent
+{
+	height:165px !important;
+	border-top:solid 1px #BFBFBF;
+}
+
+.chatboxtitle
+{
+	width:198px;
+}
+
+.chatboxistatus
+{
+	background-color:#FFFFFF !important;
+	overflow: hidden;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	padding: 3px;
+	min-height:42px;
+}
+
+/*---------- Thumbnail Additions END-----------*/
+
+.chatbox {
+	position: fixed;
+	position:expression("absolute");
+	width: 225px;
+	display:none;
+	top:expression( ( -315 + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' )
+}
+
+.chatboxhead {
+	background: url(../img/chat_head.gif) no-repeat scroll 0 0;
+	padding:0px 3px 0px 3px;
+	color: #ffffff;
+	font-weight:bold;
+	font-size:12px;
+	line-height:20px;
+	height:20px;
+	cursor:pointer;
+}
+
+.chatboxblink {
+	background: url(../img/chat_hb.gif) no-repeat scroll 0 0;
+}
+
+.chatboxcontent {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #333333;
+	height:200px;
+	width:209px;
+	overflow-y:auto;
+	overflow-x:auto;
+	padding:7px;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	/*border-bottom:1px solid #eeeeee;*/
+	background-color: #ffffff;
+	line-height: 1.3em;
+}
+
+.chatboxinput {
+	padding: 5px;
+	background-color: #ffffff;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	/*border-bottom:1px solid #cccccc;*/
+}
+
+.chatboxtextarea {
+	width: 206px;
+	height:44px;
+	padding:3px 0pt 3px 3px;
+	border: 1px solid #CCCCCC;
+	border-top: 1px solid #666666;
+	margin: 1px;
+	overflow:hidden;
+}
+
+.chatboxtextareaselected {
+	border: 2px solid #f99d39;
+	margin:0;
+}
+
+.chatboxmessage {
+	margin-left:1em;
+	text-align:left !important;
+}
+
+.chatboxinfo {
+	margin-left:-1em;
+	color:#666666;
+}
+
+.chatboxmessagefrom {
+	margin-left:-1em;
+	font-weight: bold;
+}
+
+.chatboxmessagecontent {
+}
+
+.chatboxoptions {
+	float: right;
+}
+
+div.chatboxhead div.chatboxoptions a {
+	text-decoration: none;
+	color: white;
+	font-weight:bold;
+	font-family:Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	color:#FFFFFF;
+	background:transparent !important;
+}
+
+div.chatboxhead div.chatboxoptions a:hover,
+div.chatboxhead div.chatboxoptions a:active,
+div.chatboxhead div.chatboxoptions a:focus{
+	text-decoration: none;
+	color: white;
+	font-weight:bold;
+	font-family:Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	color:#FFFFFF;
+	background:transparent !important;
+}
+
+.chatboxtitle {
+	float: left;
+}
+
+div#chbox-holder{
+	text-align:left!important;
+	background:inherit!important;
+	padding:0px!important;
+	margin:0px!important;
+}
+
+/* style for rounded chat box start here */
+/*div.ch-box-top{
+	padding:0 10px !important;
+	position:relative!important;
+	width:auto!important;
+}*/
+
+div#chbox-holder div.ch-box-tl{
+	background:transparent url(../img/mc-tr.gif) no-repeat right top;
+	/*height:20px;*/
+	height:auto;
+	padding:0px !important;
+	margin:0px !important;
+}
+
+div#chbox-holder div.ch-box-tr{
+	background:transparent url(../img/mc-tl.gif) no-repeat scroll 0 0;
+	/*height:20px;*/
+	height:auto;
+	/*padding:0px 0px 0px 10px !important;*/
+	margin-right:10px !important;
+	color:#000000!important;
+	text-align:left!important;
+	padding-top:3px;
+}
+
+div.ch-box-mid{
+	background:#ffffff !important;	
+	border-left:2px solid #e0ecff;
+	border-right:2px solid #e0ecff;
+	border-bottom:2px solid #e0ecff;
+	width:auto !important;
+	padding:0px !important;
+	margin:0px !important;
+}
+
+div.ch-box-mid h1{
+	margin:0px !important;
+	padding:2px 0px 2px 8px !important;
+	color:#666666 !important;
+	font-family:Helvetica,Arial,sans-serif !important;
+	font-size:13px !important;
+	font-weight:normal!important;
+	text-align:left !important;
+	background:#FFFFFF !important;
+}
+
+div.onoffmsg{
+	margin:0px !important;
+	padding:2px 0px 2px 8px !important;
+	color:#666666 !important;
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:13px !important;
+	font-weight:normal !important;
+	text-align:left !important;
+	background:#FFFFFF !important;
+	width:auto !important;
+}
+
+.ch-box-statusbox{
+	border-bottom:1px solid #E0ECFF;
+}
+
+span#inside-ch-box-tl{
+	padding:0 2px;
+}
+div.ch-box-mid ul{
+	padding:0px;
+	margin:0px;
+}
+
+div.ch-box-mid ul li{
+	margin:0px!important;
+	list-style-type:none!important;
+	background:inherit;
+}
+
+div.ch-box-mid ul li a{
+	color:#000000;
+	text-decoration:none;
+}
+
+div.ch-box-mid ul li a:hover{
+	color:#000000;
+	text-decoration:none;
+}
+
+div.ch-box-mid ul li.log-usr{
+	color:#666666;
+	font-weight:bold;
+	padding:3px 0 3px 13px;
+	margin:0px 0px 0px 0px;
+	border-bottom:solid 1px #999;
+	
+}
+
+div.ch-box-bot{
+	padding:0 10px;
+	position:relative;
+}
+
+div.ch-box-bl{
+	/*background:transparent url(../img/mc-bl.gif) no-repeat scroll 0 0;*/
+	height:10px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:10px;
+}
+
+div.ch-box-br{
+	/*background:transparent url(../img/mc-br.gif) no-repeat scroll 0 0;*/
+	height:10px;
+	position:absolute;
+	right:0;
+	top:0;
+	width:10px;
+}
+
+div.ch-box-bbg{
+	/*background:transparent url(../img/mc-bbg.gif) repeat-x scroll 0 0;*/
+	height:10px;
+}
+
+div.logeduser{
+	background:#FFFFFF !important;
+	text-align:left!important;
+	padding:3px 0 3px 16px!important;
+	background:transparent url(../img/green.gif) no-repeat 3px center!important;
+	line-height:20px !important;
+	color:#000000;
+}
+
+span.minimize {
+	cursor:pointer;
+}
+
+/*-----Offline------*/
+.chatboxoffline
+{
+	background-color:#FFFFFF !important;
+	text-align:center !important;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-top:1px solid #cccccc;
+	display:none;
+}
+/*-----------*/

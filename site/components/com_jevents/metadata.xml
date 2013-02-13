@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<name>
+	JEvents
+	</name>
+	<menu>
+		<options var="task" >
+			<option value='year.listevents' name="Year List of Events" msg="List view by year" />
+			<option value='month.calendar' name="Monthly Calendar" msg="Tabular calendar view by month" />
+			<option value='week.listevents' name="Week List of Events" msg="List view by week" />
+			<option value='day.listevents' name="Day List of Events" msg="List view by day" />
+			<option value='cat.listevents' name="Category List of Events" msg="List view by category" />
+			<option value='admin.listevents' name="Manage Events" msg="List events for frontend admin" />
+			<option value='icalevent.edit' name="Create New Event" msg="Create event from the frontend" />
+		</options>
+	</menu>
+</metadata>

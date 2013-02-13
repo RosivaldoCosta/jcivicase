@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5">
+	<name>ExtLogger</name>
+	<creationDate>Jan 2012</creationDate>
+	<author>Campbell Consulting Studio, LLC</author>
+	<copyright>Copyright (C) 2008 - 2010 Campbell Consulting Studio, LLC All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>www.cc5tudio.com</authorUrl>
+	<version>1.0</version>
+	<description>
+	
+		<![CDATA[ 
+			<p>ExtJs Logger Application Joomla 1.5.x </p>
+			<br />		
+			<p><u>Version 1.0 </u></p>
+
+		</p>]]>
+	</description>
+
+	<files folder="site">
+        <folder>controllers</folder>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>ext4</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_extlogger.ini</language>
+	</languages>
+	
+	<administration>
+		<menu>ExtLoger</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>admin.extlogger.php</filename>
+			<filename>config.xml</filename>
+            <folder>controllers</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>models</folder>
+		</files>
+
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_extlogger.ini</language>
+		</languages>
+
+	</administration>
+
+</install>

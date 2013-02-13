@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="res_or_cat" type="list" 
+			label="Screen Display" description="Select optional Single Resource or Single Category more. (for public booking screens only)">
+			<option value="1">Single Resource</option>
+			<option value="2">Single Category</option>
+		</param>
+		<param name="passed_id" type="text" default="" label="Id"
+			description="Enter a resource id or category id and ABPro will open showing just that single resource or category (for public booking screens only)" />
+	</params>
+</config>

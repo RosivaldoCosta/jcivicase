@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>CiviCRM - Case Search Task</name>
+	<author>CC 5tudio, LLC</author>
+	<creationDate>August 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.  All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>CiviCRM Case Search Tasks Hook for Joomla</description>
+	<files>
+		<filename plugin="civicrm">casesearchtasks.php</filename>
+	</files>
+	<params>
+		<param name="delete_contacts" type="radio" default="1"
+			label="Enable Delete Contacts" description="Enable delete contacts search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="export_contacts" type="radio" default="1"
+			label="Enable Export Contacts" description="Enable export contacts search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="print_contacts" type="radio" default="0"
+			label="Enable Print Contacts" description="Enable print contacts search task.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Progress Note</title>
+
+</head>
+
+<body><form action="http://localhost:8080/<#LocalUri#>" method="POST" name="form1" id="form1">
+<input type="hidden" value="1" name="Active"/>
+<input type="hidden" value="edit" name="action"/>
+<input type="hidden" value="<#TimeStamp#>" name="tstamp"/>
+<input type="hidden" value="Progress Notes" name="FormName"/>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr class="style4">
+      <td>Date:</td>
+      <td><input name="TimeStamp" type="text" id="Timestamp" value="<#ShortDateStamp#>" /></td>
+      <td>Case # </td>
+      <td><u><input type="text" name="CaseNumber" /></u></td>
+    </tr>
+    <tr>
+      <td>Time:</td>
+      <td><label>
+      <input name="Time" type="text" id="Time" value="<#ShortTimeStamp#>"/></td>
+      <td>Staff ID </td>
+      <td><input name="StaffID" type="text" id="StaffID" maxlength="50" /></td>
+    </tr>
+  </table>
+  <table width="100%" height="187" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <div align="left">
+          <textarea name="Notes" cols="80" rows="10" id="notes"></textarea>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="111" class="style4"><label>
+        <label>
+        <div align="left">
+          <input name="NoteAction" type="radio" value="Completed" />
+          Completed<br />
+  <input name="NoteAction" type="radio" value="Cancelled" />
+          Cancelled<br />
+  <input name="NoteAction" type="radio" value="No Show" />
+          No Show</div>
+        </label></td>
+    </tr><tr><td><input name="EastWest" type="radio" value="East"/>East  <input name="EastWest" type="radio" value="West"/>West</td>  </tr>
+<tr><td><br/><input name="InitialVisit" type="checkbox" value="1"/>Initial Visit </td>  </tr>
+    <tr>
+      <td><span class="style4">Additional Comments:<br />
+        </span><span class="style4"><label>
+        <textarea name="Comments" cols="80" rows="4" id="Comments"></textarea>
+        </label>
+          </label>
+            </span></td>
+    </tr>
+    <tr>
+      <td><input name="Depart" type="hidden" id="Depart" value="<#Depart#>" />
+        <input type="submit" name="Submit" value="Submit" /></td>
+    </tr>
+  </table>
+
+  <input type="hidden" name="MM_insert" value="form1">
+</form>
+</body>
+</html>

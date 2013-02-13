@@ -1,0 +1,7 @@
+<macrodef name="logout" description="Logout form the administration page">
+
+	<sequential>
+		<clickLink href="index.php?option=com_login&amp;task=logout" description="Logout" />
+	</sequential>
+	
+</macrodef>

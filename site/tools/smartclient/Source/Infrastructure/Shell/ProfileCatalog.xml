@@ -1,0 +1,27 @@
+﻿<SolutionProfile xmlns="http://schemas.microsoft.com/pag/cab-profile/2.0">
+  <Section Name="Services">
+    <Modules>
+      <ModuleInfo AssemblyFile="ConnectionMonitor.dll" />
+      <ModuleInfo AssemblyFile="Infrastructure.Logger.dll" />
+
+    </Modules>
+  </Section>
+  <Section Name="Apps">
+    <Dependencies>
+      <Dependency Name="Services" />
+    </Dependencies>
+    <Modules>
+      <ModuleInfo AssemblyFile="Outbox.dll" />
+
+      <ModuleInfo AssemblyFile="Infrastructure.Webserver.dll" />
+      <ModuleInfo AssemblyFile="Infrastructure.Data.dll" />
+      
+      <ModuleInfo AssemblyFile="IHIT.dll" />
+      <ModuleInfo AssemblyFile="UCC.dll" />
+      <ModuleInfo AssemblyFile="MCT.dll" />
+      <ModuleInfo AssemblyFile="OPS.dll" />
+
+
+    </Modules>
+  </Section>
+</SolutionProfile>

@@ -1,0 +1,36 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Sante.EMR.SmartClient.Module.Properties.Resources.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Sante.EMR.SmartClient.Module.OutboxView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Outbox.csproj.GenerateResource.Cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Outbox.dll.config
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Outbox.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Outbox.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Outbox.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Outbox.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Outbox.dll.config
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Outbox.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Outbox.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Sante.EMR.SmartClient.Module.Properties.Resources.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Sante.EMR.SmartClient.Module.OutboxView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Outbox.csproj.GenerateResource.Cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Outbox.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Outbox.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Outbox.dll.config
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Outbox.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Outbox.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Sante.EMR.SmartClient.Module.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Sante.EMR.SmartClient.Module.OutboxView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Outbox.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Outbox.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Module\Module\obj\Release\Outbox.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Outbox.dll.config
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Outbox.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Outbox.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Module\Module\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Module\Module\obj\Release\Sante.EMR.SmartClient.Module.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Module\Module\obj\Release\Sante.EMR.SmartClient.Module.OutboxView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Module\Module\obj\Release\Outbox.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Module\Module\obj\Release\Outbox.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Module\Module\obj\Release\Outbox.pdb

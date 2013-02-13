@@ -1,0 +1,2 @@
+2011/06/18 23:03:34 - User preferences - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : Failed to save Spoon properties:\\.host\Shared Folders\.kettle\.spoonrc (The system cannot find the path specified)
+2011/06/18 23:03:34 - Cases - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : Unable to save shared ojects: java.io.IOException: Error creating output file! Parent directory [\.kettle] does not exist.

@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Progress Note</title>
+<script type="text/JavaScript">
+<!--
+javascript:window.history.forward(1);
+<!--
+
+//-->
+<!--
+
+<!--
+function check_length(f)
+{
+maxLen = 499; // max number of characters allowed
+if (f.value.length >= maxLen) {
+// Alert message if maximum limit is reached. 
+// If required Alert can be removed. 
+var msg = "You have reached your maximum limit of characters allowed";
+alert(msg);
+// Reached the Maximum length so trim the textarea
+f.value = f.value.substring(0, maxLen);
+}
+}
+
+function check_lengtha(f)
+{
+maxLen = 254; // max number of characters allowed
+if (f.value.length >= maxLen) {
+// Alert message if maximum limit is reached. 
+// If required Alert can be removed. 
+var msg = "You have reached your maximum limit of characters allowed";
+alert(msg);
+// Reached the Maximum length so trim the textarea
+f.value = f.value.substring(0, maxLen);
+}
+}
+//-->
+
+/**
+ * DHTML date validation script. Courtesy of SmartWebby.com (http://www.smartwebby.com/dhtml/)
+ */
+// Declaring valid date character, minimum year and maximum year
+var dtCh= "/";
+var minYear=1900;
+var maxYear=2100;
+
+function isInteger(s){
+	var i;
+    for (i = 0; i < s.length; i++){   
+        // Check that current character is number.
+        var c = s.charAt(i);
+        if (((c < "0") || (c > "9"))) return false;
+    }
+    // All characters are numbers.
+    return true;
+}
+
+function stripCharsInBag(s, bag){
+	var i;
+    var returnString = "";
+    // Search through string's characters one by one.
+    // If character is not in bag, append to returnString.
+    for (i = 0; i < s.length; i++){   
+        var c = s.charAt(i);
+        if (bag.indexOf(c) == -1) returnString += c;
+    }
+    return returnString;
+}
+
+function daysInFebruary (year){
+	// February has 29 days in any year evenly divisible by four,
+    // EXCEPT for centurial years which are not also divisible by 400.
+    return (((year % 4 == 0) && ( (!(year % 100 == 0)) || (year % 400 == 0))) ? 29 : 28 );
+}
+function DaysArray(n) {
+	for (var i = 1; i <= n; i++) {
+		this[i] = 31
+		if (i==4 || i==6 || i==9 || i==11) {this[i] = 30}
+		if (i==2) {this[i] = 29}
+   } 
+   return this
+}
+
+function isDate(dtStr){
+	var daysInMonth = DaysArray(12)
+	var pos1=dtStr.indexOf(dtCh)
+	var pos2=dtStr.indexOf(dtCh,pos1+1)
+	var strMonth=dtStr.substring(0,pos1)
+	var strDay=dtStr.substring(pos1+1,pos2)
+	var strYear=dtStr.substring(pos2+1)
+	strYr=strYear
+	if (strDay.charAt(0)=="0" && strDay.length>1) strDay=strDay.substring(1)
+	if (strMonth.charAt(0)=="0" && strMonth.length>1) strMonth=strMonth.substring(1)
+	for (var i = 1; i <= 3; i++) {
+		if (strYr.charAt(0)=="0" && strYr.length>1) strYr=strYr.substring(1)
+	}
+	month=parseInt(strMonth)
+	day=parseInt(strDay)
+	year=parseInt(strYr)
+	if (pos1==-1 || pos2==-1){
+		alert("The date format should be : mm/dd/yyyy")
+		return false
+	}
+	if (strMonth.length<1 || month<1 || month>12){
+		alert("Please enter a valid month")
+		return false
+	}
+	if (strDay.length<1 || day<1 || day>31 || (month==2 && day>daysInFebruary(year)) || day > daysInMonth[month]){
+		alert("Please enter a valid day")
+		return false
+	}
+	if (strYear.length != 4 || year==0 || year<minYear || year>maxYear){
+		alert("Please enter a valid 4 digit year between "+minYear+" and "+maxYear)
+		return false
+	}
+	if (dtStr.indexOf(dtCh,pos2+1)!=-1 || isInteger(stripCharsInBag(dtStr, dtCh))==false){
+		alert("Please enter a valid date")
+		return false
+	}
+return true
+}
+
+function ValidateForm(){
+	var dt=document.form1.TimeStamp
+	if (isDate(dt.value)==false){
+		dt.focus()
+		return false
+	}
+    return true
+ }//-->
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+</script>
+</head>
+
+<body><form action="/emrtestSante/Casehistory/blank/Notes.asp?CaseNumber=459" method="POST" name="form1" id="form1" onsubmit="return ValidateForm()">
+<input type="hidden" value="1" name="Active"/>
+<input type="hidden" value="edit" name="action"/>
+<input type="hidden" value="5/8/2009 5:23:21 PM" name="cstamp"/>
+<input type="hidden" value="459" name="CaseNumber"/>
+
+<input type="hidden" name="ProgressNoteID" value="19"/>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><div align="center"><img src="../../IHIT/images/LargeLogo.gif" alt="asd" width="309" height="61" /><br />
+          <span class="style4">Baltimore   County Crisis Response System<br />
+7939    Honeygo Blvd., Suite 113<br />
+Baltimore,   MD 21236<br />
+410-931-2214</span></div></td>
+    </tr>
+    <tr>
+      <td height="74"><div align="center"><strong><span class="style6">PROGRESS NOTE </span></strong></div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+    <tr class="style4">
+      <td width="54"><span class="style2">Date:</span></td>
+      <td width="486"><label>
+      <input name="Timestamp" type="hidden" id="Timestamp" value="05/08/2009" />
+      05/08/2009</label></td>
+      <td width="76" class="style2">Case # </td>
+      <td width="248"><label><span class="style9"><u>459</u></span>
+      </label></td>
+    </tr>
+    <tr class="style4">
+      <td><span class="style2">Time:</span></td>
+      <td><label>
+      <input name="Time" type="hidden" id="Time" value="17:23:21" />
+      17:23:21</label></td>
+      <td class="style2">Staff ID </td>
+      <td><label>
+        <input name="StaffID" type="text" id="StaffID" value="" maxlength="50" />
+      </label></td>
+    </tr>
+  </table>
+  <table width="950" height="187" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><label>
+        <div align="center">
+          <textarea onKeyPress=check_length(this.form.notes); name="notes" cols="100" rows="10" id="notes"></textarea>
+        </div>
+      </label></td>
+    </tr>
+  </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="111" class="style4"><label>
+        <label>
+        <div align="left">
+          <input name="NoteAction" type="radio" value="Completed" />
+          Completed<br />
+  <input name="NoteAction" type="radio" value="Cancelled" />
+          Cancelled<br />
+  <input name="NoteAction" type="radio" value="No Show" />
+          No Show</div>
+        </label></td>
+    </tr>
+    <tr>
+      <td><span class="style4">Additional Comments:<br />
+        </span><span class="style4"><label>
+        <textarea onkeypress="check_lengtha(this.form.Comments);" name="Comments" cols="80" rows="4" id="Comments"></textarea>
+        </label>
+          </label>
+            </span></td>
+    </tr>
+    <tr>
+      <td><input name="Depart" type="hidden" id="Depart" value="UCC" />
+        <input type="submit" name="Submit" value="Submit" /></td>
+    </tr>
+  </table>
+
+  <input type="hidden" name="MM_insert" value="form1">
+</form>
+</body>
+</html>

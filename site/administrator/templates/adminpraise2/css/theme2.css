@@ -1,0 +1,469 @@
+﻿/*  AdminPraise 2 CSS
+//  Copyright 2009 JoomlaPraise - Kyle Ledbetter
+*/
+
+body,#ap-wrapper,#ap-header,#ap-right,#ap-footer {
+background-color:#222;
+}
+#ap-toolbar {
+background-color:#F0F0F0;
+border-top:3px solid #5F9E30;
+}
+a,a:visited,a:link,a:active {
+color:#0B55C4;
+}
+button,.next a {
+background:#F0F0F0 url('../images/theme2/button-bg.jpg') repeat-x 0 30%;
+border:1px solid #686868;
+}
+fieldset {
+border:1px solid #686868;
+}
+hr {
+background-color:#646464;
+}
+/* Login */
+#ap-cpanellogo {
+background:transparent url('../images/theme1/cpanel-logo.png') no-repeat 0 0;
+}
+#login-body {
+background-color:#646464;
+}
+#ap-login {
+margin:50px auto 0 auto;
+}
+#ap-mainbody {
+background-color:#FFF;
+}
+#ap-inner {
+
+}
+#ap-content,#ap-login {
+border:1px solid #CCC;
+}
+#ap-content .right,#ap-login .right {
+border-left:1px solid #EFEFEF;
+}
+#ap-content .right .right,#ap-login .right .right {
+border-left:0;
+}
+#ap-toolbar,#ap-crumbs,#ap-right,.header,#ap-content-sub,#ap-content-foot {
+border-bottom:1px solid #CCC;
+}
+#ap-content-sub,#ap-footer {
+border-top:1px solid #CCC;
+}
+#ap-header {
+background:#222 url('../images/theme2/header-bg.jpg') repeat-x 0 -3px;
+}
+#ap-crumbs {
+background:#FFF;
+}
+#ap-content,#ap-content-foot,#ap-login {
+background-color:#FFF;
+}
+#ap-content-sub {
+background-color:#EFEFEF;
+}
+#ap-logo {
+background:url('../images/theme2/logo.png') no-repeat 0 0;
+}
+#ap-menu li.separator {
+
+}
+/* Editor */
+#ap-editor #myeditor_selection  {
+border:0px solid #CCC;
+background-color:#FFF;
+}
+/* theme chooser */
+#ap-templatetheme #templateTheme {
+border:0px solid #CCC;
+background-color:#FFF;
+}
+/* Search */
+#ap-search input  {
+border:1px solid #CCC;
+}
+/* Recent Activity Select */
+#ap-cpanel #ualog_form select {
+border:1px solid #CCC;
+background:#FFF;
+}
+/* Toolbar Icons */
+#ap-toolbar span {
+border-right:1px solid #D8D8D8;
+border-left:1px solid #FFF;
+}
+
+/* Crumbs */
+#ap-crumbs span {
+border-right:1px solid #F0F0F0;
+}
+#ap-crumbs span span {
+border-right:0;
+}
+#ap-crumbs span.last span {
+background:url('../images/theme1/crumb-on.jpg') repeat-x 0 0;
+}
+#ap-crumbs span:hover {
+background:#F0F0F0;
+cursor:pointer;
+}
+#ap-crumbs span a {
+color:#2A5DB0;
+text-decoration:underline;
+}
+#ap-crumbs span.first:hover {
+background:#FFF;
+cursor:default;
+}
+
+/* Headers */
+.header {
+background:#FFF;
+font-family:Arial,Helvetica,sans-serif;
+padding-left:55px;
+background-repeat:no-repeat;
+background-position:4px 50%;
+}
+.header {
+color:#0B55C4;
+font-size:22px;
+font-weight:bold;
+line-height:28px;
+}
+.header a {
+
+}
+.header .ap-user {
+font-size:12px;
+line-height:12px;
+}
+
+.icon-48-cpanel {
+background:#222 url('../images/theme2/head-j-black.jpg') repeat-x 0 0;
+padding-left:10px;
+}
+.icon-48-cpanel a,.icon-48-cpanel {
+color:#FFF;
+}
+/* Tabs & Accordions */
+#ap-right {
+background-color:#CCC;
+}
+.mootabs {
+border-left:1px solid #CCC;
+}
+.mootabs_title {
+background:#F0F0F0;
+border-bottom:1px solid #CCC;
+}
+.mootabs_title li {
+color:#333;
+border-right:1px solid #CCC;
+border-left:1px solid #FFF;
+}
+.mootabs_title li.active,.panel h3.jpane-toggler-down {
+color: #000;
+background:#FFF;
+}
+.mootabs_panel {
+color: #000;
+}
+.mootabs_panel.active,.panel {
+background-color: #FFF;
+}
+.mootabs_title li.over {
+
+}
+.panel h3.jpane-toggler {
+background:#F0F0F0;
+}
+.panel h3.jpane-toggler,.panel h3.jpane-toggler-down {
+border-bottom:1px solid #FFF;
+}
+.panel {
+border:1px solid #CCC;
+}
+/* Condensed Tabs */
+#sm-right .mootabs {
+border-left:0;
+}
+#sm-right .mootabs_title {
+border-bottom:0;
+}
+#sm-right .mootabs_panel.active,.panel {
+border:1px solid #CCC;
+}
+#sm-right .mootabs_title li,#sm-right .mootabs_title li.active {
+background:#F0F0F0;
+border-bottom:1px solid #CCC;
+border-left:1px solid #CCC;
+}
+#sm-right .mootabs_title li:hover {
+color: #000;
+background:#FFF;
+}
+
+/* Collapse */
+#ap-collapse,#ap-expand {
+background:#F0F0F0;
+border-bottom:1px solid #CCC;
+border-left:1px solid #CCC;
+} 
+#ap-collapse a {
+background:url('../images/icons/menu/collapse-r.png') no-repeat 98% 0;
+}
+#ap-expand a {
+background:url('../images/icons/menu/collapse-l.png') no-repeat 5px 0;
+}
+
+/* Cpanel */
+#ap-content ul.ap-cplinks li a:hover {
+background-color:#EFEFEF;
+}
+
+/* Toolbar */
+#toolbar {
+border-bottom:1px solid #CCC;
+background-color:#EFEFEF;
+}
+table.toolbar a {
+color:#0B55C4 !important;
+}
+
+
+/* Table Data */
+.text_area,.inputbox {
+
+}
+table.adminlist {
+
+}
+table.adminlist th {
+background:#F0F0F0;
+border-top:1px solid #CCC;
+border-bottom:1px solid #666;
+}
+table.adminlist tr.row0 td,table.adminlist tr.row1 td,
+table.adminform tr.row0 td,table.adminform tr.row1 td {
+border-bottom:1px solid #CCC;
+}
+.mootabs table.adminlist td,
+.mootabs table.adminform td {
+border-bottom:1px solid #CCC;
+background-color:#FFF;
+}
+table.adminlist tr.row0:hover td,table.adminlist tr.row1:hover td,
+table.adminform tr.row0:hover td,table.adminform tr.row1:hover td {
+background-color:#FFFFDD;
+}
+table.adminlist tr.row0 td,
+table.adminform tr.row0 td {
+background-color:#FFF;
+}
+table.adminlist tr.row1 td,
+table.adminform tr.row1 td {
+background-color:#F9F9F9;
+}
+table.adminlist td,
+table.adminform td {
+color:#555;
+}
+table.adminlist td a,
+table.adminform td a {
+
+}
+table.adminlist td.title,
+table.adminform td.title {
+background:#F0F0F0;
+border-color:#CCC;
+}
+/* Pagination */
+.list-footer {
+background-color:#EFEFEF;
+border-top:1px solid #CCC;
+border-bottom:1px solid #CCC;
+}
+.list-footer span {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border:1px solid #DFDFDF;
+color:#AFAFAF;
+}
+.list-footer a {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border:1px solid #BDBDBD;
+color:#000 !important;
+}
+table.adminheading {
+background-color:#EFEFEF;
+border-bottom:1px solid #CCC;
+}
+table.adminform {
+border:1px solid #686868;
+}
+/* Quicklaunch */
+#adminPraiseComponentsListDiv {
+background-color: #F0F0F0;
+border:1px solid #CCC;
+}
+#adminPraiseComponentsListDiv .icon {
+background-color:#FFF;
+border:1px solid #ECECEC;
+}
+#adminPraiseComponentsListDiv .icon a {
+}
+#adminPraiseComponentsListDiv .icon a:hover {
+color:#000;
+}
+#adminPraiseComponentsListDiv .icon img {
+}
+/* Submenu */
+ul#submenu {
+background:#F6F6F6;
+border-top:1px solid #CCC;
+border-bottom:1px solid #CCC;
+}
+ul#submenu li {
+
+}
+ul#submenu li a {
+border-right:1px solid #CCC;
+border-left:1px solid #FFF;
+color:#333;
+}
+ul#submenu li a.active,ul#submenu li a:hover {
+color:#0B55C4;
+}
+/* Tooltip */
+.tool-tip {
+background:#9D9D9D url(../images/theme1/crumbs-bg.jpg) repeat-x 0 0 !important;
+border: 1px solid #686868 !important;
+}
+.tool-title {
+
+}
+.tool-text {
+
+}
+/* System Message */
+#system-message dd ul {
+
+
+
+}
+#system-message {
+border-top:1px solid #FAD163;
+border-bottom:1px solid #FAD163;
+background-color:#FFF7D7;
+
+}
+/* Admintable Key */
+table.admintable td.key, table.admintable td.paramlist_key {
+background-color:#E6E6E6;
+border-top:1px solid #FFF;
+border-left:1px solid #FFF;
+border-bottom:1px solid #CCC;
+border-right:1px solid #CCC;
+color:#666666;
+}
+/* Login */
+#modlgn_username,#modlgn_passwd,#form-login-lang select.inputbox {
+background-color:#E0E0E0;
+border:1px solid #686868;
+}
+/* Tabs */
+dl.tabs {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border-top:1px solid #686868;
+border-bottom:1px solid #686868;
+
+}
+dl.tabs dt {
+border-right:1px solid #686868;
+color:#333;
+}
+dl.tabs dt.open {
+background:#9D9D9D url(../images/theme1/crumbs-bg.jpg) repeat-x 0 0;
+color:#FFF;
+}
+/* Menu */
+#menu a, #menu div {
+color:#FFF;
+}
+#menu ul {
+background:#222 none;
+border-right:1px solid #686868;
+border-bottom:1px solid #686868;
+border-left:1px solid #686868;
+}
+#menu ul ul {
+background:#222 none;
+}
+#menu ul li.separator {
+background-color:transparent;
+border-top:1px solid #111;
+}
+#menu li.hover li a,#menu li.hover li.hover a {
+margin:0 !important;
+border:0 !important;
+background:none !important;
+padding:4px 1px 4px 4px !important;
+}
+#ap-toolbar,#ap-toolbar a {
+color:#333;
+}
+#menu li.hover li.hover a {
+color:#BBB;
+}
+#ap-menu li.node a {
+padding:2px 8px 8px 8px;
+font-weight:bold;
+}
+#ap-menu li li a {
+font-size:10px;
+}
+#ap-menu li#globals a,#ap-menu li#com-launch a, #ap-menu li#mod-launch a,
+#ap-menu li a#Config,#ap-menu li a#ComponentQuickLaunch,#ap-menu li a#ModulesQuickLaunch {
+top:0;
+border:0;
+}
+#ap-menu {
+width:845px;
+}
+.header h1 {
+margin-top:10px;
+}
+
+/** header icons **/
+.icon-48-generic 		{ background-image: url(../../khepri/images/header/icon-48-generic.png); }
+.icon-48-checkin 		{ background-image: url(../../khepri/images/header/icon-48-checkin.png); }
+.icon-48-config 		{ background-image: url(../../khepri/images/header/icon-48-config.png); }
+.icon-48-module 		{ background-image: url(../../khepri/images/header/icon-48-module.png); }
+.icon-48-menu 			{ background-image: url(../../khepri/images/header/icon-48-menu.png); }
+.icon-48-menumgr 		{ background-image: url(../../khepri/images/header/icon-48-menumgr.png); }
+.icon-48-trash 		{ background-image: url(../../khepri/images/header/icon-48-trash.png); }
+.icon-48-user	 		{ background-image: url(../../khepri/images/header/icon-48-user.png); }
+.icon-48-inbox 		{ background-image: url(../../khepri/images/header/icon-48-inbox.png); }
+.icon-48-msgconfig 	{ background-image: url(../../khepri/images/header/icon-48-message_config.png); }
+.icon-48-langmanager { background-image: url(../../khepri/images/header/icon-48-language.png); }
+.icon-48-mediamanager{ background-image: url(../../khepri/images/header/icon-48-media.png); }
+.icon-48-plugin 	{ background-image: url(../../khepri/images/header/icon-48-plugin.png); }
+.icon-48-help_header { background-image: url(../../khepri/images/header/icon-48-help_header.png); }
+.icon-48-impressions { background-image: url(../../khepri/images/header/icon-48-stats.png); }
+.icon-48-browser 		{ background-image: url(../../khepri/images/header/icon-48-stats.png); }
+.icon-48-searchtext 	{ background-image: url(../../khepri/images/header/icon-48-stats.png); }
+.icon-48-thememanager{ background-image: url(../../khepri/images/header/icon-48-themes.png); }
+.icon-48-massemail 	{ background-image: url(../../khepri/images/header/icon-48-massemail.png); }
+.icon-48-frontpage 	{ background-image: url(../../khepri/images/header/icon-48-frontpage.png); }
+.icon-48-sections 	{ background-image: url(../../khepri/images/header/icon-48-section.png); }
+.icon-48-addedit 		{ background-image: url(../../khepri/images/header/icon-48-article.png); }
+.icon-48-categories 	{ background-image: url(../../khepri/images/header/icon-48-category.png); }
+.icon-48-install 		{ background-image: url(../../khepri/images/header/icon-48-extension.png); }
+.icon-48-dbbackup		{ background-image: url(../../khepri/images/header/icon-48-backup.png); }
+.icon-48-dbrestore 	{ background-image: url(../../khepri/images/header/icon-48-dbrestore.png); }
+.icon-48-dbquery 		{ background-image: url(../../khepri/images/header/icon-48-query.png); }
+.icon-48-systeminfo 	{ background-image: url(../../khepri/images/header/icon-48-info.png); }
+.icon-48-massemail 	{ background-image: url(../../khepri/images/header/icon-48-massmail.png); }
+

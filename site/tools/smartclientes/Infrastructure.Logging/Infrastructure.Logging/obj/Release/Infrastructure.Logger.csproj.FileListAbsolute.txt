@@ -1,0 +1,32 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Sante.EMR.SmartClient.Infrastructure.Logger.LoggerView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Sante.EMR.SmartClient.Infrastructure.Logger.Properties.Resources.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.csproj.GenerateResource.Cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Logger.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Logger.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Logger.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Logger.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Sante.EMR.SmartClient.Infrastructure.Logger.LoggerView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Sante.EMR.SmartClient.Infrastructure.Logger.Properties.Resources.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.csproj.GenerateResource.Cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Logger.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Logger.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Sante.EMR.SmartClient.Infrastructure.Logger.LoggerView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Sante.EMR.SmartClient.Infrastructure.Logger.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Infrastructure.Logger.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Infrastructure.Logger.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Logging\Infrastructure.Logging\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Sante.EMR.SmartClient.Infrastructure.Logger.LoggerView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Sante.EMR.SmartClient.Infrastructure.Logger.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Logging\Infrastructure.Logging\obj\Release\Infrastructure.Logger.pdb

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#################
+# configuration
+port=4444
+selenium_path="./selenium-server.jar"
+#selenium_path="/usr/local/bin/selenium-server.jar"
+#################
+
+if [ "$1" = "start" ]; then
+  /tmp/.X11-unix/X99
+  Xvfb :99 -ac &
+  export DISPLAY=:99
+  java -jar $selenium_path -port $port
+  exit 1
+fi
+
+if [ "$1" = "stop" ]; then
+  fuser -vk $port/tcp
+  exit 1
+fi
+
+echo Invalid command
+echo Usage: selenium [start/stop]
+echo edit the source to configure
+

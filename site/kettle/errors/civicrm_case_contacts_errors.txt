@@ -1,0 +1,1041 @@
+CaseNumber;PatientID;patient_id;external_identifier;contact_id;description;fields
+ 1031; 1000;1000            ;1000;7309;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1032; 1001;1001            ;1001;7529;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1033; 1002;1002            ;1002;7310;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1034; 1003;1003            ;1003;7311;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1039; 1008;1008            ;1008;7312;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1038; 1009;1009            ;1009;7427;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1040; 1010;1010            ;1010;7313;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1041; 1011;1011            ;1011;7537;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1042; 1012;1012            ;1012;7530;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1043; 1013;1013            ;1013;7541;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1044; 1015;1015            ;1015;7520;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1045; 1016;1016            ;1016;7314;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1046; 1017;1017            ;1017;7542;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1048; 1018;1018            ;1018;7543;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1049; 1019;1019            ;1019;7315;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1050; 1020;1020            ;1020;7316;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1051; 1021;1021            ;1021;7317;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1052; 1022;1022            ;1022;7318;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1053; 1023;1023            ;1023;7319;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1057; 1034;1034            ;1034;7320;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1058; 1035;1035            ;1035;7531;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1060; 1036;1036            ;1036;7532;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1061; 1037;1037            ;1037;7321;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1062; 1038;1038            ;1038;7322;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1063; 1039;1039            ;1039;7323;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1064; 1040;1040            ;1040;7324;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1065; 1041;1041            ;1041;7325;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1066; 1042;1042            ;1042;7488;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1067; 1043;1043            ;1043;7326;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1068; 1045;1045            ;1045;7544;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1069; 1046;1046            ;1046;7545;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1070; 1047;1047            ;1047;7327;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1071; 1048;1048            ;1048;7372;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1072; 1049;1049            ;1049;7428;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1073; 1050;1050            ;1050;7429;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1074; 1051;1051            ;1051;7430;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1075; 1052;1052            ;1052;7489;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1076; 1053;1053            ;1053;7328;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1078; 1054;1054            ;1054;7490;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1079; 1055;1055            ;1055;7329;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1080; 1056;1056            ;1056;7330;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1081; 1057;1057            ;1057;7331;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1083; 1058;1058            ;1058;7332;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1082; 1059;1059            ;1059;7471;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1084; 1060;1060            ;1060;7373;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1085; 1061;1061            ;1061;7333;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1086; 1062;1062            ;1062;7334;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1087; 1063;1063            ;1063;7431;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1088; 1064;1064            ;1064;7432;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1089; 1065;1065            ;1065;7433;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1090; 1066;1066            ;1066;7335;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1092; 1067;1067            ;1067;7336;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1093; 1068;1068            ;1068;7546;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1094; 1069;1069            ;1069;7472;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1095; 1070;1070            ;1070;7374;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1096; 1071;1071            ;1071;7337;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1097; 1072;1072            ;1072;7338;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1098; 1073;1073            ;1073;7434;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1099; 1074;1074            ;1074;7339;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1100; 1075;1075            ;1075;7340;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1101; 1076;1076            ;1076;7341;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1102; 1077;1077            ;1077;7552;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1103; 1078;1078            ;1078;7547;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1104; 1087;1087            ;1087;7375;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1105; 1088;1088            ;1088;7376;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1106; 1089;1089            ;1089;7377;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1109; 1090;1090            ;1090;7378;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1110; 1091;1091            ;1091;7379;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1112; 1092;1092            ;1092;7380;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1113; 1093;1093            ;1093;7553;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1114; 1094;1094            ;1094;7381;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1115; 1095;1095            ;1095;7491;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1116; 1096;1096            ;1096;7382;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1117; 1097;1097            ;1097;7383;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1118; 1098;1098            ;1098;7538;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1119; 1099;1099            ;1099;7548;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1120; 1109;1109            ;1109;7384;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1121; 1110;1110            ;1110;7385;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1122; 1113;1113            ;1113;7386;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1123; 1114;1114            ;1114;7387;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1124; 1115;1115            ;1115;7388;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1125; 1116;1116            ;1116;7389;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1126; 1117;1117            ;1117;7390;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1127; 1118;1118            ;1118;7391;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1128; 1119;1119            ;1119;7392;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1129; 1120;1120            ;1120;7435;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1130; 1121;1121            ;1121;7393;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1132; 1128;1128            ;1128;7492;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1136; 1133;1133            ;1133;7394;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1137; 1134;1134            ;1134;7395;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1138; 1135;1135            ;1135;7493;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1139; 1136;1136            ;1136;7396;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1140; 1137;1137            ;1137;7397;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1141; 1138;1138            ;1138;7398;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1142; 1139;1139            ;1139;7399;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1143; 1140;1140            ;1140;7549;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1144; 1141;1141            ;1141;7494;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1145; 1142;1142            ;1142;7400;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1146; 1143;1143            ;1143;7533;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1147; 1144;1144            ;1144;7495;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1148; 1145;1145            ;1145;7401;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1149; 1146;1146            ;1146;7402;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1150; 1147;1147            ;1147;7403;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1151; 1148;1148            ;1148;7550;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1152; 1149;1149            ;1149;7473;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1153; 1150;1150            ;1150;7521;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1156; 1151;1151            ;1151;7551;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1157; 1152;1152            ;1152;7522;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1159; 1157;1157            ;1157;7404;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1160; 1158;1158            ;1158;7405;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1161; 1159;1159            ;1159;7406;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1162; 1160;1160            ;1160;7407;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1163; 1161;1161            ;1161;7534;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 873; 805;805             ;805;7110;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 874; 806;806             ;806;7249;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 876; 807;807             ;807;7111;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 877; 808;808             ;808;7112;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 878; 809;809             ;809;7113;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 879; 810;810             ;810;7459;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 880; 811;811             ;811;7509;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 881; 812;812             ;812;7141;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 882; 813;813             ;813;7114;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 883; 814;814             ;814;7115;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 884; 815;815             ;815;7142;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 885; 816;816             ;816;7293;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 886; 817;817             ;817;7510;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 887; 818;818             ;818;7460;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 888; 819;819             ;819;7250;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 889; 820;820             ;820;7362;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 890; 825;825             ;825;7461;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 891; 826;826             ;826;7420;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 894; 830;830             ;830;7462;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 895; 831;831             ;831;7251;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 896; 832;832             ;832;7143;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 897; 833;833             ;833;7294;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 898; 834;834             ;834;7144;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 899; 835;835             ;835;7145;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 900; 836;836             ;836;7463;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 901; 837;837             ;837;7146;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 902; 838;838             ;838;7464;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 903; 839;839             ;839;7421;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 904; 840;840             ;840;7511;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 905; 841;841             ;841;7295;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 906; 842;842             ;842;7147;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 907; 843;843             ;843;7484;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 908; 844;844             ;844;7422;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 909; 845;845             ;845;7512;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 910; 846;846             ;846;7148;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 911; 847;847             ;847;7149;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 912; 848;848             ;848;7150;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 913; 849;849             ;849;7252;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 914; 850;850             ;850;7465;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 915; 851;851             ;851;7151;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 916; 852;852             ;852;7152;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 917; 853;853             ;853;7153;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 919; 854;854             ;854;7154;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 920; 855;855             ;855;7155;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 921; 856;856             ;856;7156;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 922; 857;857             ;857;7296;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 923; 859;859             ;859;7363;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 924; 862;862             ;862;7513;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 925; 863;863             ;863;7523;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 926; 864;864             ;864;7157;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 927; 865;865             ;865;7364;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 928; 866;866             ;866;7253;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 929; 867;867             ;867;7423;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 930; 868;868             ;868;7297;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 931; 869;869             ;869;7158;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 932; 870;870             ;870;7159;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 933; 871;871             ;871;7160;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 934; 872;872             ;872;7161;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 935; 873;873             ;873;7162;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 936; 874;874             ;874;7298;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 937; 875;875             ;875;7163;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 938; 876;876             ;876;7365;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 939; 877;877             ;877;7164;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 940; 878;878             ;878;7424;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 941; 879;879             ;879;7299;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 942; 880;880             ;880;7165;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 943; 881;881             ;881;7166;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 944; 882;882             ;882;7167;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 945; 883;883             ;883;7168;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 946; 884;884             ;884;7466;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 947; 885;885             ;885;7300;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 948; 886;886             ;886;7169;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 949; 887;887             ;887;7366;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 950; 888;888             ;888;7425;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 951; 889;889             ;889;7467;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 952; 890;890             ;890;7301;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 953; 891;891             ;891;7170;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 954; 892;892             ;892;7171;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 956; 898;898             ;898;7485;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 959; 908;908             ;908;7254;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 960; 909;909             ;909;7514;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 961; 910;910             ;910;7255;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 962; 911;911             ;911;7367;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 963; 912;912             ;912;7172;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 965; 928;928             ;928;7468;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 966; 929;929             ;929;7173;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 967; 931;931             ;931;7515;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 968; 932;932             ;932;7174;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 969; 933;933             ;933;7175;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 970; 934;934             ;934;7176;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 971; 935;935             ;935;7486;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 972; 936;936             ;936;7177;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 973; 938;938             ;938;7256;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 974; 939;939             ;939;7516;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 975; 940;940             ;940;7368;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 976; 941;941             ;941;7302;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 977; 942;942             ;942;7369;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 978; 943;943             ;943;7178;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 979; 944;944             ;944;7179;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 980; 945;945             ;945;7370;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 981; 946;946             ;946;7469;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 982; 947;947             ;947;7180;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 983; 948;948             ;948;7257;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 984; 949;949             ;949;7181;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 985; 950;950             ;950;7182;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 986; 951;951             ;951;7183;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 987; 952;952             ;952;7184;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 988; 953;953             ;953;7185;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 989; 954;954             ;954;7186;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 990; 955;955             ;955;7187;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 991; 956;956             ;956;7188;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 992; 957;957             ;957;7258;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 995; 958;958             ;958;7524;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 994; 959;959             ;959;7470;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 996; 960;960             ;960;7189;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 997; 965;965             ;965;7517;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 998; 969;969             ;969;7518;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 999; 970;970             ;970;7371;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1000; 971;971             ;971;7259;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1001; 972;972             ;972;7190;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1002; 973;973             ;973;7191;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1003; 974;974             ;974;7487;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1004; 975;975             ;975;7525;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1005; 976;976             ;976;7303;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1007; 977;977             ;977;7260;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1008; 978;978             ;978;7192;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1009; 979;979             ;979;7304;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1010; 980;980             ;980;7305;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1011; 981;981             ;981;7261;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1012; 982;982             ;982;7262;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1013; 983;983             ;983;7519;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1014; 984;984             ;984;7535;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1015; 985;985             ;985;7263;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1016; 986;986             ;986;7264;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1017; 987;987             ;987;7526;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1018; 988;988             ;988;7527;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1019; 989;989             ;989;7265;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1020; 990;990             ;990;7266;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1021; 991;991             ;991;7267;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1022; 992;992             ;992;7536;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1024; 993;993             ;993;7306;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1025; 994;994             ;994;7426;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1026; 995;995             ;995;7307;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1027; 996;996             ;996;7539;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1028; 997;997             ;997;7528;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1029; 998;998             ;998;7308;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;
+ 1030; 999;999             ;999;7540;org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+Cannot add or update a child row: a foreign key constraint fails (`cc5tudio_jo155/civicrm_case_contact`, CONSTRAINT `FK_civicrm_case_contact_case_id` FOREIGN KEY (`case_id`) REFERENCES `civicrm_case` (`id`) ON DELETE CASCADE)
+;

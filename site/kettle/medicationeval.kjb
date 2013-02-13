@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>Med Eval</name>
+    <description/>
+    <extended_description/>
+    <job_version/>
+    <job_status>0</job_status>
+  <directory>&#47;</directory>
+  <created_user>-</created_user>
+  <created_date>2011&#47;04&#47;26 21:49:10.196</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2011&#47;04&#47;26 21:49:10.196</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>cc5tudio_es_emr</name>
+    <server>184.106.42.241</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>cc5tudio_jo155</database>
+    <port>3306</port>
+    <username>cc5tudio_es_emr</username>
+    <password>Encrypted 28cabd8ad19c38a878b5a9955edb697f9</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+  <logconnection/>
+  <logtable/>
+  <size_limit_lines/>
+   <use_batchid>N</use_batchid>
+   <pass_batchid>N</pass_batchid>
+   <use_logfield>N</use_logfield>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description>Special entries</description>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>51</xloc>
+      <yloc>52</yloc>
+      </entry>
+    <entry>
+      <name>Lethality Custom Fields</name>
+      <description>Transformation</description>
+      <type>TRANS</type>
+      <filename>${Internal.Job.Filename.Directory}&#47;lethality_custom_fields.ktr</filename>
+      <transname>lethality_custom_fields</transname>
+      <directory>${Internal.Job.Filename.Directory}</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>N</draw>
+      <nr>0</nr>
+      <xloc>52</xloc>
+      <yloc>320</yloc>
+      </entry>
+    <entry>
+      <name>Truncate  tables</name>
+      <description>Truncate tables</description>
+      <type>TRUNCATE_TABLES</type>
+      <connection>cc5tudio_es_emr</connection>
+      <arg_from_previous>N</arg_from_previous>
+      <fields>
+        <field>
+          <name>civicrm_value_asg_medication_evaluation_and_re_91</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_medication_order_refill_87</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_medication_evaluation_92</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_mental_status_examination_93</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_plans_and_recommendations_94</name>
+          <schemaname/>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>51</xloc>
+      <yloc>199</yloc>
+      </entry>
+    <entry>
+      <name>Truncate tables 1</name>
+      <description>Truncate tables</description>
+      <type>TRUNCATE_TABLES</type>
+      <connection/>
+      <arg_from_previous>N</arg_from_previous>
+      <fields>
+      </fields>
+      <parallel>N</parallel>
+      <draw>N</draw>
+      <nr>0</nr>
+      <xloc>140</xloc>
+      <yloc>162</yloc>
+      </entry>
+    <entry>
+      <name>Progress Notes</name>
+      <description>Transformation</description>
+      <type>TRANS</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;notes_custom_fields.ktr</filename>
+      <transname>Notes Custom Fields With Files</transname>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>231</xloc>
+      <yloc>199</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>START</from>
+      <to>Truncate  tables</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Truncate  tables</from>
+      <to>Progress Notes</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+</job>

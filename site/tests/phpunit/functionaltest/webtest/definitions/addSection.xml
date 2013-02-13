@@ -1,0 +1,19 @@
+<macrodef name="addSection" description="Add a new section">
+	<attribute name="name"/>
+
+	<sequential>
+		<clickLink label="Section Manager" />
+		<verifyText text="Section Manager" />
+		
+		<!-- Click on the 'new' button -->
+		<clickLink xpath="(//a[@class='toolbar'])[6]"/>
+		<verifyText text="Section" />
+		
+		<!-- Enter the name for the new section -->
+		<setInputField name="title" value="@{name}" />
+		
+		<!-- Save the section -->		
+		<clickLink label="Save" />
+
+	</sequential>
+</macrodef>

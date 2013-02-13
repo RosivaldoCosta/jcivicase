@@ -1,0 +1,40 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.Properties.Resources.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.TelephoneContactView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.IHITIndividualTreatmentView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.IHITView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\IHIT.csproj.GenerateResource.Cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\IHIT.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\IHIT.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\IHIT.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\IHIT.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\IHIT.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\IHIT.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.Properties.Resources.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.TelephoneContactView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.IHITIndividualTreatmentView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.IHITView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\IHIT.csproj.GenerateResource.Cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\IHIT.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\IHIT.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\IHIT.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\IHIT.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.TelephoneContactView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.IHITIndividualTreatmentView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.IHITView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\IHIT.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\IHIT.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\IHIT\IHIT\obj\Release\IHIT.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\IHIT.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\IHIT.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\IHIT\IHIT\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.TelephoneContactView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.IHITIndividualTreatmentView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\IHIT\IHIT\obj\Release\Sante.EMR.SmartClient.IHIT.IHITView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\IHIT\IHIT\obj\Release\IHIT.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\IHIT\IHIT\obj\Release\IHIT.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\IHIT\IHIT\obj\Release\IHIT.pdb

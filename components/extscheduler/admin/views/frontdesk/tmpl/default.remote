@@ -1,0 +1,58 @@
+<?php
+/ no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' );
+
+
+$extpath = "/flexdds/administrator/components/com_extscheduler/ext3";
+?>
+    <!-- Ext includes --> 
+    <link rel="stylesheet" type="text/css" href="<?php echo $extpath; ?>/resources/css/ext-all.css" /> 
+    <script type="text/javascript" src="<?php echo $extpath; ?>/adapter/ext/ext-base-debug.js"></script> 
+    <script type="text/javascript" src="<?php echo $extpath; ?>/src/ext-all-debug.js"></script> 
+    <!--link rel="stylesheet" type="text/css" href="<?php echo $extpath; ?>/resources/css/ext-all.css" />
+    <script type="text/javascript" src="<?php echo $extpath; ?>/adapter/ext/ext-base-debug.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>/ext-all-debug.js"></script--> 
+    <!-- Any Ext overrides go here --> 
+    
+    <!-- Extensible includes --> 
+    <link rel="stylesheet" type="text/css" href="<?php echo $extpath; ?>/resources/css/extensible-all.css" /> 
+    <script type="text/javascript" src="<?php echo $extpath; ?>/extensible-all-debug.js"></script> 
+    <!-- Any Extensible overrides go here --> 
+    
+    <!-- Shared example includes --> 
+    <link rel="stylesheet" type="text/css" href="<?php echo $extpath; ?>/resources/css/examples.css" /> 
+    <script type="text/javascript" src="<?php echo $extpath; ?>/examples.js"></script> 
+    
+    <!-- Page-specific includes --> 
+    <script type="text/javascript" src="<?php echo $extpath; ?>/remote.js"></script> 
+    
+    <style> 
+        .sample-ct {
+            /* pre-size the container for smoother rendering, should match the panel's height config */
+            height: 900px;
+        }
+        #errChk label {
+            cursor: pointer;
+        }
+        #errTitle {
+            font-weight: bold;
+            color: #AF1515;
+        }
+    </style> 
+    
+    	<div id="cal" class="sample-ct"></div> 
+<script>
+        // Hide the Admin Menu under Joomla! 1.5
+        //try{
+                //Ext.fly('header-box').hide();
+                //Ext.fly('border-top').hide();
+                //Ext.fly('ap-wrapper').hide();
+        //} catch(e) {}
+
+</script>
+<p id="errChk"><label for="forceError"><input type="checkbox" id="forceError" name="forceError" /> Simulate server errors</label></p>
+
+
+</body> 
+
+</html>

@@ -1,0 +1,437 @@
+﻿/*  AdminPraise 2 CSS
+//  Copyright 2009 JoomlaPraise - Kyle Ledbetter
+*/
+
+body,#ap-wrapper,#ap-header,#ap-toolbar,#ap-right,#ap-footer {
+background-color:#DCE9FA;
+}
+a,a:visited,a:link,a:active {
+color:#23435F;
+}
+button {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border:1px solid #686868;
+}
+.next a {
+background:#FECD67 url(../images/theme5/tab-on.jpg) repeat-x 0 0;
+border:1px solid #686868;
+}
+fieldset {
+border:1px solid #686868;
+}
+hr {
+background-color:#646464;
+}
+/* Quicklaunch */
+.apquicklaunch {
+background-color:#EFF6FF !important;
+border:1px solid #B0C1D1;
+}
+/* Login */
+#ap-cpanellogo {
+background:transparent url('../images/theme5/cpanel-logo.png') no-repeat 0 0;
+}
+#login-body {
+background:#6591CC url('../images/theme5/mainbody-bg.jpg') repeat-x 0 0;
+}
+#ap-login {
+margin:50px auto 0 auto;
+}
+#ap-mainbody {
+background:#6591CC url('../images/theme5/mainbody-bg.jpg') repeat-x 0 0;
+}
+#ap-inner,#ap-content,#ap-login {
+border:1px solid #B0C1D1;
+}
+#ap-inner {
+
+}
+#ap-content .right,#ap-login .right {
+border-left:1px solid #EFEFEF;
+}
+#ap-content .right .right,#ap-login .right .right {
+border-left:0;
+}
+#ap-toolbar {
+border-bottom:1px solid #B0C1D1;
+}
+#ap-crumbs {
+border-bottom:1px solid #889EC3;
+}
+#ap-right,.header,#ap-content-sub,#ap-content-foot {
+border-bottom:1px solid #A4BDE6;
+}
+#ap-content-sub,#ap-footer {
+border-top:1px solid #23435F;
+}
+#ap-header {
+background:url('../images/theme5/header-bg.jpg') repeat-x 0 0;
+}
+#ap-crumbs {
+background:#9D9D9D url('../images/theme5/crumbs-bg.jpg') repeat-x 0 0;
+}
+#ap-content,#ap-content-foot,#ap-login {
+background-color:#FFF;
+}
+#ap-content-sub {
+background-color:#EFEFEF;
+}
+#ap-logo {
+background:url('../images/theme1/logo.png') no-repeat 0 0;
+}
+#ap-menu li.separator {
+
+}
+/* Editor */
+#ap-editor #myeditor_selection  {
+border:0px solid #FFF;
+background-color:#FFF;
+}
+/* theme chooser */
+#ap-templatetheme #templateTheme {
+border:0px solid #FFF;
+background-color:#FFF;
+}
+/* Search */
+#ap-search input  {
+border:1px solid #FFF;
+}
+
+/* Toolbar Icons */
+#ap-toolbar {
+background:url('../images/theme5/toolbar-bg.jpg') repeat-x 0 0;
+height:48px;
+}
+#ap-toolbar span:hover {
+background:#FED19A url(../images/theme5/tab-on.jpg) repeat-x scroll 0 0;
+}
+/* Crumbs */
+#ap-crumbs span {
+border-right:1px solid #AFD4FF;
+color:#23435F;
+}
+#ap-crumbs span span {
+border-right:0;
+}
+#ap-crumbs span.last span {
+background:url('../images/theme1/crumb-on.jpg') repeat-x 0 0;
+}
+#ap-crumbs span:hover {
+background:url('../images/theme5/header-bg.jpg') repeat-x 0 0;
+cursor:pointer;
+}
+#ap-crumbs span.first:hover {
+background:#9D9D9D url('../images/theme5/crumbs-bg.jpg') repeat-x 0 0;
+cursor:default;
+}
+
+/* Headers */
+.header,.icon-48-cpanel {
+background:#B3D4FF url('../images/theme5/head-off-blue.jpg') repeat-x 0 0;
+font-family:Arial,Verdana,sans-serif;
+}
+.header {
+color:#0B4181;
+font-size:24px;
+font-weight:bold;
+line-height:25px;
+}
+.header a {
+color:#000;
+}
+.header .ap-user {
+font-size:12px;
+line-height:12px;
+}
+/* Tabs & Accordions */
+#ap-right {
+background:#87A1C2;
+}
+.mootabs {
+border-left:1px solid #889EC3;
+}
+.mootabs_title {
+background:#DCE9FA url('../images/theme5/header-bg.jpg') repeat-x 0 0;
+}
+.mootabs_title li {
+color: #000;
+border-right:1px solid #87A1C2;
+}
+.mootabs_title li.active,.panel h3.jpane-toggler-down {
+background:#DEDEDE url('../images/theme5/tab-on.jpg') repeat-x 0 0;
+border-right:1px solid #889EC3;
+}
+.panel h3.jpane-toggler-down {
+border-right:0;
+}
+.mootabs_panel {
+color: #000;
+}
+.mootabs_panel.active,.panel {
+background-color: #FFF;
+}
+.mootabs_title li.over {
+
+}
+.panel h3.jpane-toggler {
+background:#DCE9FA url(../images/theme5/header-bg.jpg) repeat-x scroll 0 0;
+}
+.panel {
+border:1px solid #87A1C2;
+}
+/* Condensed Tabs */
+#sm-right .mootabs_title {
+border-bottom:0;
+}
+#sm-right .mootabs_panel.active,.panel {
+border:1px solid #889EC3;
+}
+#sm-right .mootabs_title li,#sm-right .mootabs_title li.active {
+background:#DCE9FA url('../images/theme5/header-bg.jpg') repeat-x 0 0;
+border-bottom:1px solid #889EC3;
+border-right:1px solid #889EC3;
+}
+#sm-right .mootabs_title li:hover {
+background:#DEDEDE url('../images/theme5/tab-on.jpg') repeat-x 0 0;
+}
+
+/* Collapse */
+#ap-collapse,#ap-expand {
+background:url('../images/theme5/crumbs-bg.jpg') repeat-x 0 0;
+border-bottom:1px solid #889EC3;
+border-left:1px solid #889EC3;
+} 
+#ap-collapse a {
+background:url('../images/icons/menu/collapse-r.png') no-repeat 98% 0;
+}
+#ap-expand a {
+background:url('../images/icons/menu/collapse-l.png') no-repeat 5px 0;
+}
+
+/* Cpanel */
+#ap-content ul.ap-cplinks li a:hover {
+background-color:#EFEFEF;
+}
+
+/* Toolbar */
+#toolbar {
+border-bottom:1px solid #494949;
+background-color:#EFEFEF;
+}
+table.toolbar a {
+color:#0B55C4 !important;
+}
+
+
+/* Table Data */
+.text_area,.inputbox {
+
+}
+table.adminlist {
+
+}
+table.adminlist th {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border-top:1px solid #494949;
+border-bottom:1px solid #494949;
+}
+table.adminlist tr.row0 td,table.adminlist tr.row1 td,
+table.adminform tr.row0 td,table.adminform tr.row1 td {
+border-bottom:1px solid #CCC;
+}
+.mootabs table.adminlist td,
+.mootabs table.adminform td {
+border-bottom:1px solid #CCC;
+background-color:#FFF;
+}
+table.adminlist tr.row0:hover td,table.adminlist tr.row1:hover td,
+table.adminform tr.row0:hover td,table.adminform tr.row1:hover td {
+background-color:#DFEBFF;
+}
+table.adminlist tr.row0 td,
+table.adminform tr.row0 td {
+background-color:#FFF;
+}
+table.adminlist tr.row1 td,
+table.adminform tr.row1 td {
+background-color:#F1F4F9;
+}
+table.adminlist td,
+table.adminform td {
+color:#555;
+}
+table.adminlist td a,
+table.adminform td a {
+color:#555;
+}
+/* Pagination */
+.list-footer {
+background-color:#EFEFEF;
+border-top:1px solid #494949;
+border-bottom:1px solid #494949;
+}
+.list-footer span {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border:1px solid #DFDFDF;
+color:#AFAFAF;
+}
+.list-footer a {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border:1px solid #BDBDBD;
+color:#000 !important;
+}
+table.adminheading {
+background-color:#EFEFEF;
+border-bottom:1px solid #494949;
+}
+table.adminform {
+border:1px solid #686868;
+}
+/* Quicklaunch */
+#adminPraiseComponentsListDiv {
+background-color: #E0E9F8;
+border:1px solid #87A1C2;
+}
+#adminPraiseComponentsListDiv .icon {
+background-color:#FFF;
+border:1px solid #ECECEC;
+}
+#adminPraiseComponentsListDiv .icon a {
+}
+#adminPraiseComponentsListDiv .icon a:hover {
+color:#000;
+}
+#adminPraiseComponentsListDiv .icon img {
+}
+/* Submenu */
+ul#submenu {
+background:#DCE9FA url(../images/theme5/header-bg.jpg) repeat-x scroll 0 0;
+border-top:1px solid #889EC3;
+border-bottom:1px solid #889EC3;
+}
+ul#submenu li {
+
+}
+ul#submenu li a {
+border-right:1px solid #889EC3;
+color:#333;
+}
+ul#submenu li a.active,ul#submenu li a:hover {
+background:#DEDEDE url(../images/theme5/tab-on.jpg) repeat-x scroll 0 0;
+}
+
+
+
+/* Tooltip */
+.tool-tip {
+background:#9D9D9D url(../images/theme1/crumbs-bg.jpg) repeat-x 0 0 !important;
+border: 1px solid #686868 !important;
+}
+.tool-title {
+
+}
+.tool-text {
+
+}
+/* System Message */
+#system-message dd ul {
+
+
+}
+#system-message {
+border-top:1px solid #FAD163;
+border-bottom:1px solid #FAD163;
+background-color:#FFF7D7;
+}
+/* Admintable Key */
+table.admintable td.key, table.admintable td.paramlist_key {
+background-color:#E6E6E6;
+border-top:1px solid #FFF;
+border-left:1px solid #FFF;
+border-bottom:1px solid #DCE9FA;
+border-right:1px solid #DCE9FA;
+color:#666666;
+}
+/* Login */
+#modlgn_username,#modlgn_passwd,#form-login-lang select.inputbox {
+background-color:#E0E0E0;
+border:1px solid #686868;
+}
+/* Tabs */
+dl.tabs {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border-top:1px solid #686868;
+border-bottom:1px solid #686868;
+}
+dl.tabs dt {
+border-right:1px solid #686868;
+color:#333;
+}
+dl.tabs dt.open {
+background:#9D9D9D url(../images/theme1/crumbs-bg.jpg) repeat-x 0 0;
+color:#FFF;
+}
+#ap-menu li#globals a,#ap-menu li#com-launch a, #ap-menu li#mod-launch a {
+border-color:#CEE0F8;
+}
+#menu a {
+color:#23435F;
+}
+#menu ul {
+background:#DCE9FA none;
+border-right:1px solid #B0C1D1;
+border-bottom:1px solid #B0C1D1;
+border-left:1px solid #B0C1D1;
+}
+#menu ul ul {
+background:#DCE9FA none;
+}
+#ap-menu li a#Config,#ap-menu li a#ComponentQuickLaunch, #ap-menu li a#ModulesQuickLaunch {
+border-right:0;
+border-left:0;
+}
+#menu ul li.separator {
+background-color:transparent;
+border-top:1px solid #87A1C2;
+}
+#menu li.hover li.hover a { 
+background:url(../images/theme5/tab-on.jpg) repeat-x scroll 0 0;
+}
+#menu li.hover li a,#menu li.hover li.hover a {
+margin:0 !important;
+border:0 !important;
+background:none !important;
+padding:4px 1px 4px 4px !important;
+}
+#ap-toolbar span {
+background-position:50% -36px;
+margin:3px;
+border:1px solid #B0C1D1;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+}
+#ap-toolbar span:hover {
+background-position:50% 2px;
+}
+#ap-toolbar .ap-icons a {
+background-position:50% -36px !important;
+}
+#ap-toolbar .ap-icons a:hover {
+background-position:50% 2px !important;
+}
+.ap-icons a {
+background-position:50% 1px !important;
+}
+.ap-icons a:hover {
+background-position:50% -85px !important;
+}
+#apdockfisheye {
+background:transparent url('../images/theme5/dock-bg.png') repeat-x 0 100% !important;
+}
+/* Light Box */
+#sbox-window {
+background-color:#17365F;
+}
+#sbox-overlay {
+background-color:#6591CC;
+}

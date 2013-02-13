@@ -1,0 +1,271 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Informed Consent For Evaluation, Treatment, and or Services</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+body {
+	background-color: #00CCFF;
+}
+.style2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style3 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; }
+.style5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12;
+	font-weight: bold;
+}
+-->
+</style>
+
+<script language=JavaScript>
+javascript:window.history.forward(1);
+// Declaring valid date character, minimum year and maximum year
+var dtCh= "/";
+var minYear=1900;
+var maxYear=2100;
+
+function isInteger(s){
+	var i;
+    for (i = 0; i < s.length; i++){   
+        // Check that current character is number.
+        var c = s.charAt(i);
+        if (((c < "0") || (c > "9"))) return false;
+    }
+    // All characters are numbers.
+    return true;
+}
+
+function stripCharsInBag(s, bag){
+	var i;
+    var returnString = "";
+    // Search through string's characters one by one.
+    // If character is not in bag, append to returnString.
+    for (i = 0; i < s.length; i++){   
+        var c = s.charAt(i);
+        if (bag.indexOf(c) == -1) returnString += c;
+    }
+    return returnString;
+}
+
+function daysInFebruary (year){
+	// February has 29 days in any year evenly divisible by four,
+    // EXCEPT for centurial years which are not also divisible by 400.
+    return (((year % 4 == 0) && ( (!(year % 100 == 0)) || (year % 400 == 0))) ? 29 : 28 );
+}
+function DaysArray(n) {
+	for (var i = 1; i <= n; i++) {
+		this[i] = 31
+		if (i==4 || i==6 || i==9 || i==11) {this[i] = 30}
+		if (i==2) {this[i] = 29}
+   } 
+   return this
+}
+
+function isDate(dtStr){
+	var daysInMonth = DaysArray(12)
+	var pos1=dtStr.indexOf(dtCh)
+	var pos2=dtStr.indexOf(dtCh,pos1+1)
+	var strMonth=dtStr.substring(0,pos1)
+	var strDay=dtStr.substring(pos1+1,pos2)
+	var strYear=dtStr.substring(pos2+1)
+	strYr=strYear
+	if (strDay.charAt(0)=="0" && strDay.length>1) strDay=strDay.substring(1)
+	if (strMonth.charAt(0)=="0" && strMonth.length>1) strMonth=strMonth.substring(1)
+	for (var i = 1; i <= 3; i++) {
+		if (strYr.charAt(0)=="0" && strYr.length>1) strYr=strYr.substring(1)
+	}
+	month=parseInt(strMonth)
+	day=parseInt(strDay)
+	year=parseInt(strYr)
+	if (pos1==-1 || pos2==-1){
+		alert("The date format should be : mm/dd/yyyy")
+		return false
+	}
+	if (strMonth.length<1 || month<1 || month>12){
+		alert("Please enter a valid month")
+		return false
+	}
+	if (strDay.length<1 || day<1 || day>31 || (month==2 && day>daysInFebruary(year)) || day > daysInMonth[month]){
+		alert("Please enter a valid day")
+		return false
+	}
+	if (strYear.length != 4 || year==0 || year<minYear || year>maxYear){
+		alert("Please enter a valid 4 digit year between "+minYear+" and "+maxYear)
+		return false
+	}
+	if (dtStr.indexOf(dtCh,pos2+1)!=-1 || isInteger(stripCharsInBag(dtStr, dtCh))==false){
+		alert("Please enter a valid date")
+		return false
+	}
+return true
+}
+
+function ValidateForm(){
+	var dt=document.form1.PatientDate
+	var dp=document.form1.EmployeeDate
+	if (isDate(dt.value)==false){
+		dt.focus()
+		return false
+	}
+	if (isDate(dp.value)==false){
+		dp.focus()
+		return false
+	}
+    return true
+ }//-->
+</script>
+
+</head>
+
+<body>
+<form action="http://localhost:8080/<#LocalUri#>" method="POST" name="form1" id="form1" onsubmit="return ValidateForm()">
+<input type="hidden" name="Form Name" value="Informed Consent"/>
+<input type="hidden" name="tstamp" value="<#TimeStamp#>"/>
+<input type="hidden" name="FormName" value="Informed Consent"/>
+<input type="hidden" name="Depart" value="<#Depart#>"/>
+
+  <table width="100%" border="1" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="201"><img src="../../images/SmallLogo.gif" alt="safsa" width="201" height="51" /></td>
+      <td width="165"><p align="center" class="style3">Affiliated Sante Group<br />
+        Rock Creek Foundation<br />
+        Sante Medical  Associates </p>      </td>
+      <td width="242"><p align="center" class="style3">Sant&#279; Group Corporate Headquarters<br />
+        12120 Plum Orchard Drive&nbsp; Suite E<br />
+      Silver Spring, Maryland 20904 </p></td>
+      <td width="206"><p align="center" class="style3">Phone: 301-572-6585<br />
+        Fax: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;301-572-5062<br />
+      www.thesantegroup.org </p></td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="87"><p align="center" class="style2">INFORMED CONSENT FOR  EVALUATION, TREATMENT, AND/OR SERVICES</p></td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><table width="869">
+        <tr class="style3">
+          <td width="300" class="style5"><label>
+<input type="radio" name="Company" value="ASG" />            
+ASG
+<input name="CaseNumber" type="hidden" id="CaseNumber" value="<#CaseNumber#>" />
+          </label></td>
+          <td width="300" class="style5"><label>
+            <input type="radio" name="Company" value="RCF" />
+            <span class="style3">RCF</span></label></td>
+          <td width="187" class="style5"><label>
+            <input type="radio" name="Company" value="SMA" />
+            SMA</label></td>
+          <td width="187" class="style5"><label>
+            <input name="Company" type="radio" value="None" />
+            None</label></td>
+        </tr>
+      </table>      </td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr class="style3">
+      <td width="205"><span class="style1">I,(First Name) 
+        <label>
+        <input name="PFirstName" type="text" id="PFirstName" size="15" maxlength="50" />
+        </label>
+      </span></td>
+      <td width="195"><label>
+        <span class="style1">(Last Name)</span>
+        <input name="PLastName" type="text" id="PLastName" size="15" maxlength="50" />
+      </label></td>
+      <td width="500">give my permission and consent to Affiliated  Sant&eacute; Group (ASG), Rock Creek </td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr class="style3">
+      <td><p class="style1">Foundation (RCF), and/or Sant&eacute; Medical Associates for evaluation,  treatment, and/or services provided by them. I understand that this may include  an intake and diagnostic process, evaluation of treatment and/or rehabilitation  needs, and any additional evaluations, therapies, and/or medications that may  be recommended or provided by these companies and their programs.</p>
+        <p class="style1">I acknowledge that my rights as a client have been explained  to me.&nbsp; I have had an opportunity to ask  any questions which I may have as a client of any of the companies listed.&nbsp; I understand and acknowledge that strict  confidentiality is practiced and ensured, with the following exceptions:</p>
+        <ol start="1" type="1" class="style1">
+          <li>I have       signed a consent to release information statement.</li>
+          <li>There       is a court order, signed by a jury appointed or elected judge.</li>
+          <li>There       is a perceived threat of injury to myself or others.</li>
+          <li>There       is a suspicion of abuse involving children or other vulnerable individuals       (such as developmentally disabled or frail elderly persons.)</li>
+          <li>Representatives       of a funding source for my treatment or services require that my records       be made available to them with my written consent.</li>
+        </ol>
+        <p class="style1">&nbsp;</p>
+        <p class="style1">I understand and acknowledge that the results of evaluations  will be made available to me.&nbsp; I  understand that all evaluation, treatment, and services are voluntary and that  I may request, refuse, or terminate any or all of them at any time.&nbsp; ASG, RCF, and/or SMA have an obligation to  explain what consequences, if any, may occur if I refuse or terminate  evaluation, treatment or services.</p>
+        <p class="style1">I understand and acknowledge that demographic and service  utilization information regarding my treatment and/or services at ASG, RCF,  and/or SMA may be reported in statistical form to the State of Maryland  and the county mental health core service agency client information  system.&nbsp; This information will be kept  confidential and may not be released to any other agency or person without my  written consent.&nbsp; </p>
+        <span class="style1">I have had the above explained to me and voluntarily  give my informed consent to evaluation, treatment and/or services provide
+        
+        d by  ASG, RCF, and/or SMA.</span></td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><table width="855">
+        <tr class="style3">
+          <td width="302"><label>
+            <input type="radio" name="Person" value="Self" />
+            Self</label></td>
+          <td width="269"><label>
+            <input type="radio" name="Person" value="Legal" />
+            Parent/Legal</label></td>
+          <td width="202"><label>
+            <input type="radio" name="Person" value="Authorized Representatives" />
+            Authorized Representative</label></td>
+          <td width="202"><label>
+            <input name="Person" type="radio" value="None" />
+            None</label></td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr class="style3">
+      <td width="405"><label>
+
+        <div align="left">
+          <input name="PatientID" type="text" id="PatientID" value="InformedConsentClient_Case_<#CaseNumber#>_<#Date#>" size="60" maxlength="50" />
+          <br />
+          <span class="style1">Client or Other Authorized Signature </span></div>
+          </label></td>
+      <td width="449" class="style1"><label>
+
+        <div align="left">
+          <input name="PatientDate" type="text" id="PatientDate" size="20" maxlength="20" />
+          <br />
+          Date</div>
+          </label></td></tr>
+    <tr class="style3">
+      <td class="style1"><label>
+
+        <div align="left">
+          <input name="Staffsig" type="text" id="Staffsig" value="InfromedConsentEmployee_Case_<#CaseNumber#>_<#Date#>" size="60" maxlength="50" />
+          <br />
+          Staff Signature </div>
+          </label></td>
+      <td class="style1"><label>
+
+        <div align="left">
+          <input name="EmployeeDate" type="text" id="EmployeeDate" size="20" maxlength="20" />
+          <br />
+          Date</div>
+          </label></td></tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+          <input name="EmployeeID" type="hidden" id="EmployeeID" value="91"/>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="Submit" name="Submit" value="Save" /></td>
+    </tr>

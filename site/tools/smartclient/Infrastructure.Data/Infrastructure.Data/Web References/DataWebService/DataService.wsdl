@@ -1,0 +1,1564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://emr.santegroup.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://emr.santegroup.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://emr.santegroup.org/">
+      <s:element name="SaveNextTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="n" type="tns:Task" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Task">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Completed" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Owner" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AppointmentStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NextTask" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateCompleted" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Initial" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateDue" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeDue" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SetDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveNextTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveNextTaskResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SavePatient">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p" type="tns:Patient" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Patient">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DOB" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SSN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Zip" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PFirstName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PatientID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CaseNumber" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SavePatientResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SavePatientResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveCase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="tns:Case" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Case">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:DataObj">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Forms" type="tns:ArrayOfForm" />
+              <s:element minOccurs="1" maxOccurs="1" name="UserGeneratedCaseNumber" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextTaskObj" type="tns:Task" />
+              <s:element minOccurs="1" maxOccurs="1" name="SetDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ClosedInitials" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="StatusDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="OpenBy" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="NextTaskDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:Status" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateClosed" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextTask" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateOpened" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="CaseNumber" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="DataObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Tstamp" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfForm">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Form" nillable="true" type="tns:Form" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Form">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CaseNumber" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EmployeeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tstamp" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Depart" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FormName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="Status">
+        <s:restriction base="s:string">
+          <s:enumeration value="Active" />
+          <s:enumeration value="Unresolved" />
+          <s:enumeration value="FollowUp" />
+          <s:enumeration value="FrequentCaller" />
+          <s:enumeration value="MCT" />
+          <s:enumeration value="EastIHIT" />
+          <s:enumeration value="WestIHIT" />
+          <s:enumeration value="CISM" />
+          <s:enumeration value="Closure" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SaveCaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveCaseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="form" type="tns:Form" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveFormResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveIntake">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="i" type="tns:Intake" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Intake">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="AbuseOccuring" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AbuseThreatened" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AdultInHouse" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AdultRelationship" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AdultWho" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Age" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="AuditedBy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Called911" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CallerAddress" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CallerCity" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CallerDisconnects" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CallerName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CallerPhone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CallerRefuse" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CallerState" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CallerZip" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ChildrenInHouse" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ChildrenRelationship" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ChildrenWho" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Cism" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ClientsName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CommunityEd" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CrisisPlanOnly" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Culture" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DangerToOthers" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DangerToSelf" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="District" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Dob" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Drugs" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DrugUse" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EmergencyName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EmergencyPhone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EmergencyRelationship" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Eviction" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Financial" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PFirstName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Frequent" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="GunType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HistoryOfViolence" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Incarceration" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InformationOnly" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InpatientHospital" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InsuranceCompany" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InsuranceID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InsuranceOther" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InsurancePhone" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IntakeID" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Intoxication" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="IntoxicationDesc" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PlastName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Limitations" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MctDispatch" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MedicalDesc" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MedicalIssues" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MH" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MhNeeded" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NeedsMental" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NonMH" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NotifyAPS" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Officer" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OperatorNum" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OperatorTime" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OtherMed" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Pcp" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PcpPhone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PhoneBogus" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Provider" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProviderContact" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProviderPhone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RapidDeterioration" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ReasonForContact" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ReferralOther" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RefferalSource" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Relationship" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Resident" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RfNone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RiskHospitalization" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SituationalCrisis" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SSN" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SubstanceAbuseP" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SuicideAttempt" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SuicideIdeation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SuicideThreat" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ThreateningViolence" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Time" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Sex" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Referral3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Referral4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Referral5" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Referral6" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Referral7" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Referral8" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Referral9" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Referral10" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Referral1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Referral2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CrisisNeeded" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CrisisPlan" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Record911" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FollowUp" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CismFlag" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Linkage" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CaseRelated" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Veteran" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Active" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Owner" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="WeaponPresent" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WeaponUsed" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Zip" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveIntakeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SaveMCTDispatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="m" type="tns:MCTDispatch" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MCTDispatch">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="DivertedCall" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DispatchedBy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Axis1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Axis2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Axis3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Axis4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Axis5" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Additional" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Agency" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Anxiety" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="APSReferral" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ArrivalTime" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="AssistEP" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AtRisk" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ChildAbuse" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ChildBehavoir" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ChildWithSignificantIllness" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ChronicMI" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ClientEducation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ClientRefused" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CommunityResources" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContactEMT" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContactPolice" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CPSReferral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CrisisBedReferral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CrisisPlan" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DeathBySuicide" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DeathOtherThanSuicide" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Depression" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Deteriorating" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Diagnostic" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="dispatch" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="DispatchTime" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="diversion" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DomesticViolence" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ElderlyConfusion" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EmergencyPetition" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Enviromental" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ER" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Escort" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Evaluation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Family" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FamilyConflict" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FatalAccident" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Financial" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FocalOther" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Homeless" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HomicideViolence" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HotelVoucher" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="IHITReferral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Information" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InterventionEmergencyPetition" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="intoxicated" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="intreatment" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="IOPReferral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Jail" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="maritalConflict" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="MCTDispatchID" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="MCTFollowUp" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MCTTransportation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MedicalIssuePrimary" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Mileage" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="NonMHReferral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Other" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OtherDesc" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OthersInvolved" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OutPatientReferral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PHPReferral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="physical" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Precinct" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RespondingEmployeeID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Runaway" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SexualAssault" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ShelterVoucher" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SituationalCrisis" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SituationalStable" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Stable" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="StableW" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="StaffID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="StaffIN" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SubstanceAbuse" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SuicideAttempt" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SuicideIdeation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TCMReferral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Team" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Time" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="TotalTime" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UCCAppointment" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="verbal" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VoluntaryER" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WithPolice" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveMCTDispatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveMCTDispatchResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveInformedMedicationConsent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="i" type="tns:InformedMedicationConsent" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="InformedMedicationConsent">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ClientName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DoctorName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ClientSignature" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ClientSigDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="GuardianSignature" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="GuardianSigDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="SignificantOtherSign" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="SigOtherSigDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="PhysicianSignature" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="PhysicianSigDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="RnSignature" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RNSigDate" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveInformedMedicationConsentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SaveAssessmentAndTreatmentForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="tns:MCTAssessmentAndTreatment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MCTAssessmentAndTreatment">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Active" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="APS" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Axis1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Axis2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Axis3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Axis4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Axis5" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Clinician" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="COTAA" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CPS" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CrisisBed" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CrisisPlan" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DiagnosticClient" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DiagnosticImpression" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DSS" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ErEval" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="IFIT" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="inptadm" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="IOP" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Legal" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="MCTAssessmentAndTreatmentID" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="Medical" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MedicalEval" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Mental" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OHMC" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Other" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PHP" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Problem" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PRP" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PsychHistory" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PsychMeds" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PsychTreatment" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PsychEval" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RiskAssessment" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SA" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Somatic" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Strengths" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SubstanceTreatment" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Support" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Targeted" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="TimeStamp" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Treatment" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveAssessmentAndTreatmentFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveAssessmentAndTreatmentFormResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveAuthorizationToReleaseForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="tns:AuthorizationRelease" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AuthorizationRelease">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="AdmissionSummary" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DateSigned" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DischargeInstructions" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DischargeSummary" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DOB" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EmployeeDateSigned" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ExpireDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LaboratoryReports" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LegalRep" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Other" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OtherDesc" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PatientID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EmployeeSigID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Person" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PFirstName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PHIAddress" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PHIName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PHIPhone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PhysicalExamination" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PLastName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PsychiatricEvaluation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SocialHistory" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TreatmentSummary" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XRayCTMRIReports" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveAuthorizationToReleaseFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveAuthorizationToReleaseFormResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveConsentForServicesForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="tns:ConsentForServices" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ConsentForServices">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="MCT" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Parent" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ParentSignature" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PFirstName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PLastName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Staffsig" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UnableSign" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Why" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Witness" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveConsentForServicesFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveConsentForServicesFormResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveHumanRightsNotificationForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="h" type="tns:HumanRights" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HumanRights">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="EmployeeDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="PatientDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Person" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Staffsig" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveHumanRightsNotificationFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveHumanRightsNotificationFormResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveIndividualTreatmentPlanForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="i" type="tns:IHITIndividualTreatment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="IHITIndividualTreatment">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Active" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IHITIndividualTreatmentID" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="LongTerm" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="LTComplete" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="LTPComplete" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="LTPRevised" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="LTProgress" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="LTPStart" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="LTPTarget" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="LTRevised" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="LTStart" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="LTTarget" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="PDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PFirstName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PLastName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ShortTerm1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ShortTerm2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ST1Complete" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ST1Objective" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST1OComplete" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST1ORevised" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST1OStart" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST1OTarget" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST1PComplete" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST1PRevised" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="ST1Progress" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST1PStart" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST1PTarget" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="ST1Revised" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST1Start" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST1Target" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2Complete" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="ST2Objective" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2OComplete" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2ORevised" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2OStart" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2OTarget" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2PComplete" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2PRevised" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="ST2Progress" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2PStart" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2PTarget" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2Revised" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2Start" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ST2Target" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveIndividualTreatmentPlanFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveIndividualTreatmentPlanFormResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveInformedConsentForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="tns:InformedConsent" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="InformedConsent">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="EmployeeDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="MCT" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="PatientDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="PatientID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Person" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PFirstName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PLastName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Staffsig" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveInformedConsentFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveInformedConsentFormResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveMedicalEvaluationForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="m" type="tns:medeval" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="medeval">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="hallucination" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Active" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="coffee" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="tea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="caffeinatedsodas" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="caffeinatedsodas_oz" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="decreasedappetite" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="medevalid" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="abnormalities" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="accompaniedby" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="acuteillness" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="age" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="agitated" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="aims" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="alert" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="angry" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="anxious" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="appetite" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="arisetime" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="auditory" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="bedtime" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="blunted" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="blurredvision" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="bp" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="broadexpansive" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="calm" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="chronicillness" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="clientcode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="clientname" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="comments2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="congruent" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="consipation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="constricted" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="cooperative" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="crossculturalcomments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="delay" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="demanding" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="depressed" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="despairing" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="diarhea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="dizziness" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="dose1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="dose2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="dose3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="dose4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="drugs" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="drymouth" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="dysarthric" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="dysphoric" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="educationalcomments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ema" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="enddate1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="enddate2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="enddate3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="enddate4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="energy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="eps" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="euphoric" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="euthymic" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="expansive" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="flat" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="freq1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="freq2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="freq3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="freq4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="general" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="gestures" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="guarded" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="guilty" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="gustatory" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ha" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="hesitation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="hopeless" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="hostile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="hyperactive" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="increasedappetite" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="informedconsent" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="initials" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="insomnia" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="instituationalpharmacy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="irritable" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="jitters" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="labile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="manic" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="medication1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="medication2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="medication3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="medication4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="medicationevaluation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="mentalother" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="monotonous" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="mooddepressed" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="nameofpharmacy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="nausea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="nervous" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="normalrelaxed" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="olfactory" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="depresonalization" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="derealization" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="loa" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="circumstantial" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="addbox" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="addwhat" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="analysisfinding" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="apptdate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="appttime" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="blocking" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="carbamazepine" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="cbc" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="comments3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="comments4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="compmetabolic" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="concentration" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="confabulation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="decrease" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="decreasewhat" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="delusions" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="directed" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="goal" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="his" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="insightfull" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="insightnil" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="insightpartial" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="judgement" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="memory" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="New" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="newwhat" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="nochange" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="obsession" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="other" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="p" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="paranoia" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="paranoid" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="perservation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="physician" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="plansother" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="poised" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="poorknowledge" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="pressured" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="psychoreview" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="relationshipcomments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="relationshipissues" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="restless" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="reviewdate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="reviewed" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="rigid" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="rr" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="rte1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="rte2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="rte3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="rte4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="rxchange" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="rxcompliance" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="rxreview" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="selfregerentiality" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="serumamylase" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="serumlipase" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="sexualdysfunction" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="si" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="sideeffects2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="sideeffects1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="sideeffects3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="sideeffects4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="sleep" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="slowed" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="somolence" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="speechother" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="spontaneous" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="startdate1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="startdate2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="startdate3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="startdate4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="tactile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="targetsymptoms1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="targetsymptoms2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="targetsymptoms3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="targetsymptoms4" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="td" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="tearful" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="temp" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="tense" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="tft" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="therapist" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="tics" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="tired" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="tobacco" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ua" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="uco3" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="valpratelevel" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="visual" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="vocationcomments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="weight" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="weightgain" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="weightloss" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="wellrelated" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveMedicalEvaluationFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveMedicalEvaluationFormResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveNotes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="n" type="tns:ProgressNote" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProgressNote">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="InitialVisit" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="EastWest" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="StaffID" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Active" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NoteAction" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Notes" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ProgressNoteID" type="s:long" />
+              <s:element minOccurs="1" maxOccurs="1" name="Time" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="TimeStamp" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveNotesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveNotesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveTelephoneContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="t" type="tns:Telephone" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Telephone">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Employee" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="call" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextTask" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Notes" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Org" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PersonContacted" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="TelephoneID" type="s:long" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveTelephoneContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveTelephoneContactResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveLethalityForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="form" type="tns:Lethality" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Lethality">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Employee" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Accessibility" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CallerAlone" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="DepressionSymptoms" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="DrugAlcoholUse" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="FamilyAttemptsCompletions" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Method" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="PatientID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PfirstName" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="PlanSelect" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="PlastName" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="PriorAttempts" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Score" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Supports" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Time" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Total1" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Total2" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Total3" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveLethalityFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveLethalityFormResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SavePrivacyPracticesForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="tns:PrivacyPractices" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PrivacyPractices">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Form">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Signature" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="SigDate" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SavePrivacyPracticesFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SavePrivacyPracticesFormResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SaveNextTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveNextTask" />
+  </wsdl:message>
+  <wsdl:message name="SaveNextTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveNextTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="SavePatientSoapIn">
+    <wsdl:part name="parameters" element="tns:SavePatient" />
+  </wsdl:message>
+  <wsdl:message name="SavePatientSoapOut">
+    <wsdl:part name="parameters" element="tns:SavePatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveCaseSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveCase" />
+  </wsdl:message>
+  <wsdl:message name="SaveCaseSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveFormSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveForm" />
+  </wsdl:message>
+  <wsdl:message name="SaveFormSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveIntakeSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveIntake" />
+  </wsdl:message>
+  <wsdl:message name="SaveIntakeSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveIntakeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveMCTDispatchSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveMCTDispatch" />
+  </wsdl:message>
+  <wsdl:message name="SaveMCTDispatchSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveMCTDispatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveInformedMedicationConsentSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveInformedMedicationConsent" />
+  </wsdl:message>
+  <wsdl:message name="SaveInformedMedicationConsentSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveInformedMedicationConsentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveAssessmentAndTreatmentFormSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveAssessmentAndTreatmentForm" />
+  </wsdl:message>
+  <wsdl:message name="SaveAssessmentAndTreatmentFormSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveAssessmentAndTreatmentFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveAuthorizationToReleaseFormSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveAuthorizationToReleaseForm" />
+  </wsdl:message>
+  <wsdl:message name="SaveAuthorizationToReleaseFormSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveAuthorizationToReleaseFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveConsentForServicesFormSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveConsentForServicesForm" />
+  </wsdl:message>
+  <wsdl:message name="SaveConsentForServicesFormSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveConsentForServicesFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveHumanRightsNotificationFormSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveHumanRightsNotificationForm" />
+  </wsdl:message>
+  <wsdl:message name="SaveHumanRightsNotificationFormSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveHumanRightsNotificationFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveIndividualTreatmentPlanFormSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveIndividualTreatmentPlanForm" />
+  </wsdl:message>
+  <wsdl:message name="SaveIndividualTreatmentPlanFormSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveIndividualTreatmentPlanFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveInformedConsentFormSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveInformedConsentForm" />
+  </wsdl:message>
+  <wsdl:message name="SaveInformedConsentFormSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveInformedConsentFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveMedicalEvaluationFormSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveMedicalEvaluationForm" />
+  </wsdl:message>
+  <wsdl:message name="SaveMedicalEvaluationFormSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveMedicalEvaluationFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveNotesSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveNotes" />
+  </wsdl:message>
+  <wsdl:message name="SaveNotesSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveNotesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveTelephoneContactSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveTelephoneContact" />
+  </wsdl:message>
+  <wsdl:message name="SaveTelephoneContactSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveTelephoneContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveLethalityFormSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveLethalityForm" />
+  </wsdl:message>
+  <wsdl:message name="SaveLethalityFormSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveLethalityFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="SavePrivacyPracticesFormSoapIn">
+    <wsdl:part name="parameters" element="tns:SavePrivacyPracticesForm" />
+  </wsdl:message>
+  <wsdl:message name="SavePrivacyPracticesFormSoapOut">
+    <wsdl:part name="parameters" element="tns:SavePrivacyPracticesFormResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DataServiceSoap">
+    <wsdl:operation name="SaveNextTask">
+      <wsdl:input message="tns:SaveNextTaskSoapIn" />
+      <wsdl:output message="tns:SaveNextTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePatient">
+      <wsdl:input message="tns:SavePatientSoapIn" />
+      <wsdl:output message="tns:SavePatientSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCase">
+      <wsdl:input message="tns:SaveCaseSoapIn" />
+      <wsdl:output message="tns:SaveCaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveForm">
+      <wsdl:input message="tns:SaveFormSoapIn" />
+      <wsdl:output message="tns:SaveFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveIntake">
+      <wsdl:input message="tns:SaveIntakeSoapIn" />
+      <wsdl:output message="tns:SaveIntakeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveMCTDispatch">
+      <wsdl:input message="tns:SaveMCTDispatchSoapIn" />
+      <wsdl:output message="tns:SaveMCTDispatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveInformedMedicationConsent">
+      <wsdl:input message="tns:SaveInformedMedicationConsentSoapIn" />
+      <wsdl:output message="tns:SaveInformedMedicationConsentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAssessmentAndTreatmentForm">
+      <wsdl:input message="tns:SaveAssessmentAndTreatmentFormSoapIn" />
+      <wsdl:output message="tns:SaveAssessmentAndTreatmentFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAuthorizationToReleaseForm">
+      <wsdl:input message="tns:SaveAuthorizationToReleaseFormSoapIn" />
+      <wsdl:output message="tns:SaveAuthorizationToReleaseFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveConsentForServicesForm">
+      <wsdl:input message="tns:SaveConsentForServicesFormSoapIn" />
+      <wsdl:output message="tns:SaveConsentForServicesFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveHumanRightsNotificationForm">
+      <wsdl:input message="tns:SaveHumanRightsNotificationFormSoapIn" />
+      <wsdl:output message="tns:SaveHumanRightsNotificationFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveIndividualTreatmentPlanForm">
+      <wsdl:input message="tns:SaveIndividualTreatmentPlanFormSoapIn" />
+      <wsdl:output message="tns:SaveIndividualTreatmentPlanFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveInformedConsentForm">
+      <wsdl:input message="tns:SaveInformedConsentFormSoapIn" />
+      <wsdl:output message="tns:SaveInformedConsentFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveMedicalEvaluationForm">
+      <wsdl:input message="tns:SaveMedicalEvaluationFormSoapIn" />
+      <wsdl:output message="tns:SaveMedicalEvaluationFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveNotes">
+      <wsdl:input message="tns:SaveNotesSoapIn" />
+      <wsdl:output message="tns:SaveNotesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveTelephoneContact">
+      <wsdl:input message="tns:SaveTelephoneContactSoapIn" />
+      <wsdl:output message="tns:SaveTelephoneContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLethalityForm">
+      <wsdl:input message="tns:SaveLethalityFormSoapIn" />
+      <wsdl:output message="tns:SaveLethalityFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePrivacyPracticesForm">
+      <wsdl:input message="tns:SavePrivacyPracticesFormSoapIn" />
+      <wsdl:output message="tns:SavePrivacyPracticesFormSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DataServiceSoap" type="tns:DataServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveNextTask">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveNextTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePatient">
+      <soap:operation soapAction="http://emr.santegroup.org/SavePatient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCase">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveForm">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveIntake">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveIntake" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveMCTDispatch">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveMCTDispatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInformedMedicationConsent">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveInformedMedicationConsent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAssessmentAndTreatmentForm">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveAssessmentAndTreatmentForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAuthorizationToReleaseForm">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveAuthorizationToReleaseForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveConsentForServicesForm">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveConsentForServicesForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveHumanRightsNotificationForm">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveHumanRightsNotificationForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveIndividualTreatmentPlanForm">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveIndividualTreatmentPlanForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInformedConsentForm">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveInformedConsentForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveMedicalEvaluationForm">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveMedicalEvaluationForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveNotes">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveNotes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTelephoneContact">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveTelephoneContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLethalityForm">
+      <soap:operation soapAction="http://emr.santegroup.org/SaveLethalityForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePrivacyPracticesForm">
+      <soap:operation soapAction="http://emr.santegroup.org/SavePrivacyPracticesForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataServiceSoap12" type="tns:DataServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveNextTask">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveNextTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePatient">
+      <soap12:operation soapAction="http://emr.santegroup.org/SavePatient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCase">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveCase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveForm">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveIntake">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveIntake" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveMCTDispatch">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveMCTDispatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInformedMedicationConsent">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveInformedMedicationConsent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAssessmentAndTreatmentForm">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveAssessmentAndTreatmentForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAuthorizationToReleaseForm">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveAuthorizationToReleaseForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveConsentForServicesForm">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveConsentForServicesForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveHumanRightsNotificationForm">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveHumanRightsNotificationForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveIndividualTreatmentPlanForm">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveIndividualTreatmentPlanForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInformedConsentForm">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveInformedConsentForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveMedicalEvaluationForm">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveMedicalEvaluationForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveNotes">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveNotes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTelephoneContact">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveTelephoneContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLethalityForm">
+      <soap12:operation soapAction="http://emr.santegroup.org/SaveLethalityForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePrivacyPracticesForm">
+      <soap12:operation soapAction="http://emr.santegroup.org/SavePrivacyPracticesForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataService">
+    <wsdl:port name="DataServiceSoap" binding="tns:DataServiceSoap">
+      <soap:address location="http://65.216.170.16/Services/DataService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataServiceSoap12" binding="tns:DataServiceSoap12">
+      <soap12:address location="http://65.216.170.16/Services/DataService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

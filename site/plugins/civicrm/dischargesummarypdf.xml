@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="civicrm">
+	<name>CiviCRM - Discharge Summary PDF Plugin</name>
+	<author>Joomla! Project</author>
+	<creationDate>January 2012</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.
+		All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>CiviCRM Discharge Summary outputs in PDF format</description>
+	<files>
+		<filename plugin="dischargesummarypdf">dischargesummarypdf.php</filename>
+	</files>
+    <params>
+        <param name="pdf_template" type="text" default="PDF/defaultpdf" label="Custom Template Name" description="Custom Template Name" />
+        <param name="countcolumn" type="text" default="2" label="The number of columns for the long lines" description="The number of columns for the long lines" />
+        <param name="overlenght" type="text" default="110" label="Max lenght string for single row" description="Max lenght string for single row" />
+        <param name="supercolumn" type="text" default="300" label="ID custom value for single row" description="ID custom value for single row separated by commas" />
+        <param name="pagebreak" type="text" default="306" label="ID custom value for new page" description="ID custom value for new page separated by commas" />
+    </params>
+</install>

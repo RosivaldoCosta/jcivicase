@@ -1,0 +1,12 @@
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\bin\Debug\Module.IHIT.Tests.dll
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\bin\Debug\Module.IHIT.Tests.pdb
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\bin\Debug\Infrastructure.Interface.dll
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\bin\Debug\Microsoft.Practices.CompositeUI.dll
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\bin\Debug\Infrastructure.Interface.pdb
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\obj\Debug\Module.IHIT.Tests.dll
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\obj\Debug\Module.IHIT.Tests.pdb
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\bin\Debug\IHITModule.dll
+C:\Documents and Settings\Charles\My Documents\sante\code\EMR SmartClient\Module.IHIT\Module.IHIT.Tests\bin\Debug\IHITModule.pdb

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US" xml:lang="en_US">
+<head>
+<title>What's New in Version 2.0</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved." />
+<meta name="license" content="http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL" />
+</head>
+<body>
+
+<h1>EMR 2.0</h1>
+<p>
+EMR 2.0 is a Case Management application which is built on top of the open source <a href="http://www.joomla.org">Joomla</a> Content Management System and the <a href="http://www.civicrm.org/civicase">CiviCase</a> component for <a href="http://www.civicrm.org">CiviCRM</a>. It provides a way to track and manage a sequence of interactions between ASG clients, providers and referrals in the Affiliate Sante Group network. In addition to tracking and managing interactions with clients or providers, the EMR can also manage internal organizational interactions.</p>
+<p>EMR 2.0 tracks interactions in two ways: as cases and as activities. </p>
+
+<p>Activities are single interactions. For example, if a client calls to request services and the staff person opens up a case, it would be recorded as an Intake activity.</p>
+<p>
+Cases are used to track more complex interactions or communication processes. Multiple activities can be grouped together into one case, and these activities can be optionally structured in a timeline. A case can be used to track a specific workflow that must be followed, for example: a client fills out an intake form, then has an initial meeting with a staff person, and finally receives a certificate from the organisation for meeting certain goals. </p>
+
+<p>The EMR 2.0 allows for a high degree of customization to meet the needs of the Sante staff. It is important to understand the underlying principles and assumptions, as well as the elements that can be customized, before you begin to plan and configure the application based on your needs. 
+</p>
+<h2>Assumptions
+</h2>
+<p>Although EMR 2.0 is quite flexible, there are a number of assumptions about managing cases built-in to the component. These assumptions have been arrived at through an extensive trial and error process and although some of them may seem new or foreign at first, we encourage you to approach them with an open mind.
+</p>
+<ul>
+  <li>Activities are single tasks or interactions (captured in forms) between Sante staff and a client, or between people within ASG network.
+  <br /></li>
+  <li>Cases involve a sequence of interactions (<em>activities</em>). The record of these activities forms the <em>case history</em> and almost all information about a case should be stored as an activity.
+  <br /></li>
+
+  <li>Classifying cases by <em>case type</em> allows you to define work-flows and evaluate results.</li>
+  <li>Cases often have a predictable sequence of activities (a <em>standard timeline</em>). Creating a schedule with the expected <em>timeline</em> helps people working on the case to manage their work, and is a useful way to measure progress.</li>
+  <li>Cases often involve a predictable set of people involved (staff, providers, doctors etc.)<em></em>. These are <em>case roles</em>. Knowing who is playing what role in a case is helpful, and provides an easy way to communicate case activities to other people who are also working on that case.</li>
+
+  <li>Organizations may have additional people and/or outside providers (<em>case resources</em>) who are frequently contacted or involved with most or all cases.</li>
+</ul>
+<h2>Case Activities
+</h2>
+<p>Activities track specific interactions and tasks within a case. Activities may be scheduled or ad hoc, and may involve the case client, staff or provider, or a third party such as a family member or a professional who is assisting with the case such as a doctor. 
+</p>
+</p>
+<p>During the life of each case, some activities will be automatically created, such as: </p>
+<ul>
+  <li> Open Case: created at the same time the case is created.
+  <br /> </li>
+
+  <li>Follow up: you can use this type when it isn't necessary to define a more specific one (see "activity data" below).
+  <br /> </li>
+  <li>Change Case Type: created every time the type is modified.
+  <br /> </li>
+  <li>Change Case Status: created every time the status is updated.
+  <br /> </li>
+</ul>
+<h2>Case Roles and Relationships
+</h2>
+<p>The EMR 2.0 provides three mechanisms for relating people to cases and clients:
+</p>
+<ul>
+  <li>Case Roles: people directly involved in <strong>this case</strong>. These would consist of OPS Intake Specialists, Case Supervisors, Doctors and Therapists, etc. You can identify one of these roles as the <em>case supervisor</em> for a particular case type.
+  <br /></li>
+
+  <li>Other Relationships: people related to the client, with relationships that exist beyond the context of a particular case. Examples include Spouse, Sibling, Family Doctor, etc. Generally, use <em>relationships</em> when you want someone to appear on ALL cases for the same client, otherwise use a case role.</li>
+  <li>Case Resources: people and organisations that have involvement with many or all cases in your case management setting. Examples include: regulatory agency contact(s), service provider,&nbsp; frequent referral contacts, etc.</li>
+</ul>
+
+
+</body>
+</html>

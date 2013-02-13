@@ -1,0 +1,52 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.Properties.Resources.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.HumanRightsNotificationView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.Views.InformedConsentForMedicationView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.InformedConsentView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.MedicalEvalView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.NotesView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.UCCView.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\UCC.csproj.GenerateResource.Cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\UCC.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\UCC.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\UCC.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\UCC.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\UCC.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\UCC.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.Properties.Resources.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.HumanRightsNotificationView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.Views.InformedConsentForMedicationView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.InformedConsentView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.MedicalEvalView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.NotesView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.UCCView.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\UCC.csproj.GenerateResource.Cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\UCC.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\UCC.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\UCC.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\UCC.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.HumanRightsNotificationView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.Views.InformedConsentForMedicationView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.InformedConsentView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.MedicalEvalView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.NotesView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.UCCView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\UCC.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\UCC.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\UCC\UCC\obj\Release\UCC.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\UCC.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\UCC.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.Properties.Resources.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.HumanRightsNotificationView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.Views.InformedConsentForMedicationView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.InformedConsentView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.MedicalEvalView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.NotesView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\Sante.EMR.SmartClient.UCC.UCCView.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\UCC.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\UCC.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\UCC\UCC\obj\Release\UCC.pdb

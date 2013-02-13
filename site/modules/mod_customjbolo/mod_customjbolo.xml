@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>Custom HTMLfor JBolo</name>
+	<author>Joomla! Project</author>
+	<creationDate>1st March 2011</creationDate>
+	<copyright>Copyright(C)2010-2011 TechJoomla</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>jbolo@techjoomla.com</authorEmail>
+	<authorUrl>www.techjoomla.com</authorUrl>
+	<version>2.9.1</version>
+	<description>Custom HTML JBolo Module. This allows you to add the module on the chat-bar</description>
+	<files>
+		<filename module="mod_customjbolo">mod_customjbolo.php</filename>
+	</files>	
+	<params>
+		<param name="img_path" type="text" default="modules/mod_jbolo/images/icon-16-module.png" size='60' label="Module Icon Image Path" description="This will be the source of the image, which you want to show in the front end as the module icon" />
+	<param name="mod_link" type="text" default="" label="Module Link" description="This will be link of the module seen in the front end" />
+	<!--
+	<param name="mod_content" type="text" default="" label="Module Content" description="This will be content of the module seen in the front end" />
+	-->
+	</params>
+</install>

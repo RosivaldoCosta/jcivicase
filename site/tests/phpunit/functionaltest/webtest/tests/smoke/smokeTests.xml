@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+
+<project name="smokeTests" default="test">
+	<target name="test">
+		<webtest name="Smoke Tests - Administration Page">
+
+			<group description="Login">
+				<loginAdministration username="${username}" password="${passwd}" url="${url}" />
+			</group>
+
+			<group description="Set Up">
+			</group>
+			
+			<group description="Test">
+				<!-- Iterate through all the pages on the administration page -->
+				<dataDriven tableContainer="smoke/smokeTestsData.xls" description="Smoke Tests">
+					<group description="${Menu} > ${MenuItem}">
+						<clickLink label="${MenuItem}" />
+						<verifyText text="${PageTitle}" />
+						<antcall target="${SmokeTest}" inheritall="true" inheritrefs="true"/>
+					</group>
+				</dataDriven>
+			</group>
+			
+			<group description="Tear Down">
+			</group>
+			
+			<group description="Logout">
+				<logout />
+			</group>
+			
+		</webtest>		
+	</target>
+
+	<!-- Page Specific Tests -->
+    <target name="userManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+    	
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="5"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="mediaManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="2"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="globalConfiguration" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="4"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="menuManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="5"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="menuTrash" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="3"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="articleManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="10"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="articleTrash" description="${Menu} > ${Menu Item}: ${PageTitle}">
+    	
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="3"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="sectionManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="7"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="categoryManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="8"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="frontpageManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="5"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="installUninstall" description="${Menu} > ${Menu Item}: ${PageTitle}">    	
+    </target>
+
+    <target name="moduleManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+    	
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="7"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="pluginManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+    	
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="4"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="templateManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+    	
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="3"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="languageManager" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="2"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>
+    </target>
+
+    <target name="readMessages" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="4"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>    	
+    </target>
+
+    <target name="writeMessages" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="3"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>    	
+    </target>
+
+    <target name="massMail" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="3"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>    	
+    </target>
+
+    <target name="globalCheckin" description="${Menu} > ${Menu Item}: ${PageTitle}">
+    </target>
+
+    <target name="cleanCache" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="2"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>    	
+    </target>
+
+    <target name="purgeExpiredCache" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    	<!-- Buttons -->
+    	<property name="numberOfButtons" value="2"/>
+    	<verifyXPath description="Number of buttons" xpath="count(//a[@class='toolbar'])=${numberOfButtons}"/>    	
+    </target>
+
+    <target name="joomlaHelp" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    </target>
+
+    <target name="systemInfo" description="${Menu} > ${Menu Item}: ${PageTitle}">
+
+    </target>
+	
+</project>

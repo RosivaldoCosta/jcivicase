@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5">
+	<name>rsappt_pro2</name>
+	<creationDate>July 2010</creationDate>
+	<author>Soft Ventures, Inc.</author>
+	<copyright>Copyright (C) 2008 - 2010 Soft Ventures, Inc. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@softventures.com</authorEmail>
+	<authorUrl>www.softventures.com</authorUrl>
+	<version>2.0 (beta 2)</version>
+	<description>
+	
+		<![CDATA[ 
+			<p>Appointment Booking Pro system for Joomla 1.5.x </p>
+			<br />		
+			<p><u>Version 2.0 (beta 2 Oct 4/10) </u></p>
+
+		New in version 2.0 ..<br />
+		<br />
+
+		<ul>
+		<li>MVC</li>
+			<li>Edit UDF data in the booking detail screen</li>
+			<li>WYSIWYG editor for messages text</li>
+			<li>Mail functions will use JMail</li>
+			<li>Configurable Front-end Advanced Admin tabs</li>
+			<li>Extras accessible via Front-end Advanced Admin</li>		
+			<li>Include .ics attachment with confirmation email to put appointments into MS Outlook</li>
+			<li>Resource specific PayPal account setting, the PayPal account to receive payment can be set at the resource level.</li>
+			<li>PayPal timeout [optional], will release locked timeslots after x minutes. Used to free slots when customer bails out of PayPal without paying</li>
+		</ul>
+		<br />
+
+		beta 2
+		<ul>
+		  <li>.ics attachments were being sent with in-progress messages s/b just confirmations. Fixed</li>
+		  <li>Error after sending email reminders from the Front Desk screen. Fixed</li>
+		  <li>Header and Footer text not displaying. Fixed</li>
+		  <li>Config option to set name read-only for logged-in customer. New</li>
+		  <li>When using resource specific UDFs, and including the UDF value in email or calendar messages, the token for the resource specific UDF was not being removed in cases of booking other resources. Fixed</li>
+		  <li>Remove booking (admin delete) from the back-end when using Google Calendar errors out. Fixed</li>
+		  <li>Resource specific UDFs causing column alignment problems with Export to CSV. Fixed</li>
+		  <li>New views added for gad booking screen and my bookings to support facebook access. New</li>
+		</ul> 
+
+		<br />
+		</p>]]>
+	</description>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>rsappt_pro2.php</filename>
+		<filename>rsappt_pro2_ipn.php</filename>
+		<filename>CalendarPopup.js</filename>
+		<filename>date.js</filename>
+		<filename>calStyles.css</filename>
+		<filename>icon_cal.gif</filename>
+		<filename>box.png</filename>
+		<filename>fe_val.php</filename>
+		<filename>fe_fetch.php</filename>
+		<filename>fe_overlap.php</filename>
+		<filename>functions2.php</filename>
+		<filename>gad_ajax.php</filename>
+		<filename>gad_ajax2.php</filename>
+		<filename>getSlots.php</filename>
+		<filename>publish_x.png</filename>
+		<filename>script.js</filename>
+		<filename>svcalendar.php</filename>
+		<filename>svgcal.php</filename>
+		<filename>sv_apptpro.css</filename>
+		<filename>sv_apptpro_fb.css</filename>
+		<filename>tick.png</filename>
+		<filename>router.php</filename>
+		
+        <folder>controllers</folder>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>ajax</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_rsappt_pro2.ini</language>
+	</languages>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.rsappt_pro2.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.rsappt_pro2.sql</file>
+		</sql>
+	</uninstall>
+
+<!--	<installfile>install.abpro.php</installfile>-->
+
+	<administration>
+		<menu>Appointment Scheduler</menu>
+		<!--<submenu>
+			<menu link="option=com_rsappt_pro2&amp;controller=cpanel" img="components/com_rsappt_pro2/images/control_16.png" >Control Panel</menu>
+			<menu link="option=com_rsappt_pro2&amp;controller=requests" img="components/com_rsappt_pro2/images/bookings_16.png" >Appointments</menu>
+			<menu link="option=com_rsappt_pro2&amp;controller=categories" img="components/com_rsappt_pro2/images/pad_16.png" >Categories</menu>
+			<menu link="option=com_rsappt_pro2&amp;controller=resources" img="components/com_rsappt_pro2/images/resources_16.png" >Resources</menu>
+			<menu link="option=com_rsappt_pro2&amp;controller=services" img="components/com_rsappt_pro2/images/pad_16.png" >Services</menu>
+			<menu link="option=com_rsappt_pro2&amp;controller=timeslots" img="components/com_rsappt_pro2/images/timeslots_16.png" >Time Slots</menu>
+			<menu link="option=com_rsappt_pro2&amp;controller=bookoffs" img="components/com_rsappt_pro2/images/bookoffs_16.png" >Book-Offs</menu>
+			<menu link="option=com_rsappt_pro2&amp;controller=udfs" img="components/com_rsappt_pro2/images/udf_16.png" >UDFs</menu>
+			<menu link="option=com_rsappt_pro2&amp;controller=config_detail" img="components/com_rsappt_pro2/images/configure_16.png" >Configure</menu>
+		</submenu>-->
+	
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>admin.rsappt_pro2.php</filename>
+			<filename>backup.php</filename>
+			<filename>restore.php</filename>
+			<filename>import.php</filename>
+			<filename>sendmail_pro2.php</filename>
+			<filename>functions_pro2.php</filename>
+			<filename>overlib_mini.js</filename>
+			<filename>tooltip.png</filename>
+			<filename>config.xml</filename>
+
+			<!-- database script -->
+			<filename>install.rsappt_pro2.sql</filename>
+			<filename>uninstall.rsappt_pro2.sql</filename>
+
+            <folder>controllers</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>models</folder>
+			<folder>help</folder>
+			<folder>helpers</folder>
+			<folder>images</folder>
+			
+			
+		</files>
+
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_rsappt_pro2.ini</language>
+		</languages>
+
+	</administration>
+
+</install>

@@ -1,0 +1,22 @@
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : Unexpected error : 
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : An error occurred executing SQL: 
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : SELECT activity_date_time, case_id,activity_id as case_activity_id FROM civicrm_case_activity INNER Join civicrm_activity on civicrm_case_activity.activity_id=civicrm_activity.id where activity_type_id=37 
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : Column 'case_id' in field list is ambiguous
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.core.database.Database.openQuery(Database.java:1790)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.trans.steps.tableinput.TableInput.doQuery(TableInput.java:214)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.trans.steps.tableinput.TableInput.processRow(TableInput.java:127)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.trans.step.BaseStep.runStepThread(BaseStep.java:2889)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.trans.steps.tableinput.TableInput.run(TableInput.java:345)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : Caused by: java.sql.SQLException: Column 'case_id' in field list is ambiguous
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2975)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1600)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1695)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at com.mysql.jdbc.Connection.execSQL(Connection.java:3026)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1137)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1231)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.core.database.Database.openQuery(Database.java:1751)
+2011/06/18 21:40:02 - civicrm_case_activity.0 - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	... 4 more
+2011/06/18 21:40:02 - Assessment and Treatment Custom Fields - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : Errors detected!
+2011/06/18 21:40:02 - Assessment and Treatment Custom Fields - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : Errors detected!

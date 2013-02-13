@@ -1,0 +1,369 @@
+{include file="CRM/Report/Form.tpl"}
+{if $rows}
+<STYLE> 
+{literal}
+		<!-- 
+		BODY,DIV,TABLE,THEAD,TBODY,TFOOT,TR,TH,TD,P { font-family:"Arial"; font-size:x-small }
+		 -->
+{/literal}
+	</STYLE> 
+<TABLE FRAME=VOID CELLSPACING=0 COLS=28 RULES=NONE BORDER=0> 
+	<COLGROUP><COL WIDTH=118><COL WIDTH=118><COL WIDTH=8><COL WIDTH=61><COL WIDTH=4><COL WIDTH=48><COL WIDTH=19><COL WIDTH=33><COL WIDTH=52><COL WIDTH=52><COL WIDTH=61><COL WIDTH=52><COL WIDTH=52><COL WIDTH=8><COL WIDTH=52><COL WIDTH=1><COL WIDTH=61><COL WIDTH=52><COL WIDTH=33><COL WIDTH=19><COL WIDTH=52><COL WIDTH=33><COL WIDTH=53><COL WIDTH=6><COL WIDTH=1><COL WIDTH=15><COL WIDTH=1><COL WIDTH=78></COLGROUP> 
+	<TBODY> 
+		<TR> 
+			<TD COLSPAN=22 WIDTH=991 HEIGHT=28 ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000">Telephone Calls Report</FONT></B></TD> 
+			<TD WIDTH=53 ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD WIDTH=6 ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD WIDTH=1 ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD WIDTH=15 ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD WIDTH=1 ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD WIDTH=78 ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD HEIGHT=42 ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD COLSPAN=18 ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000"></FONT></B></TD> 
+			<TD ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD ALIGN=CENTER VALIGN=TOP><B><FONT SIZE=4 COLOR="#800000"><BR></FONT></B></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD HEIGHT=14 ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD COLSPAN=2 HEIGHT=28 ALIGN=LEFT VALIGN=TOP><B><FONT COLOR="#000000"><BR></FONT></B></TD> 
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" COLSPAN=22 ALIGN=LEFT VALIGN=TOP BGCOLOR="#808000"><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 HEIGHT=28 ALIGN=CENTER VALIGN=TOP BGCOLOR="#808000"><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">TTL</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Jul</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Aug</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Sep</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Oct</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Nov</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Dec</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Jan</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Feb</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Mar</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Apr</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">May</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">Jun</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=4 ALIGN=CENTER VALIGN=TOP><B><FONT COLOR="#000000">12 Mnth Avg</FONT></B></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+
+		<TR> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 HEIGHT=28 ALIGN=LEFT VALIGN=TOP><B><FONT COLOR="#000000">1.  TTL Incoming Calls</FONT></B></TD> 
+			
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="1913" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.total_calls}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-righe 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.Jul}{$rows.in.Jul}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.Aug}{$rows.in.Aug}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.Sep}{$rows.in.Sep}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="1124" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.Oct}{$rows.in.Oct}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="789" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.Nov}{$rows.in.Nov}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.December}{$rows.in.December}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.Jan}{$rows.in.Jan}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.Feb}{$rows.in.Feb}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.Mar}{$rows.in.Mar}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.Apr}{$rows.in.Apr}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.May}{$rows.in.May}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{if $rows.in.Jun}{$rows.in.Jun}{else}0{/if}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=4 ALIGN=CENTER VALIGN=TOP SDVAL="159.416666666667" SDNUM="1033;0;[$-409]0.00"><FONT COLOR="#000000">{$rows.in.avg}</FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 HEIGHT=28 ALIGN=LEFT VALIGN=TOP><B><FONT SIZE=1 COLOR="#000000">   Number of Incoming Adult (18+)</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="1558" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.total}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Jul}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Aug}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Sep}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="906" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Oct}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="652" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Nov}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.December}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Jan}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Feb}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.March}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Apr}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.May}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Jun}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=4 ALIGN=CENTER VALIGN=TOP SDVAL="129.833333333333" SDNUM="1033;0;[$-409]0.00"><FONT COLOR="#000000">{$rows.in.adult.avg}</FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 HEIGHT=28 ALIGN=LEFT VALIGN=TOP><B><FONT SIZE=1 COLOR="#000000">   Number of Incoming Child (0-17)</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="355" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.total}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Jul}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Aug}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Sep}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="218" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Oct}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="137" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Nov}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.December}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Jan}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Feb}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Mar}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Apr}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.May}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Jun}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=4 ALIGN=CENTER VALIGN=TOP SDVAL="29.5833333333333" SDNUM="1033;0;[$-409]0.00"><FONT COLOR="#000000">{$rows.in.child.avg}</FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 HEIGHT=28 ALIGN=LEFT VALIGN=TOP><B><FONT SIZE=1 COLOR="#000000">   Number of Incoming Admin</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=4 ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" COLSPAN=23 HEIGHT=28 ALIGN=LEFT VALIGN=TOP BGCOLOR="#808000"><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 HEIGHT=28 ALIGN=LEFT VALIGN=TOP><B><FONT COLOR="#000000">2.  TTL Outgoing Calls</FONT></B></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="2389" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.total}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" COLSPAN="2" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.Jul}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" COLSPAN="2" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.Aug}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="1353" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.Sep}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="1036" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.Oct}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.Nov}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.December}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.Jan}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" COLSPAN="2" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.Feb}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" COLSPAN="2" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.March}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.Apr}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.out.May}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="199.083333333333" SDNUM="1033;0;[$-409]0.00"><FONT COLOR="#000000">{$rows.out.Jun}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=4 ALIGN=CENTER VALIGN=TOP SDVAL="199.083333333333" SDNUM="1033;0;[$-409]0.00"><FONT COLOR="#000000">{$rows.out.avg}</FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 HEIGHT=28 ALIGN=LEFT VALIGN=TOP><B><FONT SIZE=1 COLOR="#000000">   Number of Outgoing Adult (18+)</FONT></B></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="1928" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.total}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Jul}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Aug}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Sep}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="1082" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Oct}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="846" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Nov}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.December}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Jan}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN="2" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Feb}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN="2" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Mar}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Apr}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN="2" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.May}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.adult.Jun}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="160.666666666667" COLSPAN="4" SDNUM="1033;0;[$-409]0.00"><FONT COLOR="#000000">{$rows.in.adult.avg}</FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 HEIGHT=28 ALIGN=LEFT VALIGN=TOP><B><FONT SIZE=1 COLOR="#000000">   Number of Outgoing Child (0-17)</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="461" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Jul}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Aug}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Sep}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Oct}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="271" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Nov}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="190" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.December}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Jan}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Feb}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Mar}</FONT></TD> 
+
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Apr}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.May}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">{$rows.in.child.Jun}</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP SDVAL="0" SDNUM="1033;0;[$-409]General"><FONT COLOR="#000000">0</FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=4 ALIGN=CENTER VALIGN=TOP SDVAL="38.4166666666667" SDNUM="1033;0;[$-409]0.00"><FONT COLOR="#000000">{$rows.in.child.avg}</FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 HEIGHT=28 ALIGN=LEFT VALIGN=TOP><B><FONT SIZE=1 COLOR="#000000">   Number of Outgoing Admin</FONT></B></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=3 ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=2 ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD STYLE="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" COLSPAN=4 ALIGN=CENTER VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" COLSPAN=23 HEIGHT=28 ALIGN=LEFT VALIGN=TOP BGCOLOR="#808000"><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD HEIGHT=14 ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+		<TR> 
+			<TD COLSPAN=6 HEIGHT=266 ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF"><FONT COLOR="#000000"><BR><IMG SRC="BCCRS%20Calls%20YTD_html_m323fface.png" WIDTH=310 HEIGHT=265 HSPACE=26 VSPACE=0> 
+			</FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD COLSPAN=8 ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF"><FONT COLOR="#000000"><BR><IMG SRC="BCCRS%20Calls%20YTD_html_m2b61ea39.png" WIDTH=309 HEIGHT=265 HSPACE=29 VSPACE=0> 
+			</FONT></TD> 
+			<TD COLSPAN=13 ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF"><FONT COLOR="#000000"><BR><IMG SRC="BCCRS%20Calls%20YTD_html_6d96535a.png" WIDTH=327 HEIGHT=265 HSPACE=45 VSPACE=0> 
+			</FONT></TD> 
+			</TR> 
+		<TR> 
+			<TD HEIGHT=280 ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT VALIGN=TOP><FONT COLOR="#000000"><BR></FONT></TD> 
+			<TD ALIGN=LEFT><BR></TD> 
+		</TR> 
+	</TBODY> 
+</TABLE> 
+{/if}

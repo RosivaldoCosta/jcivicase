@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin"  group="system">
+	<name>System - Tine 200</name>
+	<author>Telix Group</author>
+	<creationDate>October 2011</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.5</version>
+	<description>Handles user SSO authentication  with Tine 2.0</description>
+	<files>
+		<filename plugin="tine20system">tine20system.php</filename>
+		<filename>Tinebase-FAT-joomla.js</filename>
+		
+	</files>
+	<params>
+		<param name="tine_url" type="text" default="tine/" label="Tine Url" description="PARAMFOLLOW"/>
+	
+	</params>
+</install>

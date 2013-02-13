@@ -1,0 +1,22 @@
+<macrodef name="deleteCategory" description="Delete category">
+	<attribute name="name"/>
+	<attribute name="section"/>
+
+	<sequential>
+		<clickLink label="Category Manager" />
+		<verifyText text="Category Manager" />
+		
+		<!-- Filter category based on the name -->
+		<setSelectField name="sectionid" text="@{section}"/>
+		<setInputField name="search" value="@{name}" />
+		<!-- Go -->
+		<clickButton xpath="(//button)[1]" />
+		
+		<!-- Select the category -->
+		<setCheckbox name="toggle" checked="true" />
+		
+		<!-- Delete the category -->		
+		<clickLink xpath="(//a[@class='toolbar'])[5]"/>
+		
+	</sequential>
+</macrodef>

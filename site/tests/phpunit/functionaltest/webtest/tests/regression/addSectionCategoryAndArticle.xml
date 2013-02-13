@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<project name="addSectionCategoryAndArticle" default="test">
+	<target name="test">
+		<webtest name="Regression Tests: Add Section, Category and Article">
+
+			<group description="Login">
+				<loginAdministration username="${username}" password="${passwd}" url="${url}" />
+			</group>
+
+			<group description="Set Up">
+				<!-- Get the timestamp to create unique namings -->
+				<tstamp prefix="test">
+					<format property="TODAY" pattern="dd MMMM yyyy HH:mm:ss" />
+				</tstamp>
+
+				<!-- Define the names for the section, category and the article -->
+				<property name="section" value="TestSection ${test.TODAY}" />
+				<property name="category" value="TestCategory ${test.TODAY}" />
+				<property name="article" value="TestArticle ${test.TODAY}" />
+			</group>
+
+			<group description="Test">
+				<!-- Create the section, the category and the article -->
+				<addSection name="${section}" />
+				<addCategory name="${category}" section="${section}" />
+				<addArticle name="${article}" section="${section}" category="${category}" />
+			</group>
+
+			<group description="Tear Down">
+				<!-- Trash the section, the category and the article -->
+				<trashArticle name="${article}" section="${section}" category="${category}" />
+				<deleteAllArticlesInTrash />
+				<deleteCategory name="${category}" section="${section}" />
+				<deleteSection name="${section}" />
+			</group>
+
+			<group description="Logout">
+				<logout />
+			</group>
+
+		</webtest>
+	</target>
+</project>

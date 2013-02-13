@@ -1,0 +1,32 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.dll.config
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.XmlSerializers.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.dll
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.XmlSerializers.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.dll.config
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.XmlSerializers.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.dll
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.XmlSerializers.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.dll.config
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.XmlSerializers.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\Infrastructure.Data.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.XmlSerializers.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Infrastructure.Data.dll.config
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Infrastructure.Data.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Infrastructure.Data.XmlSerializers.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\Infrastructure.Data.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Data\Infrastructure.Data\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.dll
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Infrastructure.Data\Infrastructure.Data\obj\Release\Infrastructure.Data.XmlSerializers.dll

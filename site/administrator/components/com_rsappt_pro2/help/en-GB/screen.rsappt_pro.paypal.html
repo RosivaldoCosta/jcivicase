@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PayPal</title>
+<link href="../css/help.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>PayPal</h1>
+
+<h2>Description</h2>
+<p><em>Your customers do not need a PayPal account to purchase with PayPal. </em></p>
+<p>Appointment Booking Pro 1.4 can be set to:</p>
+<ul>
+  <li><strong>Not use PayPal</strong> - no PayPal payment is invoked.</li>
+  <li><strong>Only use PayPal</strong> - the user can <strong>only</strong> make a booking if they pay.</li>
+  <li><strong>Offer both PayPal and non-PayPal</strong> - you can give the user the choice, two buttons one for PayPal, one for no-PayPal (pay later)</li>
+</ul>
+<p>With PayPal enabled, the booking screen will show the calculated  cost at hours x rate, or flat rate depending on how you set it up. </p>
+<p>The other main difference when enabling PayPal, is that a new  request will get inserted with a status of 'pending' rather than 'new'.  The user is sent to PayPal to make their payment. They are sent back to  your site. In a separate thread, PayPal processes the payment and sends  an IPN (Instant Payment Notification) message to your site. This IPN is  really not 'instant' and your customer may have been returned to your  site before the IPN arrives. In this case the in-progress message is  shown to the customer. When PayPal completes the payment processing,  they send the customer an email and send your site an IPN message. When  the customer comes back to your site, the return page checks to see if  the transaction has completed. If it has it displays the confirmation  message, if not it displays the in-progress message. These messages are  set in the 'Messages' tab. </p>
+<p>There is a possibility that the customer may abandon the booking  after being sent to PayPal. In this case the booking will stay in  'pending' and need to be cleared manually. If the customer elects to  'Cancel' the payment in PayPal, the IPN will reflect that and ABPro  will set the request from 'pending' to 'canceled'.</p>
+<hr />
+<p>The relation between ABPro's <em>'Auto-Accept</em>' and <em>'PayPal Enabled'</em> is show below.</p>
+<p><strong>PayPal = No</strong> (no PayPal submit button)</p>
+<blockquote>
+  <p> <strong>Auto-Accept = Yes</strong><br />
+    New booking status = 'Accepted' (timeslot locked)<br />
+    <br />
+    <strong>Auto-Accept = No</strong><br />
+    New booking status = 'New' (timeslot not locked)<br />
+  </p>
+  <p> </p>
+</blockquote>
+<p><strong>PayPal = Yes</strong> (ONLY PayPal submit button shown)</p>
+<blockquote>
+  <p> <strong>Auto-Accept = Yes</strong><br />
+    New booking status = 'Pending' -&gt; goes to 'Accepted' on IPN ok  (Pending locks appointment)<br />
+    <br />
+    <strong>Auto-Accept = No</strong><br />
+    New booking status = 'New'<br />
+    Accept on Payment = Yes -&gt; goes to 'Accepted' on IPN ok</p>
+  <p> </p>
+</blockquote>
+<p><strong>PayPal = Optional</strong> (both submit buttons shown)</p>
+<blockquote>
+  <p> <u>non-PayPal Submit</u><br />
+      <strong>Auto-Accept = Yes</strong><br />
+    New booking status = 'Accepted'<br />
+    <br />
+    <strong>Auto-Accept = No</strong><br />
+    New booking status = 'New'</p>
+  <p> <u>PayPal Submit</u><br />
+      <strong>Auto-Accept = Yes</strong><br />
+    New booking status = 'Pending' -&gt; goes to 'Accepted' on IPN ok        (Pending locks appointment)</p>
+  <p><strong>Auto-Accept = No</strong><br />
+    New booking status = 'New'<br />
+    Accept on Payment = Yes -&gt; goes to 'Accepted' on IPN ok</p>
+  <p> </p>
+</blockquote>
+<p><em><strong>Important!!</strong></em></p>
+<p>When a booking is made with status 'Pending', the timeslot is locked  just as if it were accepted. The display GAD display will show a dashed  border so you can see what timeslots are 'Pending'. Normally a slot  should only be 'Pending' for a few minute (seconds?) while PayPal is  processing the payment. If the user aborts out of PayPal without  paying, the slot will stay 'Pending' (and locked) until admin deletes  it.</p>
+<p>  </p>
+<hr />
+<p> </p>
+<h2>Toolbar Icons</h2>
+
+
+<p><strong>Remove:</strong> Deletes one or more booking requests.</p>
+<p><strong>View:</strong> Opens the PayPal Tranactions screen to allow you to view the details as received from PayPal.</p>
+<p><strong>Export/CSV:</strong> Exports request details for one or more PayPal Tranactions to a csv file. The csv file can be read into Excel for reporting purposes.</p>
+<p><strong>Help:</strong> Opens this help screen.</p>
+<p>&nbsp;</p>
+<h2>Filters</h2>
+<p><strong>Date:</strong> Filter by date, use the 'Clear Date' link to remove filter. </p>
+<p> The date returned by PayPal is a plain text field so sorting by it may provide unexpected ordering. It is better to sort by the Timestamp field as that is the date/time the IPN message came in fom PayPal.</p>
+<p>&nbsp;</p>
+<h2>List Area</h2>
+<p><strong>PayPal txnID:</strong> Unique identified generated by PayPal for the transaction.<br /> 
+  <strong>Request ID</strong>: The ABPro request to which this PayPal transaction refers.<br /> 
+  <strong>Buyer`s Name:</strong> Name of the person who made the PayPal transaction. This may not be the same name as on the booking request.<br />  	
+  <strong>Email:</strong> Email address of the person who made the PayPal transaction. This may not be the same name as on the booking request.<br />  	
+  <strong>Date:</strong> Date and time of the PayPal transaction.<br />  	
+  <strong>Status:</strong> PayPal status.<br />
+  <strong>Total:</strong> Total amount of transaction.<br />
+  <strong>Fee:</strong> Fee if any<br />  	
+  <strong>Tax: </strong>Tax if any<br />  	
+  <strong>Timestamp:</strong> Date and time PayPal IPN was received by ABPro.</p>
+<p>Click on the <strong>PayPal Txn</strong> link to view the details of the PayPal transaction (read only)</p>
+<p></p>
+<p></p>
+<div align="center" style="margin-top: 30px; margin-bottom: 30px;">
+<a href="#" onclick="javascript:window.close();"><span class="small">Close Window</span></a>
+</div>
+
+</body>
+</html>

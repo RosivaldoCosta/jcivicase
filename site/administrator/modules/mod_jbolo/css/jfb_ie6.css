@@ -1,0 +1,616 @@
+
+
+
+.chatboxinput img{ cursor:pointer; }
+img.smileyimage { margin-left:20px; }
+
+#jfb_previous
+{
+display:none;
+}
+
+#jfb_next
+{
+display:none;
+}
+
+ul#jfbusers li
+{
+	list-style-type:none !important;
+}
+ul#jfbusers
+{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+
+.chatboxtextarea{padding:2px !important;width:180px !important;border:0px !important;overflow:auto !important;}
+
+.chatboxtextareaselected{margin:1px !important;}
+.chatboxinput{background-image:url('../../../components/com_jbolo/img/chat.gif') !important;background-repeat:no-repeat !important;padding:0px !important;border-top-color:#93A2C1 !important;border-top-style:solid !important;border-top-width:2px !important;}
+
+.chatboxtextarea {
+	height:16px !important;
+}
+
+.jfb_insideimage
+{
+	background-color:#FFFFFF !important;	
+}
+
+
+img.timgidclass
+{
+	height:40px !important;
+	left:3px !important;
+	top:1px !important;
+	position:relative !important;
+	width:40px !important;
+}
+
+
+
+a.jfb_anchor 
+{
+	-moz-background-clip:border !important;
+	-moz-background-inline-policy:continuous !important;
+	-moz-background-origin:padding !important;
+	background:transparent url(../img/green.jpg) no-repeat scroll 3px center !important;
+	border:medium none !important;
+	color:#000000 !important;
+	display:block;
+	font-weight:normal !important;
+	padding:3px 0 3px 16px !important;
+	position:relative;
+	text-align:left !important;
+	text-decoration:none !important;
+}
+a.jfb_anchor:hover 
+{
+	-moz-background-clip:border !important;
+	-moz-background-inline-policy:continuous !important;
+	-moz-background-origin:padding !important;
+	background:#526EA6 url(../img/green.jpg) no-repeat scroll 3px center !important;
+	border:medium none !important;
+	color:#FFFFFF !important;
+	font-weight:normal !important;
+	padding:3px 0 3px 16px !important;
+	text-align:left !important;
+	text-decoration:none !important;
+}
+a.jfb_anchor span.tooltip 
+{
+	display:none;
+}
+
+
+.chatboxhead 
+{
+	background:#526EA6 none repeat scroll 0 0;
+	border-color:#254588 #254588 #526EA6;
+	border-style:solid;
+	border-width:1px;
+	cursor:hand;
+	overflow:hidden !important;
+}
+
+
+.chatbox 
+{
+	right:0 !important;
+	/*margin-right:269px !important;*/
+	border:1px solid #333333;
+	margin-bottom:25px;
+	top:expression( ( -320 + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	position:expression("absolute");
+}
+
+div.mainchat div#chbox-holder div.ch-box-tl 
+{
+	background-color:#E0ECFF !important;
+}
+
+#jfb_nav_menu_wrapper 
+{ /* this will ba used as a wrapper for the nav_menu so we can center it (nav_menu). especially for IE */
+	z-index: 10990;
+	font-size: 11px;
+	width: 100%;
+	/*position: fixed;*/
+	align:right;
+ 	bottom: 0;
+ 	left: 0;
+	text-align: right;
+	padding:0px !important;
+	position:expression("absolute");
+	top:expression( ( -34 + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+
+}
+
+	#jfb_nav_menu_wrapper .jfb_nav_menu 
+	{ /* the menu itself */
+		height:33px !important; /* fix bar's height */
+		width:auto !important; /* fixed width */
+		padding:0px !important;
+
+		/* center this div */
+		margin-left:20px !important;
+		
+		/* add effect */
+		background-color:#E5E5E5 !important;
+		border:#B5B5B5 solid 1px;
+		border-bottom:none;
+	}
+
+.jfb_normal-active
+{
+	font-family: "lucida grande", tahoma, verdana;
+	font-size: 11px;
+	float: right;
+	margin: 0px;
+	height: 24px;
+	padding: 0px;
+	width: auto;
+	text-align: left;
+	background: #fff;
+	color: #000000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-top: solid 1px #FFF;
+	margin-right: -1px;
+}
+
+.jfb_normal img, .jfb_normal-active img
+{
+	float: left;
+	margin: 3px;
+}
+
+.jfb_normal div, .jfb_normal-active div
+{
+	font-family: "lucida grande", tahoma, verdana;
+	font-size: 11px;
+	float: left;
+	height: 25px;
+}
+.jfb_app
+{
+	float: left;
+	margin: 0px;
+	font-size: 9pt;
+	height: 25px !important;
+	padding: 0px !important;
+	width: 100px !important; 
+	text-align: center;
+	color: #333333;
+	background-repeat:repeat-x;
+	border-right: solid 1px #B5B5B5;
+	border-bottom-style: none;
+	display: block;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	line-height:20px;
+	cursor:pointer;
+}
+.jfb_app:hover
+{
+	background:#FFF no-repeat center left;
+	color:#000000;
+	cursor: hand;
+}
+
+.jfb_app-active:hover
+{
+	cursor: hand;
+}
+.jfb_icons
+	{float: left;
+	margin: 0px;
+	font-size: 9pt;
+	height: 25px !important;
+	padding: 0px !important;
+	width: 25px !important;
+	text-align: center;
+	color: #333333;
+	background-repeat:repeat-x;
+	border-bottom-style: none;
+	display: block;
+	line-height:20px;
+	}
+.jfb_icons:hover
+{
+	background:#FFF no-repeat center left;
+	color:#000000;
+	cursor: hand;
+}
+
+.jfb_icons-active:hover
+{
+	cursor: hand;
+}
+
+.jfb_icons span.hasTip img{
+	border:0px;
+	margin:0px;
+}
+.jfb_normal
+{
+	float: right;
+	margin: 0px;
+	font-size: 9pt;
+	height: 25px;
+	padding: 0px !important;
+	width: 123px !important;
+	color: #444444;
+	background-repeat:repeat-x;
+	border-left: solid 1px #B5B5B5;
+	border-bottom-style: none;
+	display: block;
+	text-align:center;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+	line-height:25px;
+	font-weight:bold;
+}
+
+.jfb_normal:hover
+{
+	background:#FFF no-repeat center left;
+	color:#000000;
+	cursor: hand !important;
+}
+
+.jfb_normal-active:hover
+{
+	cursor: hand !important;
+}
+
+#jfb_acttext{
+	text-align:center !important;
+	padding:0px !important;
+	width:100% !important;
+	cursor:pointer;
+}
+
+.jfb_chattext
+{	
+	text-align:left !important;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif !important;	
+	padding:0px !important;
+	width:100% !important;
+	cursor: pointer;
+}
+
+
+.jfb_chat
+{
+	width:99.4% !important;
+	float: right;
+	font-size: 9pt;
+	height: 25px;
+	padding: 0px 0px 0px 1px !important;
+	color: #444444;
+	background-color:#CFCFCF;
+	background-repeat:repeat-x;
+	border-left: solid 1px #B5B5B5;
+	border-bottom-style: none;
+	display: block;
+	text-align:left;
+	overflow:hidden;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:10px;
+	line-height:25px;
+	font-weight:bold;
+}
+
+.jfb_chat:hover
+{
+	background:#FFF no-repeat center left;
+	color:#000000;
+	cursor: pointer;
+}
+
+.jfb_chat-active:hover
+{
+	cursor: pointer;
+}
+
+.jfb_chat a{
+	text-decoration:none;
+}
+
+
+
+.jfb_chatbuttons
+{
+	float: right;
+	margin: 0px;
+	font-size: 9pt;
+	height: 25px !important;
+	padding: 0px;
+	width: 20px !important;
+	color: #444444;
+	background-repeat:repeat-x;
+	border-left: solid 1px #B5B5B5;
+	border-bottom-style: none;
+	border-right: solid 1px #B5B5B5;;
+	display: block;
+	text-align:center;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+	line-height:20px;
+	font-weight:bold;
+}
+
+
+.jfb_chatbx
+{
+	position:expression("absolute");
+	top:expression( ( -193 + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	z-index:10980;
+	bottom:25px;
+	right:0px !important;
+	margin-right:19px !important;
+	height:auto;
+	width:250px !important;
+	visibility:hidden;
+	padding:0px !important;
+}
+
+.jfb_chtop
+{
+	color:#FFFFFF;
+	cursor:pointer;
+	font-size:12px;
+	font-weight:bold;
+	height:20px !important;
+	line-height:15px;
+	width:245px !important;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#526EA6 none repeat scroll 0 0 !important;
+	border-color:#333333 #333333 black;
+	border-style:solid;
+	border-width:1px;
+	cursor:pointer;
+	padding:1px !important;
+
+}
+
+.jfb_chtitle
+{
+	width:232px !important;
+	float:left;
+	padding:2px;
+	color:white;
+	padding:0px !important;
+
+
+}
+
+.jfb_clchat
+{
+	color:white;
+	cursor:pointer;
+	text-align:right;
+	float:left;
+	width:10px !important;
+	padding:0px !important;
+
+}
+
+.jfb_mainchat
+{
+	border-color:#333333 #333333 black;
+	border-style:solid;
+	border-width:1px;
+	border-top:none;
+	overflow-x:hidden !important;
+	overflow-y:auto !important;
+	background-color:#FFFFFF !important;
+	padding:2px !important;
+	width:97.3% !important;
+	height:110px !important;
+	clear:both;
+	position:relative;
+}.chatboxistatus{
+	height:52px;
+}
+.jfb_actvty
+{
+	background-color:#FFFFFF;
+	position:expression("absolute");
+	top:expression( ( -356 + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	
+	z-index:10980;
+	bottom:25px;
+	right:0px !important;
+	margin-right:20px !important;
+	height:auto;
+	width:250px !important;
+	visibility:hidden;
+	padding:0px !important;
+	display:none;
+
+}
+
+.jfb_actop
+{
+	color:#FFFFFF;
+	cursor:pointer;
+	font-size:12px;
+	font-weight:bold;
+	height:20px !important;
+	line-height:15px;
+	width:248px !important;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#526EA6 none repeat scroll 0 0 !important;
+	border-color:#254588 #254588 #526EA6;
+	border-style:solid;
+	border-width:1px;
+	padding:0px !important;
+}
+
+.jfb_actitle
+{
+	width:230px !important;
+	float:left;
+	padding:2px !important;
+	color:white;
+}
+
+.jfb_clact
+{
+	color:white;
+	cursor:pointer;
+	text-align:right;
+	float:left;
+	padding:0px !important;
+	width:10px !important;
+}
+
+.jfb_mainact
+{
+	background-color:#FFFFFF !important;
+	padding:2px !important;
+	width:98% !important;
+    color:#555555 !important;
+}
+
+.jfb_mainact a
+{
+    color:#000000 !important;
+}
+
+
+
+.jfb_maintest
+{
+	border-color:#254588 #254588 #526EA6;
+	border-style:solid;
+	border-width:1px;
+	border-top:none;
+	width:248px !important;
+	position:relative;
+	height:300px !important;
+	overflow:auto !important;
+	padding:0px !important;
+}
+
+.jfb_imgcss
+{
+	margin-left:50px;
+	margin-top:-35px;
+	position:absolute;
+}
+
+
+#jfb_stage
+{
+	padding:0px !important;
+	/*width:227px !important;*/ 
+	height:25px !important;
+	z-index: 11020; 
+	float:right;
+}
+
+#jfb_myList
+{
+	border:0; 
+	float:right; 
+	width:auto !important; 
+	margin:0;
+	padding:0 !important; 
+	z-index: 11030; 
+}
+	
+#jfb_myList span
+{
+	list-style:none; 
+	padding:0 !important;
+	border:0; 
+	border-left: solid 1px #B5B5B5;
+	background:none !important;
+	float:right;
+	width:110px !important;
+	z-index:11040;
+}
+
+
+
+.jfb_insidechat
+{
+	padding:0px 1px 0px 0px !important;
+	float:left !important;
+	width:80% !important;	
+	height:100% !important;
+	overflow:hidden !important;
+}
+.jfb_insidechat a
+{
+	background:url('../images/greendot.gif') no-repeat 2px center !important;
+	padding-left:12px !important;
+	display:block !important;
+	height:100% !important;
+	white-space:nowrap !important;
+}
+
+
+
+.jfb_chatclose
+{
+	padding:0px !important;
+	width:19% !important;
+	float:left !important;
+}
+
+.jfb_chatclose a
+{
+	background:url('../images/fbcross-faint.gif') no-repeat 99% center !important;
+	display:block;
+	width:98%;
+}
+
+.jfb_chatclose a:hover
+{
+	text-decoration:none !important;
+	background:url('../images/fbcross.gif') no-repeat 99% center !important;
+	display:block;
+}
+
+.jfb_chatclose:hover
+{
+	color:#000000 !important;
+}	
+
+#jfb_useroptions
+{
+	background-color:#FFFFFF !important;
+	border-style:none solid solid;
+	border-width:medium 1px 1px;
+	padding:2px 0px !important;
+	float:left !important;
+	width:248px !important;
+	color: #000;
+	cursor:pointer;
+}
+span.jfb_useroptions
+{
+	float:left !important;
+}
+#jfb_useroptions:hover 
+{
+	background-color:#526EA6 !important;
+	border-right:1px solid black;
+	border-left:1px solid black;
+	color:#FFFFFF !important;
+	font-weight:normal !important;
+	padding:2px 0 !important;
+	text-decoration:none !important;
+	cursor:pointer !important;
+}

@@ -1,0 +1,193 @@
+<?php
+/*
+ ****************************************************************
+ Copyright (C) 2008-2010 Soft Ventures, Inc. All rights reserved.
+ ****************************************************************
+ * @package	Appointment Booking Pro - ABPro
+ * @copyright	Copyright (C) 2008-2010 Soft Ventures, Inc. All rights reserved.
+ * @license	GNU/GPL, see http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * ABPro is distributed WITHOUT ANY WARRANTY, or implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * This header must not be removed. Additional contributions/changes
+ * may be added to this header as long as no information is deleted.
+ *
+ ************************************************************
+ The latest version of ABPro is available to subscribers at:
+ http://www.appointmentbookingpro.com/
+ ************************************************************
+*/
+
+
+// no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' );
+
+	JHTML::_('behavior.tooltip');
+	jimport( 'joomla.application.helper' );
+
+	$user =& JFactory::getUser();
+	if($user->get('usertype') != 'Super Administrator')
+	{
+?><script type="text/javascript">elem = document.getElementById("submenu"); elem.parentNode.removeChild(elem);</script>
+<?php
+	}
+	$itemid = JRequest::getString( 'Itemid', '' );
+	$option = JRequest::getString( 'option', '' );
+
+
+	$front_desk_view = $this->front_desk_view;
+	$front_desk_resource_filter = $this->front_desk_resource_filter;
+	$front_desk_status_filter = $this->front_desk_status_filter;
+	$front_desk_user_search = $this->front_desk_user_search;
+
+	$front_desk_cur_week_offset = $this->front_desk_cur_week_offset;
+	$front_desk_cur_day = $this->front_desk_cur_day;
+	$front_desk_cur_month = $this->front_desk_cur_month;
+	$front_desk_cur_year = $this->front_desk_cur_year;
+
+
+	$retore_settings = "";
+	switch($front_desk_view){
+		case "month":
+			if($front_desk_cur_month != ""){
+				$retore_settings = "'', '".$front_desk_cur_month."', '".$front_desk_cur_year."', ''";
+			}
+			break;
+		case "week":
+			if($front_desk_cur_week_offset != ""){
+				$retore_settings = "'', '', '', '".$front_desk_cur_week_offset."'";
+			}
+			break;
+		case "day":
+			if($front_desk_cur_day != ""){
+				$retore_settings = "'".$front_desk_cur_day."', '', '', ''";
+			}
+			break;
+	}
+
+
+	$showform= true;
+
+	if(!$user->guest){
+
+		$database = &JFactory::getDBO();
+		// get resources
+		$sql = "SELECT * FROM #__sv_apptpro2_resources ".
+		"WHERE resource_admins LIKE '%|".$user->id."|%' and Published=1 ".
+		"ORDER BY ordering;";
+		//echo $sql;
+		$database->setQuery($sql);
+		$res_rows = $database -> loadObjectList();
+		if ($database -> getErrorNum()) {
+			echo $database -> stderr();
+			return false;
+		}
+
+		$database = &JFactory::getDBO();
+		$sql = 'SELECT * FROM #__sv_apptpro2_config';
+		$database->setQuery($sql);
+		$apptpro_config = NULL;
+		$apptpro_config = $database -> loadObject();
+		if ($database -> getErrorNum()) {
+			echo "DB Err: ". $database -> stderr();
+			return false;
+		}
+
+		// get statuses
+		$sql = "SELECT * FROM #__sv_apptpro2_status WHERE internal_value!='deleted' ORDER BY ordering ";
+		//echo $sql;
+		$database->setQuery($sql);
+		$statuses = $database -> loadObjectList();
+		if ($database -> getErrorNum()) {
+			echo "DB Err: ". $database -> stderr();
+			return false;
+		}
+
+	} else{
+		echo "<font color='red'>".JText::_('RS1_ADMIN_SCRN_NO_LOGIN')."</font>";
+
+		$showform = false;
+	}
+
+	// add new booking link
+	//$link 	= JRoute::_( 'index.php?option=com_rsappt_pro2&controller=frontdesk&task=add_booking&frompage=frontdesk&Itemid='.$itemid);
+	$link 	= JRoute::_( 'index.php?option=com_civicrm&task=civicrm/contact/view/activity&action=add&reset=1&selectedChild=activity&atype=43');
+
+?>
+
+<?php 
+
+$extpath = "/flexdds/administrator/components/com_extscheduler/ext3/";
+if($showform){?>
+<link rel="stylesheet" type="text/css" href="<?php echo $extpath; ?>resources/css/ext-all.css" />
+    <script type="text/javascript" src="<?php echo $extpath; ?>adapter/ext/ext-base-debug.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/ext-all-debug.js"></script>
+
+    <!-- Calendar-specific includes -->
+    <link rel="stylesheet" type="text/css" href="<?php echo $extpath; ?>resources/css/calendar.css" />
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/Ext.calendar.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/templates/DayHeaderTemplate.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/templates/DayBodyTemplate.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/templates/DayViewTemplate.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/templates/BoxLayoutTemplate.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/templates/MonthViewTemplate.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/dd/CalendarScrollManager.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/dd/StatusProxy.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/dd/CalendarDD.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/dd/DayViewDD.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/EventRecord.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/views/MonthDayDetailView.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/widgets/CalendarPicker.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/WeekEventRenderer.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/views/CalendarView.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/views/MonthView.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/views/DayHeaderView.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/views/DayBodyView.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/views/DayView.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/views/WeekView.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/widgets/DateRangeField.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/widgets/ReminderField.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/EventEditForm.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/EventEditWindow.js"></script>
+    <script type="text/javascript" src="<?php echo $extpath; ?>src/CalendarPanel.js"></script>
+
+    <!-- App -->
+    <link rel="stylesheet" type="text/css" href="<?php echo $extpath; ?>resources/css/examples.css" />
+
+   <script type="text/javascript" src="<?php echo $extpath; ?>app/calendar-list.js"></script>
+   <script type="text/javascript" src="<?php echo $extpath; ?>app/event-list.js"></script>
+   <!--<script type="text/javascript" src="<?php echo $extpath; ?>app/event-list.php"></script>-->
+   <script type="text/javascript" src="<?php echo $extpath; ?>app/test-app.js"></script>
+
+<div style="display:none;">
+    <div id="app-header-content">
+        <!--<div id="app-logo">
+            <div class="logo-top">&nbsp;</div>
+            <div id="logo-body">&nbsp;</div>
+            <div class="logo-bottom">&nbsp;</div>
+        </div>
+        <h1>Ext JS Calendar</h1>
+	-->
+        <span id="app-msg" class="x-hidden"></span>
+    </div>
+    </div>
+</body>
+<script>
+	// Hide the Admin Menu under Joomla! 1.5
+        //try{
+                //Ext.fly('header-box').hide();
+		//Ext.fly('border-top').hide();
+		Ext.fly('ap-wrapper').hide();
+        //} catch(e) {}
+
+    var updateLogoDt = function(){
+        document.getElementById('logo-body').innerHTML = new Date().getDate();
+    }
+    //updateLogoDt();
+    //setInterval(updateLogoDt, 1000);
+</script>
+
+<?php } ?>
+

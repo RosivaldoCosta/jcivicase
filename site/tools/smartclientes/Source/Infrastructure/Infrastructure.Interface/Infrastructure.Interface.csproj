@@ -1,0 +1,115 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16230282-B136-4D4E-B42C-5EE673C62D29}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sante.EMR.SmartClient.Infrastructure.Interface</RootNamespace>
+    <AssemblyName>Infrastructure.Interface</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HttpServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0505b774db687742, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\KnowlTek\Sante\HttpServer_v1.0_debug\HttpServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI, Version=1.0.51205.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\KnowlTek\Sante\code\EMR SmartClient\Lib\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms, Version=1.0.51205.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\KnowlTek\Sante\code\EMR SmartClient\Lib\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\KnowlTek\Sante\code\EMR SmartClient\Lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\KnowlTek\Sante\code\EMR SmartClient\Lib\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessEntities\InformedMedicationConsent.cs" />
+    <Compile Include="BusinessEntities\MCTAssessmentAndTreatment.cs" />
+    <Compile Include="BusinessEntities\AuthorizationRelease.cs" />
+    <Compile Include="BusinessEntities\Case.cs" />
+    <Compile Include="BusinessEntities\ConsentForServices.cs" />
+    <Compile Include="BusinessEntities\DataObj.cs" />
+    <Compile Include="BusinessEntities\Factory.cs" />
+    <Compile Include="BusinessEntities\CaseQueue.cs" />
+    <Compile Include="BusinessEntities\Employee.cs" />
+    <Compile Include="BusinessEntities\Form.cs" />
+    <Compile Include="BusinessEntities\FormQueue.cs" />
+    <Compile Include="BusinessEntities\HumanRights.cs" />
+    <Compile Include="BusinessEntities\IHITIndividualTreatment.cs" />
+    <Compile Include="BusinessEntities\InformedConsent.cs" />
+    <Compile Include="BusinessEntities\Intake.cs" />
+    <Compile Include="BusinessEntities\Lethality.cs" />
+    <Compile Include="BusinessEntities\MCTDispatch.cs" />
+    <Compile Include="BusinessEntities\medeval.cs" />
+    <Compile Include="BusinessEntities\NextTask.cs" />
+    <Compile Include="BusinessEntities\ProgressNote.cs" />
+    <Compile Include="BusinessEntities\Patient.cs" />
+    <Compile Include="BusinessEntities\PrivacyPractices.cs" />
+    <Compile Include="BusinessEntities\Telephone.cs" />
+    <Compile Include="Constants\Coordinates.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Constants\CommandNames.cs" />
+    <Compile Include="Constants\EventTopicNames.cs" />
+    <Compile Include="Constants\UIExtensionSiteNames.cs" />
+    <Compile Include="Constants\WorkspaceNames.cs" />
+    <Compile Include="Services\EntityTranslatorException.cs" />
+    <Compile Include="Services\IActionCatalogService.cs" />
+    <Compile Include="Services\IActionCondition.cs" />
+    <Compile Include="Services\IEntityTranslator.cs" />
+    <Compile Include="Services\IEntityTranslatorService.cs" />
+    <Compile Include="Services\IImpersonationContext.cs" />
+    <Compile Include="Services\IImpersonationService.cs" />
+    <Compile Include="Services\IWorkspaceLocatorService.cs" />
+    <Compile Include="ActionAttribute.cs" />
+    <Compile Include="ControlledWorkItem.cs" />
+    <Compile Include="EventArgs.cs" />
+    <Compile Include="IWorkItemController.cs" />
+    <Compile Include="Presenter.cs" />
+    <Compile Include="View\FormView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FormView.Designer.cs">
+      <DependentUpon>FormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkItemController.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

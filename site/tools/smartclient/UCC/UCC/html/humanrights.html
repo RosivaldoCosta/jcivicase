@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0095)https://65.216.170.16/emrtestSante/Casehistory/blank/HumanRightsNotification.asp?CaseNumber=459 -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Human Rights Notification</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>.style2 {
+	FONT-SIZE: 10px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style3 {
+	FONT-SIZE: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style4 {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+BODY {
+	BACKGROUND-COLOR: #00ccff
+}
+</STYLE>
+
+<SCRIPT language=JavaScript>
+javascript:window.history.forward(1);
+// Declaring valid date character, minimum year and maximum year
+var dtCh= "/";
+var minYear=1900;
+var maxYear=2100;
+
+function isInteger(s){
+	var i;
+    for (i = 0; i < s.length; i++){   
+        // Check that current character is number.
+        var c = s.charAt(i);
+        if (((c < "0") || (c > "9"))) return false;
+    }
+    // All characters are numbers.
+    return true;
+}
+
+function stripCharsInBag(s, bag){
+	var i;
+    var returnString = "";
+    // Search through string's characters one by one.
+    // If character is not in bag, append to returnString.
+    for (i = 0; i < s.length; i++){   
+        var c = s.charAt(i);
+        if (bag.indexOf(c) == -1) returnString += c;
+    }
+    return returnString;
+}
+
+function daysInFebruary (year){
+	// February has 29 days in any year evenly divisible by four,
+    // EXCEPT for centurial years which are not also divisible by 400.
+    return (((year % 4 == 0) && ( (!(year % 100 == 0)) || (year % 400 == 0))) ? 29 : 28 );
+}
+function DaysArray(n) {
+	for (var i = 1; i <= n; i++) {
+		this[i] = 31
+		if (i==4 || i==6 || i==9 || i==11) {this[i] = 30}
+		if (i==2) {this[i] = 29}
+   } 
+   return this
+}
+
+function isDate(dtStr){
+	var daysInMonth = DaysArray(12)
+	var pos1=dtStr.indexOf(dtCh)
+	var pos2=dtStr.indexOf(dtCh,pos1+1)
+	var strMonth=dtStr.substring(0,pos1)
+	var strDay=dtStr.substring(pos1+1,pos2)
+	var strYear=dtStr.substring(pos2+1)
+	strYr=strYear
+	if (strDay.charAt(0)=="0" && strDay.length>1) strDay=strDay.substring(1)
+	if (strMonth.charAt(0)=="0" && strMonth.length>1) strMonth=strMonth.substring(1)
+	for (var i = 1; i <= 3; i++) {
+		if (strYr.charAt(0)=="0" && strYr.length>1) strYr=strYr.substring(1)
+	}
+	month=parseInt(strMonth)
+	day=parseInt(strDay)
+	year=parseInt(strYr)
+	if (pos1==-1 || pos2==-1){
+		alert("The date format should be : mm/dd/yyyy")
+		return false
+	}
+	if (strMonth.length<1 || month<1 || month>12){
+		alert("Please enter a valid month")
+		return false
+	}
+	if (strDay.length<1 || day<1 || day>31 || (month==2 && day>daysInFebruary(year)) || day > daysInMonth[month]){
+		alert("Please enter a valid day")
+		return false
+	}
+	if (strYear.length != 4 || year==0 || year<minYear || year>maxYear){
+		alert("Please enter a valid 4 digit year between "+minYear+" and "+maxYear)
+		return false
+	}
+	if (dtStr.indexOf(dtCh,pos2+1)!=-1 || isInteger(stripCharsInBag(dtStr, dtCh))==false){
+		alert("Please enter a valid date")
+		return false
+	}
+return true
+}
+
+function ValidateForm(){
+	var dt=document.form1.EmployeeDate
+	var dp=document.form1.PatientDate
+	if (isDate(dt.value)==false){
+		dt.focus()
+		return false
+	}
+	if (isDate(dp.value)==false){
+		dp.focus()
+		return false
+	}
+    return true
+ }//-->
+</SCRIPT>
+
+<META content="MSHTML 6.00.6000.16825" name=GENERATOR></HEAD>
+<BODY>
+<FORM id=form1 name=form1 onsubmit="return ValidateForm()" 
+action=/emrtestSante/Casehistory/blank/HumanRightsNotification.asp?CaseNumber=459 
+method=post>
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=950 border=1>
+  <TBODY>
+  <TR>
+    <TD width=220><IMG height=51 src="humanrights_files/SmallLogo.gif" 
+      width=201></TD>
+    <TD width=200>
+      <DIV align=center><SPAN class=style2>Affiliated Sante Group<BR>Rock Creek 
+      Foundation<BR>Sante Medical Associates </SPAN></DIV></TD>
+    <TD class=style2 width=259>
+      <DIV align=center>Corporate Headquarters<BR>12120 Plum Orchard Drive Suite 
+      E<BR>Silver Spring, MD 20904 </DIV></TD>
+    <TD class=style2 width=271>
+      <DIV align=center>Tel: 301.589.2303<BR>SPA: 
+      888.867.2683<BR>WWW.THESANTEGROUP.ORG</DIV></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=950 border=0>
+  <TBODY>
+  <TR>
+    <TD height=64>
+      <DIV align=center><SPAN class=style3>HUMAN RIGHTS NOTIFICATION 
+      </SPAN></DIV></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=900 border=0>
+  <TBODY>
+  <TR>
+    <TD height=45><SPAN class=style4>All recipients of services from the 
+      Affiliated Sante Group are entitled to the following human rights: 
+    </SPAN></TD></TR>
+  <TR>
+    <TD class=style4 height=59><STRONG>Non-Discrimination</STRONG>: You are 
+      entitled to receive treatment regardless of your race, sex, creed, mental 
+      or physical handicap, national or gin, marital status, religious or 
+      political beliefs and affiliations, or sexual orientation. You will be 
+      treated with courtesy, respect, and full recognition of your individuality 
+      and dignity. </TD></TR>
+  <TR>
+    <TD class=style4 height=70><STRONG>General Information:</STRONG> You are 
+      entitled to be informed about all rules of the program and services. 
+      Before your admission to the program, you will be informed of admission, 
+      attendance, and discharge policies. You have the right to know why you are 
+      being discharged and plans for your mental health and physical health 
+      requirements after you are discharged. You have the right to access a 
+      private physician of your choice at your own expense. </TD></TR>
+  <TR>
+    <TD class=style4 height=74><STRONG>Fees:</STRONG> In language that you can 
+      understand and before you are admitted to the program, you are entitled to 
+      know how much your treatment costs, who will pay for it, any limit to the 
+      amount they will pay, and any amount for which you are responsible for 
+      payment. You have a right to be free from exploitation for financial gain. 
+      This includes misuse of any funds for your use or care. </TD></TR>
+  <TR>
+    <TD class=style4 height=118><STRONG>Treatment Services:</STRONG> All 
+      services will provide consistent with relevant federal, state, and local 
+      laws and regulations. Your treatment will be provided in the least 
+      restrictive environment that is available and appropriate for your needs. 
+      You will be informed which staff member(s) are responsible for your care. 
+      You will be asked to participate in the development of your treatment plan 
+      and your treatment will be provided consistent with the plan you helped 
+      develop. You may ask for a review of your treatment plan at any time. You 
+      have the right to be informed of alternative types of treatment. You will 
+      be informed about any changes (and why) in your treatment. You have the 
+      right to have your care explained to you and to be informed what we will 
+      do if you refuse any treatment. You have to right to refuse treatment, but 
+      if treatment is ordered by a court, we will be obligated to inform the 
+      court of your decision. </TD></TR>
+  <TR>
+    <TD class=style4 height=58><STRONG>Medication:</STRONG> You may refuse 
+      medication as part of your treatment. If you choose to take medication, 
+      you will be informed of the reasons for it, what it is intended to do, of 
+      any common side effects, and of any risks with the medication. </TD></TR>
+  <TR>
+    <TD class=style4 height=58><STRONG>Research</STRONG>: You have the right 
+      to refuse to participate in any research trial. You will be informed if 
+      you will be participating in any medication (or treatment) trial. If you 
+      do choose to participate in such a trial, you will be given all relevant 
+      information required by law so that you can make an informed decision 
+      about your participation. </TD></TR>
+  <TR>
+    <TD class=style4 height=58><STRONG>Media Use</STRONG>: You have a right to 
+      know if any tape recorders, televisions, movies, or photographs will be 
+      used in your treatment. You have a right to refuse their use and to 
+      understand what will happen if you refuse to have them used. </TD></TR>
+  <TR>
+    <TD class=style4 height=59><STRONG>Restraints:</STRONG> You have the right 
+      to be free of chemical or physical restraints except for restraints 
+      ordered by a qualified member of the staff which are clearly indicated for 
+      your protection or that of others. </TD></TR>
+  <TR>
+    <TD>
+      <P align=left><SPAN class=style4><STRONG>Confidentiality:</STRONG> All of 
+      the information recorded in your record, in accordance with medical record 
+      policy is confidential except for the following legal or regulatory 
+      exceptions:<BR>-You have signed a consent to release information 
+      form<BR>-There is a court order signed by a jury appointed or elected 
+      judge<BR>-There is a perceived threat of injury to yourself or 
+      others.<BR>-There is a suspicion of abuse involving children or other 
+      vulnerable individuals.<BR>-Representatives of funding source for your 
+      treatment or services require that your records be made available to them 
+      with your written consent. </SPAN><BR><BR></P></TD></TR>
+  <TR>
+    <TD class=style4 height=58><STRONG>Record review:</STRONG> You have the 
+      right to review your record consistent with company procedures and legal 
+      requirements. If your physician believes it would be harmful for you to 
+      review your medical record, you have a right to a written summary of the 
+      section(s) of the record which your physician believes might be harmful. 
+    </TD></TR>
+  <TR>
+    <TD class=style4 height=56><STRONG>Freedom from abuse:</STRONG> You have 
+      the right to be free from mental or physical abuse, harassment, physical 
+      punishment, or humiliating, threatening or exploiting actions. You have 
+      the right to have any allegations of abuse reported to local law 
+      enforcement agencies. </TD></TR>
+  <TR>
+    <TD class=style4 height=81><STRONG>Legal:</STRONG> You have the right to 
+      representation by a lawyer in matters relating to care. You may consult 
+      with a lawyer and have your lawyer interview staff who work with a 
+      previously worked with you. You may have access to your medical records in 
+      accordance with company procedures and legal regulations. You have a right 
+      to have a lawyer provide information before a hearing or other judicial 
+      proceeding. </TD></TR>
+  <TR>
+    <TD class=style4 height=47><STRONG>Grievances:</STRONG> You have a right 
+      to present a grievance and to understand how we handle your complaint (see 
+      Grievance Procedure posted in all waiting rooms). </TD></TR>
+  <TR>
+    <TD class=style4 height=53>I have read and understand these human rights. 
+      I have had the opportunity to ask questions about them and have received 
+      answers to my questions. I have been given a copy of these human rights. 
+    </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=900 border=0>
+  <TBODY>
+  <TR>
+    <TD height=68>
+      <TABLE width=875>
+        <TBODY>
+        <TR>
+          <TD><LABEL><INPUT type=radio value=Client name=Person> 
+          Client</LABEL></TD>
+          <TD><LABEL><INPUT type=radio value=Parent name=Person> 
+          Parent</LABEL></TD>
+          <TD><LABEL><INPUT type=radio value="Legal Guardian" name=Person> 
+            Legal Guardian</LABEL></TD>
+          <TD><LABEL><INPUT type=radio value="Authorized Representative" 
+            name=Person> Authorized 
+  Representative</LABEL></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=900 border=0>
+  <TBODY>
+  <TR>
+    <TD class=style4 width=550><LABEL><INPUT id=PFirstName maxLength=50 
+      size=50 value=HumanRightsCient_Case_459_20090510 name=PFirstName> 
+      </LABEL><INPUT id=CaseNumber type=hidden value=459 name=CaseNumber> <INPUT 
+      id=Depart type=hidden value=UCC name=Depart> <BR>Client/other authorized 
+      signature </TD>
+    <TD class=style4 width=354><LABEL><INPUT id=PatientDate maxLength=20 
+      name=PatientDate> </LABEL><BR>Date</TD></TR>
+  <TR>
+    <TD class=style4><LABEL><INPUT id=StaffSig maxLength=50 size=50 
+      value=HumanRightsEmployee_Case_459_20090510 name=StaffSig> <BR>Staff 
+      Signature </LABEL></TD>
+    <TD class=style4><LABEL><INPUT id=EmployeeDate maxLength=20 
+      name=EmployeeDate> </LABEL><BR>Date</TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=900 border=0>
+  <TBODY>
+  <TR>
+    <TD height=78><LABEL>
+      <DIV align=center><INPUT id=EmployeeID type=hidden value=91 
+      name=EmployeeID> <INPUT type=submit value=Submit name=Submit> 
+      </DIV></LABEL></TD></TR></TBODY></TABLE><INPUT type=hidden value=form1 
+name=MM_insert> </FORM></BODY></HTML>

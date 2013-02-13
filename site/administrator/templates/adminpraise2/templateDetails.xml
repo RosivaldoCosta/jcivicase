@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install type="template" version="1.5.0" client="administrator">
+	<name>AdminPraise 2</name>
+	<creationDate>3/14/09</creationDate>
+	<author>JoomlaPraise</author>
+	<authorEmail>support@joomlapraise.com</authorEmail>
+	<authorUrl>http://www.joomlapraise.com</authorUrl>
+	<copyright>Copyright JoomlaPraise 2008</copyright>
+	<license></license>
+	<version>2.3</version>
+	<description>
+		<![CDATA[
+		JoomlaPraise Administration Template for Joomla! 1.5 &copy; 2009 JoomlaPraise<br />
+		Please report stolen copies or abuse to support@joomlapraise.com<br />
+		Tango Icons Copyright Tango Desktop Project<br />
+		Component Logos are Copyright and Trademark of their respective owners.<br />
+		To automatically configure AdminPraise2, go <a style="color: red; font-weight: bold" href="index.php?adminpraise2install=true">here</a>.
+		]]>
+	</description> 
+	<installfile>install.adminpraise2.php</installfile>
+	<files>
+		<filename>component.php</filename>
+		<filename>cpanel.php</filename>
+		<filename>cpanel-module.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>footer.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>install.adminpraise2.php</filename>
+		<filename>jpanenamedsliders.php</filename>
+		<filename>login.php</filename>
+		<filename>params.ini</filename>
+		<filename>quicklaunch.php</filename>
+		<filename>right.php</filename>
+		<filename>template_thumbnail.png</filename>
+		
+		<filename>assets/cmsmarketconnect/cmsmarketconnect.php</filename>
+		<filename>assets/cmsmarketconnect/cmsmconnect_logo.png</filename>
+		<filename>assets/cmsmarketconnect/index.html</filename>
+		<filename>assets/cmsmarketconnect/template.php</filename>
+
+		<filename>css/ie7.css</filename>
+		<filename>css/menu.css</filename>
+		<filename>css/template.css</filename>
+		<filename>css/theme1.css</filename>
+		<filename>css/theme2.css</filename>
+		<filename>css/theme3.css</filename>
+		<filename>css/theme4.css</filename>
+		<filename>css/theme5.css</filename>
+		<filename>css/theme6.css</filename>
+		
+		<filename>custom/index.html</filename>
+		<filename>custom/custom.class.php</filename>
+		<filename>custom/custom.controller.php</filename>
+		<filename>custom/custom.html.php</filename>
+		<filename>custom/custom.php</filename>
+		
+		<filename>html/modules.php</filename>
+		<filename>html/mod_breadcrumbs/index.html</filename>
+		<filename>html/mod_breadcrumbs/mod_breadcrumbs.php</filename>
+		<filename>html/mod_menu/index.html</filename>
+		<filename>html/mod_menu/helper.php</filename>
+		<filename>html/mod_menu/menu.php</filename>
+		<filename>html/mod_menu/mod_menu.php</filename>
+
+		<filename>images/header/icon-48-archive.png</filename>
+		<filename>images/header/icon-48-article-add.png</filename>
+		<filename>images/header/icon-48-article.png</filename>
+		<filename>images/header/icon-48-category.png</filename>
+		<filename>images/header/icon-48-checkin.png</filename>
+		<filename>images/header/icon-48-component.png</filename>
+		<filename>images/header/icon-48-config.png</filename>
+		<filename>images/header/icon-48-content.png</filename>
+		<filename>images/header/icon-48-cpanel.png</filename>
+		<filename>images/header/icon-48-extension.png</filename>
+		<filename>images/header/icon-48-frontpage.png</filename>
+		<filename>images/header/icon-48-generic.png</filename>
+		<filename>images/header/icon-48-help_header.png</filename>
+		<filename>images/header/icon-48-inbox.png</filename>
+		<filename>images/header/icon-48-info.png</filename>
+		<filename>images/header/icon-48-install.png</filename>
+		<filename>images/header/icon-48-language.png</filename>
+		<filename>images/header/icon-48-massmail.png</filename>
+		<filename>images/header/icon-48-media.png</filename>
+		<filename>images/header/icon-48-menu.png</filename>
+		<filename>images/header/icon-48-menumgr.png</filename>
+		<filename>images/header/icon-48-module.png</filename>
+		<filename>images/header/icon-48-plugin.png</filename>
+		<filename>images/header/icon-48-print.png</filename>
+		<filename>images/header/icon-48-section.png</filename>
+		<filename>images/header/icon-48-static.png</filename>
+		<filename>images/header/icon-48-stats.png</filename>
+		<filename>images/header/icon-48-themes.png</filename>
+		<filename>images/header/icon-48-trash.png</filename>
+		<filename>images/header/icon-48-user.png</filename>
+		<filename>images/header/index.html</filename>
+
+		<filename>images/apple-touch-icon.png</filename>
+		<filename>images/publish_g.png</filename>
+		
+		<filename>images/logos/com_acajoom.png</filename>
+		<filename>images/logos/com_analytics.png</filename>
+		<filename>images/logos/com_banners.png</filename>
+		<filename>images/logos/com_cache.png</filename>
+		<filename>images/logos/com_community.png</filename>
+		<filename>images/logos/com_comprofiler.png</filename>
+		<filename>images/logos/com_config.png</filename>
+		<filename>images/logos/com_contact.png</filename>
+		<filename>images/logos/com_content.png</filename>
+		<filename>images/logos/com_cpanel.png</filename>
+		<filename>images/logos/com_customquickicons.png</filename>
+		<filename>images/logos/com_defender.png</filename>
+		<filename>images/logos/com_docman.png</filename>
+		
+		<filename>images/logos/com_easysearch.png</filename>
+		<filename>images/logos/com_easytoolbar2.png</filename>
+		<filename>images/logos/com_extplorer.png</filename>
+		<filename>images/logos/com_fireboard.png</filename>
+		<filename>images/logos/com_forme.png</filename>
+		<filename>images/logos/com_fpss.png</filename>
+		
+		<filename>images/logos/com_installer.png</filename>
+		<filename>images/logos/com_jcacl.png</filename>
+		<filename>images/logos/com_jcalpro.png</filename>
+		<filename>images/logos/com_jcommunity.png</filename>
+		<filename>images/logos/com_jce.png</filename>
+		<filename>images/logos/com_jcs.png</filename>
+		<filename>images/logos/com_jfbconnect.png</filename>
+		
+		<filename>images/logos/com_joomlaxplorer.png</filename>
+		<filename>images/logos/com_jposition.png</filename>
+		<filename>images/logos/com_jsbill.png</filename>
+		<filename>images/logos/com_jsmassmail.png</filename>
+		<filename>images/logos/com_juser.png</filename>
+		<filename>images/logos/com_jxplorer.png</filename>
+		<filename>images/logos/com_k2.png</filename>
+		<filename>images/logos/com_languages.png</filename>
+		<filename>images/logos/com_massmail.png</filename>
+		<filename>images/logos/com_menus.png</filename>
+		<filename>images/logos/com_messages.png</filename>
+		<filename>images/logos/com_modules.png</filename>
+		<filename>images/logos/com_newsfeeds.png</filename>
+		<filename>images/logos/com_ninjaxplorer.png</filename>
+		
+		<filename>images/logos/com_plugins.png</filename>
+		<filename>images/logos/com_poll.png</filename>
+		
+		<filename>images/logos/com_projectfork.png</filename>
+		<filename>images/logos/com_resource.png</filename>
+		
+		<filename>images/logos/com_search.png</filename>
+		
+		<filename>images/logos/com_sh404sef.png</filename>
+		
+		<filename>images/logos/com_templates.png</filename>
+		<filename>images/logos/com_tpi.png</filename>
+		<filename>images/logos/com_users.png</filename>
+		<filename>images/logos/com_virtuemart.png</filename>
+		<filename>images/logos/com_weblinks.png</filename>
+		<filename>images/logos/com_wrapper.png</filename>
+
+		<filename>images/logos/mod_apdock.png</filename>
+		<filename>images/logos/mod_apicons.png</filename>
+		<filename>images/logos/mod_apmenu.png</filename>
+		<filename>images/logos/mod_apquicklaunch.png</filename>
+		<filename>images/logos/mod_archive.png</filename>
+		<filename>images/logos/mod_banners.png</filename>
+		<filename>images/logos/mod_breadcrumbs.png</filename>
+		<filename>images/logos/mod_cblogin.png</filename>
+		<filename>images/logos/mod_comprofilermoderator.png</filename>
+		<filename>images/logos/mod_comprofileronline.png</filename>
+		<filename>images/logos/mod_custom.png</filename>
+		<filename>images/logos/mod_customquickicons.png</filename>
+		<filename>images/logos/mod_easysearch.png</filename>
+		<filename>images/logos/mod_esqicon.png</filename>
+		<filename>images/logos/mod_feed.png</filename>
+		<filename>images/logos/mod_footer.png</filename>
+		<filename>images/logos/mod_fpss.png</filename>
+		<filename>images/logos/mod_jcequickicon.png</filename>
+		<filename>images/logos/mod_jfbcinvite.png</filename>
+		<filename>images/logos/mod_jfbclogin.png</filename>
+		<filename>images/logos/mod_latest.png</filename>
+		<filename>images/logos/mod_latestnews.png</filename>
+		<filename>images/logos/mod_logged.png</filename>
+		<filename>images/logos/mod_login.png</filename>
+		<filename>images/logos/mod_mainmenu.png</filename>
+		<filename>images/logos/mod_menu.png</filename>
+		<filename>images/logos/mod_mostread.png</filename>
+		<filename>images/logos/mod_myeditor.png</filename>
+		<filename>images/logos/mod_newsflash.png</filename>
+		<filename>images/logos/mod_online.png</filename>
+		<filename>images/logos/mod_poll.png</filename>
+		<filename>images/logos/mod_popular.png</filename>
+		<filename>images/logos/mod_praisesessions.png</filename>
+		<filename>images/logos/mod_quickicon.png</filename>
+		<filename>images/logos/mod_random_image.png</filename>
+		<filename>images/logos/mod_related_items.png</filename>
+		<filename>images/logos/mod_search.png</filename>
+		<filename>images/logos/mod_sections.png</filename>
+		<filename>images/logos/mod_stats.png</filename>
+		<filename>images/logos/mod_status.png</filename>
+		<filename>images/logos/mod_submenu.png</filename>
+		<filename>images/logos/mod_syndicate.png</filename>
+		<filename>images/logos/mod_title.png</filename>
+		<filename>images/logos/mod_toolbar.png</filename>
+		<filename>images/logos/mod_ualog.png</filename>
+		<filename>images/logos/mod_unread.png</filename>
+		<filename>images/logos/mod_whosonline.png</filename>
+		<filename>images/logos/mod_wrapper.png</filename>
+
+		<filename>images/logos/index.html</filename>
+		<filename>images/logos/missing.png</filename>
+		
+		<filename>images/theme1/bullet.png</filename>
+		<filename>images/theme1/button-bg.jpg</filename>
+		<filename>images/theme1/collapse-bg.jpg</filename>
+		<filename>images/theme1/cpanel-logo.png</filename>
+		<filename>images/theme1/crumb-on.jpg</filename>
+		<filename>images/theme1/crumbs-bg.jpg</filename>
+		<filename>images/theme1/head-blue.jpg</filename>
+		<filename>images/theme1/header-bg.jpg</filename>
+		<filename>images/theme1/head-green.jpg</filename>
+		<filename>images/theme1/head-lime.jpg</filename>
+		<filename>images/theme1/head-purple.jpg</filename>
+		<filename>images/theme1/head-red.jpg</filename>
+		<filename>images/theme1/logo.png</filename>
+		<filename>images/theme1/logo.gif</filename>
+		<filename>images/theme1/mainnav-bg.png</filename>
+		<filename>images/theme1/menu-bg.jpg</filename>
+		<filename>images/theme1/menu-bg.png</filename>
+		<filename>images/theme1/tab-on.jpg</filename>
+
+		<filename>images/theme2/button-bg.jpg</filename>
+		<filename>images/theme2/head-j-black.jpg</filename>
+		<filename>images/theme2/header-bg.jpg</filename>
+		<filename>images/theme2/logo.png</filename>
+		<filename>images/theme2/mainnav-bg.png</filename>
+
+		<filename>images/theme3/button-bg.jpg</filename>
+		<filename>images/theme3/cpanel-logo.png</filename>
+		<filename>images/theme3/head-gray.jpg</filename>
+		<filename>images/theme3/header-bg.jpg</filename>
+		<filename>images/theme3/logo.png</filename>
+		<filename>images/theme3/mainnav-bg.png</filename>
+		<filename>images/theme3/tabs-bg.jpg</filename>
+		<filename>images/theme3/toolbar-bg.jpg</filename>
+
+		<filename>images/theme4/cpanel-logo.png</filename>
+		<filename>images/theme4/dock-bg.png</filename>
+		<filename>images/theme4/head-wp.jpg</filename>
+		<filename>images/theme4/input-bg.jpg</filename>
+		<filename>images/theme4/logo.png</filename>
+		<filename>images/theme4/mainnav-bg.png</filename>
+
+		<filename>images/theme5/cpanel-logo.png</filename>
+		<filename>images/theme5/crumbs-bg.jpg</filename>
+		<filename>images/theme5/dock-bg.png</filename>
+		<filename>images/theme5/head-off-blue.jpg</filename>
+		<filename>images/theme5/header-bg.jpg</filename>
+		<filename>images/theme5/mainbody-bg.jpg</filename>
+		<filename>images/theme5/mainnav-bg.png</filename>
+		<filename>images/theme5/tab-on.jpg</filename>
+		<filename>images/theme5/toolbar-bg.jpg</filename>
+	
+		<filename>images/theme6/collapse-l.png</filename>
+		<filename>images/theme6/collapse-r.png</filename>
+		<filename>images/theme6/dock-bg.png</filename>
+		<filename>images/theme6/logo.png</filename>
+
+		<filename>images/icons/cpanel/articles.png</filename>
+		<filename>images/icons/cpanel/category.png</filename>
+		<filename>images/icons/cpanel/components.png</filename>
+		<filename>images/icons/cpanel/files.png</filename>
+		<filename>images/icons/cpanel/frontpage.png</filename>
+		<filename>images/icons/cpanel/general.png</filename>
+		<filename>images/icons/cpanel/installer.png</filename>
+		<filename>images/icons/cpanel/languages.png</filename>
+		<filename>images/icons/cpanel/link.png</filename>
+		<filename>images/icons/cpanel/media.png</filename>
+		<filename>images/icons/cpanel/menus.png</filename>
+		<filename>images/icons/cpanel/modules.png</filename>
+		<filename>images/icons/cpanel/newart.png</filename>
+		<filename>images/icons/cpanel/newcat.png</filename>
+		<filename>images/icons/cpanel/newmenu.png</filename>
+		<filename>images/icons/cpanel/newsec.png</filename>
+		<filename>images/icons/cpanel/newuser.png</filename>
+		<filename>images/icons/cpanel/plugins.png</filename>
+		<filename>images/icons/cpanel/section.png</filename>
+		<filename>images/icons/cpanel/templates.png</filename>
+		<filename>images/icons/cpanel/trash.png</filename>
+		<filename>images/icons/cpanel/users.png</filename>
+
+		<filename>images/icons/dock/articles.png</filename>
+		<filename>images/icons/dock/category.png</filename>
+		<filename>images/icons/dock/config.png</filename>
+		<filename>images/icons/dock/dock-bg.png</filename>
+		<filename>images/icons/dock/extensions.png</filename>
+		<filename>images/icons/dock/files.png</filename>
+		<filename>images/icons/dock/gear.png</filename>
+		<filename>images/icons/dock/go-home.png</filename>
+		<filename>images/icons/dock/info.png</filename>
+		<filename>images/icons/dock/installer.png</filename>
+		<filename>images/icons/dock/menus.png</filename>
+		<filename>images/icons/dock/module.png</filename>
+		<filename>images/icons/dock/newart.png</filename>
+		<filename>images/icons/dock/plugin.png</filename>
+		<filename>images/icons/dock/section.png</filename>
+		<filename>images/icons/dock/start.png</filename>
+		<filename>images/icons/dock/stop.png</filename>
+		<filename>images/icons/dock/users.png</filename>
+		<filename>images/icons/dock/wallpaper.png</filename>
+
+		<filename>images/icons/help/blog.png</filename>
+		<filename>images/icons/help/doc.png</filename>
+		<filename>images/icons/help/help.png</filename>
+		<filename>images/icons/help/resource.png</filename>
+		
+		<filename>images/icons/menu/collapse-l.png</filename>
+		<filename>images/icons/menu/collapse-r.png</filename>
+		<filename>images/icons/menu/down.png</filename>
+		<filename>images/icons/menu/globals.png</filename>
+		<filename>images/icons/menu/search.png</filename>
+		
+		<filename>images/icons/quicklaunch/checkin.png</filename>
+		<filename>images/icons/quicklaunch/debug.png</filename>
+		<filename>images/icons/quicklaunch/files.png</filename>
+		<filename>images/icons/quicklaunch/fullscreen.png</filename>
+		<filename>images/icons/quicklaunch/general.png</filename>
+		<filename>images/icons/quicklaunch/home.png</filename>
+		<filename>images/icons/quicklaunch/info.png</filename>
+		<filename>images/icons/quicklaunch/joomla.png</filename>
+		<filename>images/icons/quicklaunch/logout.png</filename>
+		<filename>images/icons/quicklaunch/mail.png</filename>
+		<filename>images/icons/quicklaunch/newart.png</filename>
+		<filename>images/icons/quicklaunch/nodebug.png</filename>
+		<filename>images/icons/quicklaunch/params.png</filename>
+		<filename>images/icons/quicklaunch/positions.png</filename>
+		<filename>images/icons/quicklaunch/preview.png</filename>
+		<filename>images/icons/quicklaunch/profile.png</filename>
+		<filename>images/icons/quicklaunch/start.png</filename>
+		<filename>images/icons/quicklaunch/users.png</filename>
+		<filename>images/icons/quicklaunch/version.png</filename>
+
+<!--		
+		<filename>images/icons/toolbar/icon-32-adduser.png</filename>
+-->
+		<filename>images/icons/toolbar/icon-32-apply.png</filename>
+		<filename>images/icons/toolbar/icon-32-archive.png</filename>
+		<filename>images/icons/toolbar/icon-32-back.png</filename>
+		<filename>images/icons/toolbar/icon-32-cancel.png</filename>
+		<filename>images/icons/toolbar/icon-32-config.png</filename>
+		<filename>images/icons/toolbar/icon-32-copy.png</filename>
+		<filename>images/icons/toolbar/icon-32-css.png</filename>
+		<filename>images/icons/toolbar/icon-32-default.png</filename>
+<!--
+		<filename>images/icons/toolbar/icon-32-delete.png</filename>
+		<filename>images/icons/toolbar/icon-32-download.png</filename>
+-->
+		<filename>images/icons/toolbar/icon-32-edit.png</filename>
+<!--
+		<filename>images/icons/toolbar/icon-32-export.png</filename>
+-->
+		<filename>images/icons/toolbar/icon-32-forward.png</filename>
+		<filename>images/icons/toolbar/icon-32-help.png</filename>
+		<filename>images/icons/toolbar/icon-32-html.png</filename>
+<!--
+		<filename>images/icons/toolbar/icon-32-lock.png</filename>
+-->
+		<filename>images/icons/toolbar/icon-32-menu.png</filename>
+		<filename>images/icons/toolbar/icon-32-move.png</filename>
+		<filename>images/icons/toolbar/icon-32-new.png</filename>
+		<filename>images/icons/toolbar/icon-32-preview.png</filename>
+<!--
+		<filename>images/icons/toolbar/icon-32-print.png</filename>
+-->
+		<filename>images/icons/toolbar/icon-32-publish.png</filename>
+<!--
+		<filename>images/icons/toolbar/icon-32-refresh.png</filename>
+		<filename>images/icons/toolbar/icon-32-revert.png</filename>
+-->
+		<filename>images/icons/toolbar/icon-32-save.png</filename>
+<!--
+		<filename>images/icons/toolbar/icon-32-search.png</filename>
+		<filename>images/icons/toolbar/icon-32-send.png</filename>
+-->
+		<filename>images/icons/toolbar/icon-32-trash.png</filename>
+		<filename>images/icons/toolbar/icon-32-unarchive.png</filename>
+		<filename>images/icons/toolbar/icon-32-unpublish.png</filename>
+<!--
+		<filename>images/icons/toolbar/icon-32-upload.png</filename>
+-->
+		<filename>images/icons/toolbar/icon-32-user.png</filename>
+<!--
+		<filename>images/icons/toolbar/icon-32-xml.png</filename>
+-->
+
+		<filename>images/icons/toolbar/files.png</filename>
+		<filename>images/icons/toolbar/fullscreen.png</filename>
+		<filename>images/icons/toolbar/home.png</filename>
+		<filename>images/icons/toolbar/info.png</filename>
+		<filename>images/icons/toolbar/joomla.png</filename>
+		<filename>images/icons/toolbar/logout.png</filename>
+		<filename>images/icons/toolbar/mail.png</filename>
+		<filename>images/icons/toolbar/newart.png</filename>
+		<filename>images/icons/toolbar/params.png</filename>
+		<filename>images/icons/toolbar/preview.png</filename>
+		<filename>images/icons/toolbar/start.png</filename>
+		<filename>images/icons/toolbar/users.png</filename>
+		<filename>images/icons/toolbar/version.png</filename>
+
+		<filename>js/adminpraise.js</filename>
+		<filename>js/index.html</filename>
+		<filename>js/index.js</filename>
+		<filename>js/menu.js</filename>
+		<filename>js/mootabs1.2.js</filename>
+
+		<filename>packages/mod_apdock_j1.5_v1.2.zip</filename>
+		<filename>packages/mod_apicons_j1.5_v1.2.zip</filename>
+		<filename>packages/mod_apmenu_j1.5_v1.3.zip</filename>
+		<filename>packages/mod_apquicklaunch_j1.5_v1.1.zip</filename>
+		<filename>packages/mod_myeditor_j1.5_v1.0.zip</filename>
+		<filename>packages/mod_mytheme_j1.5_v1.1.zip</filename>
+		<filename>packages/mod_myadmintemplate_j1.5_v1.0.zip</filename>
+		<filename>packages/mod_ualog.zip</filename>
+		<filename>packages/plugin_ualog.zip</filename>
+
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.tpl_adminpraise2.ini</language>
+	</languages>
+	<administration>
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.tpl_adminpraise2.ini</language>
+		</languages>
+	</administration>
+	<positions>
+		<position>menu</position>
+		<position>submenu</position>
+		<position>toolbar</position>
+		<position>title</position>
+		<position>status</position>
+		<position>icon</position>
+		<position>cp_shell</position>
+		<position>cpanel</position>
+		<position>debug</position>
+		<position>head</position>
+		<position>aphead1</position>
+		<position>aphead2</position>
+		<position>online</position>
+		<position>sitename</position>
+		<position>editor</position>
+		<position>templatetheme</position>
+		<position>search</position>
+		<position>toolbar</position>
+		<position>admintop</position>
+		<position>message</position>
+		<position>apdock</position>
+		<position>apcleft</position>
+		<position>apcpleft</position>
+		<position>apcright</position>
+		<position>apright1</position>
+		<position>apright2</position>
+		<position>apright3</position>
+		<position>apright4</position>
+		<position>apright5</position>
+		<position>apright6</position>
+		<position>apright7</position>
+		<position>apright8</position>
+		<position>apright9</position>
+		<position>apcbottom</position>
+		<position>apfooter</position>
+	</positions>
+	<params addpath="/administrator/templates/adminpraise2/assets/cmsmarketconnect">
+		<param name="spacer_templatetheme" type="spacer" default="&lt;hr /&gt;&lt;B&gt;Template Theme&lt;/B&gt;" label="" />
+		<param name="templateTheme" type="list" default="theme1" label="Template Theme" description="Choose your template theme">
+			<option value="theme1">ADOBE</option>
+			<option value="theme2">JOOMLAINSPIRED</option>
+			<option value="theme3">APPLE</option>
+			<option value="theme4">WORDPRESS</option>
+			<option value="theme5">MICROSOFT</option>
+			<option value="theme6">GMAIL</option>
+		</param>
+		<param name="adminTitle" type="text" default="" size="30" label="Admin Title" description="Insert custom text to replace the site name" />
+		<param name="spacer_colorscheme" type="spacer" default="&lt;hr /&gt;&lt;B&gt;Color Scheme&lt;/B&gt;" label="" />
+
+		<param name="spacer_backgroundcolors" type="spacer" default="&lt;hr /&gt;&lt;B&gt;Background Colors&lt;/B&gt;" label="" />
+		<param name="backgroundColor" type="text" default="" size="30" label="Background Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="headerColor" type="text" default="" size="30" label="Header Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="headerBorderColor" type="text" default="" size="30" label="Header Border Color" description="Enter a hexadecimal color (Ex: #333333)" />
+
+		<param name="toolbarColor" type="text" default="" size="30" label="Toolbar Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="crumbColor" type="text" default="" size="30" label="Breadcrumb Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="mainbodyColor" type="text" default="" size="30" label="Main Body Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="contentColor" type="text" default="" size="30" label="Content Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="sidebarColor" type="text" default="" size="30" label="Sidebar Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="smallSidebarColor" type="text" default="" size="30" label="Small Sidebar Color" description="Enter a hexadecimal color (Ex: #333333)" />
+
+		<param name="spacer_fontcolors" type="spacer" default="&lt;hr /&gt;&lt;B&gt;Font Colors&lt;/B&gt;" label="" />
+		<param name="fontColor" type="text" default="" size="30" label="Font Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="headerFontColor" type="text" default="" size="30" label="Header Font Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="toolbarFontColor" type="text" default="" size="30" label="Toolbar Font Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="crumbFontColor" type="text" default="" size="30" label="Breadcrumb Font Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="linkColor" type="text" default="" size="30" label="Link Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="linkHoverColor" type="text" default="" size="30" label="Link Hover Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="sidebarFontColor" type="text" default="" size="30" label="Sidebar Font Color" description="Enter a hexadecimal color (Ex: #333333)" />
+		<param name="smallSidebarFontColor" type="text" default="" size="30" label="Small Sidebar Font Color" description="Enter a hexadecimal color (Ex: #333333)" />
+
+		<param name="spacer_displayelements" type="spacer" default="&lt;hr /&gt;&lt;B&gt;Hide/Display Elements&lt;/B&gt;" label="" />
+		<param name="hideToolbar" type="radio" default="0" label="Hide Toolbar" description="Set this to yes to force the toolbar to always be hidden.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="hideBreadCrumbs" type="radio" default="0" label="Hide Bread Crumbs" description="Set this to yes to force the bread crumbs to always be hidden.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="hideRightMenu" type="radio" default="0" label="Hide Right Sidebar" description="Set this to yes to force the right sidebar to always be hidden.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="hideFooter" type="radio" default="0" label="Hide Footer" description="Set this to yes to force the footer to always be hidden.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="spacer_componentquicklaunch" type="spacer" default="&lt;hr /&gt;&lt;B&gt;Component Quicklaunch&lt;/B&gt;" label="" />
+		<param name="quickLaunchOpen" type="radio" default="click" label="Quicklaunch Open" description="Open Quicklaunch on mouse click or hover.">
+			<option value="click">Click</option>
+			<option value="hover">Hover</option>
+		</param>
+		<param name="quickLaunchOpenDuration" type="text" default="500" size="30" label="Quicklaunch Open Duration" description="This is the amount of time it takes the Quicklaunch to open in milliseconds." />
+		<param name="spacer_righttabs" type="spacer" default="&lt;hr /&gt;&lt;B&gt;Right Tabs&lt;/B&gt;" label="" />
+		<param name="rightTabOpen" type="radio" default="click" label="Right Tab Open" description="Open Right Tab on mouse click or hover.">
+			<option value="click">Click</option>
+			<option value="hover">Hover</option>
+		</param>
+		<param name="rightTabOpenDuration" type="text" default="500" size="30" label="Right Tab Open Duration" description="This is the amount of time it takes the Right Tab to open in milliseconds." />
+
+		<param name="adminpraise2" label="Version Information" description="Up to date version, support, and review information from CMS Market." type="cmsmarketconnect" />
+	</params>
+</install>

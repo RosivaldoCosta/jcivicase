@@ -1,0 +1,21 @@
+<macrodef name="addCategory" description="Add a new category">
+	<attribute name="name"/>
+	<attribute name="section"/>
+
+	<sequential>
+		<clickLink label="Category Manager" />
+		<verifyText text="Category Manager" />
+		
+		<!-- Click on the 'new' button -->
+		<clickLink xpath="(//a[@class='toolbar'])[7]"/>
+		<verifyText text="Category" />
+		
+		<!-- Enter the name for the new category and choose the section -->
+		<setInputField name="title" value="@{name}" />
+		<setSelectField name="section" text="@{section}"/>
+		
+		<!-- Save the category -->		
+		<clickLink label="Save" />
+
+	</sequential>
+</macrodef>

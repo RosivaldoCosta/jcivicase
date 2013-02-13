@@ -1,0 +1,37 @@
+{include file="CRM/common/pager.tpl" location="top"}
+
+{if $rows }
+{include file="CRM/common/jsortable.tpl"}
+{strip}
+<table id="mailing_event" class="display">
+  <thead>
+  <tr>
+  {foreach from=$columnHeaders item=header}
+    <th>{$header.name}</th>
+  {/foreach}
+  </tr>
+  </thead>
+  {counter start=0 skip=1 print=false} 
+  {foreach from=$rows item=row}
+  <tr class="{cycle values="odd-row,even-row"}">
+  {foreach from=$row item=value}
+    <td>{$value}</td>
+  {/foreach}
+  </tr>
+  {/foreach}
+</table>
+{/strip}
+{else}
+   <div class="messages status">
+    <dl>
+        <dt><img src="{$config->resourceBase}Inform.gif" alt="{ts}status{/ts}"/></dt>
+        <dd>{ts 1=$title}There are currently no %1.{/ts}</dd>
+        </dl>
+    </div>    
+{/if}  
+
+        <div class="action-link">
+        <a href="{crmURL p='civicrm/mailing/report' q="mid=`$mailing_id`&reset=1"}" >&raquo; {ts}Back to Report{/ts}</a>
+        </div>
+
+{include file="CRM/common/pager.tpl" location="bottom"}

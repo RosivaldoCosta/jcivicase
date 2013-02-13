@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>Intake Bulk Load</name>
+    <description/>
+    <extended_description/>
+    <job_version/>
+    <job_status>0</job_status>
+  <directory>&#47;</directory>
+  <created_user>-</created_user>
+  <created_date>2011&#47;06&#47;14 21:47:08.057</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2011&#47;06&#47;14 21:47:08.057</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>cc5tudio_escrs</name>
+    <server>184.106.42.241</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>cc5tudio_jo155</database>
+    <port>3306</port>
+    <username>cc5tudio_es_emr</username>
+    <password>Encrypted 28cabd8ad19c38a878b5a9955edb697f9</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+  <logconnection/>
+  <logtable/>
+  <size_limit_lines/>
+   <use_batchid>Y</use_batchid>
+   <pass_batchid>N</pass_batchid>
+   <use_logfield>Y</use_logfield>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>BulkLoad civicrm_value_emergency_severity_6</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_emergency_severity_6</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_emergency_severity.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, cism_request_37, situation_crisis_36, substance_abuse_primary_35, needs_mental_health_service_34, rapid_deterioration_33, danger_to_self_32</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>177</xloc>
+      <yloc>245</yloc>
+      </entry>
+    <entry>
+      <name>START</name>
+      <description>Special entries</description>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>178</xloc>
+      <yloc>60</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad civicrm_value_client_information_10</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_client_information_10</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_client_information.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, veteran__62, city_64, state_65, zipcode_66, phone_67, permission_to_leave_a_message_68, ssn_69, birth_date_70, age_71, gender_72,culture_or_language_needs_73,county_155, race_390,address_60</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>Y</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>177</xloc>
+      <yloc>349</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad civicrm_value_caller_information_8</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_caller_information_8</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_caller_information.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, caller_name_51, caller_address_52, caller_city_53, caller_state_54, caller_zip_55, caller_phone_56, relationship_to_client_57, permission_to_tell_callers_name__58, referral_source_list_230</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>177</xloc>
+      <yloc>444</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad civicrm_value_crisisassessment_2</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_crisisassessment_2</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_crisisassessment.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n\r</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, medical_issues_15, gun_weapon_used_14, gun_weapon_present_13, abuse_occuring_12, abuse_threatened_11, adults_in_house_10, children_in_house_9, drug_use_8, intoxication_7, suicide_attempt_6, suicide_threat_5, threatening_violence_2, history_of_violence_3, suicide_ideation_4, weapon_type_44, medical_description_45, intoxication_description_46, threatening_violence_2_49, suicide_threat_116, drug_use_description_132, adults_in_the_house_772, children_in_the_house_773</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>Y</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>177</xloc>
+      <yloc>521</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad civicrm_value_referral_source_31</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_referral_source_31</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_referral_source.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n\r</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, source_122, officer_123, district_124, other_details_125</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>177</xloc>
+      <yloc>616</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad civicrm_value_crs_action_3</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_crs_action_3</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_crs_action.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n\r</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, mh_referral_23, nonmh_referral_22, notify_aps_or_cps_21, mct_dispatch_20, called_911_19, crisis_plan_only_18, community_ed_17, information_only_16, operator_number_753, imported_operator_time_1259</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>434</xloc>
+      <yloc>618</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad civicrm_value_case_events_4</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_case_events_4</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_case_events.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, bogus_phone_or_not_given_27, caller_refuses_services_26, frequent_known_caller_25, caller_disconnects_24</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>432</xloc>
+      <yloc>525</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad civicrm_value_risk_factors_5</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_risk_factors_5</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_risk_factors.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n\r</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, is_person_at_risk_for_hospitalization_31, incarceration_30, inpatient_hospital_29, eviction_or_homeless_28</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>434</xloc>
+      <yloc>445</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad civicrm_value_release_of_information_11</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_release_of_information_11</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_release_of_information.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n\r</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, release_74, limitations_75</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>431</xloc>
+      <yloc>351</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad - civicrm_value_provider_pcp_32</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_provider_pcp_32</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_provider_pcp.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n\r</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, phone_128, provider_name_258, provider_name_2_285, provider_phone_2_286</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>432</xloc>
+      <yloc>245</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad - civicrm_value_insurance_30</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_insurance_30</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_insurance.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n\r</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, private_117, private_id__118, phone_119, other_medical_assistance_120, insurance_type_121</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>701</xloc>
+      <yloc>321</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad - civicrm_value_emergency_contact_7</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_emergency_contact_7</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_emergency_contact.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n\r</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, emergency_name_38, emergency_relationship_40, emergency_phone_39</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>N</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>701</xloc>
+      <yloc>175</yloc>
+      </entry>
+    <entry>
+      <name>BulkLoad - civicrm_value_financial_9</name>
+      <description>BulkLoad into Mysql</description>
+      <type>MYSQL_BULK_LOAD</type>
+      <schemaname/>
+      <tablename>civicrm_value_financial_9</tablename>
+      <filename>Z:\Seagate 15TB\MSDOSFAT_Archive\CC 5tudio\projects\sante\v2\data_migration\civicrm_value_financial.csv</filename>
+      <separator>,</separator>
+      <enclosed>&quot;</enclosed>
+      <escaped>\\</escaped>
+      <linestarted/>
+      <lineterminated>\n\r</lineterminated>
+      <replacedata>Y</replacedata>
+      <ignorelines>1</ignorelines>
+      <listattribut>entity_id, financial_59</listattribut>
+      <localinfile>Y</localinfile>
+      <prorityvalue>0</prorityvalue>
+      <addfiletoresult>Y</addfiletoresult>
+      <connection>cc5tudio_escrs</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>700</xloc>
+      <yloc>247</yloc>
+      </entry>
+    <entry>
+      <name>Truncate Intake Tables</name>
+      <description>Truncate tables</description>
+      <type>TRUNCATE_TABLES</type>
+      <connection>cc5tudio_escrs</connection>
+      <arg_from_previous>N</arg_from_previous>
+      <fields>
+        <field>
+          <name>civicrm_value_caller_information_8</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_emergency_severity_6</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_insurance_30</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_provider_pcp_32</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_case_events_4</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_client_information_10</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_crisisassessment_2</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_crs_action_3</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_emergency_contact_7</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_financial_9</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_referral_source_31</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_release_of_information_11</name>
+          <schemaname/>
+        </field>
+        <field>
+          <name>civicrm_value_risk_factors_5</name>
+          <schemaname/>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>177</xloc>
+      <yloc>185</yloc>
+      </entry>
+    <entry>
+      <name>Success</name>
+      <description>Success</description>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>702</xloc>
+      <yloc>538</yloc>
+      </entry>
+    <entry>
+      <name>Import CSV</name>
+      <description>Transformation</description>
+      <type>TRANS</type>
+      <filename/>
+      <transname/>
+      <directory/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>700</xloc>
+      <yloc>415</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>BulkLoad civicrm_value_emergency_severity_6</from>
+      <to>BulkLoad civicrm_value_client_information_10</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad civicrm_value_client_information_10</from>
+      <to>BulkLoad civicrm_value_caller_information_8</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad civicrm_value_caller_information_8</from>
+      <to>BulkLoad civicrm_value_crisisassessment_2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad civicrm_value_crisisassessment_2</from>
+      <to>BulkLoad civicrm_value_referral_source_31</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad civicrm_value_referral_source_31</from>
+      <to>BulkLoad civicrm_value_crs_action_3</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad civicrm_value_crs_action_3</from>
+      <to>BulkLoad civicrm_value_case_events_4</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad civicrm_value_case_events_4</from>
+      <to>BulkLoad civicrm_value_risk_factors_5</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad civicrm_value_risk_factors_5</from>
+      <to>BulkLoad civicrm_value_release_of_information_11</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad civicrm_value_release_of_information_11</from>
+      <to>BulkLoad - civicrm_value_provider_pcp_32</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad - civicrm_value_emergency_contact_7</from>
+      <to>BulkLoad - civicrm_value_financial_9</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Truncate Intake Tables</from>
+      <to>BulkLoad civicrm_value_emergency_severity_6</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>START</from>
+      <to>Truncate Intake Tables</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad - civicrm_value_provider_pcp_32</from>
+      <to>BulkLoad - civicrm_value_emergency_contact_7</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad - civicrm_value_financial_9</from>
+      <to>BulkLoad - civicrm_value_insurance_30</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>BulkLoad - civicrm_value_insurance_30</from>
+      <to>Import CSV</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Import CSV</from>
+      <to>Success</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+</job>

@@ -1,0 +1,28 @@
+<macrodef name="addArticle" description="Add a new Article">
+	<attribute name="name"/>
+	<attribute name="section"/>
+	<attribute name="category"/>
+
+	<sequential>
+		<clickLink label="Article Manager" />
+		<verifyText text="Article Manager" />
+		
+		<!-- Click on the 'new' button -->
+		<clickLink xpath="(//a[@class='toolbar'])[9]"/>
+		<verifyText text="Article" />
+		
+		<!-- Enter the name for the new category and choose the section -->
+		<setInputField name="title" value="@{name}" />
+		<setSelectField name="sectionid" text="@{section}"/>
+		<setSelectField name="catid" text="@{category}"/>
+
+		<!-- Add content to the article through the code page -->
+		<clickLink htmlId="mce_editor_0_code" />
+		<setInputField name="htmlSource" value="@{section} - @{category} - @{name}" />
+		<clickButton name="insert" />
+		
+		<!-- Save the category -->		
+		<clickLink label="Save" />
+
+	</sequential>
+</macrodef>

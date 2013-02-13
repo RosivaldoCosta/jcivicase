@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - TapTheme</name>
+	<author>TapTheme</author>
+	<creationDate>01/14/2011</creationDate>
+	<copyright>Copyright (c) 2010 - 2011 Pixel Praise LLC. All rights reserved.</copyright>
+	<authorEmail>support@taptheme.com</authorEmail>
+	<authorUrl>www.taptheme.com</authorUrl>
+	<version>1.2</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description></description>
+	<files>
+		<filename plugin="taptheme">taptheme.php</filename>
+		<folder>taptheme</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_taptheme.ini</language>
+	</languages>
+	<params addpath="/plugins/system/taptheme/elements">
+		<param type="spacer" default="FIREFOX" label="" />
+		<param name="template_site_firefox" type="template" default="" label="TEMPLATE_SITE" description="TEMPLATE_SITE_DESC" />
+		
+		<param type="spacer" default="SAFARI" label="" />
+		<param name="template_site_safari" type="template" default="" label="TEMPLATE_SITE" description="BROWSER_SITE_DESC" />
+		
+		<param type="spacer" default="IPHONE" label="" />
+		<param name="template_admin_iphone" type="admintemplate" default="" label="TEMPLATE_ADMIN" description="BROWSER_SITE_DESC" />
+		
+		<param type="spacer" default="IPAD" label="" />
+		<param name="template_admin_ipad" type="admintemplate" default="" label="TEMPLATE_ADMIN" description="BROWSER_SITE_DESC" />
+		
+		<param type="spacer" default="BLACKBERRY" label="" />
+		<param name="template_site_blackberry" type="template" default="" label="TEMPLATE_SITE" description="BROWSER_SITE_DESC" />
+		
+		<param type="spacer" default="PALM" label="" />
+		<param name="template_site_palm" type="template" default="" label="TEMPLATE_SITE" description="BROWSER_SITE_DESC" />
+		
+		<param type="spacer" default="ANDROID" label="" />
+		<param name="template_admin_android" type="admintemplate" default="" label="TEMPLATE_ADMIN" description="BROWSER_SITE_DESC" />
+		
+		<param type="spacer" default="CHROME" label="" />
+		<param name="template_site_chrome" type="template" default="" label="TEMPLATE_ADMIN" description="BROWSER_SITE_DESC" />
+		
+		<param type="spacer" default="OPERA" label="" />
+		<param name="template_site_opera" type="template" default="" label="TEMPLATE_SITE" description="BROWSER_SITE_DESC" />
+		
+		<param type="spacer" default="IE6" label="" />
+		<param name="template_site_ie6" type="template" default="" label="TEMPLATE_SITE" description="BROWSER_SITE_DESC" />
+		
+		<param type="spacer" default="IE7" label="" />
+		<param name="template_site_ie7" type="template" default="" label="TEMPLATE_SITE" description="BROWSER_SITE_DESC" />
+		
+		<param type="spacer" default="IE8" label="" />
+		<param name="template_site_ie8" type="template" default="" label="TEMPLATE_SITE" description="BROWSER_SITE_DESC" />
+		
+	</params>
+</install>

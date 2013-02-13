@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>Jbolo! - Assets Loader</name>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<author>TechJoomla</author>
+	<authorEmail>jbolo@techjoomla.com</authorEmail>
+	<authorUrl>http://www.techjoomla.com</authorUrl>
+	<creationDate>1st March 2011</creationDate>
+	<copyright>Copyright (C) 2009 TechJoomla</copyright>
+	<version>2.9.1</version>
+	<description>This plugin loads the necessary CSS and JS for JBolo!</description>
+	<files>
+		<filename plugin="plg_sys_jbolo_asset">plg_sys_jbolo_asset.php</filename>
+	</files>
+</install>
+

@@ -1,0 +1,13 @@
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : I was unable to save the HTTP result to file because of a I/O error: Error creating output file! Parent directory [C:\Program Files\pentaho\design-tools\data-integration\${Internal.Transformation.Filename.Directory}] does not exist.
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : java.io.IOException: Error creating output file! Parent directory [C:\Program Files\pentaho\design-tools\data-integration\${Internal.Transformation.Filename.Directory}] does not exist.
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.core.vfs.KettleVFS.getOutputStream(KettleVFS.java:163)
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.core.vfs.KettleVFS.getOutputStream(KettleVFS.java:199)
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.job.entries.http.JobEntryHTTP.execute(JobEntryHTTP.java:428)
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:446)
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:547)
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:547)
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:547)
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:547)
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:377)
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at org.pentaho.di.job.entries.job.JobEntryJobRunner.run(JobEntryJobRunner.java:60)
+2011/06/18 02:16:27 - Download Files - ERROR (version 3.2.2-stable, build 10951 from 2009-09-15 15.34.19 by buildguy) : 	at java.lang.Thread.run(Thread.java:595)

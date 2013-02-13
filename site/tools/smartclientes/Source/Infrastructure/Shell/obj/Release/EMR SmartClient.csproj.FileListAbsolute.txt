@@ -1,0 +1,36 @@
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\EMRSmartClient.exe.config
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\ResolveAssemblyReference.cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\Sante.EMR.SmartClient.Infrastructure.Shell.ShellForm.resources
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\EMR SmartClient.csproj.GenerateResource.Cache
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\ProfileCatalog.xml
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\EMRSmartClient.exe
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\bin\Release\EMRSmartClient.pdb
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\EMRSmartClient.exe
+E:\Campbell Consulting 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\EMRSmartClient.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\EMRSmartClient.exe.config
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\EMRSmartClient.exe
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\EMRSmartClient.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\ProfileCatalog.xml
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\EMRSmartClient.exe
+E:\CC5tudio\projects\sante\santeemr\SmartClient\bin\Release\EMRSmartClient.pdb
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\ResolveAssemblyReference.cache
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\Sante.EMR.SmartClient.Infrastructure.Shell.ShellForm.resources
+E:\CC5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\EMR SmartClient.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\EMRSmartClient.exe.config
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\EMRSmartClient.exe
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\EMRSmartClient.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\ProfileCatalog.xml
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\EMRSmartClient.exe
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\bin\Release\EMRSmartClient.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\Sante.EMR.SmartClient.Infrastructure.Shell.ShellForm.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClient\Source\Infrastructure\Shell\obj\Release\EMR SmartClient.csproj.GenerateResource.Cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\EMRSmartClient.exe.config
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Shell\obj\Release\EMRSmartClient.exe
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Shell\obj\Release\EMRSmartClient.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\ProfileCatalog.xml
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\EMRSmartClient.exe
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\bin\Release\EMRSmartClient.pdb
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Shell\obj\Release\ResolveAssemblyReference.cache
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Shell\obj\Release\Sante.EMR.SmartClient.Infrastructure.Shell.ShellForm.resources
+E:\CC 5tudio\projects\sante\santeemr\SmartClientES\Source\Infrastructure\Shell\obj\Release\EMR SmartClient.csproj.GenerateResource.Cache

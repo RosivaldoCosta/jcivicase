@@ -1,0 +1,11 @@
+{
+    "calendars":[{
+        "id":1,
+        "title":"Therapist",
+        "color":2
+    },{
+        "id":2,
+        "title":"Physician",
+        "color":22
+    }]
+}

@@ -1,0 +1,477 @@
+﻿/*  AdminPraise 2 CSS
+//  Copyright 2009 JoomlaPraise - Kyle Ledbetter
+*/
+body {
+background-color:#464646;
+}
+#ap-wrapper,#ap-header,#ap-right,#ap-footer {
+background-color:#FFF;
+}
+#ap-toolbar {
+background:#E1E1E1 url(../images/theme4/head-wp.jpg) repeat-x scroll 0 0;
+}
+a,a:visited,a:link,a:active {
+color:#000;
+}
+#ap-content .left a {
+color:#21759B;
+}
+#ap-content .left a:hover {
+color:#D54E21;
+}
+button,.next a {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border:1px solid #686868;
+}
+fieldset {
+border:1px solid #CCC;
+}
+hr {
+background-color:#CCC;
+}
+/* Login */
+#ap-cpanellogo {
+background:transparent url('../images/theme4/cpanel-logo.png') no-repeat 0 0;
+}
+#login-body {
+background-color:#646464;
+}
+#ap-login {
+margin:50px auto 0 auto;
+}
+#ap-mainbody {
+background-color:#F9F9F9;
+}
+#ap-inner {
+background-color:#E0ECFF;
+}
+#ap-right {
+width:27%;
+}
+#ap-inner,#ap-content,#ap-login{
+border:1px solid #DFDFDF;
+}
+#ap-right,#sm-right {
+border:1px solid #EFEFEF;
+}
+#ap-content,#ap-login,#ap-right,#sm-right {
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+}
+#ap-right,#sm-right {
+margin:10px 10px 0 0;
+}
+#ap-content .right,#ap-login .right {
+border-left:1px solid #EFEFEF;
+}
+#ap-content .right .right,#ap-login .right .right {
+border-left:0;
+}
+#ap-toolbar,#ap-crumbs,.header,#ap-content-sub,#ap-content-foot {
+border-bottom:1px solid #DFDFDF;
+}
+#ap-content-sub,#ap-footer {
+border-top:1px solid #DFDFDF;
+}
+#ap-header {
+background:#464646;
+height:40px;
+padding-top:5px;
+}
+#ap-headtools {
+height:32px;
+}
+#ap-crumbs {
+background:#FFF;
+}
+#ap-content,#ap-content-foot,#ap-login {
+background-color:#FFF;
+}
+#ap-content-sub {
+background-color:#EFEFEF;
+}
+#ap-logo {
+background:url('../images/theme4/logo.png') no-repeat 0 0;
+margin:7px 5px 5px 17px;
+}
+#ap-menu li.separator {
+
+}
+/* Editor */
+#ap-editor #myeditor_selection  {
+background-color:#464646;
+color:#FFF;
+border:0;
+}
+/* theme chooser */
+#ap-templatetheme #templateTheme {
+background-color:#464646;
+color:#FFF;
+border:0;
+}
+/* Search */
+#ap-search input,#ap-cpanel #ualog_form select  {
+border:1px solid #777;
+background:#999 url('../images/theme4/input-bg.jpg') repeat-x 0 0;
+-moz-border-radius:15px;
+-webkit-border-radius:15px;
+padding-right:10px;
+padding-left:10px;
+color:#FFF;
+}
+#ap-search input {
+background-position:4% 55%;
+width:85px;
+margin:2px 0 0 0;
+}
+/* Recent Activity Select */
+#ap-cpanel #ualog_form select {
+padding:2px 6px 2px 4px;
+}
+
+/* Toolbar Icons */
+#ap-toolbar span {
+border-right:0;
+}
+
+/* Crumbs */
+#ap-crumbs span {
+border-right:1px solid #F9F9F9;
+color:666;
+}
+#ap-crumbs span span {
+border-right:0;
+}
+#ap-crumbs span.last span {
+background:url('../images/theme1/crumb-on.jpg') repeat-x 0 0;
+}
+#ap-crumbs span:hover {
+background:#EEE;
+cursor:pointer;
+}
+#ap-crumbs span a {
+color:#333;
+font-style:italic;
+}
+#ap-crumbs span.first:hover {
+background:#FFF;
+cursor:default;
+}
+
+/* Headers */
+.header {
+background:#E1E1E1 url('../images/theme4/head-wp.jpg') repeat-x 0 0;
+}
+.header {
+font-family:Georgia,"Times New Roman",Times,serif;
+color:#333;
+font-size:18px;
+font-style:italic;
+line-height:20px;
+padding:5px 10px;
+min-height:16px;
+}
+.header h1 {
+font-family:Georgia,"Times New Roman",Times,serif;
+font-style:italic;
+}
+.header a {
+color:#333;
+}
+.header .ap-user {
+font-size:12px;
+line-height:12px;
+font-family:Verdana,Arial,sans-serif;
+font-style:normal;
+}
+/* Tabs & Accordions */
+.mootabs {
+border-bottom:1px solid #DFDFDF;
+}
+.mootabs_title {
+background:#E1E1E1 url(../images/theme4/head-wp.jpg) repeat-x scroll 0 0;
+border-bottom:1px solid #DFDFDF;
+}
+.mootabs_title li {
+color:#21759B;
+border-top:1px solid #FFF;
+border-right:1px solid #DFDFDF;
+}
+.mootabs_title li:hover {
+color:#D54E21;
+}
+.mootabs_title li.active {
+color: #333;
+background:#FFF;
+}
+.mootabs_panel {
+color: #000;
+}
+.mootabs_panel.active,.panel {
+background-color: #FFF;
+}
+.mootabs_title li.over {
+
+}
+.panel h3.jpane-toggler-down {
+background:#E0E0E0 url(../images/theme1/button-bg.jpg) repeat-x scroll 0 0;
+color:#333;
+}
+.panel h3.jpane-toggler {
+background:#E1E1E1 url(../images/theme4/head-wp.jpg) repeat-x scroll 0 0;
+color:#21759B;
+}
+.panel h3.jpane-toggler:hover {
+color:#D54E21;
+}
+.panel {
+border:1px solid #DFDFDF;
+}
+/* Condensed Tabs */
+#sm-right .mootabs_title {
+border-bottom:0;
+}
+#sm-right .mootabs_panel.active,.panel {
+border:1px solid #DFDFDF;
+}
+#sm-right .mootabs_title li,#sm-right .mootabs_title li.active {
+background:#E1E1E1 url(../images/theme4/head-wp.jpg) repeat-x scroll 0 0;
+border-bottom:1px solid #DFDFDF;
+color:#21759B;
+}
+#sm-right .mootabs_title li:hover {
+background-color: #FFF;
+color:#D54E21;
+}
+
+/* Collapse */
+#ap-collapse,#ap-expand {
+background:#E0E0E0 url(../images/theme1/button-bg.jpg) repeat-x scroll 0 0;
+border-bottom:1px solid #DFDFDF;
+border-left:1px solid #DFDFDF;
+} 
+#ap-collapse a {
+background:url('../images/icons/menu/collapse-r.png') no-repeat 98% 0;
+}
+#ap-expand a {
+background:url('../images/icons/menu/collapse-l.png') no-repeat 5px 0;
+}
+
+/* Cpanel */
+#ap-content ul.ap-cplinks li a:hover {
+background-color:#EFEFEF;
+}
+
+/* Toolbar */
+#toolbar {
+border-bottom:1px solid #DFDFDF;
+background-color:#EFEFEF;
+}
+table.toolbar a {
+color:#0B55C4 !important;
+}
+
+
+/* Table Data */
+.text_area,.inputbox {
+
+}
+table.adminlist {
+
+}
+table.adminlist td.title,
+table.adminform td.title {
+border-color:#DFDFDF;
+background:#E1E1E1 url(../images/theme4/head-wp.jpg) repeat-x scroll 0 0;
+}
+table.adminlist th {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border-top:1px solid #DFDFDF;
+border-bottom:1px solid #DFDFDF;
+}
+table.adminlist tr.row0 td,table.adminlist tr.row1 td,
+table.adminform tr.row0 td,table.adminform tr.row1 td {
+border-bottom:1px solid #CCC;
+}
+.mootabs table.adminlist td,
+.mootabs table.adminform td {
+border-bottom:1px solid #CCC;
+background-color:#FFF;
+}
+table.adminlist tr.row0:hover td,table.adminlist tr.row1:hover td,
+table.adminform tr.row0:hover td,table.adminform tr.row1:hover td {
+background-color:#EAF2FA;
+}
+table.adminlist tr.row0 td,
+table.adminform tr.row0 td {
+background-color:#FFF;
+}
+table.adminlist tr.row1 td,
+table.adminform tr.row1 td {
+background-color:#F9F9F9;
+}
+table.adminlist td,
+table.adminform td {
+color:#555;
+}
+table.adminlist td a,
+table.adminform td a {
+color:#555;
+}
+/* Pagination */
+.list-footer {
+background-color:#EFEFEF;
+border-top:1px solid #DFDFDF;
+border-bottom:1px solid #DFDFDF;
+}
+.list-footer span {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border:1px solid #DFDFDF;
+color:#AFAFAF;
+}
+.list-footer a {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border:1px solid #BDBDBD;
+color:#000 !important;
+}
+table.adminheading {
+background-color:#EFEFEF;
+border-bottom:1px solid #DFDFDF;
+}
+table.adminform {
+border:1px solid #CCC;
+}
+/* Quicklaunch */
+#adminPraiseComponentsListDiv {
+background-color: #F0F0F0;
+border:1px solid #DFDFDF;
+}
+#adminPraiseComponentsListDiv .icon {
+background-color:#FFF;
+border:1px solid #ECECEC;
+}
+#adminPraiseComponentsListDiv .icon a {
+}
+#adminPraiseComponentsListDiv .icon a:hover {
+color:#000;
+}
+#adminPraiseComponentsListDiv .icon img {
+}
+/* Submenu */
+ul#submenu {
+background:#E1E1E1 url(../images/theme4/head-wp.jpg) repeat-x scroll 0 0;
+border-top:1px solid #DFDFDF;
+border-bottom:1px solid #DFDFDF;
+}
+ul#submenu li {
+
+}
+ul#submenu li a {
+border-right:1px solid #DFDFDF;
+color:#333;
+}
+ul#submenu li a.active,ul#submenu li a:hover {
+background:#9D9D9D url(../images/theme1/crumbs-bg.jpg) repeat-x 0 0;
+color:#FFF;
+}
+/* Tooltip */
+.tool-tip {
+background:#FDFDFD;
+border: 1px solid #CCC !important;
+}
+.tool-title {
+
+}
+.tool-text {
+
+}
+/* System Message */
+#system-message dd ul {
+
+
+
+}
+#system-message {
+border-top:1px solid #FAD163;
+border-bottom:1px solid #FAD163;
+background-color:#FFF7D7;
+}
+/* Admintable Key */
+table.admintable td.key, table.admintable td.paramlist_key {
+background-color:#DFDFDF;
+border-top:1px solid #F1F1F1;
+border-left:1px solid #F1F1F1;
+border-bottom:1px solid #DFDFDF;
+border-right:1px solid #DFDFDF;
+color:#333;
+}
+/* Login */
+#modlgn_username,#modlgn_passwd,#form-login-lang select.inputbox {
+background-color:#E0E0E0;
+border:1px solid #686868;
+}
+/* Tabs */
+dl.tabs {
+background:#E0E0E0 url('../images/theme1/button-bg.jpg') repeat-x 0 0;
+border-top:1px solid #CCC;
+border-bottom:1px solid #CCC;
+
+}
+dl.tabs dt {
+border-right:1px solid #CCC;
+color:#333;
+}
+dl.tabs dt.open {
+background:#9D9D9D url(../images/theme1/crumbs-bg.jpg) repeat-x 0 0;
+color:#FFF;
+}
+/* Menu */
+#ap-menu a {
+color:#FFF;
+}
+#ap-menu li#globals a,#ap-menu li#com-launch a, #ap-menu li#mod-launch a,
+#ap-menu li a#Config,#ap-menu li a#ComponentQuickLaunch,#ap-menu li a#ModulesQuickLaunch {
+border-color:transparent;
+}
+#menu ul {
+background:#F1F1F1 none;
+border-right:1px solid #464646;
+border-bottom:1px solid #464646;
+border-left:1px solid #464646;
+}
+#menu ul li.separator {
+background-color:transparent;
+border-top:1px solid #DFDFDF;
+}
+#ap-menu li.node a {
+padding:6px 8px 17px 8px;
+}
+#ap-menu li.node a a {
+padding:6px 8px 8px 8px;
+color:#333 !important;
+}
+#ap-menu li.node li.node a {
+color:#333 !important;
+}
+#menu li.hover li a,#menu li.hover li.hover a {
+margin:0 !important;
+border:0 !important;
+background:none !important;
+padding:4px 1px 4px 4px !important;
+}
+#apdockfisheye {
+background:transparent url('../images/theme4/dock-bg.png') repeat-x 0 100% !important;
+}
+/* Light Box */
+#sbox-window {
+background-color:#444;
+}
+#sbox-overlay {
+background-color:#FFF;
+}
+/* RSFinder */
+a.mod_rsfinder, a.mod_rsfinder:link, a.mod_rsfinder:hover {
+background-color:transparent;
+position:absolute;
+margin:5px 0 0 5px;
+}

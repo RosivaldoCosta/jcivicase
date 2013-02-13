@@ -1,0 +1,591 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0082)https://65.216.170.16/emrtestSante/IHIT/IndividualTreatmentPlan.asp?CaseNumber=487 -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>IHIT Individual Plan/Review</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>BODY {
+	BACKGROUND-COLOR: #00ccff
+}
+.style1 {
+	FONT-SIZE: 24px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style2 {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+</STYLE>
+
+<SCRIPT type=text/JavaScript>
+<!--
+javascript:window.history.forward(1);
+<!--
+
+//-->
+
+<!--
+
+<!--
+function check_length(f)
+{
+maxLen = 254; // max number of characters allowed
+if (f.value.length >= maxLen) {
+// Alert message if maximum limit is reached. 
+// If required Alert can be removed. 
+var msg = "You have reached your maximum limit of characters allowed";
+alert(msg);
+// Reached the Maximum length so trim the textarea
+f.value = f.value.substring(0, maxLen);
+}
+}
+
+//-->
+
+/**
+ * DHTML date validation script. Courtesy of SmartWebby.com (http://www.smartwebby.com/dhtml/)
+ */
+// Declaring valid date character, minimum year and maximum year
+var dtCh= "/";
+var minYear=1900;
+var maxYear=2100;
+
+function isInteger(s){
+	var i;
+    for (i = 0; i < s.length; i++){   
+        // Check that current character is number.
+        var c = s.charAt(i);
+        if (((c < "0") || (c > "9"))) return false;
+    }
+    // All characters are numbers.
+    return true;
+}
+
+function stripCharsInBag(s, bag){
+	var i;
+    var returnString = "";
+    // Search through string's characters one by one.
+    // If character is not in bag, append to returnString.
+    for (i = 0; i < s.length; i++){   
+        var c = s.charAt(i);
+        if (bag.indexOf(c) == -1) returnString += c;
+    }
+    return returnString;
+}
+
+function daysInFebruary (year){
+	// February has 29 days in any year evenly divisible by four,
+    // EXCEPT for centurial years which are not also divisible by 400.
+    return (((year % 4 == 0) && ( (!(year % 100 == 0)) || (year % 400 == 0))) ? 29 : 28 );
+}
+function DaysArray(n) {
+	for (var i = 1; i <= n; i++) {
+		this[i] = 31
+		if (i==4 || i==6 || i==9 || i==11) {this[i] = 30}
+		if (i==2) {this[i] = 29}
+   } 
+   return this
+}
+
+function isDate(dtStr){
+	var daysInMonth = DaysArray(12)
+	var pos1=dtStr.indexOf(dtCh)
+	var pos2=dtStr.indexOf(dtCh,pos1+1)
+	var strMonth=dtStr.substring(0,pos1)
+	var strDay=dtStr.substring(pos1+1,pos2)
+	var strYear=dtStr.substring(pos2+1)
+	strYr=strYear
+	if (strDay.charAt(0)=="0" && strDay.length>1) strDay=strDay.substring(1)
+	if (strMonth.charAt(0)=="0" && strMonth.length>1) strMonth=strMonth.substring(1)
+	for (var i = 1; i <= 3; i++) {
+		if (strYr.charAt(0)=="0" && strYr.length>1) strYr=strYr.substring(1)
+	}
+	month=parseInt(strMonth)
+	day=parseInt(strDay)
+	year=parseInt(strYr)
+	if (pos1==-1 || pos2==-1){
+		alert("The date format should be : mm/dd/yyyy")
+		return false
+	}
+	if (strMonth.length<1 || month<1 || month>12){
+		alert("Please enter a valid month")
+		return false
+	}
+	if (strDay.length<1 || day<1 || day>31 || (month==2 && day>daysInFebruary(year)) || day > daysInMonth[month]){
+		alert("Please enter a valid day")
+		return false
+	}
+	if (strYear.length != 4 || year==0 || year<minYear || year>maxYear){
+		alert("Please enter a valid 4 digit year between "+minYear+" and "+maxYear)
+		return false
+	}
+	if (dtStr.indexOf(dtCh,pos2+1)!=-1 || isInteger(stripCharsInBag(dtStr, dtCh))==false){
+		alert("Please enter a valid date")
+		return false
+	}
+return true
+}
+
+function ValidateForm(){
+
+    return true
+ }//-->
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  	var da=document.form1.PDate
+	var db=document.form1.LTStart
+	var dc=document.form1.LTTarget
+	var dd=document.form1.LTCompleted
+	var de=document.form1.LTRevised
+	var df=document.form1.LTPStart
+	var dg=document.form1.LTPTarget
+	var dh=document.form1.LTPCompleted
+	var di=document.form1.LTPRevised
+	var dj=document.form1.ST1Start
+	var dk=document.form1.ST1Target
+	var dl=document.form1.ST1Complete
+	var dm=document.form1.ST1Revised
+	var dn=document.form1.ST1OStart
+	var doa=document.form1.ST1OTarget
+	var dp=document.form1.ST1OComplete
+	var dq=document.form1.ST1ORevised
+	var dr=document.form1.ST1PStart
+	var ds=document.form1.ST1PTarget
+	var dt=document.form1.ST1PComplete
+	var du=document.form1.ST1PRevised
+	var dv=document.form1.ST2Start
+	var dw=document.form1.ST2Target
+	var dx=document.form1.ST2Complete
+	var dy=document.form1.ST2Revised
+	var dz=document.form1.ST2OStart
+	var ea=document.form1.ST2OTarget
+	var eb=document.form1.ST2OComplete
+	var ec=document.form1.ST2ORevised
+	var ed=document.form1.ST2PStart
+	var ee=document.form1.ST2PTarget
+	var ef=document.form1.ST2PComplete
+	var eg=document.form1.ST2PRevised
+		if(isDate(da.value)==false){
+			da.focus()
+		
+			}
+		if(db.value != ""){
+			if(isDate(db.value)==false){
+				db.focus()
+		
+				}
+			}
+		if(dc.value != ""){
+			if(isDate(dc.value)==false){
+				dc.focus()
+			
+				}
+			}
+		if(dd.value != ""){
+			if(isDate(dd.value)==false){
+				dd.focus()
+			
+				}
+			}
+		if(de.value != ""){
+			if(isDate(de.value)==false){
+				de.focus()
+			
+				}
+			}
+		if(df.value != ""){
+			if(isDate(df.value)==false){
+				df.focus()
+			
+				}
+			}
+		if(dg.value != ""){
+			if(isDate(dg.value)==false){
+				dg.focus()
+			
+				}
+			}
+		if(dh.value != ""){
+			if(isDate(dh.value)==false){
+				dh.focus()
+			
+				}
+			}
+		if(di.value != ""){
+			if(isDate(di.value)==false){
+				di.focus()
+			
+				}
+			}
+		if(dj.value != ""){
+			if(isDate(dj.value)==false){
+				dj.focus()
+			
+				}
+			}
+		if(dk.value != ""){
+			if(isDate(dk.value)==false){
+				dk.focus()
+		
+				}
+			}
+		if(dl.value != ""){
+			if(isDate(dl.value)==false){
+				dl.focus()
+				}
+			}
+		if(dm.value != ""){
+			if(isDate(dm.value)==false){
+				dm.focus()
+			
+				}
+			}
+		if(dn.value != ""){
+			if(isDate(dn.value)==false){
+				dn.focus()
+			
+				}
+			}
+		if(doa.value != ""){
+			if(isDate(doa.value)==false){
+				doa.focus()
+			
+				}
+			}
+		if(dp.value != ""){
+			if(isDate(dp.value)==false){
+				dp.focus()
+			
+				}
+			}
+		if(dq.value != ""){
+			if(isDate(dq.value)==false){
+				dq.focus()
+				
+				}
+			}
+		if(dr.value != ""){
+			if(isDate(dr.value)==false){
+				dr.focus()
+			
+				}
+			}
+		if(ds.value != ""){
+			if(isDate(ds.value)==false){
+				ds.focus()
+			
+				}
+			}
+		if(dt.value != ""){
+			if(isDate(dt.value)==false){
+				dt.focus()
+			
+				}
+			}
+		if(du.value != ""){
+			if(isDate(du.value)==false){
+				du.focus()
+			
+				}
+			}
+		if(dv.value != ""){
+			if(isDate(dv.value)==false){
+				dv.focus()
+			
+				}
+			}
+		if(dw.value != ""){
+			if(isDate(dw.value)==false){
+				dw.focus()
+			
+				}
+			}
+		if(dx.value != ""){
+			if(isDate(dx.value)==false){
+				dx.focus()
+			
+				}
+			}
+		if(dy.value != ""){
+			if(isDate(dy.value)==false){
+				dy.focus()
+			
+				}
+			}
+		if(dz.value != ""){
+			if(isDate(dz.value)==false){
+				dz.focus()
+			
+				}
+			}
+		if(ea.value != ""){
+			if(isDate(ea.value)==false){
+				ea.focus()
+			
+				}
+			}
+		if(eb.value != ""){
+			if(isDate(eb.value)==false){
+				eb.focus()
+			
+				}
+			}
+		if(ec.value != ""){
+			if(isDate(ec.value)==false){
+				ec.focus()
+			
+				}
+			}
+		if(ed.value != ""){
+			if(isDate(ed.value)==false){
+				ed.focus()
+				
+				}
+			}
+		if(ee.value != ""){
+			if(isDate(ee.value)==false){
+				ee.focus()
+			
+				}
+			}
+		if(ef.value != ""){
+			if(isDate(ef.value)==false){
+				ef.focus()
+				
+				}
+			}
+		if(eg.value != ""){
+			if(isDate(eg.value)==false){
+				eg.focus()
+				
+				}
+			}
+  document.MM_returnValue = (errors == '');
+}
+//-->
+</SCRIPT>
+
+<META content="MSHTML 6.00.6000.16825" name=GENERATOR></HEAD>
+<BODY>
+<FORM id=form1 name=form1 
+onsubmit="MM_validateForm('PDate','','R','PFirstName','','R','PLastName','','R','LTStart','','R','LongTerm','','R','ShortTerm1','','R','ST1Objective','','R','ShortTerm2','','R','ST2Objective','','R');return document.MM_returnValue" 
+action=http://localhost:8080/<#LocalUri#> method=post>
+<INPUT type=hidden value=1 name=Active> 
+<INPUT type=hidden value="<#TimeStamp#>" name=cstamp> 
+<INPUT type=hidden value="<#TimeStamp#>" name=tstamp> 
+ <INPUT type=hidden value=yes name=isSubmitted> 
+<INPUT type=hidden value=form1 name=MM_insert> 
+<INPUT id=Depart type=hidden value="IHIT" name="Depart"> 
+<INPUT type="hidden" value="IHIT Individual Treatment Plan" name="FormName">
+<TABLE cellSpacing=0 cellPadding=0 width=950 border=0>
+  <TBODY>
+  <TR>
+    <TD height=115>
+      <DIV align=center><STRONG><SPAN class=style1>BALTIMORE COUNTY<BR>IHIT 
+      INDIVIDUAL TREATMENT PLAN/REVIEW 
+</SPAN></STRONG></DIV></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD><STRONG><SPAN class=style2>Case Number : </SPAN></STRONG></TD>
+    <TD><LABEL><U><SPAN class=style5></SPAN></U> <INPUT id=CaseNumber type="text" name="CaseNumber"> </LABEL></TD>
+    <TD>Date:</TD>
+    <TD><LABEL><INPUT id=PDate 
+      onblur="MM_validateForm('PDate','','R','PFirstName','','R','PLastName','','R','LTStart','','R','ST1Start','','R');return document.MM_returnValue" 
+      maxLength=20 value="<#ShortDateStamp#>" name=PDate> </LABEL></TD></TR>
+  <TR>
+    <TD class=style3>Patient First Name: </TD>
+    <TD><LABEL><INPUT id=PFirstName maxLength=50 name=PFirstName> 
+      </LABEL></TD>
+    <TD class=style3>Patient Last Name: </TD>
+    <TD><LABEL><INPUT id=PLastName maxLength=50 name=PLastName> 
+      </LABEL></TD></TR></TBODY></TABLE>
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" border=1>
+  <TBODY>
+  <TR class=style3>
+    <TD class=style3 width=226>
+      <DIV align=center>Goals and Objectives </DIV></TD>
+    <TD width=155>
+      <DIV align=center>Start Date </DIV></TD>
+    <TD width=151>
+      <DIV align=center>Target Date </DIV></TD>
+    <TD width=150>
+      <DIV align=center>Completed</DIV></TD>
+    <TD width=160>
+      <DIV align=center>Revised</DIV></TD></TR>
+  <TR>
+    <TD class=style3>
+      <DIV align=center>Long-term Goal:<BR></DIV><LABEL>
+      <DIV align=center><TEXTAREA onkeypress=check_length(this.form.LongTerm); id=LongTerm name=LongTerm rows=4 cols=25></TEXTAREA> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=LTStart maxLength=20 name=LTStart> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=LTTarget maxLength=20 name=LTTarget> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=LTCompleted maxLength=20 name=LTComplete> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=LTRevised maxLength=20 name=LTRevised> 
+      </DIV></LABEL></TD></TR>
+  <TR>
+    <TD class=style3>
+      <DIV align=center>Progress:<BR></DIV><LABEL>
+      <DIV align=center><TEXTAREA onkeypress=check_length(this.form.LTProgress); id=LTProgress name=LTProgress rows=4 cols=25></TEXTAREA> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=LTPStart maxLength=20 name=LTPStart> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=LTPTarget maxLength=20 name=LTPTarget> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=LTPCompleted maxLength=20 name=LTPComplete> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=LTPRevised maxLength=20 name=LTPRevised> 
+      </DIV></LABEL></TD></TR>
+  <TR>
+    <TD class=style3>
+      <DIV align=center>Short-term goal #1:<BR></DIV><LABEL>
+      <DIV align=center><TEXTAREA onkeypress=check_length(this.form.ShortTerm1); id=ShortTerm1 onblur="MM_validateForm('PDate','','R','PFirstName','','R','PLastName','','R');return document.MM_returnValue" name=ShortTerm1 rows=4 cols=25></TEXTAREA> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1Start maxLength=20 name=ST1Start> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1Target maxLength=20 name=ST1Target> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1Complete maxLength=20 name=ST1Complete> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1Revised maxLength=20 name=ST1Revised> 
+      </DIV></LABEL></TD></TR>
+  <TR>
+    <TD class=style3>
+      <DIV align=center>Objectives:<BR></DIV><LABEL>
+      <DIV align=center><TEXTAREA onkeypress=check_length(this.form.ST1Objective); id=ST1Objective name=ST1Objective rows=4 cols=25></TEXTAREA> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1OStart maxLength=20 name=ST1OStart> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1OTarget maxLength=20 name=ST1OTarget> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1OComplete maxLength=20 name=ST1OComplete> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1ORevised maxLength=20 name=ST1ORevised> 
+      </DIV></LABEL></TD></TR>
+  <TR>
+    <TD class=style3>
+      <DIV align=center>Progress:<BR></DIV><LABEL>
+      <DIV align=center><TEXTAREA onkeypress=check_length(this.form.ST1Progress); id=ST1Progress name=ST1Progress rows=4 cols=25></TEXTAREA> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1PStart maxLength=20 name=ST1PStart> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1PTarget maxLength=20 name=ST1PTarget> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1PComplete maxLength=20 name=ST1PComplete> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST1PRevised maxLength=20 name=ST1PRevised> 
+      </DIV></LABEL></TD></TR>
+  <TR>
+    <TD class=style3>
+      <DIV align=center>Short-Term goal #2:<BR></DIV><LABEL>
+      <DIV align=center><TEXTAREA onkeypress=check_length(this.form.ShortTerm2); id=ShortTerm2 name=ShortTerm2 rows=4 cols=25></TEXTAREA> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2Start maxLength=20 name=ST2Start> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2Target maxLength=20 name=ST2Target> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2Complete maxLength=20 name=ST2Complete> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2Revised maxLength=20 name=ST2Revised> 
+      </DIV></LABEL></TD></TR>
+  <TR>
+    <TD class=style3>
+      <DIV align=center>Objectives:<BR></DIV><LABEL>
+      <DIV align=center><TEXTAREA onkeypress=check_length(this.form.ST2Objective); id=ST2Objective name=ST2Objective rows=4 cols=25></TEXTAREA> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2OStart maxLength=20 name=ST2OStart> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2OTarget maxLength=20 name=ST2OTarget> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2OComplete maxLength=20 name=ST2OComplete> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2ORevised maxLength=20 name=ST2ORevised> 
+      </DIV></LABEL></TD></TR>
+  <TR>
+    <TD class=style3>
+      <DIV align=center>Progress:<BR></DIV><LABEL>
+      <DIV align=center><TEXTAREA onkeypress=check_length(this.form.ST2Progress); id=ST2Progress onblur="MM_validateForm('LongTerm','','R','ShortTerm1','','R','ST1Objective','','R','ShortTerm2','','R','ST2Objective','','R','Comments','','R');return document.MM_returnValue" name=ST2Progress rows=4 cols=25></TEXTAREA> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2PStart maxLength=20 name=ST2PStart> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2PTarget maxLength=20 name=ST2PTarget> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2PComplete maxLength=20 name=ST2PComplete> 
+      </DIV></LABEL></TD>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=ST2PRevised maxLength=20 name=ST2PRevised> 
+      </DIV></LABEL></TD></TR></TBODY></TABLE>
+<TABLE height=175 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD class=style3>Additional Comments:<BR><LABEL><TEXTAREA onkeypress=check_length(this.form.Comments); id=Comments name=Comments rows=4 cols=80></TEXTAREA> 
+      </LABEL></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class=style3 align=center>Press the submit button to submit 
+      information from the <BR>IHIT Individual Treatment Plan And Review 
+    </DIV></TD></TR></TBODY></TABLE>
+<TABLE height=54 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD><LABEL>
+      <DIV align=center><INPUT id=EmployeeID type=hidden name=EmployeeID> <INPUT type=submit value="Save" name=Submit> 
+      </DIV></LABEL></TD></TR></TBODY></TABLE></FORM></BODY></HTML>

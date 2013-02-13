@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*
+ * CSS Document
+ * Written by Ryan Yonzon
+ * http://ryan.rawswift.com/
+ */
+ 
+/*
+ * IE hack 
+ */
+html, body {
+	margin:0px;
+	height:100%; /* make sure we'll use 100% of the page's height */
+}
+
+.chatboxtextarea {
+       height:44px !important;
+       overflow:auto !important;
+}
+
+.chatbox {
+       top:expression( ( -340 + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+       position:expression("absolute");
+}
+
+.chatbox_m {
+	top:expression( ( -21 + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	position:expression("absolute");
+}
+
+.chatboxistatus{
+	height:42px;
+}
+.chatboxhead 
+{
+	overflow:hidden;
+}
+.chatboxtitle
+{
+	line-height:13px;
+}
+.jb_smileybox
+{
+	top:-50px;
+}

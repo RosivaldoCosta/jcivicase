@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>CiviCRM - Discharge Summary Plugin</name>
+	<author>Charles Campbell</author>
+	<creationDate>October 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.
+		All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>http://www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>CiviCRM Discharge Summary Hooks </description>
+	<files>
+		<filename plugin="dischargesummary">dischargesummary.php</filename>
+	</files>
+	 <params>
+                <param name="changecasestatus_activity_type" type="text" default="16" label="Change Case Status" description="Change case status activity type"/>
+                <param name="discharge_activity_type" type="text" default="47" label="Discharge" description="Discharge"/>
+                <param name="reclosure_status" type="text" default="15" label="Status ID" description="Recommend for closure status"/>
+                <param name="referral_activity_type" type="text" default="15" label="Referral Type ID" description="Activity type for referrals given"/>
+                <param name="referral_group" type="text" default="15" label="Referral Group ID" description="Group tree id for referrals given"/>
+                <param name="referral_type_ids" type="text" default="15" label="Referral Type IDs" description="Referral type field ids"/>
+                <param name="referral_field_ids" type="text" default="15" label="Referral Field IDs" description="Referral field ids"/>
+		<!--<param name="title" type="sql" default="10" label="Select an article" query="SELECT id AS value, title FROM #__content" />-->
+          </params> 
+</install>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin"  group="auth">
+	<name>Authentication - Tine 20</name>
+	<author>Joomla! Project</author>
+	<creationDate>November 2005</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.5</version>
+	<description>Handles user SSO authentication  with Tine 2.0</description>
+	<files>
+		<filename plugin="tine20">tine20.php</filename>
+	</files>
+	<params>
+		<param name="username" type="text" size="20" default="" label="Username" description="PARAMLDAPHOST" />
+		<param name="remote_addr" type="text" size="20" default="" label="Remote Address" description="PARAMLDAPPORT" />
+		<param name="agent" type="text" default="" label="Agent" description="PARAMLDAPV3"/>
+		<param name="sso_url" type="text" default="" label="SSO Url" description="PARAMFOLLOW"/>
+		<param name="sso_version" type="text" size="20" default="" label="SSO Version" description="PARAMBASEDN" />
+		<param name="sso_action" type="text" size="20" default="" label="SSO Action" description="PARAMSEARCHSTRING" />
+		<param name="sso_userdata" type="text" size="20" default="" label="SSO User Data" description="PARAMUSERSDN" />
+	</params>
+</install>

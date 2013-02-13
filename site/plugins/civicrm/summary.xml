@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>CiviCRM - Summary</name>
+	<author>Joomla! Project</author>
+	<creationDate>February 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Campbell Consulting Studio, LLC.
+		All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>charles@cc5tudio.com</authorEmail>
+	<authorUrl>www.cc5tudio.com</authorUrl>
+	<version>1.5</version>
+	<description>CiviCRM Summary Hook for Joomla</description>
+	<files>
+		<filename plugin="civicrm">summary.php</filename>
+	</files>
+	<params>
+		<param name="content" type="textarea"
+			label="Content" rows="10" cols="5" description="HTML content to place on the summary page.">
+		</param>
+		<param name="placement" type="radio"
+			label="Placement" description="Placement on the summary page.">
+			<option value="3">Replace Summary Content</option>
+                        <option value="2">Above Summary Content</option>
+                        <option value="1">Below Summary Content</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,67 @@
+<html>
+<head>
+<title></title>
+<script type="text/javascript">
+function getSize() 
+{
+    var myWidth = 0;
+    var myHeight = 0;
+    if (typeof(window.innerWidth) == 'number') 
+    {
+        myWidth = window.innerWidth;
+        myHeight = window.innerHeight;
+    } 
+    else 
+    {
+        if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) 
+        {
+            myWidth = document.documentElement.clientWidth;
+            myHeight = document.documentElement.clientHeight;
+        } 
+        else 
+        {
+            if (document.body && (document.body.clientWidth || document.body.clientHeight)) 
+            {
+                myWidth = document.body.clientWidth;
+                myHeight = document.body.clientHeight;
+            }
+        }
+    }
+    return [myWidth, myHeight];
+}
+function resize()
+{
+	var s = getSize();
+	var width = s[0];
+	var height = s[1];
+	var browser=navigator.appName;
+	
+	if(browser!='Netscape')
+	{
+		document.getElementById('carousel').width=width;
+		document.getElementById('carousel').height=height;
+	}
+	else
+	{
+		document.getElementById('carousel_movie').width=width;
+		document.getElementById('carousel').width=width;
+		document.getElementById('carousel_movie').height=height;
+		document.getElementById('carousel').height=height;
+	}
+}
+
+window.onresize = resize;
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="resize()">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" id="carousel" align="middle">
+	<param name="allowScriptAccess" value="always" />
+	<param name="movie" value="carousel_settings.swf" />
+	<param name="quality" value="high" />
+	<param name="allowFullScreen" value="true" />
+	<param name="bgcolor" value="#333333" />
+	<embed src="carousel_settings.swf" quality="high" bgcolor="#333333" name="Carousel" id="carousel_movie" align="middle" allowFullScreen="true" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</body>
+</html>
+

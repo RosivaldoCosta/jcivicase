@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<phpunit>
+  <filter>
+    <blacklist>
+      <directory>/var/www/html/sandbox/tests</directory>
+
+    </blacklist>
+    <whitelist>
+      <directory>/var/www/html/sandbox/tests/phpunit/api/v2</directory>
+      <directory>/var/www/html/sandbox/tests/phpunit/CRM</directory>
+      <!--<exclude>
+        <directory>CRM/Auction</directory>
+        <directory>CRM/HRDCase</directory>
+        <directory>CRM/SMS</directory>
+        <file>CRM/Contact/Page/View/SMS.php</file>
+      </exclude>  -->
+    </whitelist>
+  </filter>
+  <logging>
+    <log type="coverage-html" target="var/www/html/sandbox/tools/tests/reports/coverage" charset="UTF-8"
+       yui="true" highlight="false" lowUpperBound="35" highLowerBound="70" />
+    <log type="tap" target="var/www/html/sandbox/tools/tests/reports/logfile.tap"/>
+    <log type="test-xml" target="var/www/html/sandbox/tools/tests/reports/logfile.xml" logIncompleteSkipped="false"/>
+    <log type="testdox-html" target="var/www/html/sandbox/tools/tests/reports/testdox.html"/>
+    <log type="testdox-text" target="var/www/html/sandbox/tools/tests/reports/testdox.txt"/>
+    <log type="test-xml" target="var/www/html/sandbox/tools/tests/reports/logfile.xml"
+	 logIncompleteSkipped="true" />
+  </logging>
+</phpunit>

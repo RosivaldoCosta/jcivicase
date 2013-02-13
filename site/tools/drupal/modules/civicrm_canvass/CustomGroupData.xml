@@ -1,0 +1,4372 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<CustomData>
+  <CustomGroups>
+    <CustomGroup>
+      <name>Primary_Contact</name>
+      <title>Primary Contact</title>
+      <extends>Organization</extends>
+      <style>Inline</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>1</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_primary_contact</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Voter_Info</name>
+      <title>Voter Info</title>
+      <extends>Individual</extends>
+      <style>Tab</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>3</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_voter_info</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Core_Info</name>
+      <title>Core Info</title>
+      <extends>Individual</extends>
+      <style>Inline</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>4</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_core_info</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Grassroots_Info</name>
+      <title>Grassroots Info</title>
+      <extends>Individual</extends>
+      <style>Tab</style>
+      <collapse_display>0</collapse_display>
+      <help_pre><p>Don't forget these fields!!</p></help_pre>
+      <help_post></help_post>
+      <weight>5</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_grassroots_info</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Leadership_Level</name>
+      <title>Leadership Level</title>
+      <extends>Activity</extends>
+      <style>Inline</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>6</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_leadership_level</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Contact_Info</name>
+      <title>Contact Info</title>
+      <extends>Organization</extends>
+      <style>Inline</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>7</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_contact_info</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Grant_Info</name>
+      <title>Grant Info</title>
+      <extends>Organization</extends>
+      <style>Tab</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>8</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_grant_info</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Proposal_Info</name>
+      <title>Proposal Info</title>
+      <extends>Activity</extends>
+      <extends_entity_column_value>20</extends_entity_column_value>
+      <style>Inline</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>9</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_proposal_info</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Participant_Info</name>
+      <title>Participant Info</title>
+      <extends>Participant</extends>
+      <style>Inline</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>10</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_participant_info</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Contribution_Source</name>
+      <title>Contribution Source</title>
+      <extends>Contribution</extends>
+      <style>Inline</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>11</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_contribution_source</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Walk_List_Responses</name>
+      <title>Walk List Responses</title>
+      <extends>Activity</extends>
+      <extends_entity_column_value>24</extends_entity_column_value>
+      <style>Inline</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>12</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_door_knock_responses</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Call_List_Responses</name>
+      <title>Call List Responses</title>
+      <extends>Activity</extends>
+      <extends_entity_column_value>2</extends_entity_column_value>
+      <style>Inline</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>13</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_phone_bank_responses</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Event_Details</name>
+      <title>Event Details</title>
+      <extends>Event</extends>
+      <style>Inline</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>14</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_event_details</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Activity_Source_Details</name>
+      <title>Activity Source Details</title>
+      <extends>Activity</extends>
+      <style>Inline</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>16</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_source_details</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Communication_Details</name>
+      <title>Communication Details</title>
+      <extends>Contact</extends>
+      <style>Inline</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>2</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_communication_details</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Event_Campaign_Details</name>
+      <title>Event Campaign Details</title>
+      <extends>Event</extends>
+      <extends_entity_column_value>8</extends_entity_column_value>
+      <style>Inline</style>
+      <collapse_display>0</collapse_display>
+      <help_pre><p>Additional information for tracking phone banking and field canvass.</p></help_pre>
+      <help_post></help_post>
+      <weight>15</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_event_campaign_details</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Organizational_Details</name>
+      <title>Organizational Details</title>
+      <extends>Organization</extends>
+      <style>Inline</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>17</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_organizational_details</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Demographics</name>
+      <title>Demographics</title>
+      <extends>Individual</extends>
+      <style>Tab</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>18</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_demographics</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+  </CustomGroups>
+  <CustomFields>
+    <CustomField>
+      <label>Name</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>1</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>name_1</column_name>
+      <custom_group_title>Primary Contact</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Title</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>0</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>92</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>title_2</column_name>
+      <custom_group_title>Primary Contact</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Email</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>0</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>98</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>email_3</column_name>
+      <custom_group_title>Primary Contact</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Phone</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>0</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>106</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>phone_4</column_name>
+      <custom_group_title>Primary Contact</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Precinct</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>93</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>precinct_5</column_name>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>State District</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>99</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>state_district_6</column_name>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>City District</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>103</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>city_district_7</column_name>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Federal District</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>113</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>federal_district_8</column_name>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Party Registration</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>86</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>party_registration_16</column_name>
+      <option_group_label>Party Registration</option_group_label>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>If other party...</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>91</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>if_other_party__17</column_name>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>State Voter ID</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>69</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>state_voter_id_18</column_name>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Voted in 2008 General Election?</label>
+      <data_type>Boolean</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>130</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>voted_in_2008_general_election__24</column_name>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Voted in 2008 Primary Election?</label>
+      <data_type>Boolean</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>128</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>voted_in_2008_primary_election__25</column_name>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>County Name</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>121</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>county_name_61</column_name>
+      <option_group_label>County Name</option_group_label>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Voter History</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>125</weight>
+      <help_post>A - Always 
+O - Occasional
+N - New</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>voter_history_75</column_name>
+      <option_group_label>Voter History</option_group_label>
+      <custom_group_title>Voter Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Ethnicity</label>
+      <data_type>String</data_type>
+      <html_type>Multi-Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>118</weight>
+      <help_post>Select all that apply</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>ethnicity_19</column_name>
+      <option_group_label>Ethnicity</option_group_label>
+      <custom_group_title>Demographics</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Primary Language</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>123</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>primary_language_20</column_name>
+      <option_group_label>Primary Language</option_group_label>
+      <custom_group_title>Demographics</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Secondary Language</label>
+      <data_type>String</data_type>
+      <html_type>CheckBox</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>131</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>secondary_language_95</column_name>
+      <option_group_label>Primary Language</option_group_label>
+      <custom_group_title>Demographics</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Kids?</label>
+      <data_type>Boolean</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>132</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>kids__21</column_name>
+      <custom_group_title>Demographics</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Constituent Type</label>
+      <data_type>String</data_type>
+      <html_type>CheckBox</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>85</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <options_per_line>2</options_per_line>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>constituent_type_13</column_name>
+      <option_group_label>Constituent Type</option_group_label>
+      <custom_group_title>Core Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Staff Responsible</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>133</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>staff_responsible_22</column_name>
+      <option_group_label>Staff Responsible</option_group_label>
+      <custom_group_title>Core Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Date Started</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>134</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <start_date_years>30</start_date_years>
+      <date_format>mm/dd/yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>date_started_57</column_name>
+      <custom_group_title>Core Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Other Name</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>87</weight>
+      <help_post>Other Name, e.g. chinese name or indigenous name.</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>other_name_72</column_name>
+      <custom_group_title>Core Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>How Started</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>135</weight>
+      <help_post>Describe how an individual first came to the organization.</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>how_started_73</column_name>
+      <option_group_label>How Started</option_group_label>
+      <custom_group_title>Core Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Leadership Level</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>90</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>leadership_level_12</column_name>
+      <option_group_label>Leadership Level</option_group_label>
+      <custom_group_title>Grassroots Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Issues Interest</label>
+      <data_type>String</data_type>
+      <html_type>CheckBox</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>95</weight>
+      <help_post>What issues has this person expressed interest in?</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <options_per_line>2</options_per_line>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>issues_interest_34</column_name>
+      <option_group_label>Funding Areas</option_group_label>
+      <custom_group_title>Grassroots Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Volunteer Interests</label>
+      <data_type>String</data_type>
+      <html_type>CheckBox</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>96</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <options_per_line>2</options_per_line>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>volunteer_interests_35</column_name>
+      <option_group_label>Volunteer Interests</option_group_label>
+      <custom_group_title>Grassroots Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Member Status</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>89</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>member_status_76</column_name>
+      <option_group_label>Member Status</option_group_label>
+      <custom_group_title>Grassroots Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Leadership Level</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>28</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>leadership_level_23</column_name>
+      <option_group_label>Leadership Level</option_group_label>
+      <custom_group_title>Leadership Level</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Constituent Type</label>
+      <data_type>String</data_type>
+      <html_type>CheckBox</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>59</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <options_per_line>2</options_per_line>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>constituent_type_26</column_name>
+      <option_group_label>Constituent Type</option_group_label>
+      <custom_group_title>Contact Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Average Amount</label>
+      <data_type>Money</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>62</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>average_amount_27</column_name>
+      <custom_group_title>Grant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Funding Areas</label>
+      <data_type>String</data_type>
+      <html_type>CheckBox</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>75</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <options_per_line>2</options_per_line>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>funding_areas_28</column_name>
+      <option_group_label>Funding Areas</option_group_label>
+      <custom_group_title>Grant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Requirements Notes</label>
+      <data_type>Memo</data_type>
+      <html_type>RichTextEditor</html_type>
+      <is_required>0</is_required>
+      <is_searchable>0</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>88</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>requirements_notes_29</column_name>
+      <custom_group_title>Grant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Ask Amount</label>
+      <data_type>Money</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>64</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>ask_amount_30</column_name>
+      <custom_group_title>Proposal Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Amount to be Received</label>
+      <data_type>Money</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>71</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>amount_to_be_received_99</column_name>
+      <custom_group_title>Proposal Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Date to be Received</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>77</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <start_date_years>30</start_date_years>
+      <end_date_years>5</end_date_years>
+      <date_format>mm/dd/yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>date_to_be_received_100</column_name>
+      <custom_group_title>Proposal Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Multiyear Grant</label>
+      <data_type>String</data_type>
+      <html_type>CheckBox</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>81</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>multiyear_grant_101</column_name>
+      <option_group_label>Multiyear Grant</option_group_label>
+      <custom_group_title>Proposal Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Years</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>84</weight>
+      <help_post>Enter number of years for a multi-year grant</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>years_102</column_name>
+      <custom_group_title>Proposal Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Proposal Status</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>66</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>proposal_status_118</column_name>
+      <option_group_label>Proposal Status</option_group_label>
+      <custom_group_title>Proposal Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Childcare Needed</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <default_value>0</default_value>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>17</weight>
+      <help_post>Enter number of children if participant needs childcare - otherwise leave it as 0 if no childcare is needed</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>childcare_needed_42</column_name>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Ride TO</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <default_value>0</default_value>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>37</weight>
+      <help_post>Enter number of rides participant needs TO event (include children)</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>ride_to_43</column_name>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Ride BACK</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <default_value>0</default_value>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>60</weight>
+      <help_post>Enter number of rides participant needs BACK from event (include children)</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>ride_back_44</column_name>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Invitation Date</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>61</weight>
+      <help_post>Invitation or First Call Date</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <start_date_years>30</start_date_years>
+      <end_date_years>5</end_date_years>
+      <date_format>mm/dd/yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>invitation_date_106</column_name>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Invitation Response</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>63</weight>
+      <help_post>Response to Invitation or First Call</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>invitation_response_107</column_name>
+      <option_group_label>Invitation Response</option_group_label>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Second Call Date</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>0</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>65</weight>
+      <help_post>Date of Second call</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <start_date_years>30</start_date_years>
+      <end_date_years>5</end_date_years>
+      <date_format>mm/dd/yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>second_call_date_108</column_name>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Second Call Response</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>68</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>second_call_response_109</column_name>
+      <option_group_label>Invitation Response</option_group_label>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Reminder Date</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>72</weight>
+      <help_post>Date of Reminder or last call</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <start_date_years>30</start_date_years>
+      <end_date_years>5</end_date_years>
+      <date_format>mm/dd/yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>reminder_date_110</column_name>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Reminder Response</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>74</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>reminder_response_111</column_name>
+      <option_group_label>Invitation Response</option_group_label>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Contact Attended?</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>78</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>contact_attended__112</column_name>
+      <option_group_label>Contact Attended?</option_group_label>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Participant Campaign Code</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <default_value>General Donations</default_value>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>82</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>participant_campaign_code_113</column_name>
+      <option_group_label>Campaign Source Code</option_group_label>
+      <custom_group_title>Participant Info</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Contribution Campaign Code</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <default_value>General Donations</default_value>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>21</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>campaign_source_code_45</column_name>
+      <option_group_label>Campaign Source Code</option_group_label>
+      <custom_group_title>Contribution Source</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Contribution Campaign Method</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>49</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>campaign_method_46</column_name>
+      <option_group_label>Campaign Method</option_group_label>
+      <custom_group_title>Contribution Source</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Is this a Field Canvass Campaign</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>24</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>is_this_a_field_canvass_campaign_78</column_name>
+      <option_group_label>Is this a Phone Bank?</option_group_label>
+      <custom_group_title>Walk List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q1</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>25</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q1_79</column_name>
+      <option_group_label>Q1</option_group_label>
+      <custom_group_title>Walk List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q2</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>29</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q2_80</column_name>
+      <option_group_label>Q1</option_group_label>
+      <custom_group_title>Walk List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q3</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>31</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q3_81</column_name>
+      <option_group_label>Q1</option_group_label>
+      <custom_group_title>Walk List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q4</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>38</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q4_82</column_name>
+      <option_group_label>Q1</option_group_label>
+      <custom_group_title>Walk List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Walk List Status</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>39</weight>
+      <help_post>NH - Not Home
+MV - Moved
+D - Deceased
+WA - Wrong Address</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>walk_list_status_83</column_name>
+      <option_group_label>Walk List Status</option_group_label>
+      <custom_group_title>Walk List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Is this a Call List?</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>13</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>is_this_a_phone_bank__53</column_name>
+      <option_group_label>Is this a Phone Bank?</option_group_label>
+      <custom_group_title>Call List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Call List Status</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>51</weight>
+      <help_post>NH - Not Home
+MV - Moved
+D - Deceased
+WN - Wrong Number</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>call_list_status_67</column_name>
+      <option_group_label>Call List Status</option_group_label>
+      <custom_group_title>Call List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q1</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>18</weight>
+      <help_post>Y - Yes
+N - No
+U - Undecided
+D - Declined</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q1_68</column_name>
+      <option_group_label>Q1</option_group_label>
+      <custom_group_title>Call List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q2</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>44</weight>
+      <help_post>Y - Yes
+N - No
+U - Undecided
+D - Declined</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q2_69</column_name>
+      <option_group_label>Q1</option_group_label>
+      <custom_group_title>Call List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q3</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>45</weight>
+      <help_post>Y - Yes
+N - No
+U - Undecided
+D - Declined</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q3_70</column_name>
+      <option_group_label>Q1</option_group_label>
+      <custom_group_title>Call List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q4</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>50</weight>
+      <help_post>Y - Yes
+N - No
+U - Undecided
+D - Declined</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q4_71</column_name>
+      <option_group_label>Q1</option_group_label>
+      <custom_group_title>Call List Responses</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Event Contact Person</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>8</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>event_contact_person_84</column_name>
+      <option_group_label>Staff Responsible</option_group_label>
+      <custom_group_title>Event Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Event Campaign Code</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <default_value>General Donations</default_value>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>11</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>event_source_code_94</column_name>
+      <option_group_label>Campaign Source Code</option_group_label>
+      <custom_group_title>Event Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Activity Campaign Code</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <default_value>General Donations</default_value>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>4</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>activity_source_code_93</column_name>
+      <option_group_label>Campaign Source Code</option_group_label>
+      <custom_group_title>Activity Source Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Best time to Contact</label>
+      <data_type>String</data_type>
+      <html_type>CheckBox</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>6</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <options_per_line>3</options_per_line>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>best_time_to_contact_96</column_name>
+      <option_group_label>Best time to Contact</option_group_label>
+      <custom_group_title>Communication Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Communication Status</label>
+      <data_type>String</data_type>
+      <html_type>CheckBox</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>10</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <options_per_line>3</options_per_line>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>communication_status_97</column_name>
+      <option_group_label>Communication Status</option_group_label>
+      <custom_group_title>Communication Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Reason for Do Not Mail</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>12</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>reason_for_do_not_mail_103</column_name>
+      <custom_group_title>Communication Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Reason for Do Not Phone</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>14</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>reason_for_do_not_phone_104</column_name>
+      <custom_group_title>Communication Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Reason for Do Not Email</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>16</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>reason_for_do_not_email_105</column_name>
+      <custom_group_title>Communication Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q1 Text</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>3</weight>
+      <help_post>Question 1 for Phone bank or Field Canvass</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q1_text_114</column_name>
+      <custom_group_title>Event Campaign Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q2 Text</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>5</weight>
+      <help_post>Question 2 for Phone bank or Field Canvass</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q2_text_115</column_name>
+      <custom_group_title>Event Campaign Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q3 Text</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>7</weight>
+      <help_post>Question 3 for Phone bank or Field Canvass</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q3_text_116</column_name>
+      <custom_group_title>Event Campaign Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Q4 Text</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>9</weight>
+      <help_post>Question 4 for Phone bank or Field Canvass</help_post>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>q4_text_117</column_name>
+      <custom_group_title>Event Campaign Details</custom_group_title>
+    </CustomField>
+    <CustomField>
+      <label>Rating</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>2</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>M:;:;:;d:;:;:;Y</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>rating_119</column_name>
+      <option_group_label>Rating</option_group_label>
+      <custom_group_title>Organizational Details</custom_group_title>
+    </CustomField>
+  </CustomFields>
+  <OptionGroups>
+    <OptionGroup>
+      <name>party_registration_20090826152659</name>
+      <label>Party Registration</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>county_name_20090921132351</name>
+      <label>County Name</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>voter_history_20090929101544</name>
+      <label>Voter History</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>constituent_type_20090826154044</name>
+      <label>Constituent Type</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>ethnicity_20090901181604</name>
+      <label>Ethnicity</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>primary_language_20090901181728</name>
+      <label>Primary Language</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>staff_responsible_20090901181905</name>
+      <label>Staff Responsible</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>how_started_20090929083619</name>
+      <label>How Started</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>leadership_level_20090826153735</name>
+      <label>Leadership Level</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>funding_areas_20090903195322</name>
+      <label>Funding Areas</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>volunteer_interests_20090903201346</name>
+      <label>Volunteer Interests</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>member_status_20090930123623</name>
+      <label>Member Status</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>constituent_type_20090903194042</name>
+      <label>Constituent Type</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>multiyear_grant_20091103175442</name>
+      <label>Multiyear Grant</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>proposal_status_20091124143715</name>
+      <label>Proposal Status</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>invitation_response_20091123100320</name>
+      <label>Invitation Response</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>contact_attended__20091123100701</name>
+      <label>Contact Attended?</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>campaign_source_code_20090909215114</name>
+      <label>Campaign Source Code</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>campaign_method_20090909215244</name>
+      <label>Campaign Method</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>is_this_a_phone_bank__20090910084851</name>
+      <label>Is this a Phone Bank?</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>q1_20090922131907</name>
+      <label>Q1</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>walk_list_status_20091001142548</name>
+      <label>Walk List Status</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>call_list_status_20090922131641</name>
+      <label>Call List Status</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>best_time_to_contact_20091102160221</name>
+      <label>Best time to Contact</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>communication_status_20091103160300</name>
+      <label>Communication Status</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>rating_20091201142049</name>
+      <label>Rating</label>
+      <is_active>1</is_active>
+    </OptionGroup>
+  </OptionGroups>
+  <OptionValues>
+    <OptionValue>
+      <label>Democrat</label>
+      <value>Democrat</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Party Registration</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Republican</label>
+      <value>Republican</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Party Registration</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Green</label>
+      <value>Green</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Party Registration</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Libertarian</label>
+      <value>Libertarian</value>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Party Registration</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Other</label>
+      <value>Other</value>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Party Registration</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Undeclared</label>
+      <value>Undeclared</value>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Party Registration</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Independent</label>
+      <value>Independent</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Party Registration</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Los Angeles</label>
+      <value>Los Angeles</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>County Name</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>add county here</label>
+      <value>add county here</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>County Name</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>A</label>
+      <value>A</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Voter History</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>O</label>
+      <value>O</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Voter History</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>N</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Voter History</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Volunteer</label>
+      <value>Volunteer</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Activist</label>
+      <value>Activist</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Member</label>
+      <value>Member</value>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Donor</label>
+      <value>Donor</value>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Press Contact</label>
+      <value>Press Contact</value>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Consultant</label>
+      <value>Consultant</value>
+      <is_default>0</is_default>
+      <weight>8</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Ally</label>
+      <value>Ally</value>
+      <is_default>0</is_default>
+      <weight>9</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Elected Official</label>
+      <value>Elected Official</value>
+      <is_default>0</is_default>
+      <weight>10</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Board Member</label>
+      <value>Board Member</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Lead Organizer</label>
+      <value>Lead Organizer</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Intern</label>
+      <value>Intern</value>
+      <name>Intern</name>
+      <is_default>0</is_default>
+      <weight>12</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Staff</label>
+      <value>Staff</value>
+      <name>Staff</name>
+      <is_default>0</is_default>
+      <weight>11</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Latino</label>
+      <value>Latino</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Ethnicity</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>African-American</label>
+      <value>African American</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Ethnicity</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Asian</label>
+      <value>Asian</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Ethnicity</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Spanish</label>
+      <value>Spanish</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Russian</label>
+      <value>Russian</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Chinese</label>
+      <value>Chinese</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Mandarin</label>
+      <value>Mandarin</value>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Cantonese</label>
+      <value>Cantonese</value>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Lao</label>
+      <value>Lao</value>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>English</label>
+      <value>English</value>
+      <name>English</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Jane</label>
+      <value>Jane</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Staff Responsible</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>George</label>
+      <value>George</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Staff Responsible</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Elroy</label>
+      <value>Elroy</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Staff Responsible</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Ian</label>
+      <value>Ian</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Staff Responsible</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Meeting</label>
+      <value>Meeting</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>How Started</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Event</label>
+      <value>Event</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>How Started</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Phone</label>
+      <value>Phone</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>How Started</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Action</label>
+      <value>Action</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>How Started</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Training</label>
+      <value>Training</value>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>How Started</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Spanish</label>
+      <value>Spanish</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Russian</label>
+      <value>Russian</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Chinese</label>
+      <value>Chinese</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Mandarin</label>
+      <value>Mandarin</value>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Cantonese</label>
+      <value>Cantonese</value>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Lao</label>
+      <value>Lao</value>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>English</label>
+      <value>English</value>
+      <name>English</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Primary Language</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>1</label>
+      <value>1</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Leadership Level</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>2</label>
+      <value>2</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Leadership Level</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>3</label>
+      <value>3</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Leadership Level</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>4</label>
+      <value>4</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Leadership Level</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>5</label>
+      <value>5</value>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Leadership Level</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Civil Rights</label>
+      <value>Civil Rights</value>
+      <name>Civil_Rights</name>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Economic Justice</label>
+      <value>Economic Justice</value>
+      <name>Economic_Justice</name>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Environment</label>
+      <value>Environment</value>
+      <name>Environment</name>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Environmental Justice</label>
+      <value>Environmental Justice</value>
+      <name>Environmental_Justice</name>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Health Care</label>
+      <value>Health Care</value>
+      <name>Health_Care</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Immigrant Rights</label>
+      <value>Immigrant Rights</value>
+      <name>Immigrant_Rights</name>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Peace</label>
+      <value>Peace</value>
+      <name>Peace</name>
+      <is_default>0</is_default>
+      <weight>8</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Workers Rights</label>
+      <value>Workers Rights</value>
+      <name>Workers_Rights</name>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Canvassing</label>
+      <value>Canvassing</value>
+      <name>Canvassing</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Volunteer Interests</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Office/Admin</label>
+      <value>Office_Admin</value>
+      <name>Office_Admin</name>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Volunteer Interests</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Phone Banking</label>
+      <value>Phone Banking</value>
+      <name>Phone_Banking</name>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Volunteer Interests</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Tabling</label>
+      <value>Tabling</value>
+      <name>Tabling</name>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Volunteer Interests</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Inactive</label>
+      <value>Inactive</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Member Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Deceased</label>
+      <value>Deceased</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Member Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Active</label>
+      <value>Active</value>
+      <name>Active</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Member Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>1</label>
+      <value>1</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Leadership Level</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>2</label>
+      <value>2</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Leadership Level</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>3</label>
+      <value>3</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Leadership Level</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>4</label>
+      <value>4</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Leadership Level</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>5</label>
+      <value>5</value>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Leadership Level</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Foundation</label>
+      <value>Foundation</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Business</label>
+      <value>Business</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Government</label>
+      <value>Government</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Nonprofit</label>
+      <value>Nonprofit</value>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Organization</label>
+      <value>Organization</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Constituent Type</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Civil Rights</label>
+      <value>Civil Rights</value>
+      <name>Civil_Rights</name>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Economic Justice</label>
+      <value>Economic Justice</value>
+      <name>Economic_Justice</name>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Environment</label>
+      <value>Environment</value>
+      <name>Environment</name>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Environmental Justice</label>
+      <value>Environmental Justice</value>
+      <name>Environmental_Justice</name>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Health Care</label>
+      <value>Health Care</value>
+      <name>Health_Care</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Immigrant Rights</label>
+      <value>Immigrant Rights</value>
+      <name>Immigrant_Rights</name>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Peace</label>
+      <value>Peace</value>
+      <name>Peace</name>
+      <is_default>0</is_default>
+      <weight>8</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Workers Rights</label>
+      <value>Workers Rights</value>
+      <name>Workers_Rights</name>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Funding Areas</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>Yes</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Multiyear Grant</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Accepted</label>
+      <value>Accepted</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Proposal Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Pending</label>
+      <value>Pending</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Proposal Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Rejected</label>
+      <value>Rejected</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Proposal Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Resubmitted</label>
+      <value>Resubmitted</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Proposal Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>No</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Left Message</label>
+      <value>LM</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Not Home</label>
+      <value>NH</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>No</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Left Message</label>
+      <value>LM</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Not Home</label>
+      <value>NH</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>No</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Left Message</label>
+      <value>LM</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Not Home</label>
+      <value>NH</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Invitation Response</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Contact Attended?</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>No</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Contact Attended?</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Summer 2009 Phone Bank Healthcare</label>
+      <value>Summer2009Phone</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Spring 2009 Canvass Housing</label>
+      <value>Spring2009Canvass</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Fall 2009 House Party Workers</label>
+      <value>Fall2009House</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Spring 2010 Field Canvass</label>
+      <value>Spring2010FieldCanvass</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Summer 2009 Phone Bank Healthcare</label>
+      <value>Summer2009Phone</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Spring 2009 Canvass Housing</label>
+      <value>Spring2009Canvass</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Fall 2009 House Party Workers</label>
+      <value>Fall2009House</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Spring 2010 Field Canvass</label>
+      <value>Spring2010FieldCanvass</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Door Knock</label>
+      <value>Door Knock</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Method</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Phone Bank</label>
+      <value>Phone Bank</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Method</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>House Party</label>
+      <value>House Party</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Method</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Is this a Phone Bank?</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>No</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Is this a Phone Bank?</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Y</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>N</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>U</label>
+      <value>U</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>D</label>
+      <value>D</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Y</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>N</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>U</label>
+      <value>U</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>D</label>
+      <value>D</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Y</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>N</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>U</label>
+      <value>U</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>D</label>
+      <value>D</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Y</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>N</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>U</label>
+      <value>U</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>D</label>
+      <value>D</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>NH</label>
+      <value>NH</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Walk List Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>MV</label>
+      <value>MV</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Walk List Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>D</label>
+      <value>D</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Walk List Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>WA</label>
+      <value>WA</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Walk List Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Is this a Phone Bank?</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>No</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Is this a Phone Bank?</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>NH</label>
+      <value>NH</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Call List Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>MV</label>
+      <value>MV</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Call List Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>D</label>
+      <value>D</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Call List Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>WN</label>
+      <value>WN</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Call List Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Y</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>N</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>U</label>
+      <value>U</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>D</label>
+      <value>D</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Y</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>N</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>U</label>
+      <value>U</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>D</label>
+      <value>D</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Y</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>N</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>U</label>
+      <value>U</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>D</label>
+      <value>D</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Y</label>
+      <value>Y</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>N</label>
+      <value>N</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>U</label>
+      <value>U</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>D</label>
+      <value>D</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Q1</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Jane</label>
+      <value>Jane</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Staff Responsible</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>George</label>
+      <value>George</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Staff Responsible</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Elroy</label>
+      <value>Elroy</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Staff Responsible</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Ian</label>
+      <value>Ian</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Staff Responsible</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Summer 2009 Phone Bank Healthcare</label>
+      <value>Summer2009Phone</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Spring 2009 Canvass Housing</label>
+      <value>Spring2009Canvass</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Fall 2009 House Party Workers</label>
+      <value>Fall2009House</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Spring 2010 Field Canvass</label>
+      <value>Spring2010FieldCanvass</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Summer 2009 Phone Bank Healthcare</label>
+      <value>Summer2009Phone</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Spring 2009 Canvass Housing</label>
+      <value>Spring2009Canvass</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Fall 2009 House Party Workers</label>
+      <value>Fall2009House</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Spring 2010 Field Canvass</label>
+      <value>Spring2010FieldCanvass</value>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Campaign Source Code</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Morning</label>
+      <value>Morning</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Best time to Contact</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Afternoon</label>
+      <value>Afternoon</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Best time to Contact</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Evening</label>
+      <value>Evening</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Best time to Contact</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Bad Address</label>
+      <value>Bad Address</value>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Communication Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Bad Phone</label>
+      <value>Bad Phone</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Communication Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Bad Email</label>
+      <value>Bad Email</value>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Communication Status</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Supporter or Ally</label>
+      <value>Supporter or Ally</value>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Rating</option_group_label>
+    </OptionValue>
+    <OptionValue>
+      <label>Our Network</label>
+      <value>Our Network</value>
+      <name>Our_Network</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_label>Rating</option_group_label>
+    </OptionValue>
+  </OptionValues>
+  <ProfileGroups>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Individual,Contact</group_type>
+      <title>Name and Address</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Individual,Contact</group_type>
+      <title>Update Contact Information</title>
+      <help_pre><p>Please update your contact information. If all of the information below is correct, you can close this window.</p><p>Thanks!</p></help_pre>
+      <post_URL>http://166.70.111.107/about-us/thanks/update</post_URL>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>1</is_update_dupe>
+      <cancel_URL>http://166.70.111.107</cancel_URL>
+      <is_cms_user>0</is_cms_user>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Individual</group_type>
+      <title>Update Grassroots Info</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Participant</group_type>
+      <title>Update Event Participant Info</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Individual</group_type>
+      <title>Update Voter Info</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Individual</group_type>
+      <title>Update Core Info</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Participant</group_type>
+      <title>Participant Status</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>participant_status</name>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Individual,Contact</group_type>
+      <title>New Individual</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>new_individual</name>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Organization,Contact</group_type>
+      <title>New Organization</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>new_organization</name>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Household,Contact</group_type>
+      <title>New Household</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>new_household</name>
+    </ProfileGroup>
+  </ProfileGroups>
+  <ProfileFields>
+    <ProfileField>
+      <field_name>first_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>First Name</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Name and Address</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>last_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>Last Name</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Name and Address</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>street_address</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>3</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Street Address</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Name and Address</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>city</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>4</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>City</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Name and Address</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>postal_code</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>6</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Zip Code</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Name and Address</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>state_province</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>5</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>State</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Name and Address</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>first_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>First Name</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Contact Information</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>last_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>Last Name</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Contact Information</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>3</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Email</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Update Contact Information</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>phone</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>4</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Phone</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Update Contact Information</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>street_address</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>5</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Street Address</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Update Contact Information</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>city</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>6</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>City</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Update Contact Information</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>state_province</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>7</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>1</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>State</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Update Contact Information</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>postal_code</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>8</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Zip Code</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Update Contact Information</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>preferred_communication_method</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>9</weight>
+      <help_post></help_post>
+      <visibility>Public Pages</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Preferred Communication Method</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Update Contact Information</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_34</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>2</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Grassroots...: Issues Interest</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Grassroots Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_12</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Grassroots...: Leadership Level</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Grassroots Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_35</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>4</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Grassroots...: Volunteer Interests</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Grassroots Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>participant_status_id</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>1</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Participant Status</label>
+      <field_type>Participant</field_type>
+      <profile_group_title>Update Event Participant Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_42</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>2</weight>
+      <help_post>Enter number of children if participant needs childcare - otherwise leave it as 0 if no childcare is needed</help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Participan...: Childcare Needed</label>
+      <field_type>Participant</field_type>
+      <profile_group_title>Update Event Participant Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_43</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <help_post>Enter number of rides participant needs TO event (include children)</help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Participan...: Ride TO</label>
+      <field_type>Participant</field_type>
+      <profile_group_title>Update Event Participant Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_44</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>4</weight>
+      <help_post>Enter number of rides participant needs BACK from event (include children)</help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Participan...: Ride BACK</label>
+      <field_type>Participant</field_type>
+      <profile_group_title>Update Event Participant Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_24</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>4</weight>
+      <help_post></help_post>
+      <visibility>Public Pages and Listings</visibility>
+      <in_selector>1</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>Voter Info: Voted in 2008 General Election?</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Voter Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_25</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>5</weight>
+      <help_post></help_post>
+      <visibility>Public Pages and Listings</visibility>
+      <in_selector>1</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>Voter Info: Voted in 2008 Primary Election?</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Voter Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>0</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>7</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Email (Primary)</label>
+      <field_type>Contact</field_type>
+      <profile_group_title>Name and Address</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_61</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>1</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Voter Info: County Name</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Voter Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_13</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>1</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Core Info: Constituent Type</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Core Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_20</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>2</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Core Info: Primary Language</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Core Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_21</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Core Info: Kids?</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Core Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_57</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>4</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Core Info: Date Started</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Core Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_22</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>5</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Core Info: Staff Responsible</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Core Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_75</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <help_post>A - Always 
+O - Occasional
+N - New</help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Voter Info: Voter History</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Voter Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_16</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>2</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Voter Info: Party Registration</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Voter Info</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>participant_status_id</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Participant Status</label>
+      <field_type>Participant</field_type>
+      <is_reserved>1</is_reserved>
+      <profile_group_title>Participant Status</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>first_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>First Name</label>
+      <field_type>Individual</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_title>New Individual</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>last_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Last Name</label>
+      <field_type>Individual</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_title>New Individual</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>3</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Email Address</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_title>New Individual</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>organization_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Organization Name</label>
+      <field_type>Organization</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_title>New Organization</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Email Address</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_title>New Organization</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>household_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Household Name</label>
+      <field_type>Household</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_title>New Household</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Email Address</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_title>New Household</profile_group_title>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom_76</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>1</weight>
+      <help_post></help_post>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Member Status</label>
+      <field_type>Individual</field_type>
+      <profile_group_title>Update Grassroots Info</profile_group_title>
+    </ProfileField>
+  </ProfileFields>
+</CustomData>

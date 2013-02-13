@@ -1,0 +1,20 @@
+/* Header */
+.icon-48-jbolo {
+background-image:url(../images/jbolo.png)!important;
+}
+
+span.latestbutton{
+color:#0B55C4;
+cursor: pointer;
+}
+span.latestbutton:hover{
+text-decoration:underline;
+}
+
+.horizontal_line{
+border-top:1px solid;
+border-bottom:0;
+border-right:0;
+border-left:0;
+}
+

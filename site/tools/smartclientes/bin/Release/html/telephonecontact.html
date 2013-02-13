@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0075)https://65.216.170.16/emrtestSante/IHIT/TelephoneContact.asp?CaseNumber=487 -->
+<HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Telephone Contact</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>.style1 {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+BODY {
+	BACKGROUND-COLOR: #00ccff
+}
+.style3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style5 {
+	FONT-SIZE: 16px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style6 {
+	FONT-WEIGHT: bold
+}
+</STYLE>
+
+<SCRIPT type=text/JavaScript>
+javascript:window.history.forward(1);
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+function check_length(f)
+{
+maxLen = 999; // max number of characters allowed
+if (f.value.length >= maxLen) {
+// Alert message if maximum limit is reached. 
+// If required Alert can be removed. 
+var msg = "You have reached your maximum limit of characters allowed";
+alert(msg);
+// Reached the Maximum length so trim the textarea
+f.value = f.value.substring(0, maxLen);
+}
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.6000.16825" name=GENERATOR></HEAD>
+<BODY>
+<FORM id=form1 name=form1 
+onsubmit="MM_validateForm('PersonContacted','','R','Org','','R','Phone','','RisNum','NextTask','','R');return document.MM_returnValue" 
+action=http://localhost:8080/<#LocalUri#> method=post>
+<INPUT type="hidden" name="tstamp" value="<#TimeStamp#>"/>
+<INPUT type="hidden" name="FormName" value="Telephone Contact"/>
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  
+  <TR borderColor=#000000>
+    <TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class=style1 align=right>Case #: <INPUT id=CaseNumber type="text" name="CaseNumber"> 
+      <LABEL></LABEL></DIV></TD></TR></TBODY></TABLE>
+<TABLE height=87 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD class=style1 width=60>Time/Date: <#ShortDateStamp#></TD>
+    <TD width=99><LABEL class=style1></LABEL> <INPUT 
+      id=TimeStamp type=hidden value="<#TimeStamp#>" name="TimeStamp"></TD>
+    <TD class=style1 width=68>Person Contacted </TD>
+    <TD width=144><LABEL><INPUT id=PersonContacted maxLength=50 
+      name=PersonContacted> </LABEL></TD>
+    <TD class=style1 width=23>Org.</TD>
+    <TD width=144><LABEL><INPUT id=Org maxLength=50 name=Org> </LABEL></TD>
+    <TD class=style1 width=36>Phone</TD>
+    <TD width=160><LABEL><INPUT 
+      onkeypress="MM_validateForm('Phone','','NisNum');return document.MM_returnValue" 
+      id=Phone maxLength=10 size=15 name=Phone> </LABEL></TD></TR></TBODY></TABLE>
+<TABLE width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD><INPUT type=radio value="Incoming" name=call> Incoming Call 
+<INPUT type=radio value="Outgoing" name=call> Outgoing Call</TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD height=130>
+      <DIV align="left"><TEXTAREA onkeypress=check_length(this.form.Notes); id="Notes" name="Notes" rows=5 cols=50></TEXTAREA></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=62 height=67>Next Task: </TD>
+    <TD width=483><INPUT id=NextTask maxLength=50 name="NextTask"></TD>
+    <TD class=style1 width=64>Staff ID:</TD>
+    <TD width=205><LABEL><INPUT id=EmployeeID maxLength=20 name="Employee"> </LABEL></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD height=64>
+      <DIV align=center><LABEL><INPUT id=Depart type=hidden value="IHIT" name="Depart"> <INPUT type=submit value=Submit name=Submit> 
+  </LABEL></DIV></TD></TR></TBODY></TABLE><INPUT type=hidden value=form1 
+name=MM_insert> </FORM></BODY></HTML>

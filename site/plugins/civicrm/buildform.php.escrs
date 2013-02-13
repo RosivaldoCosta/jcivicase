@@ -1,0 +1,1357 @@
+<?php
+// No direct access
+defined('_JEXEC') or die;
+
+jimport('joomla.plugin.plugin');
+class plgCivicrmBuildForm extends JPlugin
+{
+	/**
+		Post Civicrm Plugin
+		*/
+
+	public function civicrm_buildForm( $formName, &$form )
+	{
+		$defaults = array();
+
+		if( $formName == 'CRM_Case_Form_Case')
+		{
+			// Form Intake?
+			if (isset($form->_elementIndex['profiles']))
+			{
+				$element = $form->getElement('profiles') ;
+				foreach($element->_options as $key => $val)
+				{
+					// Delete two options New Organization and New Household
+					if(isset($val['text']) && ($val['text'] == 'New Organization' || $val['text'] == 'New Household'))
+					{
+						unset($element->_options[$key]);
+					}
+				}
+			}
+
+			// The required fields for the Intake form will change based on which type of case
+			if((isset($form->_activityTypeId) && $form->_activityTypeId == 13)
+			|| (isset($form->_subType) && $form->_subType == 13))
+			{
+				$form->_required = array();
+				if (isset($form->_elementIndex['activity_details']))
+				{
+					$element = $form->getElement('activity_details') ;
+					$element->_label = 'Reason For Contact';
+				}
+
+				if (isset($form->_elementIndex['contact']))
+				{
+					$element = $form->getElement('contact') ;
+					$element->freeze();
+				}
+			}
+
+			if(isset($form->_currentlyViewedContactId))
+			{
+				if(!isset($form->_activityTypeId))
+				{
+					$aId = CRM_Utils_Array::value( 'id', $_GET );
+					if($aId)
+					{
+						$dao = new CRM_Activity_BAO_Activity();
+						$dao->id = $aId;
+						if( $dao->find( true ) )
+						{
+							$aType = $dao->activity_type_id;
+						}
+						else
+						{
+							$aType = CRM_Utils_Array::value( 'atype', $_GET );
+						}
+					}
+					else
+					{
+						$aType = CRM_Utils_Array::value( 'atype', $_GET );
+					}
+				}
+				else
+				{
+					$aType = $form->_activityTypeId;
+				}
+
+				//  the client information should populate automatically based on the existing client's profile information
+				if($aType == 13) // Intake
+				{
+					$this->joomla_civicrm_buildForm_get_user_info( $form);
+				}
+			}
+		}
+		else if ($formName == 'CRM_Case_Form_Activity')
+		{
+			if (isset($form->_elementIndex['custom_1708_-1']))
+			{
+				$element = $form->getElement('custom_1708_-1');
+				$element->updateAttributes(array('style'=>"width:640px;"));
+			}
+			$report = false;
+			if( !property_exists($form, '_contactID'))
+			{
+				$params = array();
+				$caseid = $form->_caseId.'';
+				$contactid = CRM_Case_BAO_Case::retrieveContactIdsByCaseId($caseid);
+				if( count($contactid) > 0 )
+				{
+					$params['id'] = $params['contact_id'] = $contactid[1];
+					$form->_contactID = $contactid[1];
+					$defaultsCont = array();
+					$client = CRM_Contact_BAO_Contact::retrieve( $params, $defaultsCont, true );
+					//$defaults['custom_108_-1'] = 'First Name'; //$client->first_name;
+					// Add DOB
+					$defaults['custom_304_-1'] = CRM_Utils_Date::customFormat($client->birth_date,'%m/%d/%Y');
+					$defaults['custom_674_-1'] = CRM_Utils_Date::customFormat($client->birth_date,'%m/%d/%Y');
+					$atArray = array('activity_type_id' => 13);
+					$activities = CRM_Case_BAO_Case::getCaseActivity( $caseid,
+					$atArray,
+					$contactid[1] );
+					$activities = array_keys($activities);
+					if( count($activities) > 0 )
+					{
+						$activities = $activities[0];
+
+						require_once 'CRM/Case/XMLProcessor/Report.php';
+						$xmlProcessor = new CRM_Case_XMLProcessor_Report( );
+						$report       = $xmlProcessor->getActivityInfo( $contactid[1], $activities, true );
+						if(array_key_exists("customGroups",$report) && is_array($report["customGroups"]))
+						{
+							if(array_key_exists("Linkage and Referrals", $report["customGroups"]) && is_array($report["customGroups"]["Linkage and Referrals"]))
+							{
+								foreach($report["customGroups"]["Linkage and Referrals"] as $k=>$v)
+								{
+									if($v['label'] == 'Linkage')
+									{
+										$defaults['custom_330_-1'] =  $v['value'];
+									}
+
+									if($v['label'] == 'MH')
+									{
+										//print_r($v);
+
+										$defaults['custom_791_-1'] =  $v['value'];
+
+									}
+
+									if($v['label'] == 'NMH')
+									{
+										$defaults['custom_792_-1'] =  $v['value'];
+
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// Print out Client Profile in these forms
+			$aTypeCustom = array(	35, // Lethality
+			36, // Care Plan
+			37, // Assessment And Treatment
+			38, // MCT Dispatch
+			39, // Consent For Services
+			40, // Authorization To Releas
+			47, // Discharge Summary
+			50, // Progress Note
+			51, // Individual Treatment Plan
+			82, // Informed Consent
+			84, // Privacy Practices
+			85, // Human Rights Notification
+			86, // Pharmacy Voucher
+			87, // Temporary Housing
+			88, // Motel Voucher
+			89, // Transportation Voucher
+			90, // UCC Medical Evaluation
+			92, // Medication History
+			93,  // Informed Consent for Medication
+			48  // Phone Contact
+			);
+			if(!isset($form->_activityTypeId))
+			{
+				$aId = CRM_Utils_Array::value( 'id', $_GET );
+				if($aId)
+				{
+					$dao = new CRM_Activity_BAO_Activity();
+					$dao->id = $aId;
+					if( $dao->find( true ) )
+					{
+						$aType = $dao->activity_type_id;
+					}
+					else
+					{
+						$aType = CRM_Utils_Array::value( 'atype', $_GET );
+					}
+				}
+				else
+				{
+					$aType = CRM_Utils_Array::value( 'atype', $_GET );
+				}
+			}
+			else
+			{
+				$aType = $form->_activityTypeId;
+			}
+
+			if(in_array($aType,$aTypeCustom) && $form->_newLethality === NULL )
+			{
+
+				//$this->joomla_civicrm_buildForm_user_info( $formName, $form, $report );
+						    	require_once 'CRM/Contact/BAO/Client.php';
+							CRM_Contact_BAO_Client::buildForm_user_info( $form );
+			}
+
+			// Discharge Summary
+			if($aType == 47)
+			{
+				if (isset($form->_elementIndex['activity_date_time']))
+				{
+					$defaults['case_status_id'] = 15; //array_search( 'Recommend for Closure', CRM_Case_PseudoConstant::caseStatus());
+					$element = $form->getElement('activity_date_time') ;
+					$element->_label = 'Date Closed';
+				}
+			}
+
+			//  Create Discharge Summary or Recommended for Closure (custom_-1)
+			if($aType == 47 || $form->_subType == 47)
+			{
+				if (isset($form->_elementIndex['custom_368_-1']))
+				{
+					$atArray = array('activity_type_id' => 88); //	Motel Voucher
+					$activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId);
+					$activities = array_keys($activities);
+					if( count($activities) > 0 )
+					{
+						$defaults['custom_368_-1[hotel]'] = 1;
+					}
+
+					$atArray = array('activity_type_id' => 89); //	Transportation Voucher
+					$activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId);
+					$activities = array_keys($activities);
+					if( count($activities) > 0 )
+					{
+						$defaults['custom_368_-1[transportation]'] = 1;
+					}
+				}
+
+				if (isset($form->_elementIndex['custom_371_-1']))
+				{
+					$atArray = array('activity_type_id' => 86); //	Pharmacy Voucher
+					$activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId);
+					$activities = array_keys($activities);
+
+					if( count($activities) > 0 )
+					{
+						$defaults['custom_371_-1'] = 1;
+					}
+					else
+					{
+						$defaults['custom_371_-1'] = 0;
+					}
+				}
+
+				// Mental Health
+				if (isset($form->_elementIndex['custom_791_-1']))
+				{
+					$atArray = array('activity_type_id' => 101); // Out Referrals Given to Client
+					$activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId );
+					$activities = array_keys($activities);
+					if( count($activities) > 0 )
+					{
+						require_once 'CRM/Core/BAO/CustomGroup.php';
+                        require_once 'CRM/Core/BAO/CustomOption.php';
+						$formAlt = array();
+                        $refTypeOption = array();
+						$dataArr = array();
+						
+						foreach ($activities as $k => $v)
+                        {
+                            $groupTree =& CRM_Core_BAO_CustomGroup::getTree( 'Activity', $formAlt , $v, null, '101');
+                            $config =& CRM_Core_Config::singleton( );
+                            if ($config->customTemplateFileExtension === "escrs")
+                            {
+                                if(isset($groupTree[250]['fields'][1267]['customValue'][1]['data']))
+                                {
+                                    $dataArr[0][] = $groupTree[250]['fields'][1267]['customValue'][1]['data'];
+                                    $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1267);
+                                }
+                                if(isset($groupTree[250]['fields'][1268]['customValue'][1]['data']))
+                                {
+                                    $dataArr[1][] = $groupTree[250]['fields'][1268]['customValue'][1]['data'];
+                                    $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1268);
+                                }
+                            }
+                            else
+                            {
+        						if(isset($groupTree[250]['fields'][1443]['customValue'][1]['data']))
+        						{
+        							$dataArr[0][] = $groupTree[250]['fields'][1443]['customValue'][1]['data'];
+                                    $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1443);
+        						}
+        						
+        						if(isset($groupTree[250]['fields'][1444]['customValue'][1]['data']))
+                                {
+                                    $dataArr[1][] = $groupTree[250]['fields'][1444]['customValue'][1]['data'];
+                                    $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1444);
+                                }
+        
+        						if(isset($groupTree[250]['fields'][1625]['customValue'][1]['data']))
+        						{
+        							$dataArr[0][] = $groupTree[250]['fields'][1625]['customValue'][1]['data'];
+                                    $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1625);
+        						}
+        						
+                                if(isset($groupTree[250]['fields'][1626]['customValue'][1]['data']))
+                                {
+                                    $dataArr[1][] = $groupTree[250]['fields'][1626]['customValue'][1]['data'];
+                                    $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1626);
+                                }
+        
+        						if(isset($groupTree[250]['fields'][1627]['customValue'][1]['data']))
+        						{
+        							$dataArr[0][] = $groupTree[250]['fields'][1627]['customValue'][1]['data'];
+                                    $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1627);
+                                }
+                                if(isset($groupTree[250]['fields'][1628]['customValue'][1]['data']))
+                                {
+                                    $dataArr[1][] = $groupTree[250]['fields'][1628]['customValue'][1]['data'];
+                                    $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1628);
+                                }
+                            }
+                        }
+						//print_r($dataArr);
+						$defaults['custom_791_-1'] = implode(',',$dataArr[0]);
+					}
+
+					$element = $form->getElement('custom_791_-1') ;
+                    
+				    $element->_options = array();
+                    $i = 0;
+                    if (!empty($refTypeOption) && $refTypeOption[0] && $refTypeOption[1])
+                    {
+                        foreach ($refTypeOption[0][0] as $v)
+                        {
+                            $key = array_search($v['value'], $dataArr[0]);
+                            if ($key !== false)
+                            {
+                                $element->_options[$i]['text'] =  $v['label'];
+                                $element->_options[$i]['attr']['value'] = $dataArr[0][$key]; 
+                                foreach ($refTypeOption[1][0] as $v1)
+                                {
+                                    if ($v1['value'] == $dataArr[1][$key])
+                                    {
+                                        $element->_options[$i]['text'] = $element->_options[$i]['text'] .' ('.$v1['label'].')';
+                                        $i++;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+					
+                    $element->freeze( );
+
+				}
+				elseif (isset($form->_groupTree[77]['fields'][791]))
+				{
+				    $atArray = array('activity_type_id' => 101); // Out Referrals Given to Client
+                    $activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId );
+                    $activities = array_keys($activities);
+                    if( count($activities) > 0 )
+                    {
+                        require_once 'CRM/Core/BAO/CustomGroup.php';
+                        require_once 'CRM/Core/BAO/CustomOption.php';
+                        $formAlt = array();
+                        $refTypeOption = array();
+                        $dataArr = array();
+                        
+                        foreach ($activities as $k => $v)
+                        {
+                            $groupTree =& CRM_Core_BAO_CustomGroup::getTree( 'Activity', $formAlt , $v,null, '101');
+                            $config =& CRM_Core_Config::singleton( );
+                            if ($config->customTemplateFileExtension === "escrs")
+                            {
+                                if(isset($groupTree[250]['fields'][1267]['customValue'][1]['data']))
+                                {
+                                    $dataArr[0][] = $groupTree[250]['fields'][1267]['customValue'][1]['data'];
+                                    $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1267);
+                                }
+                                if(isset($groupTree[250]['fields'][1268]['customValue'][1]['data']))
+                                {
+                                    $dataArr[1][] = $groupTree[250]['fields'][1268]['customValue'][1]['data'];
+                                    $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1268);
+                                }
+                            }
+                            else
+                            {
+                                if(isset($groupTree[250]['fields'][1443]['customValue'][1]['data']))
+                                {
+                                    $dataArr[0][] = $groupTree[250]['fields'][1443]['customValue'][1]['data'];
+                                    $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1443);
+                                }
+                                if(isset($groupTree[250]['fields'][1444]['customValue'][1]['data']))
+                                {
+                                    $dataArr[1][] = $groupTree[250]['fields'][1444]['customValue'][1]['data'];
+                                    $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1444);
+                                }
+        
+                                if(isset($groupTree[250]['fields'][1625]['customValue'][1]['data']))
+                                {
+                                    $dataArr[0][] = $groupTree[250]['fields'][1625]['customValue'][1]['data'];
+                                    $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1625);
+                                }
+                                
+                                if(isset($groupTree[250]['fields'][1626]['customValue'][1]['data']))
+                                {
+                                    $dataArr[1][] = $groupTree[250]['fields'][1626]['customValue'][1]['data'];
+                                    $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1626);
+                                }
+        
+                                if(isset($groupTree[250]['fields'][1627]['customValue'][1]['data']))
+                                {
+                                    $dataArr[0][] = $groupTree[250]['fields'][1627]['customValue'][1]['data'];
+                                    $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1627);
+                                }
+                                if(isset($groupTree[250]['fields'][1628]['customValue'][1]['data']))
+                                {
+                                    $dataArr[1][] = $groupTree[250]['fields'][1628]['customValue'][1]['data'];
+                                    $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1628);
+                                }
+                            }
+                        }
+                    }
+
+                    $element = $form->getElement($form->_groupTree[77]['fields'][791]['element_name']) ;
+                    
+                    $element->_options = array();
+                    $i = 0;
+                    if (!empty($refTypeOption) && $refTypeOption[0] && $refTypeOption[1])
+                    {
+                        $defaults[$form->_groupTree[77]['fields'][791]['element_name']] = implode(',',$dataArr[0]);
+                        foreach ($refTypeOption[0][0] as $v)
+                        {
+                            $key = array_search($v['value'], $dataArr[0]);
+                            if ($key !== false)
+                            {
+                                $element->_options[$i]['text'] =  $v['label'];
+                                $element->_options[$i]['attr']['value'] = $dataArr[0][$key]; 
+                                foreach ($refTypeOption[1][0] as $v1)
+                                {
+                                    if ($v1['value'] == $dataArr[1][$key])
+                                    {
+                                        $element->_options[$i]['text'] = $element->_options[$i]['text'] .' ('.$v1['label'].')';
+                                        $i++;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                    
+                    $element->freeze( );
+				}
+				// Linkage
+				if (isset($form->_elementIndex['custom_330_-1']))
+				{
+					require_once 'CRM/Case/Form/Activity/OpenCase.php';
+					$defaults['custom_330_-1'] = CRM_Case_Form_Activity_OpenCase::getValue('Linkage and Referrals',
+												'Linkage',	
+					$form->_caseId,
+					$form->_currentlyViewedContactId);
+				}
+
+				// Non-Mental Health
+				if (isset($form->_elementIndex['custom_792_-1']))
+				{
+					/*require_once 'CRM/Case/Form/Activity/OpenCase.php';
+					 $defaults['custom_792_-1'] = CRM_Case_Form_Activity_OpenCase::getValue('Linkage and Referrals',
+					 'NMH',
+					 $form->_caseId,
+					 $form->_currentlyViewedContactId);
+					 */
+					$atArray = array('activity_type_id' => 101); // Out Referrals Given to Client
+					$activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId );
+					$activities = array_keys($activities);
+					if( count($activities) > 0 )
+					{
+						require_once 'CRM/Core/BAO/CustomGroup.php';
+                        require_once 'CRM/Core/BAO/CustomOption.php';
+						$formAlt = array();
+                        $dataArr = array();
+                        $refTypeOption = array();
+                        foreach ($activities as $k => $v)
+                        {
+    						$groupTree =& CRM_Core_BAO_CustomGroup::getTree( 'Activity', $formAlt , $v, null, '101');
+    						// Non-Mental Health Out Referral
+    						if(isset($groupTree[250]['fields'][1445]['customValue'][1]['data']))
+    						{
+    							$dataArr[0][] = $groupTree[250]['fields'][1445]['customValue'][1]['data'];
+                                $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1445);
+    						}
+    
+    						// Non-Mental Health Out Referral 2
+    						if(isset($groupTree[250]['fields'][1629]['customValue'][1]['data']))
+    						{
+    							$dataArr[0][] = $groupTree[250]['fields'][1629]['customValue'][1]['data'];
+                                $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1629);
+    						}
+    
+    						// Non-Mental Health Out Referral 3
+    						if(isset($groupTree[250]['fields'][1631]['customValue'][1]['data']))
+    						{
+    							$dataArr[0][] = $groupTree[250]['fields'][1631]['customValue'][1]['data'];
+                                $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1631);
+    						}
+    						
+                            // Non-Mental Health Out Referral
+                            if(isset($groupTree[250]['fields'][1446]['customValue'][1]['data']))
+                            {
+                                $dataArr[1][] = $groupTree[250]['fields'][1446]['customValue'][1]['data'];
+                                $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1446);
+                            }
+    
+                            // Non-Mental Health Out Referral 2
+                            if(isset($groupTree[250]['fields'][1630]['customValue'][1]['data']))
+                            {
+                                $dataArr[1][] = $groupTree[250]['fields'][1630]['customValue'][1]['data'];
+                                $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1630);
+                            }
+    
+                            // Non-Mental Health Out Referral 3
+                            if(isset($groupTree[250]['fields'][1632]['customValue'][1]['data']))
+                            {
+                                $dataArr[1][] = $groupTree[250]['fields'][1632]['customValue'][1]['data'];
+                                $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1632);
+                            }
+                        }
+						$defaults['custom_792_-1'] = implode(',',$dataArr[0]);
+					}
+					$element = $form->getElement('custom_792_-1') ;
+					
+				    $element->_options = array();
+                    $i = 0;
+                    if (!empty($refTypeOption) && $refTypeOption[0] && $refTypeOption[1])
+                    {
+                        foreach ($refTypeOption[0][0] as $v)
+                        {
+                            $key = array_search($v['value'], $dataArr[0]);
+                            if ($key !== false)
+                            {
+                                $element->_options[$i]['text'] =  $v['label'];
+                                $element->_options[$i]['attr']['value'] = $dataArr[0][$key]; 
+                                foreach ($refTypeOption[1][0] as $v1)
+                                {
+                                    if ($v1['value'] == $dataArr[1][$key])
+                                    {
+                                        $element->_options[$i]['text'] = $element->_options[$i]['text'] .' ('.$v1['label'].')';
+                                        $i++;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+					
+                    $element->freeze( );
+				}
+				elseif (isset($form->_groupTree[77]['fields'][792]))
+                {
+                    $atArray = array('activity_type_id' => 101); // Out Referrals Given to Client
+                    $activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId );
+                    $activities = array_keys($activities);
+                    if( count($activities) > 0 )
+                    {
+                        require_once 'CRM/Core/BAO/CustomGroup.php';
+                        require_once 'CRM/Core/BAO/CustomOption.php';
+                        $formAlt = array();
+                        $dataArr = array();
+                        $refTypeOption = array();
+                        
+                        foreach ($activities as $k => $v)
+                        {
+                            $groupTree =& CRM_Core_BAO_CustomGroup::getTree( 'Activity', $formAlt , $v, null, '101');
+                            // Non-Mental Health Out Referral
+                            if(isset($groupTree[250]['fields'][1445]['customValue'][1]['data']) && !empty($groupTree[250]['fields'][1445]['customValue'][1]['data']))
+                            {
+                                $dataArr[0][] = $groupTree[250]['fields'][1445]['customValue'][1]['data'];
+                                $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1445);
+                            }
+    
+                            // Non-Mental Health Out Referral 2
+                            if(isset($groupTree[250]['fields'][1629]['customValue'][1]['data']))
+                            {
+                                $dataArr[0][] = $groupTree[250]['fields'][1629]['customValue'][1]['data'];
+                                $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1629);
+                            }
+    
+                            // Non-Mental Health Out Referral 3
+                            if(isset($groupTree[250]['fields'][1631]['customValue'][1]['data']))
+                            {
+                                $dataArr[0][] = $groupTree[250]['fields'][1631]['customValue'][1]['data'];
+                                $refTypeOption[0][] = CRM_Core_BAO_CustomOption::getCustomOption(1631);
+                            }
+                            
+                            // Non-Mental Health Out Referral
+                            if(isset($groupTree[250]['fields'][1446]['customValue'][1]['data']) && !empty($groupTree[250]['fields'][1446]['customValue'][1]['data']))
+                            {
+                                $dataArr[1][] = $groupTree[250]['fields'][1446]['customValue'][1]['data'];
+                                $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1446);
+                            }
+    
+                            // Non-Mental Health Out Referral 2
+                            if(isset($groupTree[250]['fields'][1630]['customValue'][1]['data']))
+                            {
+                                $dataArr[1][] = $groupTree[250]['fields'][1630]['customValue'][1]['data'];
+                                $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1630);
+                            }
+    
+                            // Non-Mental Health Out Referral 3
+                            if(isset($groupTree[250]['fields'][1632]['customValue'][1]['data']))
+                            {
+                                $dataArr[1][] = $groupTree[250]['fields'][1632]['customValue'][1]['data'];
+                                $refTypeOption[1][] = CRM_Core_BAO_CustomOption::getCustomOption(1632);
+                            }
+                        }
+                    }
+
+                    $element = $form->getElement($form->_groupTree[77]['fields'][792]['element_name']) ;
+
+                    $defaults[$form->_groupTree[77]['fields'][792]['element_name']] = implode(',',$dataArr[0]);
+
+                    $element->_options = array();
+                    $i = 0;
+                    if (!empty($refTypeOption) && $refTypeOption[0] && $refTypeOption[1])
+                    {
+                        foreach ($refTypeOption[0][0] as $v)
+                        {
+                            $key = array_search($v['value'], $dataArr[0]);
+                            if ($key !== false)
+                            {
+                                $element->_options[$i]['text'] =  $v['label'];
+                                $element->_options[$i]['attr']['value'] = $dataArr[0][$key]; 
+                                foreach ($refTypeOption[1][0] as $v1)
+                                {
+                                    if ($v1['value'] == $dataArr[1][$key])
+                                    {
+                                        $element->_options[$i]['text'] = $element->_options[$i]['text'] .' ('.$v1['label'].')';
+                                        $i++;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    } 
+
+                    $element->freeze( );
+                }
+
+				// @todo Gin
+				if (isset($form->_elementIndex['custom_357_-1']))
+				{
+					$atArray = array('activity_type_id' => 53); //	Therapist Appointment - 53
+					$activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId);
+					$activities_key = array_keys($activities);
+
+					if( count($activities_key) > 0 )
+					{
+						if(isset($activities[$activities_key[0]]))
+						{
+							$result = $this->joomla_civicrm_buildForm_get_activity_appt( $activities[$activities_key[0]] );
+							$defaults['custom_357_-1'] = $result['date'];
+							$defaults['custom_358_-1'] = $result['status'];
+						}
+
+						if(isset($activities[$activities_key[1]]))
+						{
+							$result = $this->joomla_civicrm_buildForm_get_activity_appt( $activities[$activities_key[1]] );
+							$defaults['custom_359_-1'] = $result['date'];
+							$defaults['custom_360_-1'] = $result['status'];
+						}
+
+						if(isset($activities[$activities_key[2]]))
+						{
+							$result = $this->joomla_civicrm_buildForm_get_activity_appt( $activities[$activities_key[2]] );
+							$defaults['custom_361_-1'] = $result['date'];
+							$defaults['custom_362_-1'] = $result['status'];
+						}
+
+						if(isset($activities[$activities_key[3]]))
+						{
+							$result = $this->joomla_civicrm_buildForm_get_activity_appt( $activities[$activities_key[3]] );
+							$defaults['custom_363_-1'] = $result['date'];
+							$defaults['custom_364_-1'] = $result['status'];
+						}
+
+					}
+				}
+
+				if (isset($form->_elementIndex['custom_348_-1']))
+				{
+					$atArray = array('activity_type_id' => 54); //	Physician Appointment - 54
+					$activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId);
+
+					$activities_key = array_keys($activities);
+
+					if( count($activities_key) > 0 )
+					{
+						if(isset($activities[$activities_key[0]]))
+						{
+							$result = $this->joomla_civicrm_buildForm_get_activity_appt( $activities[$activities_key[0]] );
+							$defaults['custom_348_-1'] = $result['date'];
+							$defaults['custom_349_-1'] = $result['status'];
+						}
+
+						if(isset($activities[$activities_key[1]]))
+						{
+							$result = $this->joomla_civicrm_buildForm_get_activity_appt( $activities[$activities_key[1]] );
+							$defaults['custom_350_-1'] = $result['date'];
+							$defaults['custom_351_-1'] = $result['status'];
+						}
+
+						if(isset($activities[$activities_key[2]]))
+						{
+							$result = $this->joomla_civicrm_buildForm_get_activity_appt( $activities[$activities_key[2]] );
+							$defaults['custom_352_-1'] = $result['date'];
+							$defaults['custom_353_-1'] = $result['status'];
+						}
+
+						if(isset($activities[$activities_key[3]]))
+						{
+							$result = $this->joomla_civicrm_buildForm_get_activity_appt( $activities[$activities_key[3]] );
+							$defaults['custom_354_-1'] = $result['date'];
+							$defaults['custom_355_-1'] = $result['status'];
+						}
+					}
+				}
+
+
+				if (isset($form->_elementIndex['custom_365_-1']))
+				{
+					// Total Visits IHIT/IFIT
+					$atArray = array('activity_type_id' => CRM_Core_OptionGroup::getValue( 'activity_type', 'IHIT Visit', 'label' ));
+					$activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId);
+
+					$activities_key = array_keys($activities);
+					if( count($activities_key) > 0 )
+					{
+						$defaults['custom_365_-1'] = count($activities_key);
+					}
+				}
+
+
+
+			}//end if($aType == 47 || $form->_subType == 47)
+
+			// edit Intake
+			if(isset($form->_caseId) && ((isset($form->_activityTypeId) && $form->_activityTypeId == 13)
+			|| (isset($form->_subType) && $form->_subType == 13)))
+			{
+				$form->_required = array();
+				if (isset($form->_elementIndex['details']))
+				{
+					$element = $form->getElement('details') ;
+					$element->_label = 'Reason For Contact';
+				}
+			}
+
+			//joomla_civicrm_buildDischargeForm($formName, $form, $defaults);
+			if(isset($form->_elementIndex['custom_291_-1']))
+			{
+				$defaults['custom_291_-1'] = CRM_Case_BAO_Case::calculateDaysOpened($form->_caseId);
+			}
+
+			// Get Date Closed
+			//$defaults['custom_290_-1'] = ''; // CRM_Case_BAO_Case::getDateClosed($form->_caseId);
+
+			// Date Opened
+			//$defaults['custom_289_-1'] = CRM_Case_BAO_Case::getDateOpened($form->_caseId);
+
+			// Age Bracket
+			if(isset($form->_elementIndex['custom_300_-1']))
+			{
+				$params = array();
+				$params['id'] = $form->_contactID;
+				$defaultAtt = array();
+				$client = CRM_Contact_BAO_Contact::retrieve( $params, $defaultAtt, true );
+				if($client->birth_date)
+				{
+					$age = CRM_Utils_Date::calculateAge($client->birth_date);
+
+					if( $age['years'])
+					{
+						$defaults['custom_113_-1'] = $age['years'];
+
+						if( $age['years'] <= 12)
+						$defaults['custom_300_-1'] = 'child';
+						else if ( $age['years'] >= 13 && $age['years'] <= 17)
+						$defaults['custom_300_-1'] = 'adolescent';
+						else if ( $age['years'] >= 18 && $age['years'] <= 21 )
+						$defaults['custom_300_-1'] = 'trans_adult';
+						else if ( $age['years'] >= 22 && $age['years'] <= 60 )
+						$defaults['custom_300_-1'] = 'adult';
+						else if ( $age['years'] > 61 )
+						$defaults['custom_300_-1'] = 'geriatric';
+						else
+						$defaults['custom_300_-1'] = 'unknown';
+					}
+					else
+					{
+						$defaults['custom_300_-1'] = 'unknown';
+					}
+				}
+				else
+				{
+					$defaults['custom_300_-1'] = 'unknown';
+
+				}
+			}// end isset
+
+
+			require_once 'CRM/Case/Form/Activity/OpenCase.php';
+
+			// Referral Source
+			if(isset($form->_elementIndex['custom_293_-1']))
+			$defaults['custom_293_-1'] = CRM_Case_Form_Activity_OpenCase::getValue('Referral Source',
+												'Source',
+			$form->_caseId,
+			$form->_currentlyViewedContactId);
+
+			// Insurance Status
+			if(isset($form->_elementIndex['custom_294_-1']))
+			$defaults['custom_294_-1'] = CRM_Case_Form_Activity_OpenCase::getValue('Insurance','Insurance Type',$form->_caseId, $form->_currentlyViewedContactId);
+
+			// Risk Factors
+			if(isset($form->_elementIndex['custom_298_-1']))
+			{
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Eviction or Homeless',$form->_caseId, $form->_currentlyViewedContactId);
+				if($v === 'Yes')
+				$defaults['custom_298_-1[homeless]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Eviction or Homeless',$form->_caseId, $form->_currentlyViewedContactId);
+
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Inpatient Hospital',$form->_caseId, $form->_currentlyViewedContactId);
+				if($v === 'Yes')
+				$defaults['custom_298_-1[imminent_admit]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Inpatient Hospital',$form->_caseId, $form->_currentlyViewedContactId);
+
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Incarceration',$form->_caseId, $form->_currentlyViewedContactId);
+				if($v === 'Yes')
+				$defaults['custom_298_-1[incarceration]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Incarceration',$form->_caseId, $form->_currentlyViewedContactId);
+
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Risk for Hospitalization',$form->_caseId, $form->_currentlyViewedContactId);
+				if($v == 'Yes')
+				$defaults['custom_298_-1[future_hospitalization]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Risk for Hospitalization',$form->_caseId, $form->_currentlyViewedContactId);
+			}
+
+			// CRS Action
+			//if( $form->_caseId && $form->_currentlyViewedContactId)
+			//{
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Information Only',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[information_only]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Crisis Plan Only',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[crisis_plan]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','MCT Dispatch',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[mct]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Notify APS or CPS',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[aps_cps_gst]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Non-MH Referral',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[refer_to_non_mh_provider]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','MH Referral',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[refer_to_mhs_provider]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[911_dispatch]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+			//}
+			/*
+
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Operator Time',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[911_dispatch]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Emergency Petition',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[911_dispatch]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Voluntary Admit to Emergency Room',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[911_dispatch]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+
+			$v = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Community Ed',$form->_caseId, $form->_currentlyViewedContactId);
+			if($v == 'Yes')
+			$defaults['custom_307_-1[911_dispatch]'] = 1; // CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+			*/
+
+
+			// Lethality
+			if(isset($form->_elementIndex['custom_301_-1']))
+			{
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','Threatening Violence',$form->_caseId, $form->_currentlyViewedContactId);
+				if( $v == 'Yes')
+				$defaults['custom_301_-1[threat_of_violence]'] = 1;
+
+				/*$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','Threatening Violence',$form->_caseId, $form->_currentlyViewedContactId);
+				 if( $v == 'Yes')
+				 $defaults['custom_301_-1[assaultive]'] = 1;
+				 */
+
+				/*$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','',$form->_caseId, $form->_currentlyViewedContactId);
+				 if( $v == 'Yes')
+				 $defaults['custom_301_-1[psychosis]'] = 1;
+				 */
+
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','Gun Weapon Present',$form->_caseId, $form->_currentlyViewedContactId);
+				if( $v == 'Yes')
+				$defaults['custom_301_-1[weapon_present]'] = 1;
+
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','Suicide Attempt',$form->_caseId, $form->_currentlyViewedContactId);
+				if( $v == 'Yes')
+				$defaults['custom_301_-1[suicide_attempt]'] = 1;
+
+				/*$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','Threatening Violence',$form->_caseId, $form->_currentlyViewedContactId);
+				 if( $v == 'Yes')
+				 $defaults['custom_301_-1[suicide_ideation_with_pain]'] = 1;
+				 */
+
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','Suicide Ideation',$form->_caseId, $form->_currentlyViewedContactId);
+				if( $v == 'Yes')
+				$defaults['custom_301_-1[suicide_ideation_with_no_pain]'] = 1;
+
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','Decompensation',$form->_caseId, $form->_currentlyViewedContactId);
+				if( $v == 'Yes')
+				$defaults['custom_301_-1[rapid_decompensation]'] = 1;
+
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','Intoxication',$form->_caseId, $form->_currentlyViewedContactId);
+				if( $v == 'Yes')
+				$defaults['custom_301_-1[under_influence_intoxication]'] = 1;
+
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','Children In House',$form->_caseId, $form->_currentlyViewedContactId);
+				if( $v == 'Yes')
+				$defaults['custom_301_-1[children_present]'] = 1;
+
+				$v = CRM_Case_Form_Activity_OpenCase::getValue('Immediate Safety','Medical Issues',$form->_caseId, $form->_currentlyViewedContactId);
+				if( $v == 'Yes')
+				$defaults['custom_301_-1[medical_issues]'] = 1;
+
+			}
+
+
+
+			if($form->_caseId && $form->_currentlyViewedContactId)
+			{
+				// Urgent Care Appointments
+				$atArray = array('activity_type_id' => 43);
+				$activities = CRM_Case_BAO_Case::getCaseActivity( $form->_caseId, $atArray, $form->_currentlyViewedContactId);
+				$activities = array_keys($activities);
+				if( count($activities) > 0 )
+				{
+					require_once 'CRM/Case/XMLProcessor/Report.php';
+					$xmlProcessor = new CRM_Case_XMLProcessor_Report( );
+					/*foreach($activities as $k => $activity_id)
+					 {
+					 $report       = $xmlProcessor->getActivityInfo( $form->_currentlyViewedContactId, $activity_id, true );
+					 $form->addDate( 'custom_348_-11'.$k, ts('Appointment Date'), true, array( 'formatType' => 'activityDate') );
+
+					 $checkBoxes = array( );
+					 $checkBoxes[0] = $form->addElement('checkbox', 'custom_349_-1'.$k, null, '' );
+
+					 $form->addGroup  ( $checkBoxes, 'custom_349_-11'.$k );
+					 $form->addElement( 'checkbox', 'toggleSelect', null, null, array( 'onclick' => "return toggleCheckboxVals('contact_check',this);" ) );
+
+					 }
+					 */
+				}
+			}
+
+
+
+			// Vouchers - Other Assistance Provided
+
+			// Med Voucher Provided
+
+			// DOB from Intake
+			if (isset($report['customGroups']['Client Information'][8]) && date_parse($report['customGroups']['Client Information'][8]['value']))
+			{
+				if (isset($form->_elementIndex['custom_304_-1']) && $defaults['custom_304_-1'] != '')
+				{
+					$defaults['custom_304_-1'] = CRM_Utils_Date::customFormat(CRM_Utils_Date::processDate($report['customGroups']['Client Information'][8]['value']),'%m/%d/%Y');
+				}
+				if (isset($form->_elementIndex['custom_674_-1']) && $defaults['custom_674_-1'] != '')
+				{
+					$defaults['custom_674_-1'] = CRM_Utils_Date::customFormat(CRM_Utils_Date::processDate($report['customGroups']['Client Information'][8]['value']),'%m/%d/%Y');
+				}
+			}
+			else
+			{
+                if (isset($form->_elementIndex['custom_304_-1']))
+                {
+                    $defaults['custom_304_-1'] = '';
+                }
+                if (isset($form->_elementIndex['custom_674_-1']))
+                {
+                    $defaults['custom_674_-1'] = '';
+                }
+			}
+
+
+			// Handle setting default values for Status of Case Activities and the label
+			require_once 'CRM/Core/OptionGroup.php';
+			$caseTasks = CRM_Core_OptionGroup::values( 'case_tasks' );
+			$activityStatus = CRM_Core_PseudoConstant::activityStatus( );
+			if(!$form->_activityId)
+			{
+				if(in_array($aType, array_keys($caseTasks)))
+				{
+					if (isset($form->_elementIndex['status_id']))
+					{
+						$element = $form->getElement('status_id') ;
+						$element->_label = 'Level of Completion';
+						$defaults['status_id'] = array_search( 'Scheduled', $activityStatus );
+
+					}
+				}
+				else
+				{
+					$caseForms = CRM_Core_OptionGroup::values( 'case_forms' );
+					if(in_array($aType, array_keys($caseForms)))
+					{
+						if (isset($form->_elementIndex['status_id']))
+						{
+							$element = $form->getElement('status_id') ;
+							$element->_label = 'Level of Completion';
+							$defaults['status_id'] = array_search( 'Completed', $activityStatus );
+						}
+					}
+				}
+			}
+
+			if($form->_isPrint)
+			{
+				foreach ($form->_elementIndex as $elementName => $index)
+				{
+					$element = $form->getElement($elementName) ;
+					$element->freeze( );
+				}
+			}
+	}
+	else if ($formName == 'CRM_Activity_Form_Activity')
+	{
+		if(!isset($form->_activityTypeId))
+		{
+			$aId = CRM_Utils_Array::value( 'id', $_GET );
+			if($aId)
+			{
+				$dao = new CRM_Activity_BAO_Activity();
+				$dao->id = $aId;
+				if( $dao->find( true ) )
+				{
+					$aType = $dao->activity_type_id;
+				}
+				else
+				{
+					$aType = CRM_Utils_Array::value( 'atype', $_GET );
+				}
+			}
+			else
+			{
+				$aType = CRM_Utils_Array::value( 'atype', $_GET );
+			}
+		}
+		else
+		{
+			$aType = $form->_activityTypeId;
+		}
+		require_once 'CRM/Core/OptionGroup.php';
+		$caseTasks = CRM_Core_OptionGroup::values( 'case_tasks' );
+		$activityStatus = CRM_Core_PseudoConstant::activityStatus( );
+		if(!$form->_activityId)
+		{
+			if(in_array($aType, array_keys($caseTasks)))
+			{
+				if (isset($form->_elementIndex['status_id']))
+				{
+					$defaultScheduled = array(34, // How Are You
+					56, // Confirm Appointment
+					67 // Call Referrals
+					);
+					$element = $form->getElement('status_id') ;
+					$element->_label = 'Level of Completion';
+					if( in_array($aType, $defaultScheduled) )
+					$defaults['status_id'] = array_search( 'Completed', $activityStatus );
+					else
+					$defaults['status_id'] = array_search( 'Completed', $activityStatus );
+				}
+			}
+			else
+			{
+				$caseForms = CRM_Core_OptionGroup::values( 'case_forms' );
+				if(in_array($aType, array_keys($caseForms)))
+				{
+					if (isset($form->_elementIndex['status_id']))
+					{
+						$element = $form->getElement('status_id') ;
+						$element->_label = 'Level of Completion';
+						$defaults['status_id'] = array_search( 'Completed', $activityStatus );
+					}
+				}
+			}
+		}
+	}
+
+
+	$form->setDefaults($defaults);
+
+}
+
+function joomla_civicrm_buildDischargeForm($formName, &$form, &$defaults)
+{
+	$defaults['custom_291_-1'] = "10"; //CRM_Case_BAO_Case::calculateDaysOpened($form->_caseId);
+
+	// Get Date Closed
+	$defaults['custom_290_-1'] = ''; // CRM_Case_BAO_Case::getDateClosed($form->_caseId);
+
+	// Date Opened
+	$defaults['custom_289_-1'] = CRM_Case_BAO_Case::getDateOpened($form->_caseId);
+
+	// Age Bracket
+	$params = array();
+	$params['id'] = $params['contact_id'] = $form->_currentlyViewedContactId;
+	$client = CRM_Contact_BAO_Contact::retrieve( $params, $defaults, true );
+	$age = CRM_Utils_Date::calculateAge($client->birth_date);
+	if( $age <= 12)
+	$defaults['custom_300_-1'] = 'child';
+	else if ( $age >= 13 && $age <= 17)
+	$defaults['custom_300_-1'] = 'adolescent';
+	else if ( $age >= 18 && $age <= 21 )
+	$defaults['custom_300_-1'] = 'trans_adult';
+	else if ( $age >= 22 && $age <= 60 )
+	$defaults['custom_300_-1'] = 'adult';
+	else if ( $age > 61 )
+	$defaults['custom_300_-1'] = 'geriatric';
+	else
+	$defaults['custom_300_-1'] = 'unknown';
+
+
+
+	require_once 'CRM/Case/Form/Activity/OpenCase.php';
+
+	// Referral Source
+	$defaults['custom_293_-1'] = CRM_Case_Form_Activity_OpenCase::getValue('Referral Source','Source',$form->_caseId, $form->_currentlyViewedContactId);
+
+	// Insurance Status
+	$defaults['custom_294_-1'] = CRM_Case_Form_Activity_OpenCase::getValue('Insurance','Insurance Type',$form->_caseId, $form->_currentlyViewedContactId);
+
+	// Risk Factors
+	$risk_factors = array();
+	$risk_factors[] = $defaults['custom_298_-1[homeless]'] = CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Eviction or Homeless',$form->_caseId, $form->_currentlyViewedContactId);
+	$risk_factors[] = $defaults['custom_298_-1[imminent_admit]'] = CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Inpatient Hospital',$form->_caseId, $form->_currentlyViewedContactId);
+	$risk_factors[] = $defaults['custom_298_-1[incarceration]'] = CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Incarceration',$form->_caseId, $form->_currentlyViewedContactId);
+	$risk_factors[] = $defaults['custom_298_-1[future_hospitalization]'] = CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Risk for Hospitalization',$form->_caseId, $form->_currentlyViewedContactId);
+	$defaults['custom_298_-1[homeless]'] = 1;
+	$defaults['custom_298_-1[imminent_admin]'] = 0;
+	//print_r($risk_factors);
+	//$defaults['custom_298_-1'] = CRM_Case_Form_Activity_OpenCase::getValue('Risk Factors','Insurance Type',$form->_caseId, $form->_currentlyViewedContactId);
+
+	// CRS Action
+	$actions = array();
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Information Only',$form->_caseId, $form->_currentlyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Community Ed',$form->_caseId, $form->_currentlyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Crisis Plan Only',$form->_caseId, $form->_currentlyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Called 911',$form->_caseId, $form->_currenltyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','MCT Dispatch',$form->_caseId, $form->_currentlyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Notify APS or CPS',$form->_caseId, $form->_currenltyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Non-MH Referral',$form->_caseId, $form->_currentlyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','MH Referral',$form->_caseId, $form->_currentlyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Operator Number',$form->_caseId, $form->_currentlyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Operator Time',$form->_caseId, $form->_currentlyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Emergency Petition',$form->_caseId, $form->_currentlyViewedContactId);
+	$actions[] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','Voluntary Admit to Emergency Room',$form->_caseId, $form->_currentlyViewedContactId);
+	//print_r($actions);
+	//$defaults['custom_16_-1'] = CRM_Case_Form_Activity_OpenCase::getValue('CRS Action','',$form->_caseId);
+
+	// Lethality
+
+
+	// MH Provider Linked/Admitted to
+
+	// Urgent Care Appointments
+	// Hospitalized - If Yes, was client assessed for crisis bed?
+
+
+	// IHIT/IFIT Total Visits
+	// COTAA Total Visits
+	// With Psychiatrist
+
+	// Vouchers - Other Assistance Provided
+
+	// Med Voucher Provided
+
+	$form->setDefaults($defaults);
+
+
+}
+
+
+/**
+ * Build block Client Profile
+ *
+ * @param $formName
+ * @param $form
+ * @param $report
+ *
+ */
+function joomla_civicrm_buildForm_user_info( $formName, &$form, &$report )
+{
+	if(!isset($form->_contactID) && isset($form->_currentlyViewedContactId))
+	{
+		$form->_contactID = $form->_currentlyViewedContactId;
+	}
+	if(!$report)
+	{
+		$params = array();
+		$caseid = $form->_caseId.'';
+
+		$atArray = array('activity_type_id' => 13); // Intake
+		$activities = CRM_Case_BAO_Case::getCaseActivity( $caseid, $atArray, $form->_contactID );
+		$activities = array_keys($activities);
+		if( count($activities) > 0 )
+		{
+			$activities = $activities[0];
+
+			require_once 'CRM/Case/XMLProcessor/Report.php';
+			$xmlProcessor = new CRM_Case_XMLProcessor_Report( );
+			$report       = $xmlProcessor->getActivityInfo( $form->_contactID, $activities, true );
+		}
+	}
+
+	if(isset($report["customGroups"]) && is_array($report["customGroups"]))
+	{
+
+		$groupTree['Client_Profile']['name'] = 'Client_Profile';
+		$groupTree['Client_Profile']['title'] = 'Client Profile';
+		$groupTree['Client_Profile']['collapse_display'] = 0;
+		$groupTree['Client_Profile']['fields'] = array();
+
+		$params = array('id' => $form->_contactID);
+		$defaultsAttr = array();
+		$client = CRM_Contact_BAO_Contact::retrieve( $params, $defaultsAttr, true );
+
+		// column 1
+		$caseArr = array('label' => ts('Client'),'value' => $client->first_name . ' ' . $client->last_name, 'type' => 'String');
+		$groupTree['Client_Profile']['fields'][0][] = $caseArr;
+
+		$report['customGroups']['Client Information'][10]['label'] = ts('Sex');
+		$groupTree['Client_Profile']['fields'][0][] = $report['customGroups']['Client Information'][10];
+
+		$report['customGroups']['Client Information'][0]['label'] = ts('Veteran');
+		$groupTree['Client_Profile']['fields'][0][] = $report['customGroups']['Client Information'][0];
+		//print_r($report['customGroups']['Client Information']);
+		//exit(0);
+
+		// column 2
+		$report['customGroups']['Client Information'][18]['label'] = ts('Address');
+		$groupTree['Client_Profile']['fields'][1][] = $report['customGroups']['Client Information'][18];
+		$report['customGroups']['Client Information'][14]['label'] = ts('Race');
+		$groupTree['Client_Profile']['fields'][1][] = $report['customGroups']['Client Information'][14];
+		//print_r($report['customGroups']['Client Information']);
+		$report['customGroups']['Insurance'][4]['label'] = ts('Insurance');
+		$groupTree['Client_Profile']['fields'][1][] = $report['customGroups']['Insurance'][4];
+		$report['customGroups']['Financial'][0]['label'] = ts('Employment Status');
+		$groupTree['Client_Profile']['fields'][1][] = $report['customGroups']['Financial'][0];
+
+		// column 3
+		$report['customGroups']['Client Information'][5]['label'] = ts('Phone Number');
+		$groupTree['Client_Profile']['fields'][2][] = $report['customGroups']['Client Information'][5];
+
+		$report['customGroups']['Client Information'][9]['label'] = ts('Age');
+		$groupTree['Client_Profile']['fields'][2][] = $report['customGroups']['Client Information'][9];
+
+		$report['customGroups']['Client Information'][8]['label'] = ts('DOB');
+		$report['customGroups']['Client Information'][8]['value'] = CRM_Utils_Date::customFormat(CRM_Utils_Date::processDate($report['customGroups']['Client Information'][8]['value']),'%m/%d/%Y');;
+		$groupTree['Client_Profile']['fields'][2][] = $report['customGroups']['Client Information'][8];
+		$caseArr = array('label' => ts('Marital Status'),'value' => '', 'type' => 'String');
+		$groupTree['Client_Profile']['fields'][2][] = $caseArr;
+
+		//retrieve details about case
+		$case1 = new CRM_Case_BAO_Case();
+		$case1->id = $form->_caseId;
+		$res = $case1->find(true);
+		$case_status = CRM_Utils_Array::value( $case1->status_id, CRM_Case_PseudoConstant::caseStatus());
+
+		// column 4
+		$caseArr = array('label' => ts('Case Number'),'value' => $form->_caseId, 'type' => 'String');
+		$groupTree['Client_Profile']['fields'][3][] = $caseArr;
+		$report['fields'][8]['label'] = ts('Status');
+		$groupTree['Client_Profile']['fields'][3][] = array('label' => ts('Status'), 'value' => $case_status, 'type' => 'String');//$report['fields'][8];
+		$caseTypes    = CRM_Core_OptionGroup::values( 'case_type' );
+		$caseTypesId = CRM_Case_PseudoConstant::caseTypeName( $form->_caseId );
+		$caseArr = array('label' => ts('Case Type'),'value' => $caseTypes[$caseTypesId['id']], 'type' => 'String');
+		$groupTree['Client_Profile']['fields'][3][] = $caseArr;
+		$report['fields'][6]['label'] = ts('Case Opened');
+		$report['fields'][6]['value'] = CRM_Utils_Date::customFormat($report['fields'][6]['value'],'%m/%d/%Y');
+		$groupTree['Client_Profile']['fields'][3][] = $report['fields'][6];
+
+		$form->assign_by_ref( 'userinfo_groupTree', $groupTree );
+
+	}
+}
+
+/**
+ * the client information should populate automatically based on the existing
+ * client's profile information
+ *
+ * @param $form
+ *
+ */
+function joomla_civicrm_buildForm_get_user_info( &$form )
+{
+	require_once 'CRM/Contact/Page/AJAX.php';
+
+	$defaults = CRM_Contact_Page_AJAX::getContactInfoProfile($form->_currentlyViewedContactId);
+	$form->setDefaults($defaults);
+}
+
+/**
+ * the client information should get
+ * client's case information
+ *
+ * @param $element
+ *
+ */
+function joomla_civicrm_buildForm_get_activity_appt( $element )
+{
+	$result = array();
+	$result['date'] = CRM_Utils_Date::customFormat(CRM_Utils_Date::processDate($element['display_date']),'%m/%d/%Y');
+	switch ($element['status']) {
+		case 'Kept (UCC Only)':
+			$status = 'kept';
+			break;
+		case 'No Show (UCC Only)':
+			$status = 'no_show';
+			break;
+		case 'Cancelled (UCC Only)':
+			$status = 'cancelled';
+			break;
+
+		default:
+			$status = '';
+			break;
+	}
+	$result['status'] = $status;
+
+	return $result;
+}
+
+
+
+}

@@ -1,0 +1,17 @@
+<macrodef name="deleteAllArticlesInTrash" description="Delete all the articles in the trash">
+
+	<sequential>
+		<clickLink label="Article Trash" />
+		<verifyText text="Trash Manager" />
+		
+		<!-- Select all articles in the trash -->
+		<setSelectField name="limit" text="all"/>
+		<setCheckbox name="toggle" checked="true" />
+		
+		<!-- Delete all the articles -->		
+		<clickLink xpath="(//a[@class='toolbar'])[2]"/>
+		
+		<!-- Confirm the deletion -->
+		<clickLink xpath="//a[@class='icon-32-delete']" />
+	</sequential>
+</macrodef>

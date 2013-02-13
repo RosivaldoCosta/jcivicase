@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://emr.santegroup.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://emr.santegroup.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://emr.santegroup.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetModifiedTables">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetModifiedTablesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetModifiedTablesResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Search">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="firstname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="casenumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchResult" type="tns:ArrayOfPatient" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPatient">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Patient" nillable="true" type="tns:Patient" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Patient">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DOB" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SSN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Zipcode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreeAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PatientID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CaseNumber" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTasks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="casenumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTasksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTasksResult" type="tns:ArrayOfNextTask" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfNextTask">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="NextTask" nillable="true" type="tns:NextTask" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="NextTask">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Appt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateCompleted" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Initial" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateDue" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SetDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetOPSCases">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetOPSCasesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOPSCasesResult" type="tns:ArrayOfCase" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCase">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Case" nillable="true" type="tns:Case" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Case">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Forms" type="tns:ArrayOfForm" />
+          <s:element minOccurs="0" maxOccurs="1" name="NextTaskObj" type="tns:NextTask" />
+          <s:element minOccurs="1" maxOccurs="1" name="SetDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClosedInitials" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StatusDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tstamp" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="OpenBy" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NextTaskDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:Status" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateClosed" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="NextTask" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateOpened" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CaseNumber" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfForm">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Form" nillable="true" type="tns:Form" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Form" />
+      <s:simpleType name="Status">
+        <s:restriction base="s:string">
+          <s:enumeration value="Active" />
+          <s:enumeration value="Unresolved" />
+          <s:enumeration value="FollowUp" />
+          <s:enumeration value="FrequentCaller" />
+          <s:enumeration value="MCT" />
+          <s:enumeration value="EastIHIT" />
+          <s:enumeration value="WestIHIT" />
+          <s:enumeration value="CISM" />
+          <s:enumeration value="Closure" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="RetrieveMCTCases">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetrieveMCTCasesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RetrieveMCTCasesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrieveIHITCases">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetrieveIHITCasesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RetrieveIHITCasesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetModifiedTablesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetModifiedTables" />
+  </wsdl:message>
+  <wsdl:message name="GetModifiedTablesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetModifiedTablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchSoapIn">
+    <wsdl:part name="parameters" element="tns:Search" />
+  </wsdl:message>
+  <wsdl:message name="SearchSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTasksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTasks" />
+  </wsdl:message>
+  <wsdl:message name="GetTasksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOPSCasesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOPSCases" />
+  </wsdl:message>
+  <wsdl:message name="GetOPSCasesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOPSCasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveMCTCasesSoapIn">
+    <wsdl:part name="parameters" element="tns:RetrieveMCTCases" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveMCTCasesSoapOut">
+    <wsdl:part name="parameters" element="tns:RetrieveMCTCasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveIHITCasesSoapIn">
+    <wsdl:part name="parameters" element="tns:RetrieveIHITCases" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveIHITCasesSoapOut">
+    <wsdl:part name="parameters" element="tns:RetrieveIHITCasesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DataServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModifiedTables">
+      <wsdl:input message="tns:GetModifiedTablesSoapIn" />
+      <wsdl:output message="tns:GetModifiedTablesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Search">
+      <wsdl:input message="tns:SearchSoapIn" />
+      <wsdl:output message="tns:SearchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTasks">
+      <wsdl:input message="tns:GetTasksSoapIn" />
+      <wsdl:output message="tns:GetTasksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOPSCases">
+      <wsdl:input message="tns:GetOPSCasesSoapIn" />
+      <wsdl:output message="tns:GetOPSCasesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveMCTCases">
+      <wsdl:input message="tns:RetrieveMCTCasesSoapIn" />
+      <wsdl:output message="tns:RetrieveMCTCasesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveIHITCases">
+      <wsdl:input message="tns:RetrieveIHITCasesSoapIn" />
+      <wsdl:output message="tns:RetrieveIHITCasesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DataServiceSoap" type="tns:DataServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://emr.santegroup.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModifiedTables">
+      <soap:operation soapAction="http://emr.santegroup.org/GetModifiedTables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search">
+      <soap:operation soapAction="http://emr.santegroup.org/Search" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTasks">
+      <soap:operation soapAction="http://emr.santegroup.org/GetTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOPSCases">
+      <soap:operation soapAction="http://emr.santegroup.org/GetOPSCases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveMCTCases">
+      <soap:operation soapAction="http://emr.santegroup.org/RetrieveMCTCases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveIHITCases">
+      <soap:operation soapAction="http://emr.santegroup.org/RetrieveIHITCases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataServiceSoap12" type="tns:DataServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://emr.santegroup.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModifiedTables">
+      <soap12:operation soapAction="http://emr.santegroup.org/GetModifiedTables" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search">
+      <soap12:operation soapAction="http://emr.santegroup.org/Search" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTasks">
+      <soap12:operation soapAction="http://emr.santegroup.org/GetTasks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOPSCases">
+      <soap12:operation soapAction="http://emr.santegroup.org/GetOPSCases" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveMCTCases">
+      <soap12:operation soapAction="http://emr.santegroup.org/RetrieveMCTCases" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveIHITCases">
+      <soap12:operation soapAction="http://emr.santegroup.org/RetrieveIHITCases" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataService">
+    <wsdl:port name="DataServiceSoap" binding="tns:DataServiceSoap">
+      <soap:address location="http://65.216.170.16/Services/DataService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataServiceSoap12" binding="tns:DataServiceSoap12">
+      <soap12:address location="http://65.216.170.16/Services/DataService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

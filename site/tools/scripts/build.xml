@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<project name="CiviCRM" basedir="." default="report">
+  <target name="report">
+    <phpunit2report infile="../tests/reports/logfile.xml"
+                    styledir="phpunit-xslt"
+                    format="frames"
+                    todir="../tests/reports/results"/>
+  </target>
+</project>

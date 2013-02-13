@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Configure</title>
+<link href="../css/help.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Appointment Booking Pro Configuration</h1>
+<h3>Description</h3>
+<p>This screen is used to configure the component to your particular needs. </p>
+<ul>
+  <li><a href="#basic">Basic Setup</a></li>
+  <li><a href="#calendar">Calendars</a></li>
+  <li><a href="#gad">Graphic Availability Display</a></li>
+  <li><a href="#messages">Messages</a></li>
+  <li><a href="#paypal">PayPal</a></li>
+</ul>
+<h3>Toolbar Icons</h3>
+<p> <strong>Save:</strong> Save changes.</p>
+<p><strong>Help:</strong> Opens this help screen.</p>
+<p>&nbsp;</p>
+<a name="basic" id="basic">
+<h3>Basic Setup</h3>
+</a>
+<p><strong>Send email notifications TO:</strong> When a new booking request is created by the front-end screen, a notification is emailed to the address specified here. Note this can be overridden at the resource level, so different resources can send notifications to different addresses.</p>
+<p><strong>Email notification FROM address:</strong> Any emails sent from the component must have a FROM address. This should be the same domain as you web site. Example: if your web site is <strong>abc.com</strong>, the FROM must be <strong>somebody@abc.com</strong> or else you mail server may reject the outgoing mail as 'relayed' or spam.<br />
+</p>
+<p><strong>Email notification SUBJECT:</strong> This will be the subject used in email notifications<br />
+</p>
+<p><strong>HTML email</strong>: Yes = send HTML formatted email, No = send plain text emails.<br />
+</p>
+<p><strong>Phone:</strong> Make the phone number a required input field / optional input field or hide it.<br />
+</p>
+<p><strong>Email:</strong> Make the email address a required input field / optional input field or hide it.<br />
+</p>
+<p><strong>Hide logo:</strong> Hide the ResourceBookingPro.com link on the front-end screen.<br />
+</p>
+<p><strong>Use DIV Calendar:</strong> Yes = use CSS div calendar, No = use popup window calendar, for date picker.</p>
+<p><strong>Date Picker Start Day:</strong> Date picker can be set to start on Sunday or Monday.</p>
+<p><strong>Limit User`s Daily Bookings:</strong> You can limit the maximum number of bookings a user can make. Only applies to logged in users so only usable with Login Required = Yes.<br />
+  <em><strong> 0 = NO LIMIT</strong></em></p>
+<p><strong>Auto-Accept Bookings:</strong> Normally a booking 'request' is created, with the status of 'new', and notification is send to the address specified above. A designated administrator would make the decision to accept or decline the booking request. With Auto-Accept = Yes, the 'new' status is skipped and the booking as added with the status of accepted. This should be used with caution when running the control in Start/End mode as a malicious user could book from Dec 1 to Jan 31 and thereby lock up a resource until an administrator went in and canceled the booking.<br />
+</p>
+<p><strong>Allow Cancellation:</strong> If set to 'Yes', a system generated, unique, code is created and added to the booking. You can add this code to the confirmation sent to the user via tokens (see Tokens on the Messages tab). With Allow Cancellation = Yes, a section will be shown, at the bottom of the booking screen, where the user can enter their cancellation code and have their booking canceled. This does not remove the booking, it just changes the status to 'cancelled' It will remove the booking from the calendar if one is in use.</p>
+<p><strong>up to x hours..:</strong> You can set a minimum time, before the booking, that cancellation will be accepted. For example, if you set it to 24 hours and the customer attempts to cancel 4 hours before, they will get a message saying cancellations are only allowed up to x hours before the booking starts. See Messages tab for setting the exact wording you want.<br />
+</p>
+<p><strong>Time Format:</strong> You can specify the time format to be used on the front-end screen, either 24 hour or 12 hour +AM/PM. All internal times and administrator screens are in 24 hour format.</p>
+<p><strong>Header Text:</strong> Enter any information text that you would like to be displayed above the input fields of the booking screen.<br />
+</p>
+<p><strong>Footer Text:</strong> Enter any information text that you would like to be displayed above the input fields of the booking screen.</p>
+<p><a href="#">Top</a></p>
+<p>&nbsp;</p>
+<a name="calendar" id="basic"><h3>Calendars</h3>
+</a>
+<p><strong></strong>Resource Booking Pro can be set to work with either of two 3rd party calendars, JCalPro or EventList.</p>
+<p>There is no direct connection between RBPro and the calendars, RBPro just adds/removes data from the calendar's tables. This means the communication is one-way,  RBPro knows about the calendar but the calendar has no knowledge of RBPro. You cannot initiate a booking from the 3rd party calendar and have it talk to RBPro.</p>
+<p>When a calendar is chosen, a section dealing with the calendar will appear in the booking details screen.</p>
+<p><img src="../images/cal1.jpg" width="400" height="187" />&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>None:</strong> do not use a 3rd party calendar</p>
+<p><strong>Various 3rd party calendars supported.</strong></p>
+<p><strong>Calendar Fields:</strong> 3rd party calendars have a 'title' and 'body' area. The title is what appears in the calendar cell, the body is what appears when you open a calendar date for details on the event. You can tell RBPro which field to put in which area.<br />
+  <br />
+<strong>Event Title:</strong> Choose	either	resource.name (name of the resource) or request.name (name of the requestor)</p>
+<p><strong>Event Body:</strong> This is what will be placed in the calendar body area. You can use tokens too insert booking information. </p>
+<p><strong>Daylight Savings Time:</strong> ABPro stores times in local time but some 3rd party calendars store in  UTC (or GMT) and ABPro needs to convert local to UTC by using the  Joomla time zone setting. Not everywhere in the world implements DST.  This setting lets you tell ABPro if it should apply DST when converting  to UTC.</p>
+<p> These are the<strong> tokens available</strong>:</p>
+<table border="0" cellpadding="2" style="font-size:10px;">
+  <tr>
+    <td bgcolor="FFFFCC"><strong>Token</strong></td>
+    <td><strong>Will be replaced with</strong></td>
+    <td width="5%">&nbsp;</td>
+    <td bgcolor="FFFFCC"><strong>Token</strong></td>
+    <td><strong>Will be replaced with</strong></td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[resource]</td>
+    <td>name of the resource being booked</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[resource_category]</td>
+    <td>the resource category</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[requester name]</td>
+    <td>the name of the requester</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[resource_service]</td>
+    <td>the resource service</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[startdate]</td>
+    <td>start date of the booking</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[phone]</td>
+    <td>the phone number of the requester</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[starttime]</td>
+    <td>start time of the booking</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[email]</td>
+    <td>the email address of the requester</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[enddate]</td>
+    <td>end date of the booking</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[cancellation_id]]</td>
+    <td>the system generated cancellation_id3</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[endtime]</td>
+    <td>end time of the booking</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[booking_total]</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr >
+    <td colspan="5"><hr /></td>
+  </tr>
+  <tr>
+    <td>for UDFs</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>UDF example</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[<em>screen label</em>]</td>
+    <td>the UDF label </td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[Favorite Fruit]</td>
+    <td>value entered by user for Favorite Fruit</td>
+  </tr>
+</table>
+<p>Example:</p>
+<p><img src="../images/cal2.jpg" border="1" width="500" height="98" /></p>
+<p><img src="../images/cal3.jpg" border="1" width="400" height="223" /></p>
+<p><a href="#">Top</a></p>
+<a name="gad" id="basic"><h3>Graphic Availability Display</h3>
+</a>
+<p>These settings are used for the Graphic Availability Display booking screen only.</p>
+<p>This display presents an alternate booking screen in which the user chooses a timeslot from a table of available slots.</p>
+<p><strong>Default Grid Start Time:</strong> The user can adjust the grid or table of timeslots to display an appropriate range of hours. This setting is the default when the screen opens.</p>
+<p><strong>Default Grid End Time:</strong> The user can adjust the grid or table of timeslots to display an appropriate range of hours. This setting is the default when the screen opens.</p>
+<p><strong>Hide Gird Start/Stop controls:</strong> Yes=Do not show the grid start/end dropdown lists on the GAD screen. The grid will be fixed at the values above. </p>
+<p><strong>Grid Start Day:</strong> <strong>Today</strong> = Grid will start with today's date, 
+  <strong>Tomorrow</strong> = Grid will start with tomorrow's date,<strong> x days from no</strong>w = Grid will start at x days from now.<br />
+  <strong>Specific date</strong> = Grid will start at the selected date </p>
+<p><strong>Grid Width:</strong> This is the width of the timeslots grid. You may need to adjust this to work with your template. This must be a number of pixels, not a  percentage, as the system must calculate a ratio of pixels to grid minutes for  resizing grid. 
+(default is 700)</p>
+<p><strong>Name Width:</strong> This is the with of the Y-Axis for the availability table. Either date or name. Again, it must be a number of pixels not a %. 
+(default is 100)</p>
+<p><strong>Available Time Slot image:</strong> You can specify an image to be shown in the available timeslots. This is a path to image, example: &quot;./administrator/images/tick.png&quot;</p>
+<p><strong>Booked Time Slot image:</strong> You can specify an image to be shown in the booked or unavailable timeslots. This is a path to image, example: &quot;./administrator/images/publish_x.png&quot;</p>
+<p>The colors for this screen are set in the css file and can be tailored to you site.</p>
+<p><strong>Number of days to show:</strong> When viewing by resource, this sets the number of days to show in the grid. Default is 7. 
+More days = longer screen and slower response as more days need to be calculated and added to the grid.</p>
+<p><strong>Show Seats Available:</strong> Instead of a checkmark indicating a free timeslot, show the number of available seats.</p>
+<p>&nbsp;</p>
+<p></p>
+<p><a href="#">Top</a></p>
+<p>&nbsp;</p>
+<a name="messages" id="basic">
+<h3>Messages</h3>
+<p>Several important messages produced by the system are represented here for you to edit.</p>
+<p><strong>Booking Complete:</strong> This message is used when the booking is complete. You can use the tokens listed at the bottom of the screen in this message.</p>
+<p>Example:</p>
+<p><img src="../images/pp3.jpg" border="1"  /></p>
+<p><img src="../images/pp4.jpg" border="1"  /></p>
+<p><strong>Booking In-Progress:</strong> This message tells the customer that their payment is still being processed. 
+Note: NO TOKEN replacement here as PayPal does not return the request id until it is completed.</p>
+<p><strong>Too late to Cancel:</strong> This is the message displayed if you have set a minimum amount of time before a booking that a cancellation is accepted, and the user tries to cancel too close to the booking time. You will probably want to tailor it you your settings, ex: Online cancellation is only allowed up to 24 hours before your booking, Please call our office.</p>
+<img src="../images/msg2.jpg" border="1" width="400" height="111" />
+<p><strong>Cancellation: </strong>This is the confirmation message for user initiated cancellation. It appears on the booking screen so best to keep it short and sweet ;-)</p>
+<p><img src="../images/msg1.jpg" border="1" width="400" height="132" /></p>
+<p>&nbsp;</p>
+<p><strong>Reminder:</strong> This message can be sent by Admin to remind a person about their booking.</p>
+<p>&nbsp;</p>
+<p> These are the<strong> tokens available</strong>:</p>
+<table border="0" cellpadding="2" style="font-size:10px;">
+  <tr>
+    <td bgcolor="FFFFCC"><strong>Token</strong></td>
+    <td><strong>Will be replaced with</strong></td>
+    <td width="5%">&nbsp;</td>
+    <td bgcolor="FFFFCC"><strong>Token</strong></td>
+    <td><strong>Will be replaced with</strong></td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[resource]</td>
+    <td>name of the resource being booked</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[resource_category]</td>
+    <td>the resource category</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[requester name]</td>
+    <td>the name of the requester</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[resource_service]</td>
+    <td>the resource service</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[startdate]</td>
+    <td>start date of the booking</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[phone]</td>
+    <td>the phone number of the requester</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[starttime]</td>
+    <td>start time of the booking</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[email]</td>
+    <td>the email address of the requester</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[enddate]</td>
+    <td>end date of the booking</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[cancellation_id]]</td>
+    <td>the system generated cancellation_id3</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[endtime]</td>
+    <td>end time of the booking</td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[booking_total]</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr >
+    <td colspan="5"><hr /></td>
+  </tr>
+  <tr>
+    <td>for UDFs</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>UDF example</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="FFFFCC">[<em>screen label</em>]</td>
+    <td>the UDF label </td>
+    <td>&nbsp;</td>
+    <td bgcolor="FFFFCC">[Favorite Fruit]</td>
+    <td>value entered by user for Favorite Fruit</td>
+  </tr>
+</table>
+</a>
+
+<p><a href="#">Top</a></p>
+
+<p>&nbsp;</p>
+<a name="paypal" id="basic"><h3>PayPal</h3></a>
+<p>Appointment Booking Pro 1.4 can be set to:</p>
+<ul>
+  <li><strong>Not use PayPal</strong> - no PayPal payment is invoked.</li>
+  <li><strong>Only use PayPal</strong> - the user can <strong>only</strong> make a booking if they pay.</li>
+  <li><strong>Offer both PayPal and non-PayPal</strong> - you can give the user the choice, two buttons one for PayPal, one for no-PayPal (pay later)</li>
+</ul>
+<p>With PayPal enabled, the booking screen will show the calculated cost at hours x rate, or flat rate depending on how you set it up. </p>
+<p>The other main difference when enabling PayPal, is that a new request will get inserted with a status of 'pending' rather than 'new'. The user is sent to PayPal to make their payment. They are sent back to your site. In a separate thread, PayPal processes the payment and sends an IPN (Instant Payment Notification) message to your site. This IPN is really not 'instant' and your customer may have been returned to your site before the IPN arrives. In this case the in-progress message is shown to the customer. When PayPal completes the payment processing, they send the customer an email and send your site an IPN message. When the customer comes back to your site, the return page checks to see if the transaction has completed. If it has it displays the confirmation message, if not it displays the in-progress message. These messages are set in the 'Messages' tab. </p>
+<p>There is a possibility that the customer may abandon the booking after being sent to PayPal. In this case the booking will stay in 'pending' and need to be cleared manually. If the customer elects to 'Cancel' the payment in PayPal, the IPN will reflect that and ABPro will set the request from 'pending' to 'canceled'.</p>
+<hr />
+<p>The relation between ABPro's <em>'Auto-Accept</em>' and <em>'PayPal Enabled'</em> is show below.</p>
+<p><strong>PayPal = No</strong> (no PayPal submit button)</p>
+<blockquote>
+  <p> <strong>Auto-Accept = Yes</strong><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;New booking status = 'Accepted' (timeslot locked)<br />
+    <br />
+    <strong>Auto-Accept = No</strong><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;New booking status = 'New' (timeslot not locked)<br />
+  </p>
+  <p>&nbsp;</p>
+</blockquote>
+<p><strong>PayPal = Yes</strong> (ONLY PayPal submit button shown)</p>
+<blockquote>
+  <p> <strong>Auto-Accept = Yes</strong><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;New booking status = 'Pending' -&gt; goes to 'Accepted' on IPN ok&nbsp;&nbsp;(Pending locks appointment)<br />
+    <br />
+    <strong>Auto-Accept = No</strong><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;New booking status = 'New'<br />
+  Accept on Payment = Yes -&gt; goes to 'Accepted' on IPN ok</p>
+  <p></p>
+  <p>&nbsp;</p>
+</blockquote>
+<p><strong>PayPal = Optional</strong> (both submit buttons shown)</p>
+<blockquote>
+  <p> <u>non-PayPal Submit</u><br />
+    <strong>Auto-Accept = Yes</strong><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;New booking status = 'Accepted'<br />
+    <br />
+    <strong>Auto-Accept = No</strong><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;New booking status = 'New'</p>
+  <p> <u>PayPal Submit</u><br />
+    <strong>Auto-Accept = Yes</strong><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;New booking status = 'Pending' -&gt; goes to 'Accepted' on IPN ok  
+    (Pending locks appointment)</p>
+  <p><strong>Auto-Accept = No</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;New booking status = 'New'<br />
+Accept on Payment = Yes -&gt; goes to 'Accepted' on IPN ok</p>
+  <p>&nbsp;</p>
+</blockquote>
+<p><em><strong>Important!!</strong></em></p>
+<p>When a booking is made with status 'Pending', the timeslot is locked just as if it were accepted. The display GAD display will show a dashed border so you can see what timeslots are 'Pending'. Normally a slot should only be 'Pending' for a few minute (seconds?) while PayPal is processing the payment. If the user aborts out of PayPal without paying, the slot will stay 'Pending' (and locked) until admin deletes it.</p>
+<p>&nbsp; </p>
+<hr />
+<p>&nbsp;</p>
+<p><strong>Enable PayPal</strong>: Enable ABPro to use PayPal - see above.</p>
+<p><strong>'Accept' booking when Paid:</strong> If the IPN message coming back from PayPal indicates payment complete, the request status skips the 'new' state and goes to 'accepted'</p>
+<p><strong>  Additional Fee:</strong> You can optionally add an additional fee to the PayPal transaction. This can be either a fixed fee or percentage for the total. An example may be a processing fee you wish to charge.</p>
+<p><strong>Enable Coupons</strong>: Set to yes if you wish to enable the coupon system and show a coupon entry box on the booking screens.</p>
+<p><strong>PayPal button image URL:</strong> This is the location used to fetch the PayPal button image. For other images, use PayPal to 'create a buy now button' then cut&amp;paste the button URL.</p>
+<p> 
+<strong>Currency Code:</strong> What currency you wish to charge in.</p>
+<p><strong>  PayPal Account:</strong> Enter your PayPal business account, normally your email address.</p>
+<p> <strong>PayPal Sandbox URL:</strong> Use of the PayPal sandbox for testing is recommended but not mandatory. How to use the sandbox is beyond the scope of this help file.</p>
+<p>  <strong>PayPal Production URL:</strong> This is the URL to access PayPal, it was made editable as it may change for non-North American PayPal accounts(?).<br />
+</p>
+<p><strong>Use PayPal Sandbox:</strong> If set to 'Yes', the buy-now button will  be send you to the PayPal sandbox URL rather than the production URL. </p>
+<p><strong>IPN Page for PayPal:</strong> To use PayPal you will need to enable IPN (Instant Payment Notification) in your PayPal account. This field will display the IPN return URL that you will need to enter into you PayPal profile.</p>
+<p><strong>Your Logo image</strong>: If you want the PayPal payment screen to display your logo, enter a full url here &lt;br&gt;(ex: http://mysite.com/mylogo.png)</p>
+<p><strong>Item  Name:</strong> You can modify the item name, this is what PayPal shows as the thing being  purchased.</p>
+<p><strong>Optional  Fields (0-3):</strong> You can specify additional information to be show on the PayPal  screen. See User's Guide 'PayPal Optional Fields Example' for example of setup and use.</p>
+<p>&nbsp; </p>
+<div align="center" style="margin-top: 30px; margin-bottom: 30px;"> <a href="#" onclick="javascript:window.close();"><span class="small">Close Window</span></a> </div>
+</body>
+</html>

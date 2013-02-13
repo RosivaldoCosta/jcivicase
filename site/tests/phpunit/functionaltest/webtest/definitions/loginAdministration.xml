@@ -1,0 +1,15 @@
+<macrodef name="loginAdministration" description="Login to the Administration page">
+	<attribute name="username"/>
+	<attribute name="password"/>
+	<attribute name="url"/>
+
+	<sequential>
+		<invoke url="@{url}" description="Joomla! Administration Test"/>
+	
+		<setInputField name="username" value="@{username}" />
+	  	<setInputField name="passwd" value="@{password}" />
+	  	<clickButton label="Login" />
+	  		
+	  	<verifyTitle regex="true" text=".*Administration" />
+	</sequential>
+</macrodef>

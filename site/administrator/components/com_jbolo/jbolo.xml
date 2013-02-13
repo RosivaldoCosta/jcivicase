@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+ 	<name>JBolo!</name>
+ 	<creationDate>1st March 2011</creationDate>
+ 	<author>TechJoomla</author>
+ 	<copyright>Copyright(C)2010-11 TechJoomla</copyright>
+ 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+ 	<authorEmail>jbolo@techjoomla.com</authorEmail>
+	<authorUrl>www.techjoomla.com</authorUrl>
+ 	<version>2.9.1</version>
+	<description>JBolo! is an extension that allows the users of your Joomla! site to chat with each other using a Gmail/FB Like chat interface. Please make sure to install the Plugin plg_sys_jbolo_asset and Module mod_jbolo. For docs/FAQs please visit the support section at Techjoomla.com</description>
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<folder>config</folder>
+		<folder>img</folder>
+		<folder>sound</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>uploads</folder>
+		<filename>index.html</filename>			
+		<filename>jbolo.php</filename>
+		<filename>controller.php</filename>
+		<filename>smileys.txt</filename>
+	</files>
+	<languages folder="site/lang">
+		<language tag="en-GB">en-GB.com_jbolo.ini</language>
+		<language tag="cs-CZ">cs-CZ.com_jbolo.ini</language>
+	</languages>
+	<install>
+		<queries>
+ 			<query>CREATE TABLE IF NOT EXISTS `#__jbolo` (
+				  `id` int(10) unsigned NOT NULL auto_increment,
+				  `from` varchar(255) NOT NULL default '',
+				  `to` varchar(255) NOT NULL default '',
+				  `message` text NOT NULL,
+				  `sent` datetime NOT NULL default '0000-00-00 00:00:00',
+				  `recd` int(10) unsigned NOT NULL default '0',
+				  PRIMARY KEY  (`id`)
+				) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci;
+			</query> 
+			<query>
+					CREATE TABLE IF NOT EXISTS `#__jbolo_status` (
+		  			`joom_id` int(11) NOT NULL,
+		 			`chat_status` int(11) NOT NULL,
+		  			`status_msg` varchar(140) default NULL,
+		  			UNIQUE KEY `joom_id` (`joom_id`)
+					) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+			</query>
+			<query>
+					CREATE TABLE IF NOT EXISTS `#__jbolo_group` (
+					  `id` int(11) NOT NULL auto_increment,
+					  `chatroom_id` varchar(255) NOT NULL,
+					  `userid` varchar(255) NOT NULL,
+					  `type` int(11) NOT NULL,
+					  `status` int(11) NOT NULL,
+					  `timestamp` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+					  PRIMARY KEY  (`id`)
+					) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+			</query>
+			<query>		
+					CREATE TABLE IF NOT EXISTS `#__jbolo_group_xref` (
+					  `jid` int(11) NOT NULL,
+					  `userid` int(11) NOT NULL,
+					  `recd` int(11) NOT NULL
+					) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+			</query>
+		</queries>
+ 	</install>
+	<administration>
+		<menu img="../components/com_jbolo/img/chat.gif">JBolo!</menu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>css</folder>
+			<folder>images</folder>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>			
+			<filename>admin.jbolo.php</filename>
+		</files>
+		<languages folder="admin/lang">
+			<language tag="en-GB">en-GB.com_jbolo.ini</language>
+		</languages>
+	</administration>
+</install>

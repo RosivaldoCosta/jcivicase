@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>eastern_shore_data_migration</name>
+    <description/>
+    <extended_description/>
+    <job_version/>
+  <directory>&#47;</directory>
+  <created_user>-</created_user>
+  <created_date>2011&#47;04&#47;26 21:49:10.196</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2011&#47;04&#47;26 21:49:10.196</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>cc5tudio_es_emr</name>
+    <server>184.106.42.241</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>cc5tudio_jo155</database>
+    <port>3306</port>
+    <username>cc5tudio_es_emr</username>
+    <password>Encrypted 28cabd8ad19c38a878b5a9955edb697f9</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.zeroDateTimeBehavior</code><attribute>convertToNull</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+  <logconnection/>
+  <logtable/>
+  <size_limit_lines/>
+   <use_batchid>Y</use_batchid>
+   <pass_batchid>N</pass_batchid>
+   <use_logfield>Y</use_logfield>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description>Special entries</description>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>147</xloc>
+      <yloc>595</yloc>
+      </entry>
+    <entry>
+      <name>Assessment And Treatment</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;assessmentandtreatment.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>Y</set_logfile>
+      <logfile>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;errors&#47;assessment_treatment_error</logfile>
+      <logext>txt</logext>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Error</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>138</xloc>
+      <yloc>129</yloc>
+      </entry>
+    <entry>
+      <name>Authorization to Release</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;authorizationtorelease.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>Y</set_logfile>
+      <logfile>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;errors&#47;authorization_release_errors</logfile>
+      <logext>txt</logext>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Error</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>314</xloc>
+      <yloc>129</yloc>
+      </entry>
+    <entry>
+      <name>Consent For Services</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;consentforservices.kjb</filename>
+      <jobname>Consent For Services</jobname>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>Y</set_logfile>
+      <logfile>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;errors&#47;consentforservices_errors</logfile>
+      <logext>txt</logext>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Error</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>482</xloc>
+      <yloc>129</yloc>
+      </entry>
+    <entry>
+      <name>MCT Dispatch</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;mctdispatch.kjb</filename>
+      <jobname>MCT Dispatch</jobname>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>Y</set_logfile>
+      <logfile>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;errors&#47;mct_dispatch_errors</logfile>
+      <logext>txt</logext>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Error</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>484</xloc>
+      <yloc>226</yloc>
+      </entry>
+    <entry>
+      <name>Progress Notes</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;progressnotes.kjb</filename>
+      <jobname>Progress Notes</jobname>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>Y</set_logfile>
+      <logfile>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;errors&#47;progressnotes_errors</logfile>
+      <logext>txt</logext>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Error</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>483</xloc>
+      <yloc>420</yloc>
+      </entry>
+    <entry>
+      <name>Phone Contacts</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;phonecontacts.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>Y</set_logfile>
+      <logfile>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;errors&#47;phonecontacts_errors</logfile>
+      <logext>txt</logext>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Error</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>649</xloc>
+      <yloc>420</yloc>
+      </entry>
+    <entry>
+      <name>Attached Files</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;attachedfiles.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>Y</set_logfile>
+      <logfile>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;errors&#47;attachedfiles_errors</logfile>
+      <logext>txt</logext>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Error</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>644</xloc>
+      <yloc>524</yloc>
+      </entry>
+    <entry>
+      <name>Lethality</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;lethality.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>Y</set_logfile>
+      <logfile>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;errors&#47;lethality_errors</logfile>
+      <logext>txt</logext>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Error</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>484</xloc>
+      <yloc>526</yloc>
+      </entry>
+    <entry>
+      <name>Intake</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;intake.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>141</xloc>
+      <yloc>362</yloc>
+      </entry>
+    <entry>
+      <name>Success</name>
+      <description>Success</description>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>484</xloc>
+      <yloc>627</yloc>
+      </entry>
+    <entry>
+      <name>Delete Clients</name>
+      <description>SQL</description>
+      <type>SQL</type>
+      <sql>delete from civicrm_contact where contact_sub_type = &apos;Client&apos;;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <connection>cc5tudio_es_emr</connection>
+      <parallel>N</parallel>
+      <draw>N</draw>
+      <nr>0</nr>
+      <xloc>252</xloc>
+      <yloc>659</yloc>
+      </entry>
+    <entry>
+      <name>Clients</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;clients.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>148</xloc>
+      <yloc>497</yloc>
+      </entry>
+    <entry>
+      <name>Cases</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;cases.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>146</xloc>
+      <yloc>433</yloc>
+      </entry>
+    <entry>
+      <name>Tasks</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;tasks.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>140</xloc>
+      <yloc>300</yloc>
+      </entry>
+    <entry>
+      <name>Forms</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;forms.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>139</xloc>
+      <yloc>233</yloc>
+      </entry>
+    <entry>
+      <name>Appointment Custom Fields</name>
+      <description>Job</description>
+      <type>JOB</type>
+      <filename>file:&#47;&#47;&#47;Z:&#47;Seagate 15TB&#47;MSDOSFAT_Archive&#47;CC 5tudio&#47;projects&#47;sante&#47;v2&#47;data_migration&#47;kettle&#47;appointments.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>482</xloc>
+      <yloc>334</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>Assessment And Treatment</from>
+      <to>Authorization to Release</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Authorization to Release</from>
+      <to>Consent For Services</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Consent For Services</from>
+      <to>MCT Dispatch</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Progress Notes</from>
+      <to>Phone Contacts</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Phone Contacts</from>
+      <to>Attached Files</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Attached Files</from>
+      <to>Lethality</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Lethality</from>
+      <to>Success</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>START</from>
+      <to>Clients</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Clients</from>
+      <to>Cases</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Cases</from>
+      <to>Intake</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Forms</from>
+      <to>Assessment And Treatment</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Intake</from>
+      <to>Tasks</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Tasks</from>
+      <to>Forms</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>MCT Dispatch</from>
+      <to>Appointment Custom Fields</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Appointment Custom Fields</from>
+      <to>Progress Notes</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+</job>

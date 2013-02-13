@@ -1,0 +1,1193 @@
+/*  AdminPraise 2 CSS
+//  Copyright 2009 JoomlaPraise - Kyle Ledbetter
+*/
+body {
+font-size:11px;
+font-family:Verdana,Arial, Helvetica, sans-serif;
+}
+* {
+margin:0;
+padding:0;
+}
+/*a,a:link,a:active,a:visited,a:hover {
+text-decoration:none;
+}
+*/
+:focus { -moz-outline-style: none; }
+h1,h2,h3,h4,h5 {
+font-family:'Lucida Grande', Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,.module,p {
+margin:5px 0 10px 0;
+}
+h1 {
+font-size:22px;
+line-height:24px;
+}
+h2 {
+font-size:20px;
+line-height:22px;
+}
+h3 {
+font-size:16px;
+line-height:20px;
+}
+button {
+font-size:11px;
+padding:1px 5px;
+}
+img {
+border:0;
+}
+fieldset {
+margin:5px;
+padding:5px;
+}
+hr {
+border:0;
+display:block;
+height:1px;
+}
+#ap-content hr {
+background-color:#EFEFEF;
+}
+.clr {
+clear:both;
+}
+.spacer {
+display:block;
+height:10px;
+}
+#ap-wrapper {
+padding:5px;
+margin-bottom:110px;
+}
+#ap-mainbody {
+min-height:500px;
+}
+#ap-header {
+height:26px;
+}
+#ap-headtools {
+height:28px;
+overflow:hidden;
+}
+#ap-logo {
+display:block;
+height:20px;
+width:20px;
+float:left;
+margin:5px 5px 5px 15px;
+}
+#ap-toolbar {
+clear:both;
+height:40px;
+font-size:9px;
+}
+#ap-footer {
+overflow:hidden;
+}
+#ap-crumbs {
+height:22px;
+overflow:hidden;
+}
+#ap-content {
+float:left;
+width:70%;
+margin:10px 5px 10px 10px;
+font-size:12px;
+overflow:visible;
+clear:left;
+}
+#ap-content a {
+
+}
+.ap-wide {
+width:92% !important;
+}
+#ap-right {
+float:right;
+width:28%;
+overflow:hidden;
+margin-bottom:10px;
+}
+#sm-right {
+position:relative;
+float:right;
+width:50px;
+margin-bottom:10px;
+}
+
+.ap-helptitle {
+float:left;
+}
+.ap-helpedit {
+float:right;
+}
+/* Editor */
+#ap-editor {
+width:15px;
+float:right;
+margin:6px 5px 0 0;
+overflow:hidden;
+}
+#ap-editor #myeditor_selection {
+font-size:11px;
+padding:0;
+width:110px;
+margin:2px 0 0 0;
+border:0 !important;
+}
+/* Theme chooser */
+#ap-templatetheme {
+width:15px;
+float:right;
+margin:6px 5px 0 0;
+overflow:hidden;
+}
+#ap-templatetheme #templateTheme {
+font-size:11px;
+padding:0;
+width:120px;
+margin:2px 0 0 0;
+}
+/* Admin Template Chooser */
+#ap-admintemplate {
+width:120px;
+float:right;
+margin:5px 5px 0 0;
+}
+#ap-admintemplate #myadmintemplate_selection {
+font-size:11px;
+padding:1px 0 1px 2px;
+width:120px;
+margin:2px 0 0 0;
+}
+/* Search */
+#ap-search {
+width:110px;
+float:right;
+margin:5px 5px 0 0;
+}
+#ap-search input  {
+padding:2px 0 2px 25px;
+width:80px;
+font-size:10px;
+margin:2px 0 0 0;
+}
+/* Recent Activity Select */
+#ap-cpanel #ualog_form {
+margin-bottom:10px;
+}
+/* Easy Search */
+#ap-search #easysearch-form {
+margin:0 !important;
+}
+#ap-search .button {
+display:none;
+}
+/* Toolbar */
+#ap-toolbar span {
+float:left;
+text-align:center;
+}
+#ap-toolbar span a {
+display:block;
+padding:24px 4px 4px 4px;
+}
+#ap-toolbar .ap-icons a {
+background-position:50% 2px !important;
+background-repeat:no-repeat;
+}
+#ap-toolbar .ap-icons a:hover {
+background-position:50% -36px !important;
+}
+#ap-toolbar span#ap-version,#ap-toolbar span#ap-fullscreen,#ap-toolbar span#ap-logout,
+#ap-toolbar #version,#ap-toolbar #Logout,#ap-toolbar #FullScreen {
+float:right;
+}
+/* Joomla Tools */
+#ap-toolbar span.legacy-mode,#ap-toolbar span.no-unread-messages,#ap-toolbar span.unread-messages,#ap-toolbar span.loggedin-users,
+#ap-toolbar span#ap-version,#ap-toolbar #version a {
+display:block;
+padding:24px 4px 4px 4px;
+}
+#ap-toolbar span.loggedin-users,#ap-toolbar span.no-unread-messages,#ap-toolbar span.unread-messages,#ap-toolbar #messages a,#ap-toolbar #sessioncount a
+ {
+display:block;
+padding:24px 10px 4px 10px;
+}
+#ap-toolbar span.logout {
+display:none;
+}
+/* Quicklaunch */
+.apquicklaunch {
+border:2px solid #666;
+background-color:#EFEFEF !important;
+color:#333;
+}
+.apquicklaunch a {
+color:#333;
+}
+
+/* Crumbs */
+#ap-crumbs span {
+text-align:center;
+display:block;
+float:left;
+padding:4px 6px 5px 6px;
+}
+#ap-crumbs span a {
+display:block;
+height:100%;
+}
+#ap-crumbs span span {
+padding:0;
+}
+/* Headers */
+.header {
+padding:10px;
+margin:0;
+}
+.header h1 {
+font-size:26px;
+font-weight:normal;
+}
+.header img {
+float:left;
+margin:3px 10px 0 2px;
+}
+#ap-cpanellogo {
+float:left;
+margin:3px 10px 0 2px;
+display:block;
+width:46px;
+height:35px;
+}
+.ap-pagetitle {
+float:left;
+}
+.ap-welcome {
+float:right;
+}
+.icon-48-cpanel {
+
+}
+#ap-online span.loggedin-users {position:relative;float:right;margin:9px 8px 0 0;overflow:hidden;background: url(http://c498950.r50.cf2.rackcdn.com/icon-16-user.png) no-repeat scroll 3px 0px transparent;padding-left:20px;}
+#ap-sitename span.sitename {position:relative;float:right;margin:9px 8px 0 0;overflow:hidden;padding-left:20px;}
+
+/* Content */
+.inner {
+padding:10px;
+}
+#ap-cpanel .right .inner {
+padding:10px 0 10px 10px;
+}
+.fifty {
+width:49%;
+}
+.left {
+float:left;
+}
+.right {
+float:right;
+}
+#ap-content ul,#ap-content ol {
+margin-left:20px;
+}
+/* Tabs & Accordions */
+.mootabs {
+
+}
+.mootabs_title {
+list-style-image: none;
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+height: 26px;
+}
+.mootabs_title li {
+float: left;
+padding: 2px 8px 2px 8px;
+cursor: pointer;
+font-size: 12px;
+height: 24px;
+line-height: 24px;
+}
+.mootabs_title li.active {
+
+}
+.mootabs_panel {
+display: none;
+position: relative;
+width: 100%;
+top: -1px;
+clear: both;
+overflow: auto;
+padding: 5px;
+}
+.mootabs_panel.active {
+display: block;
+}
+.mootabs_title li.over {
+
+}
+.panel h3.title {
+font-size:12px;
+margin:0;
+font-weight:normal;
+padding:2px 2px 2px 8px;
+cursor:pointer;
+}
+.panel {
+margin:0 5px 0  0;
+}
+.panel h3.jpane-toggler-down {
+margin-bottom:5px;
+}
+/* Condensed Tabs & Accordions */
+#sm-right .mootabs {
+position:relative;
+}
+#sm-right .mootabs_title {
+list-style-image: none;
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+height: auto;
+}
+#sm-right .mootabs_title li {
+float: none;
+display:block;
+padding: 2px 8px 2px 8px;
+cursor: pointer;
+font-size: 12px;
+height: 24px;
+line-height: 24px;
+font-size:9px;
+overflow:hidden;
+}
+#sm-right .mootabs_title li.active {
+
+}
+#sm-right .mootabs_panel {
+display: none;
+position: absolute;
+width: 250px;
+height:auto !important;
+left:-262px;
+clear: none;
+overflow: auto;
+padding: 5px;
+-moz-border-radius-topleft:5px;
+-webkit-border-top-left-radius:5px;
+-moz-border-radius-bottomleft:5px;
+-webkit-border-bottom-left-radius:5px;
+-moz-border-radius-bottomright:5px;
+-webkit-border-bottom-right-radius:5px;
+}
+#sm-right .mootabs_panel.active {
+display: block;
+}
+#sm-right .mootabs_title li.over {
+
+}
+#sm-right .panel h3.title {
+font-size:12px;
+line-height:12px;
+margin:0;
+font-weight:normal;
+padding:5px 2px 5px 10px;
+cursor:pointer;
+}
+#sm-right .panel {
+margin:0 5px 0  0;
+}
+#sm-right .panel h3.jpane-toggler-down {
+margin-bottom:5px;
+}
+
+/* Collapse */
+#ap-collapse,#ap-expand {
+padding:2px;
+height:14px;
+text-align:right;
+}
+#ap-collapse a,#ap-expand a {
+display:block;
+height:13px;
+}
+/* Cpanel */
+#ap-content ul.ap-cplinks {
+list-style:none;
+margin-left:0;
+}
+ul.ap-cplinks li {
+
+}
+#ap-content ul.ap-cplinks li a {
+display:block;
+height:15px;
+padding:12px 0 5px 35px;
+text-decoration:none;
+}
+/* Help */
+#ap-content ul.help,#ap-content ul.doc,#ap-content ul.resource,#ap-content ul.blog {
+margin-left:10px;
+margin-top:5px;
+list-style:none;
+}
+#ap-content ul.help li a,#ap-content ul.doc li a,#ap-content ul.resource li a,#ap-content ul.blog li a {
+display:block;
+height:10px;
+padding:5px 0 5px 20px;
+text-decoration:none;
+}
+/* List Styles */
+#ap-content ul.bullet1 {
+margin-left:0;
+margin-top:5px;
+list-style:none;
+}
+#ap-content ul.bullet1 li {
+display:block;
+padding:5px 0 5px 20px;
+}
+#ap-right ul.bullet1,#sm-right ul.bullet1 {
+list-style:circle;
+margin-left:15px;
+}
+#ap-right ul.bullet1 li,#sm-right ul.bullet1 li {
+background:none;
+margin-bottom:5px;
+}
+#ap-right ul.bullet1 a,#sm-right ul.bullet1 a {
+text-decoration:underline;
+}
+
+/* Custom Quick Icons */
+div.icon {
+/*width:65px;
+height:70px;
+*/
+margin:4px;
+text-align:center;
+font-size:10px;
+float:left;
+}
+#ap-toolbar div.icon {
+font-size:9px;
+width:auto;
+height:auto;
+margin:0;
+float:none;
+}
+#ap-cpanel div.icon {
+height:60px;
+}
+.apquicklaunch div.icon {
+height:80px;
+}
+.ap-icons a {
+display:block;
+padding:35px 0 0 0;
+background-repeat:no-repeat;
+background-position:50% -85px !important;
+}
+.ap-icons a:hover {
+background-position:50% 1px !important;
+}
+/* Menu Icons */
+#ap-menumod div.icon {
+height:60px;
+}
+/* Toolbar */
+#toolbar {
+text-align:center;
+padding:5px;
+margin-bottom:5px;
+}
+#toolbar .toolbar {
+margin:0 auto;
+}
+#ap-content table.toolbar a {
+cursor:pointer;
+display:block;
+float:left;
+padding:1px 3px;
+text-decoration:none;
+white-space:nowrap;
+}
+table.toolbar span {
+display:block;
+float:none;
+height:36px;
+margin:0 auto;
+width:36px;
+background-position:50% 0;
+background-repeat:no-repeat;
+}
+table.toolbar span:hover {
+background-position:50% -41px;
+}
+/* Table Data */
+.text_area,.inputbox,#levellimit {
+font-size:11px;
+}
+table.adminlist {
+border-collapse:collapse;
+border:0;
+font-size:11px;
+width:100%;
+margin-top:5px;
+font-size:10px;
+}
+table.adminlist th {
+padding:3px;
+white-space:nowrap;
+font-weight:normal;
+}
+table.adminlist td {
+padding:4px;
+}
+#ap-content table.adminlist td a {
+text-decoration:none;
+}
+#ap-content table.adminlist th a {
+text-decoration:none;
+}
+/* Pagination */
+.list-footer {
+text-align:center;
+padding:5px;
+margin:5px -4px;
+}
+.list-footer span {
+padding:0 6px;
+}
+.list-footer a {
+cursor:pointer;
+padding:0 6px;
+text-decoration:none !important;
+}
+.list-footer .limit {
+margin-bottom:5px;
+}
+.list-footer .counter {
+margin-top:5px;
+}
+table.adminheading {
+margin:-5px 0 0 0;
+width:100%;
+}
+table.adminheading th {
+padding:5px;
+}
+table.adminlist td.order {
+white-space:nowrap;
+}
+table.adminlist td.order span {
+display:block;
+float:left;
+text-align:center;
+width:16px;
+}
+table.adminlist td.order input.text_area {
+width:20px;
+}
+table.noshow td {
+vertical-align:top;
+}
+table.adminform {
+border-collapse:collapse;
+width:100%;
+}
+table.adminform td {
+padding:5px;
+}
+table.adminform .quote {
+font-style:italic;
+}
+/* Quicklaunch */
+#adminPraiseComponentsListDiv {
+overflow: hidden;
+padding:6px 0 0 12px;
+z-index:999;
+}
+#adminPraiseComponentsListDiv .icon {
+width:88px;
+height:88px;
+padding:1px;
+margin:6px 2px 3px 2px;
+display:block;
+}
+#adminPraiseComponentsListDiv .icon a {
+background-color:transparent;
+border:0;
+float:none;
+padding:0;
+}
+#adminPraiseComponentsListDiv .icon a:hover {
+
+}
+#adminPraiseComponentsListDiv .icon img {
+width:50px;
+height:50px;
+border:0;
+padding:0;
+margin:0;
+}
+/* Submenu */
+#ap-content .module h3 {
+display:none;
+}
+#ap-content #ap-cpanel .module h3 {
+display:block;
+clear:both;
+}
+#ap-content #ap-content-sub .module h3 {
+display:block;
+}
+ul#submenu {
+list-style:none;
+margin:-6px 0 0 0 !important;
+display:block;
+overflow:hidden;
+}
+ul#submenu li {
+display:inline;
+}
+ul#submenu li a {
+display:block;
+float:left;
+padding:4px 10px;
+font-weight:normal;
+text-decoration:none !important;
+cursor:pointer;
+}
+/* Tooltip */
+.tool-tip {
+float: left !important;
+padding: 5px !important;
+max-width: 200px !important;
+z-index: 50 !important;
+}
+.tool-title {
+padding: 0 !important;
+margin: 0 !important;
+font-size: 100% !important;
+font-weight: bold !important;
+margin-top: -15px !important;
+padding-top: 15px !important;
+padding-bottom: 5px !important;
+}
+.tool-text {
+font-size: 100% !important;
+margin: 0 !important;
+}
+/* System Message */
+#system-message dd ul {
+color:#000;
+margin-bottom:0;
+margin-left:0 !important;
+border-top:0;
+border-bottom:0;
+padding:0;
+}
+#system-message dd ul li {
+list-style:none;
+}
+#system-message {
+margin-bottom:10px;
+margin-left:0 !important;
+padding:5px;
+text-align:center;
+}
+#system-message dt.message {
+display:none;
+}
+/* Admintable Key */
+table.admintable th,table.admintable td {
+padding:2px 4px;
+}
+table.admintable td.key, table.admintable td.paramlist_key {
+text-align:right;
+width:118px;
+}
+.paramlist_value textarea,.paramseditor_width textarea {
+width:90%;
+}
+/* JCE */
+#paramseditor_body_class_custom,
+#paramseditor_help_url,
+#paramseditor_theme_advanced_blockformats,
+#paramseditor_theme_advanced_fonts_add,
+#paramseditor_theme_advanced_fonts_remove,
+#paramseditor_font_size_style_values {
+width:90%;
+}
+/* Login */
+#ap-loginwrap {
+margin:0;
+}
+#ap-login {
+margin:50px auto 0 auto;
+width:700px;
+}
+#ap-login .right {
+min-height:200px;
+}
+#ap-login .next a {
+display:block;
+padding:2px 6px;
+width:50px;
+float:right;
+text-align:center;
+cursor:pointer;
+}
+#form-login-username,#form-login-password,#form-login-lang {
+text-align:right;
+}
+#modlgn_username,#modlgn_passwd,#form-login-lang select.inputbox {
+width:250px;
+text-align:left;
+}
+#ap-login ul,#ap-login ol {
+margin-left:20px;
+}
+#ap-login ul h2 {
+font-size:12px;
+}
+/* Forgot Links */
+ul.forgot-links {
+width:200px;
+margin:0 auto;
+}
+/* NinjaXplorer */
+#editorarea iframe,#editorarea #codearea_cp {
+width:100% !important;
+height:600px !important;
+}
+/* Tabs */
+dl.tabs {
+float: left;
+margin: 10px 0 -1px 0;
+z-index: 40;
+width:100%;
+}
+dl.tabs dt {
+float: left;
+padding: 4px 10px;
+}
+dl.tabs dt.open {
+z-index: 100;
+color: #000;
+}
+div.current {
+clear: both;
+padding: 10px 10px;
+}
+div.current dd {
+padding: 0;
+margin: 0;
+}
+/* Editor Buttons */
+.button2-left {
+float:left;
+margin:10px 10px 10px 0;
+}
+.button2-left a {
+padding:1px 5px;
+border:1px solid #686868;
+background:url('http://c498950.r50.cf2.rackcdn.com/button-bg.jpg') repeat-x 0 0;
+}
+/* Module Position Preview */
+.mod-preview {
+position:relative;
+}
+.mod-preview-info {
+opacity:0.5 !important;
+font-weight:bold;
+position:absolute;
+top:0;
+background:transparent;
+color:#FFF;
+text-align:center;
+text-transform:uppercase;
+font-size:13px;
+display:block;
+height:97%;
+width:98%;
+border:0;
+background:#000;
+border:1px solid #FF0000;
+min-height:14px;
+}
+.mod-preview-wrapper {
+opacity:1 !important;
+color:inherit;
+}
+
+/* Global Icons */
+/* Cpanel */
+li.ap-newsec a,#NewSection a,#Section a {
+background:url('http://c498950.r50.cf2.rackcdn.com/newsec.png') no-repeat 0 0;
+}
+li.ap-newcat a,#NewCategory a,#Category a {
+background:url('http://c498950.r50.cf2.rackcdn.com/newcat.png') no-repeat 0 0;
+}
+li.ap-newart a,#NewArticle a,#Article a {
+background:url('http://c498950.r50.cf2.rackcdn.com/newart.png') no-repeat 0 0;
+}
+li.ap-newmenu a,#Menu a {
+background:url('http://c498950.r50.cf2.rackcdn.com/newmenu.png') no-repeat 0 0;
+}
+li.ap-newuser a,#NewUser a,#User a {
+background:url('http://c498950.r50.cf2.rackcdn.com/newuser.png') no-repeat 0 0;
+}
+
+li.ap-extcom a,#ComponentManager a,#Components a {
+background:url('http://c498950.r50.cf2.rackcdn.com/components.png') no-repeat 0 0;
+}
+li.ap-extmod a,#ModuleManager a,#SiteModules a,#Modules a,#NewModule a,#AdminModules a,#NewAdminModule a,#PublishedModules a {
+background:url('http://c498950.r50.cf2.rackcdn.com/modules.png') no-repeat 0 0;
+}
+li.ap-extplug a,#PluginManager a,#Plugins a {
+background:url('http://c498950.r50.cf2.rackcdn.com/plugins.png') no-repeat 0 0;
+}
+li.ap-exttemplate a,#TemplateManager a,#Templates a,#AdminTemplates a {
+background:url('http://c498950.r50.cf2.rackcdn.com/templates.png') no-repeat 0 0;
+}
+li.ap-extinstall a,#Installer a {
+background:url('http://c498950.r50.cf2.rackcdn.com/installer.png') no-repeat 0 0;
+}
+
+li.ap-mgrsec a,#SectionManager a,#Sections a {
+background:url('http://c498950.r50.cf2.rackcdn.com/section.png') no-repeat 0 0;
+}
+li.ap-mgrcat a,#CategoryManager a,#Categories a {
+background:url('http://c498950.r50.cf2.rackcdn.com/category.png') no-repeat 0 0;
+}
+li.ap-mgrart a,#ArticleManager a,#Articles a {
+background:url('http://c498950.r50.cf2.rackcdn.com/articles.png') no-repeat 0 0;
+}
+li.ap-mgrfront a,#FrontpageManager a,#FrontPage a,#Frontpage a {
+background:url('http://c498950.r50.cf2.rackcdn.com/frontpage.png') no-repeat 0 0;
+}
+li.ap-mgrmenu a,#Menus a,#MenuManager a {
+background:url('http://c498950.r50.cf2.rackcdn.com/menus.png') no-repeat 0 0;
+}
+li.ap-mgruser a,#UserManager a,#Users a {
+background:url('http://c498950.r50.cf2.rackcdn.com/users.png') no-repeat 0 0;
+}
+li.ap-mgrfile a,#FileManager a,#Files a {
+background:url('http://c498950.r50.cf2.rackcdn.com/files.png') no-repeat 0 0;
+}
+li.ap-mgrmedia a,#MediaManager a,#Media a {
+background:url('http://c498950.r50.cf2.rackcdn.com/media.png') no-repeat 0 0;
+}
+li.ap-mgrlang a,#LanguageManager a,#Languages a {
+background:url('http://c498950.r50.cf2.rackcdn.com/languages.png') no-repeat 0 0;
+}
+li.ap-general a,#general a {
+background:url('http://c498950.r50.cf2.rackcdn.com/general.png') no-repeat 0 0;
+}
+#ap-cpanel .ap-icons a {
+background-position:50% 8px !important;
+}
+#ap-cpanel .ap-icons a:hover {
+background-position:50% 8px !important;
+}
+
+/* Help */
+ul.help li a {
+background:url('../images/icons/help/help.png') no-repeat 0 4px;
+}
+ul.doc li a {
+background:url('../images/icons/help/doc.png') no-repeat 0 4px;
+}
+ul.resource li a {
+background:url('../images/icons/help/resource.png') no-repeat 0 4px;
+}
+ul.blog li a {
+background:url('../images/icons/help/blog.png') no-repeat 0 4px;
+}
+/* List Styles */
+ul.bullet1 li {
+background:url('../images/theme1/bullet.png') no-repeat 0 7px;
+}
+/* Menu Icons */
+#ap-menumod a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/link.png');
+}
+#MenuManager a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/menus.png');
+}
+#MenuTrash a,#ArticleTrash a,#Trash a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/trash.png');
+}
+/* Toolbar */
+.icon-32-menus { 
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-menu.png');
+}
+.icon-32-delete {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-trash.png');
+}
+.icon-32-help {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-help.png');
+}
+.icon-32-new {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-new.png');
+}
+.icon-32-edit {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-edit.png') no-repeat 50% 0;
+}
+.icon-32-trash {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-trash.png');
+}
+.icon-32-copy {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-copy.png');
+}
+.icon-32-move,.icon-32-move_f2 {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-move.png');
+}
+.icon-32-unpublish {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-unpublish.png');
+}
+.icon-32-publish {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-publish.png');
+}
+.icon-32-archive,.icon-32-archive_f2 {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-archive.png');
+}
+.icon-32-unarchive {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-unarchive.png');
+}
+.icon-32-popup-Popup,.icon-32-config,.icon-32-cpanel {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-config.png');
+}
+.icon-32-save {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-save.png');
+}
+.icon-32-apply,.icon-32-upload {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-apply.png');
+}
+.icon-32-cancel {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-cancel.png');
+}
+.icon-32-default {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-default.png');
+}
+.icon-32-preview {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-preview.png');
+}
+.icon-32-html {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-html.png');
+}
+.icon-32-css {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-css.png');
+}
+.icon-32-forward {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-forward.png');
+}
+.icon-32-Link,.icon-32-back {
+background:url('http://c498950.r50.cf2.rackcdn.com/icon-32-back.png');
+}
+.icon-32-user {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/icon-32-user.png') !important;
+}
+.icon-32-user {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/icon-32-user.png') !important;
+}
+/* Toolbar Icons */
+#ap-home,#Home a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/home.png');
+}
+#ap-profile,#YourProfile a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/profile.png');
+}
+#ap-params,#AdminParams a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/params.png');
+}
+#ap-info,#SysInfo a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/info.png');
+}
+#ap-start,#SetStart a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/start.png');
+}
+#ap-files,#FileExplorer a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/files.png');
+}
+#ap-toolbar #NewArticle a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/newart.png');
+}
+#ap-preview,#Preview a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/preview.png');
+}
+#ap-version,#Version a,#version a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/version.png');
+}
+#ap-fullscreen,#FullScreen a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/fullscreen.png');
+}
+#ap-logout,#Logout a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/logout.png');
+}
+#ap-checkin,#CheckIn a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/checkin.png');
+}
+#debug a,#Debug a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/debug.png');
+}
+#nodebug a,#NoDebug a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/nodebug.png');
+}
+#Positions a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/positions.png');
+}
+#ap-toolbar #general a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/general.png');
+}
+
+/* Joomla Tools */
+#ap-toolbar span.legacy-mode,#LegacyMode,#Legacy a,#legacy a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/joomla.png');
+}
+#ap-toolbar span.preview,#Preview a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/preview.png');
+}
+#ap-toolbar span.no-unread-messages,#Messages a,#messages a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/mail.png');
+}
+#ap-toolbar span.loggedin-users,#LoggedIn a,#sessioncount a {
+background-image:url('http://c498950.r50.cf2.rackcdn.com/users.png');
+}
+/* Search */
+#ap-search input  {
+background:#FFF url('../images/icons/menu/search.png') no-repeat 2% 50%;
+}
+/* Menu Icons */
+#ap-menu li#globals a,#ap-menu li a#Config {
+background:url('../images/icons/menu/globals.png') no-repeat 50% 0;
+text-indent:-9999px;
+}
+#ap-menu li#globals a:hover,#ap-menu li a#Config:hover {
+background:url('../images/icons/menu/globals.png') no-repeat 50% -18px;
+}
+#ap-menu li#com-launch a,#ap-menu li#mod-launch a,#ap-menu li a#ComponentQuickLaunch,#ap-menu li a#ModulesQuickLaunch {
+background:url('../images/icons/menu/down.png') no-repeat 3px 5px;
+text-indent:-9999px;
+}
+#ap-menu li#com-launch a:hover,#ap-menu li#mod-launch a:hover,#ap-menu li a#ComponentQuickLaunch:hover,#ap-menu li a#ModulesQuickLaunch:hover {
+background:url('../images/icons/menu/down.png') no-repeat 3px -16px;
+}
+/* Light Box */
+#sbox-window {
+padding:5px;
+}
+iframe body{
+background-color:#FFF;
+}
+/* eXtplorer */
+#ext-gen296 {
+top:30px !important;
+}
+#ext-gen304,#ext-gen304-split,#ext-gen328 {
+top:80px !important;
+}
+/* RSFinder */
+a.mod_rsfinder, a.mod_rsfinder:link, a.mod_rsfinder:hover {
+background-color:#FFF;
+position:absolute;
+margin:4px 0 0 2px;
+}
+#rsResults {
+right:0;
+}
+/* CB Admin */
+.cbtoolbarbar .cbtoolbar {
+background-color:#EFEFEF;
+}
+#ap-templatetheme,#ap-editor {
+position:relative;
+width:15px;
+height:17px;
+}
+#ap-templatetheme #templateTheme {
+position:relative;
+left:-105px;
+top:0px;
+}
+#ap-editor #myeditor_selection {
+position:relative;
+left:-95px;
+top:0px;
+}/* Help */
+#treecellhelp {    display: block;    float: left;    margin: 0;    overflow: hidden;    padding: 2px;    position: relative;    width: 25%;}#datacellhelp {    display: block;    float: left;    margin: 0;    padding: 2px 0 0;    width: 73%;}
+.helpIndex {	border: 0px;	width: 100%;	height: 100%;	padding: 0px 0px 0px 0px;	overflow: auto;}.helpFrame {	border-left: 0px solid #222;	border-right: none;	border-top: none;	border-bottom: none;	width: 100%;	height: 800px;	padding: 0px 5px 0px 10px;}table.adminform {/*    margin: 5px;*/    padding: 5px;}table.adminform td.helpMenu {    text-align: right;}table.adminform td {    padding: 3px;    text-align: left;}
+.messages dl, .form-autosave-message dl
+{
+    min-height: 20px;
+}
+
+.form-autosave-message
+{
+    position: absolute; 
+    top:77px;
+}
+
+#crm-container div.form-autosave-message 
+{
+    margin: 0.5em;
+    background-color: #FF9;
+    padding: .25em .5em .25em .5em;
+    border: 1px solid dimGray;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+}
+
+#crm-container div.form-autosave-message  dt 
+{
+    float: left;
+    clear: none;
+    width: 30px;
+}
+#crm-container div.form-autosave-message dd 
+{
+    margin-left: 45px;
+}
+
+.highlight {
+    background-color: #FFFEBB;
+}
+
+.small {
+    color: #999999;
+    font-size: 0.9em;
+    font-weight: normal;
+    text-align: left;
+}
+
+table.contentpaneopen fieldset {
+    border-color: #DDDDDD -moz-use-text-color -moz-use-text-color;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+}
+table.contentpaneopen, table.contentpane {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+table.contentpaneopen a:hover {
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+table.contentpaneopen a {
+    text-decoration: none;
+    font-weight: normal;
+}
