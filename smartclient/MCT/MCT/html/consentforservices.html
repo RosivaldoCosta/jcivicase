@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0090)https://65.216.170.16/emrtestSante/Casehistory/blank/ConsentForServices.asp?CaseNumber=459 -->
+<HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Consent For Services</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>.style1 {
+	FONT-SIZE: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style2 {
+	FONT-SIZE: 16px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.style3 {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+BODY {
+	BACKGROUND-COLOR: #00ccff
+}
+</STYLE>
+
+<SCRIPT language=JavaScript>
+javascript:window.history.forward(1);
+
+// Declaring valid date character, minimum year and maximum year
+var dtCh= "/";
+var minYear=1900;
+var maxYear=2100;
+
+function isInteger(s){
+	var i;
+    for (i = 0; i < s.length; i++){   
+        // Check that current character is number.
+        var c = s.charAt(i);
+        if (((c < "0") || (c > "9"))) return false;
+    }
+    // All characters are numbers.
+    return true;
+}
+
+function stripCharsInBag(s, bag){
+	var i;
+    var returnString = "";
+    // Search through string's characters one by one.
+    // If character is not in bag, append to returnString.
+    for (i = 0; i < s.length; i++){   
+        var c = s.charAt(i);
+        if (bag.indexOf(c) == -1) returnString += c;
+    }
+    return returnString;
+}
+
+function daysInFebruary (year){
+	// February has 29 days in any year evenly divisible by four,
+    // EXCEPT for centurial years which are not also divisible by 400.
+    return (((year % 4 == 0) && ( (!(year % 100 == 0)) || (year % 400 == 0))) ? 29 : 28 );
+}
+function DaysArray(n) {
+	for (var i = 1; i <= n; i++) {
+		this[i] = 31
+		if (i==4 || i==6 || i==9 || i==11) {this[i] = 30}
+		if (i==2) {this[i] = 29}
+   } 
+   return this
+}
+
+function isDate(dtStr){
+	var daysInMonth = DaysArray(12)
+	var pos1=dtStr.indexOf(dtCh)
+	var pos2=dtStr.indexOf(dtCh,pos1+1)
+	var strMonth=dtStr.substring(0,pos1)
+	var strDay=dtStr.substring(pos1+1,pos2)
+	var strYear=dtStr.substring(pos2+1)
+	strYr=strYear
+	if (strDay.charAt(0)=="0" && strDay.length>1) strDay=strDay.substring(1)
+	if (strMonth.charAt(0)=="0" && strMonth.length>1) strMonth=strMonth.substring(1)
+	for (var i = 1; i <= 3; i++) {
+		if (strYr.charAt(0)=="0" && strYr.length>1) strYr=strYr.substring(1)
+	}
+	month=parseInt(strMonth)
+	day=parseInt(strDay)
+	year=parseInt(strYr)
+	if (pos1==-1 || pos2==-1){
+		alert("The date format should be : mm/dd/yyyy")
+		return false
+	}
+	if (strMonth.length<1 || month<1 || month>12){
+		alert("Please enter a valid month")
+		return false
+	}
+	if (strDay.length<1 || day<1 || day>31 || (month==2 && day>daysInFebruary(year)) || day > daysInMonth[month]){
+		alert("Please enter a valid day")
+		return false
+	}
+	if (strYear.length != 4 || year==0 || year<minYear || year>maxYear){
+		alert("Please enter a valid 4 digit year between "+minYear+" and "+maxYear)
+		return false
+	}
+	if (dtStr.indexOf(dtCh,pos2+1)!=-1 || isInteger(stripCharsInBag(dtStr, dtCh))==false){
+		alert("Please enter a valid date")
+		return false
+	}
+return true
+}
+
+function ValidateForm(){
+	var dt=document.form1.TimeStamp
+	if (isDate(dt.value)==false){
+		dt.focus()
+		return false
+	}
+    return true
+ }
+
+</SCRIPT>
+
+<META content="MSHTML 6.00.6000.16825" name=GENERATOR></HEAD>
+<BODY>
+<FORM id=form1 name=form1 onsubmit="return ValidateForm()" 
+action=http://localhost:8080/consentforservices
+method=post>
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=800 border=1>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center><STRONG><SPAN class=style1>Baltimore County Crisis 
+      Response System<BR>Mobile Crisis Team 
+</SPAN></STRONG></DIV></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=800 border=0>
+  <TBODY>
+  <TR>
+    <TD height=99>
+      <DIV align=center><STRONG><SPAN class=style2>Consent For Services 
+      </SPAN></STRONG></DIV></TD></TR>
+  <TR>
+    <TD><SPAN class=style5>By signing below, I voluntarily accept the 
+      evaluation and treatment services provided by the Mobile Crisis Team. I 
+      understand that I may terminate this service at any time, and that the 
+      Mobile Crisis Team staff have an obligation to explain what consequences, 
+      if any may occur as a result. I understand that due to the nature of this 
+      crisis service, the mental health clinician and police officer may need to 
+      share information related to the contract. </SPAN></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=800 border=0>
+  <TBODY>
+  <TR>
+    <TD class=style3 width=279 height=72>
+      <TABLE cellSpacing=0 cellPadding=0 width=277 border=0>
+        <TBODY>
+        <TR>
+          <TD width=75><STRONG>First Name: </STRONG></TD>
+          <TD width=156><LABEL><INPUT id=PFirstName maxLength=50 
+            value=oughbookddd name=PFirstName> </LABEL></TD></TR></TBODY></TABLE></TD>
+    <TD width=276>
+      <TABLE cellSpacing=0 cellPadding=0 width=276 border=0>
+        <TBODY>
+        <TR>
+          <TD width=67><SPAN class=style5>Last Name: </SPAN></TD>
+          <TD width=163><LABEL><INPUT id=PLastName maxLength=50 value=gg 
+            name=PLastName> </LABEL></TD></TR></TBODY></TABLE><LABEL></LABEL></TD>
+    <TD class=style5 width=84>Staff Signature: </TD>
+    <TD width=175><LABEL><INPUT id=StaffSig maxLength=50 size=25 
+      value=ConsentEmployee_Case_459_20090509 name=StaffSig> </LABEL></TD></TR>
+  <TR>
+    <TD class=style3>
+      <DIV align=right><STRONG>Witness:</STRONG></DIV></TD>
+    <TD><LABEL><INPUT id=Witness maxLength=50 size=40 name=Witness> 
+</LABEL></TD>
+    <TD class=style5>Date:</TD>
+    <TD><LABEL><INPUT id=TimeStamp type=hidden value=05/09/2009 
+      name=TimeStamp> <SPAN 
+class=style5>05/09/2009</SPAN></LABEL></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=800 border=0>
+  <TBODY>
+  <TR>
+    <TD width=503><SPAN class=style5>I,</SPAN> <LABEL><INPUT id=Parent 
+      maxLength=50 size=30 name=Parent> <SPAN class=style5>(parent/ guardian) 
+      give BCCRS permission to </SPAN></LABEL></TD>
+    <TD class=style5 width=397><INPUT id=Casenumber type=hidden value=459 
+      name=Casenumber> <INPUT id=MCT type=hidden value=Y name=MCT></TD></TR>
+  <TR>
+    <TD class=style5>provide services to my child, <INPUT id=ParentSignature 
+      maxLength=50 value=ConsentParent_Case_459_20090509 
+name=ParentSignature></TD>
+    <TD><LABEL></LABEL></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=800 border=0>
+  <TBODY>
+  <TR>
+    <TD><LABEL>
+      <TABLE width=800 border=0>
+        <TBODY>
+        <TR>
+          <TD width=104>Unable to sign </TD>
+          <TD width=157><LABEL><INPUT type=radio value=Yes name=UnableSign> 
+            Yes <INPUT type=radio value=No name=UnableSign> No</LABEL></TD>
+          <TD width=53>Why?</TD>
+          <TD width=568><LABEL><INPUT id=Why maxLength=70 size=70 name=Why> 
+            </LABEL></TD></TR></TBODY></TABLE>
+      <DIV align=center><INPUT id=EmployeeID type=hidden name=EmployeeID> <INPUT 
+      id=Depart type=hidden value=MCT name=Depart> <INPUT type=submit value=Submit name=Submit> 
+</DIV></LABEL></TD></TR></TBODY></TABLE><INPUT type=hidden value=form1 
+name=MM_insert> </FORM></BODY></HTML>

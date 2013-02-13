@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sante.EMR.SmartClient.Infrastructure.Interface.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="IntakeFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Comments=custom_78&amp;CallerName=custom_51&amp;CallerAddress=custom_52&amp;CallerCity=custom_53&amp;CallerState=custom_54&amp;CallerZip=custom_55&amp;CallerPhone=custom_56&amp;Relationship=custom_57&amp;RefferalSource=custom_230&amp;RefferalSource=custom_1268&amp;PhoneBogus=custom_27&amp;CallerRefuse=custom_26&amp;Frequent=custom_25&amp;CallerDisconnects=custom_24&amp;Address=custom_1448&amp;Resident=custom_61&amp;Veteran=custom_62&amp;CaseRelated=custom_63&amp;City=custom_64&amp;State=custom_65&amp;Zip=custom_66&amp;Phone=custom_67&amp;Message=custom_68&amp;SSN=custom_69&amp;Dob=custom_70&amp;Sex=custom_72&amp;Culture=custom_73&amp;CrisisPlan=custom_79&amp;Record911=custom_80&amp;FollowUp=custom_81&amp;CrisisNeeded=custom_131&amp;NotifyAPS=custom_21&amp;MCTDispatch=custom_20&amp;CrisisPlanOnly=custom_18&amp;CommunityEd=custom_17&amp;InformationOnly=custom_16&amp;OperatorTime=custom_48&amp;OperatorNum=custom_753&amp;EmergencyName=custom_38&amp;EmergencyRelationship=custom_40&amp;EmergencyPhone=custom_39&amp;CismFlag=cism_request_37&amp;SituationalCrisis=custom_36&amp;SubstanceAbuseP=custom_35&amp;RapidDeterioration=custom_33&amp;DangerToSelf=custom_32&amp;DangerToOthers=custom_1261&amp;Release=custom_74&amp;Limitations=custom_75&amp;RiskHospitalization=custom_31&amp;Incarceration=custom_30&amp;InpatientHospital=custom_29&amp;Eviction=custom_28&amp;Financial=custom_59&amp;OtherMed=custom_120&amp;Linkage=custom_82&amp;MH=custom_771&amp;NonMH=custom_790&amp;ReferralOther=custom_824&amp;ProviderPhone=custom_286&amp;ProviderContact=custom_258&amp;Provider=custom_260&amp;Age=custom_71&amp;Called911=custom_19&amp;InsurancePhone=custom_128&amp;County=custom_155</Value>
+    </Setting>
+    <Setting Name="MCTDispatchFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Team=custom_652&amp;location=custom_656&amp;Precinct=custom_657&amp;DispatchedBy=custom_659&amp;RespondingEmployeeID=custom_670&amp;Mileage=custom_671&amp;DivertedCall=custom_1248</Value>
+    </Setting>
+    <Setting Name="AuthorizationReleaseFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ConsentForServicesFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Parent=custom_268&amp;PFirstName=custom_269&amp;UnableSign=custom_271&amp;Why=custom_272&amp;Witness=custom_274&amp;Staffsig=custom_275  
+</Value>
+    </Setting>
+    <Setting Name="HumanRightsFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IHITIndividualTreatmentFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">
+ST2Objective=custom_610&amp;ST2Progress=custom_611&amp;ST2Start=custom_786&amp;ST2Target=custom_787&amp;ST2Complete=custom_788&amp;ST2Revised=custom_789&amp;ST1Objective=custom_607&amp;amp;ST1Progress=custom_608&amp;ST1Start=custom_782&amp;ST1Targer=custom_783&amp;ST1Complete=custom_784&amp;ST1Revised=custom_785
+LTStart=custom_603&amp;amp;LTTarget=custom_604&amp;amp;LTRevised=custom_605&amp;amp;LTComplete=custom_781</Value>
+    </Setting>
+    <Setting Name="InformedConsentFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Company=custom_312&amp;Staffsig=custom_313</Value>
+    </Setting>
+    <Setting Name="InformedMedicationConsentFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DoctorName=custom_720</Value>
+    </Setting>
+    <Setting Name="LethalityFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Method=custom_733&amp;Accessibility=custom_734&amp;CallerAlone=custom__754&amp;FamilyAttemptsCompletions=custom_756&amp;Supports=custom_758</Value>
+    </Setting>
+    <Setting Name="MCTAssessmentAndTreatmentFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Axis1=custom_585&amp;Axis2=custom_586&amp;Axis3=custom_587&amp;Axis4=custom_588&amp;Axis5=custom_589&amp;CrisisPlan=custom_590&amp;DiagnosticClient=custom_584&amp;DiagnosticImpression=583&amp;Legal=custom_578&amp;Medical=custom_579&amp;MedicalEval=custom_581&amp;Mental=custom_581&amp;Problem=custom_571&amp;PsychHistory=custom_573&amp;PsychMeds=custom_574&amp;PsychEval=custom_575&amp;RiskAssessment=custom_572&amp;Somatic=custom_580&amp;Strengths=custom_582&amp;SubstanceTreatment=custom_576&amp;Treatment=custom_591</Value>
+    </Setting>
+    <Setting Name="medevalFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PrivacyPracticesFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ProgressNoteFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">StaffID=custom_134&amp;Notes=custom_13&amp;5NoteAction=custom_140&amp;InitialVisit=custom_944&amp;Comments=custom_143</Value>
+    </Setting>
+    <Setting Name="TelephoneFieldMap" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PersonContacted=custom_723&amp;Org=custom_724&amp;NextTask=custom_728&amp;Phone=custom_775</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

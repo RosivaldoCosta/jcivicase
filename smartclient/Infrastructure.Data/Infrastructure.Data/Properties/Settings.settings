@@ -1,0 +1,108 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sante.EMR.SmartClient.Infrastructure.Data.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SmartClientDatabase_ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source ="|DataDirectory|\SmartClientDatabase.sdf"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Microsoft.SqlServerCe.Client.3.5&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source ="|DataDirectory|\SmartClientDatabase.sdf"</Value>
+    </Setting>
+    <Setting Name="SanteConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source ="|DataDirectory|\Sante.sdf"; Password ="password";&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Microsoft.SqlServerCe.Client.3.5&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source ="|DataDirectory|\Sante.sdf"; Password ="password";</Value>
+    </Setting>
+    <Setting Name="SanteCacheConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\SanteCache.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\SanteCache.mdb</Value>
+    </Setting>
+    <Setting Name="Infrastructure_Data_DataWebService_DataService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://65.216.170.16/Services/DataService.asmx</Value>
+    </Setting>
+    <Setting Name="RestHost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://ehr.santegroup.org</Value>
+    </Setting>
+    <Setting Name="SiteName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/staging</Value>
+    </Setting>
+    <Setting Name="ApiKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&amp;api_key=6eb29a5ba31340845cb349293de79f94</Value>
+    </Setting>
+    <Setting Name="SiteKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&amp;key=4602cf369006e6f5d5c6513c8a96a75d</Value>
+    </Setting>
+    <Setting Name="RestUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/administrator/components/com_civicrm/civicrm/extern/rest.php?q=civicrm</Value>
+    </Setting>
+    <Setting Name="RestUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&amp;name=smart_client</Value>
+    </Setting>
+    <Setting Name="RestPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&amp;pass=23wesdxc%40%23WESDXC</Value>
+    </Setting>
+    <Setting Name="CaseRequest" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/case/create&amp;subject=Open+OPS+Case+From+Smart+Client&amp;case_type_id=1&amp;status_id=4&amp;creator_id=746&amp;medium_id=1&amp;case_type=Operations+Center</Value>
+    </Setting>
+    <Setting Name="ActivityRequest" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/case/activity/create&amp;source_contact_id=746&amp;status_id=2</Value>
+    </Setting>
+    <Setting Name="IntakeActivityId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">13</Value>
+    </Setting>
+    <Setting Name="MCTDispatchId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">38</Value>
+    </Setting>
+    <Setting Name="RecommendForClosureId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">17</Value>
+    </Setting>
+    <Setting Name="MentalHealthEvalId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="LethalityId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">35</Value>
+    </Setting>
+    <Setting Name="CarePlanId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">36</Value>
+    </Setting>
+    <Setting Name="AssessmentId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">37</Value>
+    </Setting>
+    <Setting Name="ConsentForServicesId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">39</Value>
+    </Setting>
+    <Setting Name="AuthorizationReleasId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">40</Value>
+    </Setting>
+    <Setting Name="ProgessNoteId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="TreatmentPlanId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">51</Value>
+    </Setting>
+    <Setting Name="InformedConsentId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">82</Value>
+    </Setting>
+    <Setting Name="PrivacyPracticesId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">84</Value>
+    </Setting>
+    <Setting Name="HumanRightsId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">85</Value>
+    </Setting>
+    <Setting Name="InformedConsentMedicationId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">93</Value>
+    </Setting>
+    <Setting Name="TelephoneId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">48</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

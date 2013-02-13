@@ -1,0 +1,1502 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Medical Evaluation and Review Form</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #00CCFF;
+}
+.style3 {	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+.style4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+.style7 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.style12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.style13 {font-size: 9px}
+-->
+</style>
+<script type="text/JavaScript">
+javascript:window.history.forward(1);
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+</script>
+<script language=JavaScript>
+<!--
+function check_length(f)
+{
+maxLen = 254; // max number of characters allowed
+if (f.value.length >= maxLen) {
+// Alert message if maximum limit is reached. 
+// If required Alert can be removed. 
+var msg = "You have reached your maximum limit of characters allowed";
+alert(msg);
+// Reached the Maximum length so trim the textarea
+f.value = f.value.substring(0, maxLen);
+}
+}
+//-->
+<!--
+// Declaring valid date character, minimum year and maximum year
+var dtCh= "/";
+var minYear=1900;
+var maxYear=2100;
+
+function isInteger(s){
+	var i;
+    for (i = 0; i < s.length; i++){   
+        // Check that current character is number.
+        var c = s.charAt(i);
+        if (((c < "0") || (c > "9"))) return false;
+    }
+    // All characters are numbers.
+    return true;
+}
+
+function stripCharsInBag(s, bag){
+	var i;
+    var returnString = "";
+    // Search through string's characters one by one.
+    // If character is not in bag, append to returnString.
+    for (i = 0; i < s.length; i++){   
+        var c = s.charAt(i);
+        if (bag.indexOf(c) == -1) returnString += c;
+    }
+    return returnString;
+}
+
+function daysInFebruary (year){
+	// February has 29 days in any year evenly divisible by four,
+    // EXCEPT for centurial years which are not also divisible by 400.
+    return (((year % 4 == 0) && ( (!(year % 100 == 0)) || (year % 400 == 0))) ? 29 : 28 );
+}
+function DaysArray(n) {
+	for (var i = 1; i <= n; i++) {
+		this[i] = 31
+		if (i==4 || i==6 || i==9 || i==11) {this[i] = 30}
+		if (i==2) {this[i] = 29}
+   } 
+   return this
+}
+
+function isDate(dtStr){
+	var daysInMonth = DaysArray(12)
+	var pos1=dtStr.indexOf(dtCh)
+	var pos2=dtStr.indexOf(dtCh,pos1+1)
+	var strMonth=dtStr.substring(0,pos1)
+	var strDay=dtStr.substring(pos1+1,pos2)
+	var strYear=dtStr.substring(pos2+1)
+	strYr=strYear
+	if (strDay.charAt(0)=="0" && strDay.length>1) strDay=strDay.substring(1)
+	if (strMonth.charAt(0)=="0" && strMonth.length>1) strMonth=strMonth.substring(1)
+	for (var i = 1; i <= 3; i++) {
+		if (strYr.charAt(0)=="0" && strYr.length>1) strYr=strYr.substring(1)
+	}
+	month=parseInt(strMonth)
+	day=parseInt(strDay)
+	year=parseInt(strYr)
+	if (pos1==-1 || pos2==-1){
+		alert("The date format should be : mm/dd/yyyy")
+		return false
+	}
+	if (strMonth.length<1 || month<1 || month>12){
+		alert("Please enter a valid month")
+		return false
+	}
+	if (strDay.length<1 || day<1 || day>31 || (month==2 && day>daysInFebruary(year)) || day > daysInMonth[month]){
+		alert("Please enter a valid day")
+		return false
+	}
+	if (strYear.length != 4 || year==0 || year<minYear || year>maxYear){
+		alert("Please enter a valid 4 digit year between "+minYear+" and "+maxYear)
+		return false
+	}
+	if (dtStr.indexOf(dtCh,pos2+1)!=-1 || isInteger(stripCharsInBag(dtStr, dtCh))==false){
+		alert("Please enter a valid date")
+		return false
+	}
+return true
+}
+
+function ValidateForm(){
+	var dt=document.form1.xDate
+	var da=document.form1.Startdate1
+	var db=document.form1.Startdate2
+	var dc=document.form1.Startdate3
+	var dd=document.form1.Startdate4
+	var de=document.form1.enddate1
+	var df=document.form1.enddate2
+	var dg=document.form1.enddate3
+	var dh=document.form1.enddate4
+	var di=document.form1.reviewdate
+	var dj=document.form1.apptdate
+	if (isDate(dt.value)==false){
+		dt.focus()
+		return false
+	}
+	if (da.value !=""){
+		if (isDate(da.value)==false){
+			da.focus()
+			return false
+		}
+	}
+	if (db.value !=""){
+		if (isDate(db.value)==false){
+			db.focus()
+			return false
+		}
+	}
+	if (dc.value !=""){
+		if (isDate(dc.value)==false){
+			dc.focus()
+			return false
+		}
+	}
+	if (dd.value !=""){
+		if (isDate(dd.value)==false){
+			dd.focus()
+			return false
+		}
+	}
+	if (de.value != ""){
+		if (isDate(de.value)==false){
+			de.focus()
+			return false
+		}
+	}
+	if (df.value != ""){
+		if (isDate(df.value)==false){
+			df.focus()
+			return false
+		}
+	}
+	if (dg.value != ""){
+		if (isDate(dg.value)==false){
+			dg.focus()
+			return false
+		}
+	}
+	if (dh.value != ""){
+		if (isDate(dh.value)==false){
+			dh.focus()
+			return false
+		}
+	}
+		if (isDate(di.value)==false){
+			di.focus()
+			return false
+		}
+		if (isDate(dj.value)==false){
+			dj.focus()
+			return false
+		}
+		
+	
+    return true
+ }
+ //-->
+
+</script>
+</head>
+
+<body>
+<form ACTION="/emrtestSante/Casehistory/blank/medevalreview.asp?CaseNumber=459" METHOD="POST" name="form1" id="form1" onsubmit="return ValidateForm()" >
+<input type="hidden" value="1" name="Active"/>
+<input type="hidden" value="10" name="medevalID"/>
+<input type="hidden" value="5/8/2009 4:14:30 PM" name="cstamp"/>
+
+<div align="center"><img src="../../images/LargeLogo.gif" width="309" height="61" /> <br />
+    <span class="style3">Baltimore County Crisis Response System<br />
+      7939 Honey go Blvd., Suite 113<br />
+      Baltimore,   MD 21236<br />
+      410-931-2214</span>
+    <input name="CaseNumber" type="hidden" id="CaseNumber" value="459" />
+    <table width="950" height="83" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><div align="center"><strong><span class="style4">ASG Medication Evaluation and Review Form </span></strong></div></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="142"><div align="left"><span class="style7">Client Name: </span></div></td>
+        <td width="310"><div align="left"><span class="style7"> </span></div>
+            <span class="style7">
+            <label>
+            <div align="left">
+              <input name="ClientName" type="text" id="ClientName" size="25" maxlength="50" />
+            </div>
+              </label>
+          </span></td>
+        <td width="80"><div align="left"><span class="style7">Date:</span></div></td>
+        <td width="332"><label>
+            <div align="left">
+              <input name="xDate" type="text" id="xDate" size="25" maxlength="20" />
+            </div>
+          </label></td>
+      </tr>
+      <tr>
+        <td><div align="left"><span class="style7">Client Code: </span></div></td>
+        <td><div align="left"><span class="style7"> </span></div>
+            <span class="style7">
+            <label>
+            <div align="left">
+              <input name="ClientCode" type="text" id="ClientCode" size="25" maxlength="50" />
+            </div>
+              </label>
+          </span></td>
+        <td><div align="left"><span class="style7">Therapist:</span></div></td>
+        <td><label>
+            <div align="left">
+              <input name="Therapist" type="text" id="Therapist" size="25" maxlength="50" />
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="159"><span class="style7">
+          <label>
+          <input name="MedicationEvaluation" type="checkbox" id="MedicationEvaluation" value="checkbox" />
+            Medication Evaluation</label>
+        </span></td>
+        <td width="100"><span class="style7">
+          <label>
+          <input name="RXReview" type="checkbox" id="RXReview" value="checkbox" />
+            RX Review</label>
+        </span></td>
+        <td width="63"><span class="style7">
+          <label>
+          <input name="AIMS" type="checkbox" id="AIMS" value="checkbox" />
+            AIMS</label>
+        </span></td>
+        <td width="156"><span class="style7">
+          <label>
+          <input name="InstitutionalPharmacy" type="checkbox" id="InstitutionalPharmacy" value="checkbox" />
+            Institutional Pharmacy</label>
+        </span></td>
+        <td width="125"><span class="style7">Name of Pharmacy </span></td>
+        <td width="221"><div align="left">
+            <input name="NameOfPharmacy" type="text" id="NameOfPharmacy" size="25" maxlength="50" />
+        </div></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="61"><div align="center"><strong><span class="style12">Medication Order Refill </span></strong></div></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="88"><div align="center"><span class="style7">Medication</span></div></td>
+        <td width="73"><div align="center"><span class="style7">Dose<br />
+          (in mg) </span></div></td>
+        <td width="133"><div align="center"><span class="style7">Rte # <br />
+          Dose </span></div></td>
+        <td width="92"><div align="center"><span class="style7">Freq. #<br />
+          ord </span></div></td>
+        <td width="85"><div align="center"><span class="style7">Start Date </span></div></td>
+        <td width="81"><div align="center"><span class="style7">End Date </span></div></td>
+        <td width="135"><div align="center"><span class="style7">Target Symptoms </span></div></td>
+        <td width="97"><div align="center"><span class="style7">Side Effects</span></div></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input name="Medication1" type="text" id="Medication1" size="20" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="dose1" type="text" id="dose1" onkeypress="MM_validateForm('dose1','','NisNum');return document.MM_returnValue" size="10" maxlength="15" />
+        </label></td>
+        <td><label>
+          <input name="rte1" type="text" id="rte1" size="15" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="freq1" type="text" id="freq1" size="15" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="Startdate1" type="text" id="Startdate1" size="10" maxlength="20" />
+        </label></td>
+        <td><label>
+          <input name="enddate1" type="text" id="enddate1" size="10" maxlength="20" />
+        </label></td>
+        <td><label>
+          <input name="targetsymptoms1" type="text" id="targetsymptoms1" size="20" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="Sideeffects1" type="text" id="Sideeffects1" size="25" maxlength="255" />
+        </label></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input name="Medication2" type="text" id="Medication2" size="20" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="dose2" type="text" id="dose2" onkeypress="MM_validateForm('dose2','','NisNum');return document.MM_returnValue" size="10" maxlength="15" />
+        </label></td>
+        <td><label>
+          <input name="rte2" type="text" id="rte2" size="15" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="freq2" type="text" id="freq2" size="15" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="Startdate2" type="text" id="Startdate2" size="10" maxlength="20" />
+        </label></td>
+        <td><label>
+          <input name="enddate2" type="text" id="enddate2" size="10" maxlength="20" />
+        </label></td>
+        <td><label>
+          <input name="targetsymptoms2" type="text" id="targetsymptoms2" size="20" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="Sideeffects2" type="text" id="Sideeffects2" size="25" maxlength="255" />
+        </label></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input name="Medication3" type="text" id="Medication3" size="20" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="dose3" type="text" id="dose3" onkeypress="MM_validateForm('dose3','','NisNum');return document.MM_returnValue" size="10" maxlength="15" />
+        </label></td>
+        <td><label>
+          <input name="rte3" type="text" id="rte3" size="15" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="freq3" type="text" id="freq3" size="15" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="Startdate3" type="text" id="Startdate3" size="10" maxlength="20" />
+        </label></td>
+        <td><label>
+          <input name="enddate3" type="text" id="enddate3" size="10" maxlength="20" />
+        </label></td>
+        <td><label>
+          <input name="targetsymptoms3" type="text" id="targetsymptoms3" size="20" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="Sideeffects3" type="text" id="Sideeffects3" size="25" maxlength="255" />
+        </label></td>
+      </tr>
+      <tr>
+        <td><label>
+        <input name="Medication4" type="text" id="Medication4" size="20" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="dose4" type="text" id="dose4" onkeypress="MM_validateForm('dose4','','NisNum');return document.MM_returnValue" size="10" maxlength="15" />
+        </label></td>
+        <td><label>
+          <input name="rte4" type="text" id="rte4" size="15" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="freq4" type="text" id="freq4" size="15" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="Startdate4" type="text" id="Startdate4" size="10" maxlength="20" />
+        </label></td>
+        <td><label>
+          <input name="enddate4" type="text" id="enddate4" size="10" maxlength="20" />
+        </label></td>
+        <td><label>
+          <input name="targetsymptoms4" type="text" id="targetsymptoms4" size="20" maxlength="255" />
+        </label></td>
+        <td><label>
+          <input name="Sideeffects4" type="text" id="Sideeffects4" size="25" maxlength="255" />
+        </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="191">Informed Consent Signed
+          <label>
+            <input name="informedconsent" type="text" id="informedconsent" size="5" maxlength="5" />
+          </label></td>
+        <td width="155">VS as needed: BP
+          <label>
+            <input name="BP" type="text" id="BP" size="5" maxlength="50" />
+          </label></td>
+        <td width="54">P
+          <label>
+            <input name="P" type="text" id="P" size="5" maxlength="20" />
+          </label></td>
+        <td width="69">RR
+          <label>
+            <input name="RR" type="text" id="RR" size="5" maxlength="50" />
+          </label></td>
+        <td width="115">Temp
+          <label>
+            <input name="temp" type="text" id="temp" size="10" maxlength="50" />
+          </label></td>
+        <td width="240">Weight
+          <label>
+            <input name="weight" type="text" id="weight" size="15" maxlength="15" />
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="65"><div align="center" class="style12"><strong>Medications are prescribed at the lowest effective dose, they are discussed with the client/appropriate other. It is agreed that the benefits outweigh the risks. Medications are evaluated at each visit for efficacy, side effects and are adjusted accordingly. </strong></div></td>
+      </tr>
+      <tr>
+        <td height="40" class="style7"><div align="left"><u><strong>Medication Evaluation:</strong> (Complete &quot;Mental Health Summary, Substance Abuse, HX and Medical Review&quot;) </u></div></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="172"><u><strong>Medication Review: </strong></u></td>
+        <td width="24">Age:</td>
+        <td width="91"><label>
+          <input name="age" type="text" id="age" onkeypress="MM_validateForm('age','','NinRange1:120');return document.MM_returnValue" size="5" maxlength="3" />
+        </label></td>
+        <td width="105">Accompanied By: </td>
+        <td width="452"><label>
+          <input name="accompaniedby" type="text" id="accompaniedby" size="25" maxlength="50" />
+        </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="284"><strong>Overall Subjective Status of Well being: </strong></td>
+        <td width="53"><label>
+          <input name="status" type="radio" value="poor" />
+          Poor</label></td>
+        <td width="52"><label>
+          <input name="status" type="radio" value="Fair" />
+          Fair</label></td>
+        <td width="66"><label>
+          <input name="status" type="radio" value="Good" />
+          Good</label></td>
+        <td width="389"><label>
+          <input name="status" type="radio" value="Very Good" />
+          Very Good</label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="style7">Comments Regarding current issues:<br />
+            <label>
+            <textarea  cols="100" rows="3" id="comments"  onKeyPress=check_length(this.form.comments); name="comments"></textarea>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><div align="left" class="style3"><u>Biomedical Issues: </u></div></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="95"><p align="left"><strong>RX Compliance: Estimated:</strong></p></td>
+        <td width="77"><label>
+            <div align="left">
+              <input name="rxcompliance" type="radio" value="25" />
+              25%</div>
+          </label></td>
+        <td width="91"><label>
+            <div align="left">
+              <input name="rxcompliance" type="radio" value="50" />
+              50%</div>
+          </label></td>
+        <td width="95"><label>
+            <div align="left">
+              <input name="rxcompliance" type="radio" value="60" />
+              60%</div>
+          </label></td>
+        <td width="127"><label>
+            <div align="left">
+              <input name="rxcompliance" type="radio" value="70" />
+              70%</div>
+          </label></td>
+        <td width="100"><label>
+            <div align="left">
+              <input name="rxcompliance" type="radio" value="80" />
+              80%</div>
+          </label></td>
+        <td width="130"><label>
+            <div align="left">
+              <input name="rxcompliance" type="radio" value="90" />
+              90%</div>
+          </label></td>
+        <td width="69"><label>
+            <div align="left">
+              <input name="rxcompliance" type="radio" value="100" />
+              100%</div>
+          </label></td>
+      </tr>
+      <tr class="style7">
+        <td width="95"><div align="left"><strong>RX Side Effects</strong> </div></td>
+        <td width="77"><label>
+            <div align="left">
+              <input name="nervous" type="checkbox" id="nervous" value="checkbox" />
+              Nervous</div>
+          </label></td>
+        <td width="91"><label>
+            <div align="left">
+              <input name="jitters" type="checkbox" id="jitters" value="checkbox" />
+              Jitters</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="somolence" type="checkbox" id="somolence" value="checkbox" />
+              Somnolence</div>
+            </label></td>
+        <td><label>
+            <div align="left">
+              <input name="insomnia" type="checkbox" id="insomnia" value="checkbox" />
+              Insomnia</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="HA" type="checkbox" id="HA" value="checkbox" />
+              HA</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="dizziness" type="checkbox" id="dizziness" value="checkbox" />
+              Dizziness</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="nausea" type="checkbox" id="nausea" value="checkbox" />
+              Nausea</div>
+          </label></td>
+      </tr>
+      <tr class="style7">
+        <td width="95"><div align="left"></div></td>
+        <td width="77"><label>
+            <div align="left">
+              <input name="drymouth" type="checkbox" id="drymouth" value="checkbox" />
+              Dry Mouth</div>
+          </label></td>
+        <td width="91"><label>
+            <div align="left">
+              <input name="diarhhea" type="checkbox" id="diarhhea" value="checkbox" />
+              Diarrhea</div>
+            </label></td>
+        <td><label>
+            <div align="left">
+              <input name="constipation" type="checkbox" id="constipation" value="checkbox" />
+              Constipation</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="increasedappetite" type="checkbox" id="increasedappetite" value="checkbox" />
+              Increased Appetite</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="blurredvision" type="checkbox" id="blurredvision" value="checkbox" />
+              Blurred Vision</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="sexualdysfunction" type="checkbox" id="sexualdysfunction" value="checkbox" />
+              Sexual Dysfunction</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="EPS" type="checkbox" id="EPS" value="checkbox" />
+              EPS</div>
+          </label></td>
+      </tr>
+      <tr class="style7">
+        <td width="95"><div align="left"></div></td>
+        <td width="77"><label>
+            <div align="left">
+              <input name="TD" type="checkbox" id="TD" value="checkbox" />
+              TD</div>
+          </label></td>
+        <td width="91"><label>
+            <div align="left">
+              <input name="weightgain" type="checkbox" id="weightgain" value="checkbox" />
+              Weight Gain</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="weightloss" type="checkbox" id="weightloss" value="checkbox" />
+              Weight Loss</div>
+          </label></td>
+        <td><div align="right">Other:</div></td>
+        <td><label>
+            <div align="left">
+              <input name="other" type="text" id="other" size="15" maxlength="50" />
+            </div>
+          </label></td>
+        <td><div align="left"></div></td>
+        <td><div align="left"></div></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="51" height="60"><strong>Sleep:</strong></td>
+        <td width="67"><label>
+          <input name="sleep" type="radio" value="Poor" />
+          Poor</label></td>
+        <td width="62"><label>
+          <input name="sleep" type="radio" value="Fair" />
+          Fair</label></td>
+        <td width="90"><label>
+          <input name="sleep" type="radio" value="Good" />
+          Good</label></td>
+        <td width="574"><label>
+            <div align="left">
+              <input name="sleep" type="radio" value="Very Good" />
+              Very Good</div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="87" height="63">Usual Bedtime: </td>
+        <td width="90"><label>
+          <input name="bedtime" type="text" id="bedtime" size="15" maxlength="15" />
+        </label></td>
+        <td width="113"><p>Delayed Onset? Till?</p></td>
+        <td width="60"><label>
+          <input name="delay" type="text" id="delay" size="10" maxlength="10" />
+        </label></td>
+        <td width="67">Restless?</td>
+        <td width="53"><label>
+          <input name="restless" type="radio" value="y" />
+          Y</label></td>
+        <td width="61"><label>
+          <input name="restless" type="radio" value="N" />
+          N</label></td>
+        <td width="57">EMA?</td>
+        <td width="50"><label>
+          <input name="EMA" type="radio" value="Y" />
+          Y</label></td>
+        <td width="106"><label>
+          <input name="EMA" type="radio" value="N" />
+          N</label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="64">Arise Time: </td>
+        <td width="75"><label>
+          <input name="AriseTime" type="text" id="AriseTime" size="10" maxlength="15" />
+        </label></td>
+        <td width="66">Comments:</td>
+        <td width="659"><label>
+          <input name="Comments2" type="text" id="Comments2" size="50" maxlength="255" />
+        </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="56"><strong>Appetite:</strong></td>
+        <td width="55"><label>
+          <input name="appetite" type="radio" value="Poor" />
+          Poor</label></td>
+        <td width="50"><label>
+          <input name="appetite" type="radio" value="Fair" />
+          Fair</label></td>
+        <td width="54"><label>
+          <input name="appetite" type="radio" value="Good" />
+          Good</label></td>
+        <td width="157"><label>
+          <input name="appetite" type="radio" value="Very Good" />
+          Very Good</label></td>
+        <td width="51"><strong>Energy:</strong></td>
+        <td width="55"><label>
+          <input name="energy" type="radio" value="Poor" />
+          Poor</label></td>
+        <td width="52"><label>
+          <input name="energy" type="radio" value="Fair" />
+          Fair</label></td>
+        <td width="69"><label>
+          <input name="energy" type="radio" value="Good" />
+          Good</label></td>
+        <td width="145"><label>
+          <input name="energy" type="radio" value="Very Good" />
+          Very Good</label></td>
+      </tr>
+    </table>
+  <table width="950" height="68" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="style3"><div align="left">Health Concerns/Comments: </div></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="193" class="style7"><p align="left">Chronic Illness? </p></td>
+        <td width="711"><label>
+            <div align="left">
+              <input name="chronicillness" type="text" id="chronicillness" size="75" maxlength="255" />
+            </div>
+          </label></td>
+      </tr>
+      <tr>
+        <td class="style7"><div align="left">Acute Illness/Injury? </div></td>
+        <td><label>
+            <div align="left">
+              <input name="acuteillness" type="text" id="acuteillness" size="75" maxlength="255" />
+            </div>
+          </label></td>
+      </tr>
+      <tr>
+        <td class="style7"><div align="left">Tobacco?(how much/d)? </div></td>
+        <td><label>
+            <div align="left">
+              <input name="tobacco" type="text" id="tobacco" size="75" maxlength="255" />
+            </div>
+          </label></td>
+      </tr>
+      <tr>
+        <td class="style7"><div align="left">Drugs/ETOH(how much/d) </div></td>
+        <td><label>
+            <div align="left">
+              <input name="Drugs" type="text" id="Drugs" size="75" maxlength="255" />
+            </div>
+          </label></td>
+      </tr>
+      <tr>
+        <td class="style7"><div align="left">General/Other Issues: </div></td>
+        <td><label>
+            <div align="left">
+              <input name="General" type="text" id="General" size="75" maxlength="255" />
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="173"><div align="left">Lab Results Reviewed </div></td>
+        <td width="32"><div align="left">Initial:</div></td>
+        <td width="70"><label>
+            <div align="left">
+              <input name="initials" type="text" id="initials" size="10" maxlength="10" />
+            </div>
+          </label></td>
+        <td width="65"><div align="left">Reviewed?</div></td>
+        <td width="47"><label>
+            <div align="left">
+              <input name="Reviewed" type="radio" value="Yes" />
+              Yes</div>
+          </label></td>
+        <td width="160"><label>
+            <div align="left">
+              <input name="Reviewed" type="radio" value="No" />
+              No</div>
+          </label></td>
+        <td width="257"><label>
+            <div align="left">Date:
+              <input name="reviewdate" type="text" id="reviewdate" size="25" maxlength="50" />
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="style7"><div align="left">
+            <label>Abnormalities
+              <input name="abnormalities" type="text" id="abnormalities" size="80" maxlength="255" />
+            </label>
+        </div></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="307"><div align="left"><strong>Psycho-Social/ Psychotherapy Issues: </strong></div></td>
+        <td width="69"><div align="left">Reviewed?</div></td>
+        <td width="45"><div align="left">
+            <label>
+            <input name="PsychoReview" type="radio" value="Yes" />
+              Yes</label>
+        </div></td>
+        <td width="443"><div align="left">
+            <label>
+            <input name="PsychoReview" type="radio" value="No" />
+              No</label>
+        </div></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td height="67"><div align="left">Relationship Issues/Problems </div></td>
+        <td><label>
+          <input name="relationshipissues" type="radio" value="Spouse" />
+          Spouse</label></td>
+        <td><label>
+          <input name="relationshipissues" type="radio" value="BF GF" />
+          BF/GF</label></td>
+        <td><label>
+          <input name="relationshipissues" type="radio" value="Mother" />
+          Mother</label></td>
+        <td><label>
+          <input name="relationshipissues" type="radio" value="Father" />
+          Father</label></td>
+        <td><label>
+          <input name="relationshipissues" type="radio" value="Brother" />
+          Brother</label></td>
+        <td><label>
+          <input name="relationshipissues" type="radio" value="Sister" />
+          Sister</label></td>
+        <td><label>
+          <input name="relationshipissues" type="radio" value="Son" />
+          Son</label></td>
+        <td><label>
+          <input name="relationshipissues" type="radio" value="Daughter" />
+          Daughter</label></td>
+        <td><label>
+          <input name="relationshipissues" type="radio" value="Other" />
+          Other</label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="455"><div align="left">Comments/ Interventions( address abuse/trauma/loss/sexuality/conflict/guilt, etc.) </div></td>
+        <td width="449"><label>
+            <div align="left">
+              <textarea  onKeyPress=check_length(this.form.RelationshipComments); name="RelationshipComments" cols="60" rows="3" id="RelationshipComments"></textarea>
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="455" class="style7"><div align="left">Vocation/Employment/Housing/Financial Issues or Problems: Comments/intervention </div></td>
+        <td width="449"><label>
+            <div align="left">
+              <textarea  onKeyPress=check_length(this.form.vocationcomments); name="vocationcomments" cols="60" rows="3" id="vocationcomments"></textarea>
+            </div>
+          </label></td>
+      </tr>
+      <tr>
+        <td class="style7"><div align="left">Educational Issues/Problems: Comments/Interventions: </div></td>
+        <td><label>
+            <div align="left">
+              <textarea  onKeyPress=check_length(this.form.educationalcomments); name="educationalcomments" cols="60" rows="3" id="educationalcomments"></textarea>
+            </div>
+          </label></td>
+      </tr>
+      <tr>
+        <td class="style7"><div align="left">Cross-cultural Enculturation Issues/Problems: Comments/Interventions </div></td>
+        <td><label>
+            <div align="left">
+              <textarea  onKeyPress=check_length(this.form.croccculturalcomments); name="croccculturalcomments" cols="60" rows="3" id="croccculturalcomments"></textarea>
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="1" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td height="55"><div align="left"><span class="style3">Mental Status Examination: </span><span class="style7">Appearance/Behavior as observed:</span> </div></td>
+      </tr>
+    </table>
+  <table width="950" border="1" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="56"><label>
+            <div align="left">
+              <input name="Calm" type="checkbox" id="Calm" value="checkbox" />
+              Calm</div>
+          </label></td>
+        <td width="55"><label>
+            <div align="left">
+              <input name="Tense" type="checkbox" id="Tense" value="checkbox" />
+              Tense</div>
+          </label></td>
+        <td width="60"><label>
+            <div align="left">
+              <input name="Alert" type="checkbox" id="Alert" value="checkbox" />
+              Alert</div>
+          </label></td>
+        <td width="84"><label>
+            <div align="left">
+              <input name="Tired" type="checkbox" id="Tired" value="checkbox" />
+              Tired</div>
+          </label></td>
+        <td width="69"><label>
+            <div align="left">
+              <input name="Slowed" type="checkbox" id="Slowed" value="checkbox" />
+              Slowed</div>
+          </label></td>
+        <td width="85"><label>
+            <div align="left">
+              <input name="hyperactive" type="checkbox" id="hyperactive" value="checkbox" />
+              Hyperactive</div>
+          </label></td>
+        <td width="90"><label>
+            <div align="left">
+              <input name="wellrelated" type="checkbox" id="wellrelated" value="checkbox" />
+              Well 
+              related
+              </label>
+          </div></td>
+        <td width="89"><label>
+            <div align="left">
+              <input name="cooperative" type="checkbox" id="cooperative" value="checkbox" />
+              Cooperative</div>
+          </label></td>
+        <td width="59"><label>
+            <div align="left">
+              <input name="poised" type="checkbox" id="poised" value="checkbox" />
+              Poised</div>
+          </label></td>
+        <td width="95"><label>
+            <div align="left">
+              <input name="agitated" type="checkbox" id="agitated" value="checkbox" />
+              Agitated</div>
+          </label></td>
+      </tr>
+      <tr class="style7">
+        <td><label>
+            <div align="left">
+              <input name="rigid" type="checkbox" id="rigid" value="checkbox" />
+              Rigid</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="hostile" type="checkbox" id="hostile" value="checkbox" />
+              Hostile</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="tearful" type="checkbox" id="tearful" value="checkbox" />
+              Tearful</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="depressed" type="checkbox" id="depressed" value="checkbox" />
+              Depressed</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="guarded" type="checkbox" id="guarded" value="checkbox" />
+              Guarded</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="paranoid" type="checkbox" id="paranoid" value="checkbox" />
+              Paranoid</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="demanding" type="checkbox" id="demanding" value="checkbox" />
+              Demanding</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="gestures" type="checkbox" id="gestures" value="checkbox" />
+              Gestures</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="tics" type="checkbox" id="tics" value="checkbox" />
+              Tics</div>
+          </label></td>
+        <td><label>
+            <div align="left">Other:
+              <input name="mentalother" type="text" id="mentalother" size="10" maxlength="55" />
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="1" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="53" height="66"><div align="left"><strong>Speech:</strong></div></td>
+        <td width="97"><label>
+            <div align="left">
+              <input name="spontaneous" type="checkbox" id="spontaneous" value="checkbox" />
+              Spontaneous</div>
+          </label></td>
+        <td width="114"><label>
+            <div align="left">
+              <input name="normalrelaxed" type="checkbox" id="normalrelaxed" value="checkbox" />
+              Normal/Relaxed</div>
+          </label></td>
+        <td width="81"><label>
+            <div align="left">
+              <input name="hesitation" type="checkbox" id="hesitation" value="checkbox" />
+              Hesitation</div>
+          </label></td>
+        <td width="84"><label>
+            <div align="left">
+              <input name="pressured" type="checkbox" id="pressured" value="checkbox" />
+              Pressured</div>
+          </label></td>
+        <td width="95"><label>
+            <div align="left">
+              <input name="monotonous" type="checkbox" id="monotonous" value="checkbox" />
+              Monotonous</div>
+          </label></td>
+        <td width="82"><label>
+            <div align="left">
+              <input name="dysarthric" type="checkbox" id="dysarthric" value="checkbox" />
+              Dysarthric</div>
+          </label></td>
+        <td width="178"><label>
+            <div align="left">Other:
+              <input name="speechOther" type="text" id="speechOther" size="10" maxlength="55" />
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="1" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="37" height="56"><div align="left"><strong>Mood:</strong></div></td>
+        <td width="81"><label>
+            <div align="left">
+              <input name="Euthymic" type="checkbox" id="Euthymic" value="checkbox" />
+              Euthymic</div>
+          </label></td>
+        <td width="91"><label>
+            <div align="left">
+              <input name="despairing" type="checkbox" id="despairing" value="checkbox" />
+              Despairing</div>
+          </label></td>
+        <td width="116"><label>
+            <div align="left">
+              <input name="mooddepressed" type="checkbox" id="mooddepressed" value="checkbox" />
+              Depressed</div>
+          </label></td>
+        <td width="78"><label>
+            <div align="left">
+              <input name="hopeless" type="checkbox" id="hopeless" value="checkbox" />
+              Hopeless</div>
+          </label></td>
+        <td width="80"><label>
+            <div align="left">
+              <input name="irritable" type="checkbox" id="irritable" value="checkbox" />
+              Irritable</div>
+          </label></td>
+        <td width="80"><label>
+            <div align="left">
+              <input name="expansive" type="checkbox" id="expansive" value="checkbox" />
+              Expansive</div>
+          </label></td>
+        <td width="73"><label>
+            <div align="left">
+              <input name="anxious" type="checkbox" id="anxious" value="checkbox" />
+              Anxious</div>
+          </label></td>
+        <td width="55"><label>
+            <div align="left">
+              <input name="angry" type="checkbox" id="angry" value="checkbox" />
+              Angry</div>
+          </label></td>
+        <td width="53"><label>
+            <div align="left">
+              <input name="guilty" type="checkbox" id="guilty" value="checkbox" />
+              Guilty</div>
+          </label></td>
+      </tr>
+      <tr class="style7">
+        <td height="56"><div align="left"><strong>Affect:</strong></div></td>
+        <td><label>
+            <div align="left">
+              <input name="congruent" type="checkbox" id="congruent" value="checkbox" />
+              Congruent</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="constricted" type="checkbox" id="constricted" value="checkbox" />
+              Constricted</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="broadExpansive" type="checkbox" id="broadExpansive" value="checkbox" />
+              Broad/Expansive</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="blunted" type="checkbox" id="blunted" value="checkbox" />
+              Blunted</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="dysphoric" type="checkbox" id="dysphoric" value="checkbox" />
+              Dysphoric</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="euphoric" type="checkbox" id="euphoric" value="checkbox" />
+              Euphoric</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="labile" type="checkbox" id="labile" value="checkbox" />
+              Labile</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="manic" type="checkbox" id="manic" value="checkbox" />
+              Manic</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="flat" type="checkbox" id="flat" value="checkbox" />
+              Flat</div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="1" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="172" height="54"><div align="left"><strong>Perceptions:</strong> Hallucinations ( </div></td>
+        <td width="79"><label>
+            <div align="left">
+              <input name="auditory" type="checkbox" id="auditory" value="checkbox" />
+              Auditory</div>
+          </label></td>
+        <td width="61"><label>
+            <div align="left">
+              <input name="visual" type="checkbox" id="visual" value="checkbox" />
+              Visual</div>
+          </label></td>
+        <td width="65"><label>
+            <div align="left">
+              <input name="tactile" type="checkbox" id="tactile" value="checkbox" />
+              Tactile</div>
+          </label></td>
+        <td width="83"><label>
+            <div align="left">
+              <input name="gustatory" type="checkbox" id="gustatory" value="checkbox" />
+              Gustatory</div>
+          </label></td>
+        <td width="90"><label>
+            <div align="left">
+              <input name="olfactory" type="checkbox" id="olfactory" value="checkbox" />
+              Olfactory   )</div>
+          </label></td>
+        <td width="132"><label>
+            <div align="left">
+              <input name="depersonalization" type="checkbox" id="depersonalization" value="checkbox" />
+              Depersonalization</div>
+          </label></td>
+        <td width="102"><label>
+            <div align="left">
+              <input name="derealization" type="checkbox" id="derealization" value="checkbox" />
+              Derealization</div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="1" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td height="55"><div align="left"><strong>Thought Process : </strong></div></td>
+        <td><label>
+            <div align="left">
+              <input name="LOA" type="checkbox" id="LOA" value="checkbox" />
+              LOA</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="circumstantial" type="checkbox" id="circumstantial" value="checkbox" />
+              Circumstantial</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="goal" type="checkbox" id="goal" value="checkbox" />
+              Goal</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="directed" type="checkbox" id="directed" value="checkbox" />
+              Directed</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="perservation" type="checkbox" id="perservation" value="checkbox" />
+              Preservation</div>
+            </label></td>
+        <td><label>
+            <div align="left">
+              <input name="confabulation" type="checkbox" id="confabulation" value="checkbox" />
+              Confabulation</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="blocking" type="checkbox" id="blocking" value="checkbox" />
+              Blocking</div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="1" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td height="51"><div align="left"><strong>Thought Content:</strong> </div></td>
+        <td><label>
+            <div align="left">
+              <input name="SI" type="checkbox" id="SI" value="checkbox" />
+              SI</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="HI" type="checkbox" id="HI" value="checkbox" />
+              HI</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="paranoia" type="checkbox" id="paranoia" value="checkbox" />
+              Paranoia</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="selfReferentiality" type="checkbox" id="selfReferentiality" value="checkbox" />
+              Self Referentially</div>
+            </label></td>
+        <td><label>
+            <div align="left">Delusions:
+              <input name="delusions" type="text" id="delusions" size="15" maxlength="55" />
+            </div>
+          </label></td>
+        <td><label>
+            <div align="left">Obsessions
+              <input name="obsession" type="text" id="obsession" size="15" maxlength="55" />
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="1" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td height="58"><div align="left"><strong>Cognitive Impairment : </strong></div></td>
+        <td>Memory</td>
+        <td><label>
+          <input name="Memory" type="radio" value="STM" />
+          STM</label>
+            <label>
+            <input name="Memory" type="radio" value="LTM" />
+              LTM</label></td>
+        <td><label>
+          <input name="concentration" type="checkbox" id="concentration" value="checkbox" />
+          Concentration</label></td>
+        <td><label>
+          <input name="judgement" type="checkbox" id="judgement" value="checkbox" />
+          Judgment</label></td>
+        <td><label>Poor Fund Of Knowledge
+          <input name="PoorKnowledge" type="text" id="PoorKnowledge" size="25" maxlength="100" />
+        </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="143"><div align="left"><strong>Insight</strong></div></td>
+        <td width="47"><label>
+            <div align="left">
+              <input name="insightnil" type="checkbox" id="insightnil" value="checkbox" />
+              Nil</div>
+          </label></td>
+        <td width="82"><label>
+            <div align="left">
+              <input name="insightpartial" type="checkbox" id="insightpartial" value="checkbox" />
+              Partial</div>
+          </label></td>
+        <td width="592"><label>
+            <div align="left">
+              <input name="insightfull" type="checkbox" id="insightfull" value="checkbox" />
+              Full</div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><label>
+            <div align="left">Comments:<br />
+                <textarea  onKeyPress=check_length(this.form.comments3); name="comments3" cols="50" rows="3" id="comments3"></textarea>
+            </div>
+          </label></td>
+      </tr>
+      <tr>
+        <td><label>
+            <div align="left">Analysis/Findings<br />
+                <textarea  onKeyPress=check_length(this.form.analysisfinings); name="analysisfinings" cols="50" rows="3" id="analysisfinings"></textarea>
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td width="145"><div align="left"><strong>Plans/Recommendations:</strong></div></td>
+        <td width="112"><div align="left"></div></td>
+        <td width="161"><div align="left"></div></td>
+        <td width="198"><div align="left"></div></td>
+        <td width="95"><div align="left"></div></td>
+        <td width="113"><div align="left"></div></td>
+      </tr>
+      <tr class="style7">
+        <td><div align="left">Biomedical/laboratory:</div></td>
+        <td><label>
+            <div align="left">
+              <input name="cbc" type="checkbox" id="cbc" value="checkbox" />
+              CBC w/Plt</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="compmetabolic" type="checkbox" id="compmetabolic" value="checkbox" />
+              Comp Metabolic</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="tft" type="checkbox" id="tft" value="checkbox" />
+              TFT</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="ua" type="checkbox" id="ua" value="checkbox" />
+              UA</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="sertumamylase" type="checkbox" id="sertumamylase" value="checkbox" />
+              Serum Amylase</div>
+          </label></td>
+      </tr>
+      <tr class="style7">
+        <td><label>
+            <div align="left">
+              <input name="serumlipase" type="checkbox" id="serumlipase" value="checkbox" />
+              Serum Lipase</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="valproatelevel" type="checkbox" id="valproatelevel" value="checkbox" />
+              Valproate Level </div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="carbamazepine" type="checkbox" id="carbamazepine" value="checkbox" />
+              Carbamazepine Level</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="uc03" type="checkbox" id="uc03" value="checkbox" />
+              UC0<span class="style13">3 </span>Level</div>
+          </label></td>
+        <td><div align="left">Other</div></td>
+        <td><label>
+            <div align="left">
+              <input name="plansOther" type="text" id="plansOther" size="15" maxlength="50" />
+            </div>
+          </label></td>
+      </tr>
+      <tr class="style7">
+        <td><div align="left">Medication Changes </div></td>
+        <td><label>
+            <div align="left">
+              <input name="nochange" type="checkbox" id="nochange" value="checkbox" />
+              No Change</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="addbox" type="checkbox" id="addbox" value="checkbox" />
+              Add what?
+              <input name="addWhat" type="text" id="addWhat" size="15" maxlength="50" />
+            </div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="decrease" type="checkbox" id="decrease" value="checkbox" />
+              Decrease(what?)
+              <input name="DecreaseWhat" type="text" id="DecreaseWhat" size="15" maxlength="50" />
+            </div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="new" type="checkbox" id="new" value="checkbox" />
+              New (what?)</div>
+          </label></td>
+        <td><label>
+            <div align="left">
+              <input name="newWhat" type="text" id="newWhat" size="15" maxlength="50" />
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr class="style7">
+        <td><div align="left">Rx Change Explanation/Future Rx Plans?<br />
+          </div>
+            <label>
+            <div align="left">
+              <textarea  onKeyPress=check_length(this.form.rxchange); name="rxchange" cols="50" rows="3" id="rxchange"></textarea>
+            </div>
+          </label></td>
+      </tr>
+      <tr class="style7">
+        <td><div align="left">Comments:<br />
+          </div>
+            <label>
+            <div align="left">
+              <textarea  onKeyPress=check_length(this.form.comments4); name="comments4" cols="50" rows="3" id="comments4"></textarea>
+            </div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" height="150" border="0" cellpadding="0" cellspacing="0">
+      <tr class="style7">
+        <td width="152"><div align="left">Next Appointment: Date </div></td>
+        <td width="411"><label>
+            <div align="left">
+              <input name="apptdate" type="text" id="apptdate" size="25" maxlength="20" />
+            </div>
+          </label></td>
+        <td width="45"><div align="left">Time:</div></td>
+        <td width="256"><label>
+            <div align="left">
+              <input name="appttime" type="hidden" id="appttime" value="16:14:30" />
+              <strong>16:14:30</strong></div>
+          </label></td>
+      </tr>
+      <tr class="style7">
+        <td><div align="left">Physician Signature </div></td>
+        <td><label>
+            <div align="left">
+              <input name="physician" type="text" id="physician" size="25" maxlength="50" />
+            </div>
+          </label></td>
+        <td><div align="left">Date:</div></td>
+        <td><label>
+            <div align="left">
+              <input name="timestamp" type="hidden" id="timestamp" value="16:14:30" />
+              <strong>05/08/2009</strong></div>
+          </label></td>
+      </tr>
+    </table>
+  <table width="950" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><label>
+            <div align="center">
+              <label>
+              <input name="Depart" type="hidden" id="Depart" value="UCC" />
+              <input type="submit" name="Submit" value="Submit" />
+              </label>
+            </div>
+          </label></td>
+      </tr>
+    </table>
+</div>
+
+<input type="hidden" name="MM_insert" value="form1">
+</form>
+</body>
+</html>
